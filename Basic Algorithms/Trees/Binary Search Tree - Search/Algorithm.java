@@ -55,6 +55,16 @@ public class BinarySearchTree {
 
         // Insert keys
         tree.insert(50);
+        tree.insert(30);
+        tree.insert(20);
+        tree.insert(40);
+        tree.insert(70);
+        tree.insert(60);
+        tree.insert(80);
 
+        // Search for keys
+        int searchKey = 60;
+        if (tree.search(searchKey))
+            System.out.println(searchKey + " found in the BST");
     }
 }
