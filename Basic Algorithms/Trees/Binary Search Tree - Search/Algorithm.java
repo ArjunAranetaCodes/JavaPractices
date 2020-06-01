@@ -56,7 +56,6 @@ public class BinarySearchTree {
         // Insert keys
         tree.insert(50);
         tree.insert(30);
-        tree.insert(20);
 
     }
 }
