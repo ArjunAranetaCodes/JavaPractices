@@ -58,7 +58,6 @@ public class BinarySearchTree {
         tree.insert(30);
         tree.insert(20);
         tree.insert(40);
-        tree.insert(70);
 
     }
 }
