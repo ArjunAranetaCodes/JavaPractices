@@ -63,6 +63,5 @@ public class BinarySearchTree {
         tree.insert(80);
 
         // Search for keys
-        int searchKey = 60;
     }
 }
