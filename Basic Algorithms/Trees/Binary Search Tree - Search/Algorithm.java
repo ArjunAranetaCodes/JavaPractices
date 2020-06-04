@@ -67,6 +67,5 @@ public class BinarySearchTree {
         if (tree.search(searchKey))
             System.out.println(searchKey + " found in the BST");
         else
-            System.out.println(searchKey + " not found in the BST");
     }
 }
