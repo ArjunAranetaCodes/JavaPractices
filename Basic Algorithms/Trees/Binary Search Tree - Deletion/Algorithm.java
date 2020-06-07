@@ -110,5 +110,6 @@ public class Algorithm {
         int keyToDelete = 30;
         bst.delete(keyToDelete);
         System.out.println("\n\nAfter deleting " + keyToDelete + ":");
+        bst.inOrder();
     }
 }
