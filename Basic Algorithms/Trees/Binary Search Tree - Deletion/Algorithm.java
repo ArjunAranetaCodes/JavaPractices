@@ -109,5 +109,6 @@ public class Algorithm {
         // Delete a node
         int keyToDelete = 30;
         bst.delete(keyToDelete);
+        System.out.println("\n\nAfter deleting " + keyToDelete + ":");
     }
 }
