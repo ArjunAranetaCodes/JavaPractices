@@ -106,5 +106,7 @@ public class Algorithm {
         System.out.println("In-order traversal:");
         bst.inOrder();
 
+        // Delete a node
+        int keyToDelete = 30;
     }
 }
