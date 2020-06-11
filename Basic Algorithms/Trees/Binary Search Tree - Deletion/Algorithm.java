@@ -102,6 +102,7 @@ public class Algorithm {
         bst.insert(60);
         bst.insert(80);
 
+        // Print the in-order traversal
 
     }
 }
