@@ -100,4 +100,8 @@ public class Algorithm {
         bst.insert(40);
         bst.insert(70);
         bst.insert(60);
-        bst.in
+        bst.insert(80);
+
+
+    }
+}
