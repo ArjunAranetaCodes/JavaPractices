@@ -95,6 +95,7 @@ public class Algorithm {
 
         // Insert nodes
         bst.insert(50);
+        bst.insert(30);
 
 
     }
