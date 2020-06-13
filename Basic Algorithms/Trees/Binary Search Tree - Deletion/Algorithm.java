@@ -93,6 +93,8 @@ public class Algorithm {
     public static void main(String[] args) {
         Algorithm bst = new Algorithm();
 
+        // Insert nodes
+        bst.insert(50);
 
 
     }
