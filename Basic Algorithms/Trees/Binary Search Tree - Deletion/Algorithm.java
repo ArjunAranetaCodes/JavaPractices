@@ -85,6 +85,7 @@ public class Algorithm {
         if (root != null) {
             inOrderRec(root.left);
             System.out.print(root.key + " ");
+            inOrderRec(root.right);
         }
     }
 
