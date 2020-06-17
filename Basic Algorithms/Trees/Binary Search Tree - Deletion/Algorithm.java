@@ -78,6 +78,10 @@ public class Algorithm {
 
     // Print the tree in-order
     public void inOrder() {
+        inOrderRec(root);
+    }
+
+    private void inOrderRec(Node root) {
     }
 
 }
