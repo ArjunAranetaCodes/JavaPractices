@@ -82,6 +82,8 @@ public class Algorithm {
     }
 
     private void inOrderRec(Node root) {
+        if (root != null) {
+        }
     }
 
 }
