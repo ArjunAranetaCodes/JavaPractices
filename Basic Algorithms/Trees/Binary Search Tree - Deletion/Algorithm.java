@@ -73,6 +73,7 @@ public class Algorithm {
             minValue = root.left.key;
             root = root.left;
         }
+        return minValue;
     }
 
 
