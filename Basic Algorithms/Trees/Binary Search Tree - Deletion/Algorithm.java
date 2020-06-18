@@ -69,6 +69,9 @@ public class Algorithm {
 
     private int minValue(Node root) {
         int minValue = root.key;
+        while (root.left != null) {
+            minValue = root.left.key;
+        }
     }
 
 
