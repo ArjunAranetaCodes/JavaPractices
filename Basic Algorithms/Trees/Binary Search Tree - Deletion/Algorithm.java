@@ -64,6 +64,7 @@ public class Algorithm {
             root.right = deleteRec(root.right, root.key);
         }
 
+        return root;
     }
 
 
