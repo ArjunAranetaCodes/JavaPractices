@@ -52,7 +52,9 @@ public class Algorithm {
         } else {
             // Node with only one child or no child
             if (root.left == null) {
+                return root.right;
             } else if (root.right == null) {
+                return root.left;
             }
 
 
