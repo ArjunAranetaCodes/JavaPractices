@@ -47,4 +47,15 @@ public class Algorithm {
 
         if (key < root.key) {
             root.left = deleteRec(root.left, key);
-        } else if (key > root.key) 
+        } else if (key > root.key) {
+            root.right = deleteRec(root.right, key);
+        } else {
+            // Node with only one child or no child
+
+
+        }
+
+    }
+
+
+}
