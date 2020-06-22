@@ -51,6 +51,9 @@ public class Algorithm {
             root.right = deleteRec(root.right, key);
         } else {
             // Node with only one child or no child
+            if (root.left == null) {
+            } else if (root.right == null) {
+            }
 
 
         }
