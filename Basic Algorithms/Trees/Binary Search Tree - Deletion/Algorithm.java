@@ -42,6 +42,7 @@ public class Algorithm {
 
     private Node deleteRec(Node root, int key) {
         if (root == null) {
+            return root;
         }
 
 
