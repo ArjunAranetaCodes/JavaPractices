@@ -30,6 +30,7 @@ public class Algorithm {
         } else if (key > root.key) {
         }
 
+        return root;
     }
 
 
