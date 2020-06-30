@@ -15,6 +15,7 @@ public class Algorithm {
         root = null;
     }
 
+    // Insert a key into the BST
 
 
 
