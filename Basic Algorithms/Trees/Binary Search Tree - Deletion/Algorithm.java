@@ -16,6 +16,8 @@ public class Algorithm {
     }
 
     // Insert a key into the BST
+    public void insert(int key) {
+    }
 
 
 
