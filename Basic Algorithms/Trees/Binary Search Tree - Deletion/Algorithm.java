@@ -26,10 +26,6 @@ public class Algorithm {
             return root;
         }
 
-        if (key < root.key) {
-        } else if (key > root.key) {
-        }
-
     }
 
 
