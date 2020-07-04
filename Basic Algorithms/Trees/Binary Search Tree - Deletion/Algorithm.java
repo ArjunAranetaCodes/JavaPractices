@@ -22,7 +22,6 @@ public class Algorithm {
 
     private Node insertRec(Node root, int key) {
         if (root == null) {
-            return root;
         }
 
     }
