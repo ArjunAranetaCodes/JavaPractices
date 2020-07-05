@@ -37,7 +37,6 @@ public class Algorithm {
 
     // Delete a key from the BST
     public void delete(int key) {
-        root = deleteRec(root, key);
     }
 
 
