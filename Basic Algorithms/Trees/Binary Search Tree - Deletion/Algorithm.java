@@ -40,10 +40,5 @@ public class Algorithm {
         root = deleteRec(root, key);
     }
 
-    private Node deleteRec(Node root, int key) {
-
-
-    }
-
 
 }
