@@ -46,7 +46,6 @@ public class Algorithm {
         }
 
         if (key < root.key) {
-            root.left = deleteRec(root.left, key);
         } else if (key > root.key) {
         } else {
 
