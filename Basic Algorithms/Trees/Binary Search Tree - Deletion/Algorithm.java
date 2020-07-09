@@ -60,7 +60,6 @@ public class Algorithm {
             // Node with two children: Get the inorder successor (smallest in the right subtree)
             root.key = minValue(root.right);
 
-            // Delete the inorder successor
         }
 
     }
