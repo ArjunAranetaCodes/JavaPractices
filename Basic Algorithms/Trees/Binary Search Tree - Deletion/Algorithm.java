@@ -67,8 +67,5 @@ public class Algorithm {
         return root;
     }
 
-    private int minValue(Node root) {
-    }
-
 
 }
