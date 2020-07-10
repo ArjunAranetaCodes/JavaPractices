@@ -61,7 +61,6 @@ public class Algorithm {
             root.key = minValue(root.right);
 
             // Delete the inorder successor
-            root.right = deleteRec(root.right, root.key);
         }
 
     }
