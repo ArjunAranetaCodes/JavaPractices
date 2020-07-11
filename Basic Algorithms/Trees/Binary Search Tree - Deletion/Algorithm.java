@@ -71,7 +71,6 @@ public class Algorithm {
         int minValue = root.key;
         while (root.left != null) {
             minValue = root.left.key;
-            root = root.left;
         }
     }
 
