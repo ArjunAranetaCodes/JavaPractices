@@ -77,7 +77,5 @@ public class Algorithm {
     }
 
     // Print the tree in-order
-    public void inOrder() {
-    }
 
 }
