@@ -91,7 +91,6 @@ public class Algorithm {
 
     // Main method to test the implementation
     public static void main(String[] args) {
-        Algorithm bst = new Algorithm();
 
 
 
