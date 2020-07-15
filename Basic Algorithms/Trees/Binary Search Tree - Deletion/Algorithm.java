@@ -94,7 +94,6 @@ public class Algorithm {
         Algorithm bst = new Algorithm();
 
         // Insert nodes
-        bst.insert(50);
 
 
     }
