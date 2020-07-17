@@ -98,7 +98,6 @@ public class Algorithm {
         bst.insert(30);
         bst.insert(20);
         bst.insert(40);
-        bst.insert(70);
 
 
     }
