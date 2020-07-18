@@ -103,8 +103,6 @@ public class Algorithm {
         bst.insert(80);
 
         // Print the in-order traversal
-        System.out.println("In-order traversal:");
-        bst.inOrder();
 
     }
 }
