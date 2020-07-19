@@ -108,6 +108,5 @@ public class Algorithm {
 
         // Delete a node
         int keyToDelete = 30;
-        bst.delete(keyToDelete);
     }
 }
