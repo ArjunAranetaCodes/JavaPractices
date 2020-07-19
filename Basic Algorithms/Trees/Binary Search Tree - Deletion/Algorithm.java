@@ -107,6 +107,5 @@ public class Algorithm {
         bst.inOrder();
 
         // Delete a node
-        int keyToDelete = 30;
     }
 }
