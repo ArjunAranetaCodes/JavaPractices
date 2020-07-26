@@ -57,6 +57,8 @@ public class Algorithm {
         // Inserting elements into the BST
         tree.insert(50);
         tree.insert(30);
+        tree.insert(20);
+        tree.insert(40);
 
     }
 }
