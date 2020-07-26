@@ -54,6 +54,8 @@ public class Algorithm {
     public static void main(String[] args) {
         Algorithm tree = new Algorithm();
 
+        // Inserting elements into the BST
+        tree.insert(50);
 
     }
 }
