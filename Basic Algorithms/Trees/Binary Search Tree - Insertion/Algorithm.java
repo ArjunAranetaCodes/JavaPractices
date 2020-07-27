@@ -47,6 +47,12 @@ public class Algorithm {
         if (root != null) {
             inorderRec(root.left);
             System.out.print(root.key + " ");
+            inorderRec(root.right);
         }
+    }
+
+    public static void main(String[] args) {
+
+
     }
 }
