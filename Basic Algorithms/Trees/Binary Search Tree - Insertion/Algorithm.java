@@ -52,4 +52,8 @@ public class Algorithm {
     }
 
     public static void main(String[] args) {
-        Algori
+        Algorithm tree = new Algorithm();
+
+
+    }
+}
