@@ -46,6 +46,7 @@ public class Algorithm {
     void inorderRec(Node root) {
         if (root != null) {
             inorderRec(root.left);
+            System.out.print(root.key + " ");
         }
     }
 }
