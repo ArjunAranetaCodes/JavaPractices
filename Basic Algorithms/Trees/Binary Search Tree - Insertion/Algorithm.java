@@ -40,6 +40,9 @@ public class Algorithm {
 
     // Method to print the BST in inorder traversal
     void inorder() {
+        inorderRec(root);
     }
 
+    void inorderRec(Node root) {
+    }
 }
