@@ -35,6 +35,9 @@ public class Algorithm {
         }
 
         // Return the unchanged node pointer
+        return root;
     }
+
+    // Method to print the BST in inorder traversal
 
 }
