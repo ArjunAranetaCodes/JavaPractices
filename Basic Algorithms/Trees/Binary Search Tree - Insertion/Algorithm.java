@@ -39,5 +39,7 @@ public class Algorithm {
     }
 
     // Method to print the BST in inorder traversal
+    void inorder() {
+    }
 
 }
