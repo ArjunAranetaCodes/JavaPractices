@@ -31,8 +31,10 @@ public class Algorithm {
         if (key < root.key) {
             root.left = insertRec(root.left, key);
         } else if (key > root.key) {
+            root.right = insertRec(root.right, key);
         }
 
+        // Return the unchanged node pointer
     }
 
 }
