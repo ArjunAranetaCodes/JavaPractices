@@ -25,4 +25,10 @@ public class Algorithm {
         if (root == null) {
             root = new Node(key);
             return root;
- 
+        }
+
+        // Otherwise, recur down the tree
+
+    }
+
+}
