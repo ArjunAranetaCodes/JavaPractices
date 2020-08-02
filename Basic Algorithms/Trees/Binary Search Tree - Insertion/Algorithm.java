@@ -21,6 +21,8 @@ public class Algorithm {
     }
 
     Node insertRec(Node root, int key) {
+        if (root == null) {
+        }
 
 
     }
