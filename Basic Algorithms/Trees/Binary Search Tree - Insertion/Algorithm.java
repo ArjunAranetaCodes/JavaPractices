@@ -17,6 +17,12 @@ public class Algorithm {
 
     // Method to insert a key into the BST
     void insert(int key) {
+        root = insertRec(root, key);
+    }
+
+    Node insertRec(Node root, int key) {
+
+
     }
 
 }
