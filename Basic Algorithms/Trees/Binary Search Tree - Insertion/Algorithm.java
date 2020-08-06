@@ -7,3 +7,9 @@ class Node {
         left = right = null;
     }
 }
+
+public class Algorithm {
+    Node root;
+
+
+}
