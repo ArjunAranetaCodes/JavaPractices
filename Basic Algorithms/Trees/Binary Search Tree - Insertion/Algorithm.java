@@ -4,6 +4,5 @@ class Node {
 
     public Node(int item) {
         key = item;
-        left = right = null;
     }
 }
