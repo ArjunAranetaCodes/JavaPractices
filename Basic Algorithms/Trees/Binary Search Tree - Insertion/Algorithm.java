@@ -3,6 +3,5 @@ class Node {
     Node left, right;
 
     public Node(int item) {
-        key = item;
     }
 }
