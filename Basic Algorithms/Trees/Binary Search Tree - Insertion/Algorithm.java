@@ -9,7 +9,6 @@ class Node {
 }
 
 public class Algorithm {
-    Node root;
 
 
 }
