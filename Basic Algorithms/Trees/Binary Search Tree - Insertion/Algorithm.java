@@ -12,7 +12,6 @@ public class Algorithm {
     Node root;
 
     public Algorithm() {
-        root = null;
     }
 
 
