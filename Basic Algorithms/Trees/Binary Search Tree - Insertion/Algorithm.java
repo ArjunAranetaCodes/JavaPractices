@@ -20,9 +20,4 @@ public class Algorithm {
         root = insertRec(root, key);
     }
 
-    Node insertRec(Node root, int key) {
-
-
-    }
-
 }
