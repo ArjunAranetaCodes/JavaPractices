@@ -23,7 +23,6 @@ public class Algorithm {
     Node insertRec(Node root, int key) {
         // If the tree is empty, create a new node
         if (root == null) {
-            root = new Node(key);
         }
 
 
