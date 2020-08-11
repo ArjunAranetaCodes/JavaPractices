@@ -24,7 +24,6 @@ public class Algorithm {
         // If the tree is empty, create a new node
         if (root == null) {
             root = new Node(key);
-            return root;
         }
 
 
