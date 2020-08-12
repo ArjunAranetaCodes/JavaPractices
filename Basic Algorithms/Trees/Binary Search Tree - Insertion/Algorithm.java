@@ -29,7 +29,6 @@ public class Algorithm {
 
         // Otherwise, recur down the tree
         if (key < root.key) {
-            root.left = insertRec(root.left, key);
         } else if (key > root.key) {
         }
 
