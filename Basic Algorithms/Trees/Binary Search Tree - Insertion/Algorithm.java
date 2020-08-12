@@ -28,9 +28,6 @@ public class Algorithm {
         }
 
         // Otherwise, recur down the tree
-        if (key < root.key) {
-        } else if (key > root.key) {
-        }
 
     }
 
