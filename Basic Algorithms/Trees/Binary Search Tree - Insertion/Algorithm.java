@@ -34,7 +34,6 @@ public class Algorithm {
             root.right = insertRec(root.right, key);
         }
 
-        // Return the unchanged node pointer
     }
 
 }
