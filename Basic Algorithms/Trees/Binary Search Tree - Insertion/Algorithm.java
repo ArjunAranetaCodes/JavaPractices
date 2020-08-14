@@ -35,7 +35,6 @@ public class Algorithm {
         }
 
         // Return the unchanged node pointer
-        return root;
     }
 
 }
