@@ -44,7 +44,5 @@ public class Algorithm {
     }
 
     void inorderRec(Node root) {
-        if (root != null) {
-        }
     }
 }
