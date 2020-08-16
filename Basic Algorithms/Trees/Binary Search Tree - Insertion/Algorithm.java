@@ -43,6 +43,4 @@ public class Algorithm {
         inorderRec(root);
     }
 
-    void inorderRec(Node root) {
-    }
 }
