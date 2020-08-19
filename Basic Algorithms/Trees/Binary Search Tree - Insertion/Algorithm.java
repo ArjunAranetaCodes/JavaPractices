@@ -50,9 +50,4 @@ public class Algorithm {
             inorderRec(root.right);
         }
     }
-
-    public static void main(String[] args) {
-
-
-    }
 }
