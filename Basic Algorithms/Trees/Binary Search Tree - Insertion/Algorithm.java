@@ -55,7 +55,6 @@ public class Algorithm {
         Algorithm tree = new Algorithm();
 
         // Inserting elements into the BST
-        tree.insert(50);
 
     }
 }
