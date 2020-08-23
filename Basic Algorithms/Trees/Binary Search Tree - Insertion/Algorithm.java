@@ -63,6 +63,5 @@ public class Algorithm {
         tree.insert(60);
         tree.insert(80);
 
-        // Print the inorder traversal of the BST
     }
 }
