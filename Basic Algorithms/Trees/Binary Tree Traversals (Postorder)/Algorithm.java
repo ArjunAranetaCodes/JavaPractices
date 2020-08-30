@@ -27,6 +27,8 @@ public class Algorithm {
         // Traverse the right subtree
         postorderTraversal(node.right);
 
+        // Visit the node
+        System.out.print(node.data + " ");
     }
 
 
