@@ -8,3 +8,8 @@ class TreeNode {
     }
 }
 
+public class Algorithm {
+    // Root of the Binary Tree
+
+
+}
