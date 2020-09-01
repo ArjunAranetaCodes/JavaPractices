@@ -12,4 +12,9 @@ public class Algorithm {
     // Root of the Binary Tree
     TreeNode root;
 
-    A
+    Algorithm() {
+        root = null;
+    }
+
+
+}
