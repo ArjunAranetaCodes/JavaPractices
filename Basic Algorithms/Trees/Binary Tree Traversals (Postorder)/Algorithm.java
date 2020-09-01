@@ -16,5 +16,12 @@ public class Algorithm {
         root = null;
     }
 
+    // Method to perform postorder traversal
+    void postorderTraversal(TreeNode node) {
+
+
+
+    }
+
 
 }
