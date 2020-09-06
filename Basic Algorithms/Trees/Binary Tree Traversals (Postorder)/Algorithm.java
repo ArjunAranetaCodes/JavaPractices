@@ -21,7 +21,6 @@ public class Algorithm {
         if (node == null)
             return;
 
-        // Traverse the left subtree
 
 
     }
