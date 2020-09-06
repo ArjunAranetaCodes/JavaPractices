@@ -18,7 +18,6 @@ public class Algorithm {
 
     // Method to perform postorder traversal
     void postorderTraversal(TreeNode node) {
-        if (node == null)
 
 
 
