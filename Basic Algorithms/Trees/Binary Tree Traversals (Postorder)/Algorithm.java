@@ -27,7 +27,6 @@ public class Algorithm {
         // Traverse the right subtree
         postorderTraversal(node.right);
 
-        // Visit the node
     }
 
 
