@@ -31,6 +31,5 @@ public class Algorithm {
         System.out.print(node.data + " ");
     }
 
-    // Wrapper method to start postorder traversal from the root
 
 }
