@@ -28,7 +28,6 @@ public class Algorithm {
         postorderTraversal(node.right);
 
         // Visit the node
-        System.out.print(node.data + " ");
     }
 
 
