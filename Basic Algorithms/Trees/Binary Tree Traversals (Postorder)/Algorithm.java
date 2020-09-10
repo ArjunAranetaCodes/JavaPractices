@@ -32,7 +32,5 @@ public class Algorithm {
     }
 
     // Wrapper method to start postorder traversal from the root
-    void startPostorderTraversal() {
-    }
 
 }
