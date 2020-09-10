@@ -36,8 +36,4 @@ public class Algorithm {
         postorderTraversal(root);
     }
 
-    // Driver method to test the Algorithm
-    public static void main(String[] args) {
-
-    }
 }
