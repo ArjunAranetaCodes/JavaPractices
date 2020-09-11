@@ -49,7 +49,6 @@ public class Algorithm {
          *    4   5
          */
         tree.root = new TreeNode(1);
-        tree.root.left = new TreeNode(2);
 
     }
 }
