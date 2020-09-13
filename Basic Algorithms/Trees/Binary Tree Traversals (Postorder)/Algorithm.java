@@ -55,6 +55,5 @@ public class Algorithm {
         tree.root.left.right = new TreeNode(5);
 
         System.out.println("Postorder traversal of binary tree:");
-        tree.startPostorderTraversal();
     }
 }
