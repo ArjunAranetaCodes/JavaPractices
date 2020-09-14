@@ -39,5 +39,6 @@ public class Algorithm {
         tree.root.left.right = new TreeNode(5);
 
         System.out.println("Preorder traversal of binary tree is: ");
+        tree.preOrderTraversal(tree.root);
     }
 }
