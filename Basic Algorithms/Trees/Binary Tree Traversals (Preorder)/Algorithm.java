@@ -34,6 +34,8 @@ public class Algorithm {
         Algorithm tree = new Algorithm();
         tree.root = new TreeNode(1);
         tree.root.left = new TreeNode(2);
+        tree.root.right = new TreeNode(3);
+        tree.root.left.left = new TreeNode(4);
 
     }
 }
