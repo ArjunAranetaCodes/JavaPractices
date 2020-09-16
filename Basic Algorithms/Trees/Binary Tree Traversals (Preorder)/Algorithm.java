@@ -33,6 +33,7 @@ public class Algorithm {
         // Create a sample binary tree
         Algorithm tree = new Algorithm();
         tree.root = new TreeNode(1);
+        tree.root.left = new TreeNode(2);
 
     }
 }
