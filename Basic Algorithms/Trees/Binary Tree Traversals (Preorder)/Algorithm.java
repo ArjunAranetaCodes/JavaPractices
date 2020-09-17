@@ -28,4 +28,8 @@ public class Algorithm {
             preOrderTraversal(node.right);
         }
     }
+
+    public static void main(String[] args) {
+
+    }
 }
