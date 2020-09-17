@@ -21,6 +21,8 @@ public class Algorithm {
             // Process the current node
             System.out.print(node.data + " ");
 
+            // Recur on the left subtree
+            preOrderTraversal(node.left);
 
         }
     }
