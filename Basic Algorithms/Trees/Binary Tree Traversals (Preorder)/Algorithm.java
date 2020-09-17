@@ -25,6 +25,7 @@ public class Algorithm {
             preOrderTraversal(node.left);
 
             // Recur on the right subtree
+            preOrderTraversal(node.right);
         }
     }
 }
