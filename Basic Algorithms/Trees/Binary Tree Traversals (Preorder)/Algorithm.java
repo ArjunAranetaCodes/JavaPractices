@@ -19,6 +19,7 @@ public class Algorithm {
     void preOrderTraversal(TreeNode node) {
         if (node != null) {
             // Process the current node
+            System.out.print(node.data + " ");
 
 
         }
