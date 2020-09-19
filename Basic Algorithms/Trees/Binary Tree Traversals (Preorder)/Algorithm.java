@@ -18,6 +18,7 @@ public class Algorithm {
     // Recursive method to perform Preorder traversal
     void preOrderTraversal(TreeNode node) {
         if (node != null) {
+            // Process the current node
 
 
         }
