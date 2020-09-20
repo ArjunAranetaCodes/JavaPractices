@@ -15,4 +15,7 @@ public class Algorithm {
         root = null;
     }
 
+    // Recursive method to perform Preorder traversal
+    void preOrderTraversal(TreeNode node) {
+    }
 }
