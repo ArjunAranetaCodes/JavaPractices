@@ -12,6 +12,7 @@ public class Algorithm {
     TreeNode root;
 
     Algorithm() {
+        root = null;
     }
 
 }
