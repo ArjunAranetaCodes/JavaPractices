@@ -4,6 +4,7 @@ class TreeNode {
 
     public TreeNode(int item) {
         data = item;
+        left = right = null;
     }
 }
 
