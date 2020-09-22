@@ -3,6 +3,7 @@ class TreeNode {
     TreeNode left, right;
 
     public TreeNode(int item) {
+        data = item;
     }
 }
 
