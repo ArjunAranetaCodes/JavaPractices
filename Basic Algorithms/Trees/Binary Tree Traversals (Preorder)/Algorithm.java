@@ -5,7 +5,3 @@ class TreeNode {
     public TreeNode(int item) {
     }
 }
-
-public class Algorithm {
-
-}
