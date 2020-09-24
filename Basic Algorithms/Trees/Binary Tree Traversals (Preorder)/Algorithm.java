@@ -9,6 +9,5 @@ class TreeNode {
 }
 
 public class Algorithm {
-    TreeNode root;
 
 }
