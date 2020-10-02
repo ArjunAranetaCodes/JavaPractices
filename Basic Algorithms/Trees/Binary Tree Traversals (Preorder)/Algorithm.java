@@ -1,59 +1,44 @@
 class TreeNode {
-    int val;
+    int data;
     TreeNode left, right;
 
     public TreeNode(int item) {
-        val = item;
+        data = item;
         left = right = null;
     }
 }
 
 public class Algorithm {
-    // Root of the Binary Tree
     TreeNode root;
 
-    public Algorithm() {
+    Algorithm() {
         root = null;
     }
 
-    // Inorder traversal of the tree
-    private void inorderTraversal(TreeNode node) {
+    // Recursive method to perform Preorder traversal
+    void preOrderTraversal(TreeNode node) {
         if (node != null) {
-            // Traverse the left subtree
-            inorderTraversal(node.left);
+            // Process the current node
+            System.out.print(node.data + " ");
 
-            // Visit the root node
-            System.out.print(node.val + " ");
+            // Recur on the left subtree
+            preOrderTraversal(node.left);
 
-            // Traverse the right subtree
-            inorderTraversal(node.right);
+            // Recur on the right subtree
+            preOrderTraversal(node.right);
         }
     }
 
-    // Helper method to start the inorder traversal from the root
-    public void inorderTraversal() {
-        inorderTraversal(root);
-    }
-
-    // Driver method to test the Algorithm class
     public static void main(String[] args) {
+        // Create a sample binary tree
         Algorithm tree = new Algorithm();
-
-        /* Constructed binary tree is:
-                   1
-                 /   \
-                2     3
-               / \
-              4   5
-        */
-
         tree.root = new TreeNode(1);
         tree.root.left = new TreeNode(2);
         tree.root.right = new TreeNode(3);
         tree.root.left.left = new TreeNode(4);
         tree.root.left.right = new TreeNode(5);
 
-        System.out.println("Inorder traversal of the binary tree is:");
-        tree.inorderTraversal();
+        System.out.println("Preorder traversal of binary tree is: ");
+        tree.preOrderTraversal(tree.root);
     }
 }
