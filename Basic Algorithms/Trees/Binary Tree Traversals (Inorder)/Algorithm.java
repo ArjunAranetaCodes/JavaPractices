@@ -20,6 +20,7 @@ public class Algorithm {
     private void inorderTraversal(TreeNode node) {
         if (node != null) {
             // Traverse the left subtree
+            inorderTraversal(node.left);
 
 
         }
