@@ -22,6 +22,7 @@ public class Algorithm {
             // Traverse the left subtree
             inorderTraversal(node.left);
 
+            // Visit the root node
 
         }
     }
