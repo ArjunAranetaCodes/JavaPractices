@@ -13,6 +13,7 @@ public class Algorithm {
     TreeNode root;
 
     public Algorithm() {
+        root = null;
     }
 
 
