@@ -16,6 +16,7 @@ public class Algorithm {
         root = null;
     }
 
+    // Inorder traversal of the tree
 
 
 }
