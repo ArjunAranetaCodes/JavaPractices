@@ -12,6 +12,8 @@ public class Algorithm {
     // Root of the Binary Tree
     TreeNode root;
 
+    public Algorithm() {
+    }
 
 
 
