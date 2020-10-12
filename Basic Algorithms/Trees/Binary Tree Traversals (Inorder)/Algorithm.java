@@ -7,3 +7,12 @@ class TreeNode {
         left = right = null;
     }
 }
+
+public class Algorithm {
+    // Root of the Binary Tree
+    TreeNode root;
+
+
+
+
+}
