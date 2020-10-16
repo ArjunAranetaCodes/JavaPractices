@@ -3,6 +3,5 @@ class TreeNode {
     TreeNode left, right;
 
     public TreeNode(int item) {
-        val = item;
     }
 }
