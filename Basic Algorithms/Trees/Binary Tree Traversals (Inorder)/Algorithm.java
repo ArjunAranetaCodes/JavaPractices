@@ -18,10 +18,6 @@ public class Algorithm {
 
     // Inorder traversal of the tree
     private void inorderTraversal(TreeNode node) {
-        if (node != null) {
-
-
-        }
     }
 
 
