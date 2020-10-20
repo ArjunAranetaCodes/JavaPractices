@@ -26,7 +26,6 @@ public class Algorithm {
             System.out.print(node.val + " ");
 
             // Traverse the right subtree
-            inorderTraversal(node.right);
         }
     }
 
