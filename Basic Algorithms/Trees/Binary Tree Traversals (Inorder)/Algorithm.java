@@ -25,7 +25,6 @@ public class Algorithm {
             // Visit the root node
             System.out.print(node.val + " ");
 
-            // Traverse the right subtree
         }
     }
 
