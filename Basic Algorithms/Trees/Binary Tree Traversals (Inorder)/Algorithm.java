@@ -23,7 +23,6 @@ public class Algorithm {
             inorderTraversal(node.left);
 
             // Visit the root node
-            System.out.print(node.val + " ");
 
         }
     }
