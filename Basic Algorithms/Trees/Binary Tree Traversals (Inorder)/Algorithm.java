@@ -31,7 +31,5 @@ public class Algorithm {
     }
 
     // Helper method to start the inorder traversal from the root
-    public void inorderTraversal() {
-    }
 
 }
