@@ -35,5 +35,4 @@ public class Algorithm {
         inorderTraversal(root);
     }
 
-    // Driver method to test the Algorithm class
 }
