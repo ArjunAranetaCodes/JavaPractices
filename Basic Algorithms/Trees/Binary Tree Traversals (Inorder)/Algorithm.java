@@ -37,7 +37,6 @@ public class Algorithm {
 
     // Driver method to test the Algorithm class
     public static void main(String[] args) {
-        Algorithm tree = new Algorithm();
 
 
     }
