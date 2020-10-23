@@ -39,14 +39,6 @@ public class Algorithm {
     public static void main(String[] args) {
         Algorithm tree = new Algorithm();
 
-        /* Constructed binary tree is:
-                   1
-                 /   \
-                2     3
-               / \
-              4   5
-        */
-
 
     }
 }
