@@ -53,7 +53,5 @@ public class Algorithm {
         tree.root.left.left = new TreeNode(4);
         tree.root.left.right = new TreeNode(5);
 
-        System.out.println("Inorder traversal of the binary tree is:");
-        tree.inorderTraversal();
     }
 }
