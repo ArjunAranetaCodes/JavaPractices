@@ -28,6 +28,7 @@ public class Algorithm {
             } else if (array[mid] < target) {
                 low = mid + 1; // Search in the right half
             } else {
+                high = mid - 1; // Search in the left half
             }
         }
 
