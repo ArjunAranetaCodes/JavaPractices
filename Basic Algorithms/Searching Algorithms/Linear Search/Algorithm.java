@@ -20,6 +20,9 @@ public class Algorithm {
         int low = 0;
         int high = array.length - 1;
 
+        while (low <= high) {
+
+        }
 
     }
 }
