@@ -24,6 +24,7 @@ public class Algorithm {
             int mid = low + (high - low) / 2;
 
             if (array[mid] == target) {
+                return mid; // Element foundx
             } else if (array[mid] < target) {
             } else {
             }
