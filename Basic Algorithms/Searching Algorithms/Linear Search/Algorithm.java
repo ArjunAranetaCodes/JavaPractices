@@ -15,4 +15,5 @@ public class Algorithm {
         }
     }
 
+    // Binary search method
 }
