@@ -16,4 +16,8 @@ public class Algorithm {
     }
 
     // Binary search method
+    public static int binarySearch(int[] array, int target) {
+
+
+    }
 }
