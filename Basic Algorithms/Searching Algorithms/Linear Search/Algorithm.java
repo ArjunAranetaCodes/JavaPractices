@@ -7,10 +7,6 @@ public class Algorithm {
         // Perform binary search
         int result = binarySearch(array, target);
 
-        // Display the result
-        if (result != -1) {
-        } else {
-        }
     }
 
 }
