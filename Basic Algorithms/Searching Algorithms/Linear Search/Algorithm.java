@@ -9,7 +9,6 @@ public class Algorithm {
 
         // Display the result
         if (result != -1) {
-            System.out.println("Element " + target + " found at index " + result);
         } else {
         }
     }
