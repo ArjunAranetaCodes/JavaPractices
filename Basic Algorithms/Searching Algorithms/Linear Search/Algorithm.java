@@ -11,7 +11,6 @@ public class Algorithm {
         if (result != -1) {
             System.out.println("Element " + target + " found at index " + result);
         } else {
-            System.out.println("Element " + target + " not found in the array");
         }
     }
 
