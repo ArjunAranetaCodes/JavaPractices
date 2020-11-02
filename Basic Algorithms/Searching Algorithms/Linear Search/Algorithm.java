@@ -21,7 +21,6 @@ public class Algorithm {
         int high = array.length - 1;
 
         while (low <= high) {
-            int mid = low + (high - low) / 2;
 
         }
 
