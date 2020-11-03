@@ -23,10 +23,6 @@ public class Algorithm {
         while (low <= high) {
             int mid = low + (high - low) / 2;
 
-            if (array[mid] == target) {
-            } else if (array[mid] < target) {
-            } else {
-            }
         }
 
     }
