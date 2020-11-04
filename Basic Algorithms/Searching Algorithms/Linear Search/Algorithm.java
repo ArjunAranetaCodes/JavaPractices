@@ -26,7 +26,6 @@ public class Algorithm {
             if (array[mid] == target) {
                 return mid; // Element found
             } else if (array[mid] < target) {
-                low = mid + 1; // Search in the right half
             } else {
             }
         }
