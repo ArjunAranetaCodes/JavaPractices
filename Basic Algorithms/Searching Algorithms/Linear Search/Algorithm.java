@@ -32,6 +32,5 @@ public class Algorithm {
             }
         }
 
-        return -1; // Element not found
     }
 }
