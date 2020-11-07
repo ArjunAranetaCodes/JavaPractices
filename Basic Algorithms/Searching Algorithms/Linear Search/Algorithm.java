@@ -38,5 +38,6 @@ public class Algorithm {
             System.out.println("Element " + target + " not found in the array");
         }
 
+        scanner.close();
     }
 }
