@@ -31,6 +31,7 @@ public class Algorithm {
         // Perform Linear Search
         int index = linearSearch(array, target);
 
+        // Display the result
 
     }
 }
