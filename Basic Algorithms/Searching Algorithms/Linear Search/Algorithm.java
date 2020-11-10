@@ -28,6 +28,7 @@ public class Algorithm {
         System.out.print("Enter the element to search: ");
         int target = scanner.nextInt();
 
+        // Perform Linear Search
 
 
     }
