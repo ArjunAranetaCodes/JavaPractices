@@ -29,6 +29,7 @@ public class Algorithm {
         int target = scanner.nextInt();
 
         // Perform Linear Search
+        int index = linearSearch(array, target);
 
 
     }
