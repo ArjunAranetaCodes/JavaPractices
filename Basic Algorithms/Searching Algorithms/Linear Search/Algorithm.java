@@ -26,6 +26,7 @@ public class Algorithm {
 
         // Input target element to search
         System.out.print("Enter the element to search: ");
+        int target = scanner.nextInt();
 
 
 
