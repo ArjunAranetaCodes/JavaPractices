@@ -19,6 +19,7 @@ public class Algorithm {
         int size = scanner.nextInt();
 
         int[] array = new int[size];
+        System.out.println("Enter the elements of the array:");
 
 
 
