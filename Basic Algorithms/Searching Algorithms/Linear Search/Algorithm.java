@@ -15,6 +15,7 @@ public class Algorithm {
         Scanner scanner = new Scanner(System.in);
 
         // Input array elements
+        System.out.print("Enter the size of the array: ");
         int size = scanner.nextInt();
 
 
