@@ -8,6 +8,7 @@ public class Algorithm {
                 return i; // Return the index where the target is found
             }
         }
+        return -1; // Return -1 if the target is not found in the array
     }
 
 }
