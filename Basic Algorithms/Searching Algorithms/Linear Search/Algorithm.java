@@ -11,12 +11,4 @@ public class Algorithm {
         return -1; // Return -1 if the target is not found in the array
     }
 
-    public static void main(String[] args) {
-
-
-
-
-
-
-    }
 }
