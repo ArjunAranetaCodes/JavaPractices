@@ -14,7 +14,6 @@ public class Algorithm {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        // Input array elements
 
 
 
