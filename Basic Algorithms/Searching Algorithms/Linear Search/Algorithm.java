@@ -20,7 +20,6 @@ public class Algorithm {
 
         int[] array = new int[size];
         System.out.println("Enter the elements of the array:");
-        for (int i = 0; i < size; i++) {
 
 
 
