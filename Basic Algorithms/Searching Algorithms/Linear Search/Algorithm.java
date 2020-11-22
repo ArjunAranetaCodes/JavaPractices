@@ -24,7 +24,6 @@ public class Algorithm {
             array[i] = scanner.nextInt();
         }
 
-        // Input target element to search
 
 
 
