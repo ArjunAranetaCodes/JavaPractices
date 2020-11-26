@@ -32,9 +32,6 @@ public class Algorithm {
         int index = linearSearch(array, target);
 
         // Display the result
-        if (index != -1) {
-        } else {
-        }
 
     }
 }
