@@ -35,7 +35,6 @@ public class Algorithm {
         if (index != -1) {
             System.out.println("Element " + target + " found at index " + index);
         } else {
-            System.out.println("Element " + target + " not found in the array");
         }
 
     }
