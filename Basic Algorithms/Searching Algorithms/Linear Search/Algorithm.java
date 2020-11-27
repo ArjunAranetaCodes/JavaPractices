@@ -33,7 +33,6 @@ public class Algorithm {
 
         // Display the result
         if (index != -1) {
-            System.out.println("Element " + target + " found at index " + index);
         } else {
         }
 
