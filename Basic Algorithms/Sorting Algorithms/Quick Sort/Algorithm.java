@@ -33,6 +33,7 @@ public class Algorithm {
                 // Swap arr[i] and arr[j]
                 int temp = arr[i];
                 arr[i] = arr[j];
+                arr[j] = temp;
             }
         }
 
