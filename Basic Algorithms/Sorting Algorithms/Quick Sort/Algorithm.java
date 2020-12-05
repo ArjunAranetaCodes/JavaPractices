@@ -16,6 +16,7 @@ public class Algorithm {
         if (low < high) {
             int pivotIndex = partition(arr, low, high);
 
+            quickSort(arr, low, pivotIndex - 1);
         }
     }
 
