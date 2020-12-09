@@ -5,7 +5,6 @@ public class Algorithm {
         System.out.println("Original Array:");
         printArray(array);
         
-        quickSort(array, 0, array.length - 1);
         
     }
 
