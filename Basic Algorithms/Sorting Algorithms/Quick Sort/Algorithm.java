@@ -7,7 +7,6 @@ public class Algorithm {
         
         quickSort(array, 0, array.length - 1);
         
-        System.out.println("Sorted Array:");
     }
 
 
