@@ -12,8 +12,6 @@ public class Algorithm {
     }
 
     // Quick Sort implementation
-    public static void quickSort(int[] arr, int low, int high) {
-    }
 
 
 }
