@@ -22,9 +22,5 @@ public class Algorithm {
     }
 
     // Helper method to partition the array
-    public static int partition(int[] arr, int low, int high) {
-
-
-    }
 
 }
