@@ -28,7 +28,6 @@ public class Algorithm {
 
         for (int j = low; j < high; j++) {
             if (arr[j] <= pivot) {
-                i++;
             }
         }
 
