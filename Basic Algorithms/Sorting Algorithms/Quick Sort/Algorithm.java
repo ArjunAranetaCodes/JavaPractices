@@ -26,9 +26,6 @@ public class Algorithm {
         int pivot = arr[high];
         int i = low - 1;
 
-        for (int j = low; j < high; j++) {
-        }
-
 
     }
 
