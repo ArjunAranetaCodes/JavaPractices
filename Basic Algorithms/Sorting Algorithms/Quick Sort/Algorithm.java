@@ -37,7 +37,6 @@ public class Algorithm {
             }
         }
 
-        // Swap arr[i+1] and arr[high] (pivot)
 
     }
 
