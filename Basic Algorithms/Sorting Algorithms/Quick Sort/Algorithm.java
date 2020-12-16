@@ -38,7 +38,6 @@ public class Algorithm {
         }
 
         // Swap arr[i+1] and arr[high] (pivot)
-        int temp = arr[i + 1];
 
     }
 
