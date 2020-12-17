@@ -45,5 +45,4 @@ public class Algorithm {
         return i + 1;
     }
 
-    // Helper method to print the array
 }
