@@ -47,7 +47,5 @@ public class Algorithm {
 
     // Helper method to print the array
     public static void printArray(int[] arr) {
-        for (int value : arr) {
-        }
     }
 }
