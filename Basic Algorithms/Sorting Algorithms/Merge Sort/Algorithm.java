@@ -71,6 +71,7 @@ public class Algorithm {
     // Utility function to print an array
     public static void printArray(int[] arr) {
         for (int value : arr) {
+            System.out.print(value + " ");
         }
     }
 }
