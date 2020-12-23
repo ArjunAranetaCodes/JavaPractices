@@ -63,6 +63,7 @@ public class Algorithm {
         // Copy the remaining elements of rightArray[], if there are any
         while (j < n2) {
             arr[k] = rightArray[j];
+            j++;
         }
     }
 
