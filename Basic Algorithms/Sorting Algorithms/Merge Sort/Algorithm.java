@@ -60,6 +60,7 @@ public class Algorithm {
             k++;
         }
 
+        // Copy the remaining elements of rightArray[], if there are any
     }
 
 }
