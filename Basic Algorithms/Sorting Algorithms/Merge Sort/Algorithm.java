@@ -57,6 +57,7 @@ public class Algorithm {
         while (i < n1) {
             arr[k] = leftArray[i];
             i++;
+            k++;
         }
 
     }
