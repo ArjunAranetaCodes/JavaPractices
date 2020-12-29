@@ -53,6 +53,7 @@ public class Algorithm {
             k++;
         }
 
+        while (i < n1) {
 
     }
 
