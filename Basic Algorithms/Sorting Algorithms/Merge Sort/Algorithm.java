@@ -47,6 +47,7 @@ public class Algorithm {
                 arr[k] = leftArray[i];
                 i++;
             } else {
+                arr[k] = rightArray[j];
             }
         }
 
