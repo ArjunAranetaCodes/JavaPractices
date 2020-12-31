@@ -42,6 +42,8 @@ public class Algorithm {
 
         // Merge the temporary arrays
         int i = 0, j = 0, k = left;
+        while (i < n1 && j < n2) {
+        }
 
 
     }
