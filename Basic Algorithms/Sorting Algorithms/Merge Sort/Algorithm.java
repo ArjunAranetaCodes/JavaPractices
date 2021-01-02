@@ -38,6 +38,7 @@ public class Algorithm {
 
         // Copy data to temporary arrays
         System.arraycopy(arr, left, leftArray, 0, n1);
+        System.arraycopy(arr, middle + 1, rightArray, 0, n2);
 
 
 
