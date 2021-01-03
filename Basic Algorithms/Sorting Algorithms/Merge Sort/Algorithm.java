@@ -36,6 +36,7 @@ public class Algorithm {
         int[] leftArray = new int[n1];
         int[] rightArray = new int[n2];
 
+        // Copy data to temporary arrays
 
 
 
