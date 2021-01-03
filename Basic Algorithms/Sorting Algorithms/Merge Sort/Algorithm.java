@@ -32,6 +32,7 @@ public class Algorithm {
         int n1 = middle - left + 1;
         int n2 = right - middle;
 
+        // Create temporary arrays
 
 
 
