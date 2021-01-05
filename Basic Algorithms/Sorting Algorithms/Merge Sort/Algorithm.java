@@ -28,5 +28,12 @@ public class Algorithm {
     }
 
     // Merge function
+    public static void merge(int[] arr, int left, int middle, int right) {
+
+
+
+
+
+    }
 
 }
