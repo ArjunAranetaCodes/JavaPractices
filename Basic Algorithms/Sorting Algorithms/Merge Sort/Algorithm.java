@@ -22,6 +22,7 @@ public class Algorithm {
             mergeSort(arr, left, middle);
             mergeSort(arr, middle + 1, right);
 
+            // Merge the sorted halves
         }
     }
 
