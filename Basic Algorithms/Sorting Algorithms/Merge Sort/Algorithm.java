@@ -20,6 +20,7 @@ public class Algorithm {
 
             // Recursively sort the first and second halves
             mergeSort(arr, left, middle);
+            mergeSort(arr, middle + 1, right);
 
         }
     }
