@@ -18,6 +18,7 @@ public class Algorithm {
             // Find the middle point
             int middle = left + (right - left) / 2;
 
+            // Recursively sort the first and second halves
 
         }
     }
