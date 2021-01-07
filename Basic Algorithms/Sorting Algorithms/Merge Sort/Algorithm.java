@@ -16,6 +16,7 @@ public class Algorithm {
     public static void mergeSort(int[] arr, int left, int right) {
         if (left < right) {
             // Find the middle point
+            int middle = left + (right - left) / 2;
 
 
         }
