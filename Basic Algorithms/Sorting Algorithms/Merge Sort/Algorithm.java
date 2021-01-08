@@ -12,6 +12,7 @@ public class Algorithm {
         printArray(array);
     }
 
+    // Merge Sort function
 
 
 }
