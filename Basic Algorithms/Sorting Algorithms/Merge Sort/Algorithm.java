@@ -9,7 +9,6 @@ public class Algorithm {
         mergeSort(array, 0, array.length - 1);
 
         System.out.println("\nSorted array:");
-        printArray(array);
     }
 
 
