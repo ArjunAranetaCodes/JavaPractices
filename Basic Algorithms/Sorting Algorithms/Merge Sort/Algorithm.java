@@ -19,7 +19,6 @@ public class Algorithm {
             int middle = left + (right - left) / 2;
 
             // Recursively sort the first and second halves
-            mergeSort(arr, left, middle);
 
         }
     }
