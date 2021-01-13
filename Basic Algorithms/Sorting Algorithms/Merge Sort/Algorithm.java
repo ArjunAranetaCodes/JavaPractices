@@ -27,6 +27,5 @@ public class Algorithm {
         }
     }
 
-    // Merge function
 
 }
