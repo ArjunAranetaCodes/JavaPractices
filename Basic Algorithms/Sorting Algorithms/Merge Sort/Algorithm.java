@@ -30,7 +30,6 @@ public class Algorithm {
     // Merge function
     public static void merge(int[] arr, int left, int middle, int right) {
         int n1 = middle - left + 1;
-        int n2 = right - middle;
 
 
 
