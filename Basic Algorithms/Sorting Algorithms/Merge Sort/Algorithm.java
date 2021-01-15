@@ -33,7 +33,6 @@ public class Algorithm {
         int n2 = right - middle;
 
         // Create temporary arrays
-        int[] leftArray = new int[n1];
 
 
 
