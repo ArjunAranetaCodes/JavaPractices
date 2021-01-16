@@ -34,7 +34,6 @@ public class Algorithm {
 
         // Create temporary arrays
         int[] leftArray = new int[n1];
-        int[] rightArray = new int[n2];
 
 
 
