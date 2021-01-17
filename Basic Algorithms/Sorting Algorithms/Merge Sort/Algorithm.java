@@ -41,7 +41,6 @@ public class Algorithm {
         System.arraycopy(arr, middle + 1, rightArray, 0, n2);
 
         // Merge the temporary arrays
-        int i = 0, j = 0, k = left;
 
 
     }
