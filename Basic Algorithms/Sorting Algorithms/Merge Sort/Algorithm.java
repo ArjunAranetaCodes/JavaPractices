@@ -45,7 +45,6 @@ public class Algorithm {
         while (i < n1 && j < n2) {
             if (leftArray[i] <= rightArray[j]) {
                 arr[k] = leftArray[i];
-                i++;
             } else {
             }
         }
