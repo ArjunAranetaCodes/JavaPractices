@@ -44,7 +44,6 @@ public class Algorithm {
         int i = 0, j = 0, k = left;
         while (i < n1 && j < n2) {
             if (leftArray[i] <= rightArray[j]) {
-                arr[k] = leftArray[i];
             } else {
             }
         }
