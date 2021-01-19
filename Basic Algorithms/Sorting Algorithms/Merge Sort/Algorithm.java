@@ -55,7 +55,6 @@ public class Algorithm {
 
         // Copy the remaining elements of leftArray[], if there are any
         while (i < n1) {
-            arr[k] = leftArray[i];
         }
 
     }
