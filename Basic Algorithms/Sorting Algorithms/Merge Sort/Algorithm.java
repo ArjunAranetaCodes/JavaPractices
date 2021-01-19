@@ -53,7 +53,6 @@ public class Algorithm {
             k++;
         }
 
-        // Copy the remaining elements of leftArray[], if there are any
         while (i < n1) {
         }
 
