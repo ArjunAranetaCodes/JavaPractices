@@ -54,7 +54,6 @@ public class Algorithm {
         }
 
         while (i < n1) {
-        }
 
     }
 
