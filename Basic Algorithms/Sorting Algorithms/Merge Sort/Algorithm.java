@@ -50,7 +50,6 @@ public class Algorithm {
                 arr[k] = rightArray[j];
                 j++;
             }
-            k++;
         }
 
 
