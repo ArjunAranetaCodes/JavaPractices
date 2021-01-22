@@ -64,7 +64,6 @@ public class Algorithm {
         while (j < n2) {
             arr[k] = rightArray[j];
             j++;
-            k++;
         }
     }
 
