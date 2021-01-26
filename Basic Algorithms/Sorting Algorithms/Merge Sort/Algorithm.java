@@ -1,41 +1,78 @@
 public class Algorithm {
 
     public static void main(String[] args) {
-        int[] array = {64, 25, 12, 22, 11};
-        
+        int[] array = {12, 11, 13, 5, 6, 7};
+
         System.out.println("Original array:");
         printArray(array);
 
-        selectionSort(array);
+        mergeSort(array, 0, array.length - 1);
 
-        System.out.println("\nArray after Selection Sort:");
+        System.out.println("\nSorted array:");
         printArray(array);
     }
 
-    static void selectionSort(int[] arr) {
-        int n = arr.length;
+    // Merge Sort function
+    public static void mergeSort(int[] arr, int left, int right) {
+        if (left < right) {
+            // Find the middle point
+            int middle = left + (right - left) / 2;
 
-        for (int i = 0; i < n - 1; i++) {
-            int minIndex = i;
+            // Recursively sort the first and second halves
+            mergeSort(arr, left, middle);
+            mergeSort(arr, middle + 1, right);
 
-            for (int j = i + 1; j < n; j++) {
-                if (arr[j] < arr[minIndex]) {
-                    minIndex = j;
-                }
-            }
-
-            // Swap the found minimum element with the element at i
-            int temp = arr[minIndex];
-            arr[minIndex] = arr[i];
-            arr[i] = temp;
+            // Merge the sorted halves
+            merge(arr, left, middle, right);
         }
     }
 
-    static void printArray(int[] arr) {
-        for (int i = 0; i < arr.length; i++) {
-            System.out.print(arr[i] + " ");
+    // Merge function
+    public static void merge(int[] arr, int left, int middle, int right) {
+        int n1 = middle - left + 1;
+        int n2 = right - middle;
+
+        // Create temporary arrays
+        int[] leftArray = new int[n1];
+        int[] rightArray = new int[n2];
+
+        // Copy data to temporary arrays
+        System.arraycopy(arr, left, leftArray, 0, n1);
+        System.arraycopy(arr, middle + 1, rightArray, 0, n2);
+
+        // Merge the temporary arrays
+        int i = 0, j = 0, k = left;
+        while (i < n1 && j < n2) {
+            if (leftArray[i] <= rightArray[j]) {
+                arr[k] = leftArray[i];
+                i++;
+            } else {
+                arr[k] = rightArray[j];
+                j++;
+            }
+            k++;
+        }
+
+        // Copy the remaining elements of leftArray[], if there are any
+        while (i < n1) {
+            arr[k] = leftArray[i];
+            i++;
+            k++;
+        }
+
+        // Copy the remaining elements of rightArray[], if there are any
+        while (j < n2) {
+            arr[k] = rightArray[j];
+            j++;
+            k++;
+        }
+    }
+
+    // Utility function to print an array
+    public static void printArray(int[] arr) {
+        for (int value : arr) {
+            System.out.print(value + " ");
         }
         System.out.println();
     }
 }
- 
