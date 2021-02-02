@@ -26,4 +26,5 @@ public class Algorithm {
         }
     }
 
+    static void printArray(int[] arr) {
 }
