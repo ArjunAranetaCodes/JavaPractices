@@ -12,6 +12,7 @@ public class Algorithm {
         printArray(array);
     }
 
+    static void insertionSort(int[] arr) {
 
 
 }
