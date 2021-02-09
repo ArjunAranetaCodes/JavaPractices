@@ -14,6 +14,5 @@ public class Algorithm {
 
     static void insertionSort(int[] arr) {
 
-    }
 
 }
