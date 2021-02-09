@@ -8,7 +8,6 @@ public class Algorithm {
 
         insertionSort(array);
 
-        System.out.println("\nSorted array using Insertion Sort:");
     }
 
 
