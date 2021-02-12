@@ -16,7 +16,6 @@ public class Algorithm {
         int n = arr.length;
         for (int i = 1; i < n; ++i) {
             int key = arr[i];
-            int j = i - 1;
 
         }
     }
