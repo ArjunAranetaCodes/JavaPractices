@@ -18,7 +18,6 @@ public class Algorithm {
             int key = arr[i];
             int j = i - 1;
 
-            while (j >= 0 && arr[j] > key) {
         }
     }
 
