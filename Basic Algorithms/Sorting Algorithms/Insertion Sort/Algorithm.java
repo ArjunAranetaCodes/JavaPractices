@@ -20,7 +20,6 @@ public class Algorithm {
 
             while (j >= 0 && arr[j] > key) {
                 arr[j + 1] = arr[j];
-                j = j - 1;
             }
         }
     }
