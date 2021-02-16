@@ -30,6 +30,6 @@ public class Algorithm {
         for (int value : arr) {
             System.out.print(value + " ");
         }
-        System.out.println();
+        System.out.println(); 
     }
 }
