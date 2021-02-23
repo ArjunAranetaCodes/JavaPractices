@@ -13,6 +13,7 @@ public class Algorithm {
     }
 
     static void selectionSort(int[] arr) {
+        int n = arr.length;
 
     }
 }
