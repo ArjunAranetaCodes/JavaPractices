@@ -4,6 +4,7 @@ public class Algorithm {
         int[] array = {64, 25, 12, 22, 11};
         
         System.out.println("Original array:");
+        printArray(array);
 
 
     }
