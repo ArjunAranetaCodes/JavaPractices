@@ -8,6 +8,7 @@ public class Algorithm {
 
         selectionSort(array);
 
+        System.out.println("\nArray after Selection Sort:");
     }
 
 }
