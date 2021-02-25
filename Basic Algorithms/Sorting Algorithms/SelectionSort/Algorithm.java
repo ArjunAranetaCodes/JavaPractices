@@ -6,7 +6,6 @@ public class Algorithm {
         System.out.println("Original array:");
         printArray(array);
 
-        selectionSort(array);
 
     }
 
