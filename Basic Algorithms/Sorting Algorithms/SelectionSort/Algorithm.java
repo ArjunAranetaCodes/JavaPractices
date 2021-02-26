@@ -12,7 +12,4 @@ public class Algorithm {
         printArray(array);
     }
 
-    static void selectionSort(int[] arr) {
-
-    }
 }
