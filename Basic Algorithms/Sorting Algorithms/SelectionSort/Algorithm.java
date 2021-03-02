@@ -24,7 +24,6 @@ public class Algorithm {
                 }
             }
 
-            // Swap the found minimum element with the element at i
         }
     }
 }
