@@ -30,6 +30,4 @@ public class Algorithm {
             arr[i] = temp;
         }
     }
-
-    static void printArray(int[] arr) {
 }
