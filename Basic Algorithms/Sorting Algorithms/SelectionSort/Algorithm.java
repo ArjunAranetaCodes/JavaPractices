@@ -27,7 +27,6 @@ public class Algorithm {
             // Swap the found minimum element with the element at i
             int temp = arr[minIndex];
             arr[minIndex] = arr[i];
-            arr[i] = temp;
         }
     }
 }
