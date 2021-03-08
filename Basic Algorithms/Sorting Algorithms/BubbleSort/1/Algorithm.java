@@ -8,6 +8,7 @@ public class Algorithm {
 
         bubbleSort(array);
 
+        System.out.println("\nSorted array:");
     }
 
     static void bubbleSort(int[] arr) {
