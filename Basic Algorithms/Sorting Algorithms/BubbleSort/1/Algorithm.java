@@ -9,6 +9,7 @@ public class Algorithm {
         bubbleSort(array);
 
         System.out.println("\nSorted array:");
+        printArray(array);
     }
 
     static void bubbleSort(int[] arr) {
