@@ -22,7 +22,7 @@ class Circle extends Shape<Double> {
     @Override 
     Double calculateArea() {
         return Math.PI * radius * radius;
-    }
+    } 
 }
 
 class
