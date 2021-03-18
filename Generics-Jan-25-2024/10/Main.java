@@ -1,25 +1,28 @@
-import java.util.concurrent.Semaphore;
-
 public class Main {
-    private static final int MAX_PERMITS = 3;
-    private static Semaphore semaphore = new Semaphore(MAX_PERMITS);
-
     public static void main(String[] args) {
-        for (int i = 0; i < 5; i++) {
-            Thread workerThread = new Thread(() -> accessSharedResource());
-            workerThread.start();
-        }
-    }
+        Circle circle = new Circle(5.0);
+        Rectangle rectangle = new Rectangle(4.0, 6.0);
 
-    private static void accessSharedResource() {
-        try {
-            semaphore.acquire(); // Acquire a permit
-            System.out.println(Thread.currentThread().getName() + ": Accessing the shared resource");
-            Thread.sleep(2000); // Simulate resource usage
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        } finally {
-            semaphore.release(); // Release the permit
-        }
+        System.out.println("Circle Area: " + circle.calculateArea());       // Output: Circle Area: 78.53981633974483
+        System.out.println("Rectangle Area: " + rectangle.calculateArea()); // Output: Rectangle Area: 24.0
     }
 }
+
+abstract class Shape<T extends Number> {
+    abstract T calculateArea();
+}
+
+class Circle extends Shape<Double> {
+    private double radius;
+
+    public Circle(double radius) {
+        this.radius = radius;
+    }
+
+    @Override
+    Double calculateArea() {
+        return Math.PI * radius * radius;
+    }
+}
+
+class
