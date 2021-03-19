@@ -53,5 +53,4 @@ class DoubleCalculator implements Calculator<Double> {
 
     public Double divide(Double a, Double b) {
         return a / b;
-    }
-}
+    } 
