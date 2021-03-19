@@ -1,32 +1,17 @@
-import java.util.concurrent.CountDownLatch;
+import java.util.List;
 
 public class Main {
-    public static void main(String[] args) throws InterruptedException {
-        int threadCount = 3;
-        CountDownLatch startLatch = new CountDownLatch(1);
-        CountDownLatch endLatch = new CountDownLatch(threadCount);
-
-        for (int i = 0; i < threadCount; i++) {
-            Thread workerThread = new Thread(() -> performTask(startLatch, endLatch));
-            workerThread.start();
-        }
-
-        System.out.println("All threads are waiting...");
-        startLatch.countDown(); // Start all threads simultaneously
-
-        endLatch.await(); // Wait for all threads to finish
-        System.out.println("All threads have completed the task.");
+    public static void main(String[] args) {
+        List<Integer> intList = List.of(1, 2, 3, 4);
+        List<Double> doubleList = List.of(1.1, 2.2, 3.3, 4.4);
+        printList(intList);    // Output: 1 2 3 4
+        printList(doubleList); // Output: 1.1 2.2 3.3 4.4
     }
 
-    private static void performTask(CountDownLatch startLatch, CountDownLatch endLatch) {
-        try {
-            startLatch.await(); // Wait for the signal to start
-            // Task logic
-            System.out.println(Thread.currentThread().getName() + ": Performing the task");
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        } finally {
-            endLatch.countDown(); // Signal that the task is complete
+    static void printList(List<? extends Number> list) {
+        for (Number element : list) {
+            System.out.print(element + " ");
         }
+        System.out.println();
     }
 }
