@@ -30,6 +30,6 @@ class GenericStack<T> {
     }
 
     public boolean isEmpty() {
-        return stack.isEmpty(); 
+        return stack.isEmpty();  
     }
 }
