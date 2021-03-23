@@ -1,17 +1,25 @@
 public class Main {
-    private static int counter = 0;
-
     public static void main(String[] args) {
-        Thread t1 = new Thread(() -> incrementCounter());
-        Thread t2 = new Thread(() -> incrementCounter());
+        Pair<String, Integer> pair = new Pair<>("John", 25);
+        System.out.println(pair.getFirst());   // Output: John
+        System.out.println(pair.getSecond());  // Output: 25
+    }
+}
 
-        t1.start();
-        t2.start();
+class Pair<T, U> {
+    private T first;
+    private U second;
+
+    public Pair(T first, U second) {
+        this.first = first;
+        this.second = second;
     }
 
-    private static synchronized void incrementCounter() {
-        for (int i = 0; i < 5; i++) {
-            System.out.println(Thread.currentThread().getName() + ": " + (++counter));
-        }
+    public T getFirst() {
+        return first;
+    }
+
+    public U getSecond() {
+        return second;
     }
 }
