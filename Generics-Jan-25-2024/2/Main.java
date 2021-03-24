@@ -36,3 +36,4 @@ public class Main {
         System.out.println("Pop: " + stack.pop());
     }
 }
+ 
