@@ -1,2 +1,0 @@
-Problem 8: Thread Interruption
-Description: Create a program where one thread generates prime numbers, and another thread interrupts the first thread after a certain time.
