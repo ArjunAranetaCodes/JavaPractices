@@ -1,2 +1,0 @@
-Problem 5: Thread Pool
-Description: Implement a simple thread pool with a fixed number of worker threads.
