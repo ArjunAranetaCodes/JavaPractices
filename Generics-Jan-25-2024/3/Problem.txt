@@ -1,0 +1,2 @@
+Problem 3: Thread Synchronization
+Description: Ensure that two threads increment a shared counter safely using synchronization.
