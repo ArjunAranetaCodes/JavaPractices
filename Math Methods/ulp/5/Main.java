@@ -1,14 +1,13 @@
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Angle (degrees)\tSine\t\tCosine");
-        
-        for (int degrees = 0; degrees <= 180; degrees += 30) {
-            double radians = Math.toRadians(degrees);
-            double sineValue = Math.sin(radians);
-            double cosineValue = Math.cos(radians);
+        float floatValue = 1.0f;
 
-            System.out.printf("%d\t\t\t%.4f\t\t%.4f\n", degrees, sineValue, cosineValue);
-        }
+        System.out.println("Original Float Value: " + floatValue);
+        System.out.println("ULP of Float Value: " + Math.ulp(floatValue));
+
+        double doubleValue = 1.0;
+
+        System.out.println("Original Double Value: " + doubleValue);
+        System.out.println("ULP of Double Value: " + Math.ulp(doubleValue));
     }
 }
- 
