@@ -1,12 +1,14 @@
 public class Main {
     public static void main(String[] args) {
-        double radius = 5.0;
-        double centralAngleDegrees = 60.0;
+        double value = 1.0;
+        double epsilon = 1e-9; // A small value for comparison
 
-        double centralAngleRadians = Math.toRadians(centralAngleDegrees);
-        double area = 0.5 * Math.pow(radius, 2) * centralAngleRadians;
+        System.out.println("Original Value: " + value);
 
-        System.out.println("Area of the sector: " + area);
+        if (Math.abs(Math.ulp(value)) < epsilon) {
+            System.out.println("The value is close to zero within the specified epsilon.");
+        } else {
+            System.out.println("The value is not close to zero within the specified epsilon.");
+        }
     }
 }
-  
