@@ -1,9 +1,13 @@
 public class Main {
     public static void main(String[] args) {
-        double degrees = 60; // 60 degrees
-        double radians = Math.toRadians(degrees);
+        System.out.println("Angle (degrees)\tSine\t\tCosine");
+        
+        for (int degrees = 0; degrees <= 180; degrees += 30) {
+            double radians = Math.toRadians(degrees);
+            double sineValue = Math.sin(radians);
+            double cosineValue = Math.cos(radians);
 
-        System.out.println("Angle in degrees: " + degrees);
-        System.out.println("Angle in radians: " + radians);
+            System.out.printf("%d\t\t\t%.4f\t\t%.4f\n", degrees, sineValue, cosineValue);
+        }
     }
 }
