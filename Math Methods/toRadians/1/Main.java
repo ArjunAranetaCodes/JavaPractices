@@ -6,4 +6,4 @@ public class Main {
         System.out.println(degrees + " degrees is equal to " + radians + " radians.");
     }
 }
- 
+  
