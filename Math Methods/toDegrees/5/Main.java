@@ -1,7 +1,9 @@
 public class Main {
     public static void main(String[] args) {
-        double x = -1.5;
-        double result = Math.tanh(x);
-        System.out.println("tanh(" + x + ") = " + result);
+        double degrees = 60; // 60 degrees
+        double radians = Math.toRadians(degrees);
+
+        System.out.println("Angle in degrees: " + degrees);
+        System.out.println("Angle in radians: " + radians);
     }
 }
