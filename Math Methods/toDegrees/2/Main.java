@@ -1,7 +1,16 @@
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
-        double x = 1.0;
-        double result = Math.tanh(x);
-        System.out.println("tanh(" + x + ") = " + result);
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Enter angle in radians: ");
+        double radians = scanner.nextDouble();
+
+        double degrees = Math.toDegrees(radians);
+        System.out.println("Angle in radians: " + radians);
+        System.out.println("Angle in degrees: " + degrees);
+
+        scanner.close();
     }
 }
