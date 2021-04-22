@@ -5,4 +5,4 @@ public class Main {
         System.out.println("Tangent of " + angle + " degrees: " + tangentValue);
     }
 }
-   
+    
