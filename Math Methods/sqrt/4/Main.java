@@ -6,4 +6,4 @@ public class Main {
         System.out.println("Distance between points (" + x1 + ", " + y1 + ") and (" + x2 + ", " + y2 + ") is: " + distance);
     }
 }
-  
+   
