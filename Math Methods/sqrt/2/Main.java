@@ -6,3 +6,4 @@ public class Main {
         System.out.println("Hypotenuse of a right-angled triangle with sides " + side1 + " and " + side2 + " is: " + hypotenuse);
     }
 }
+ 
