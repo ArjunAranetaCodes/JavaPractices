@@ -5,3 +5,4 @@ public class Main {
         System.out.println("Square root of " + number + " is: " + squareRoot);
     }
 }
+ 
