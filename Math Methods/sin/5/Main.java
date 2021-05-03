@@ -1,10 +1,13 @@
 public class Main {
     public static void main(String[] args) {
-        double temperature = -5.0;
-        String weather = (Math.signum(temperature) > 0) ? "Warm" : "Cold";
+        int startAngle = 0;
+        int endAngle = 360;
+        int step = 45;
 
-        System.out.println("Temperature: " + temperature);
-        System.out.println("Weather: " + weather);
+        for (int angleInDegrees = startAngle; angleInDegrees <= endAngle; angleInDegrees += step) {
+            double angleInRadians = Math.toRadians(angleInDegrees);
+            double sinValue = Math.sin(angleInRadians);
+            System.out.println("Sine of " + angleInDegrees + " degrees: " + sinValue);
+        }
     }
 }
- 
