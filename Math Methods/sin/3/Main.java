@@ -1,9 +1,12 @@
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
-        double expressionResult = Math.sin(Math.PI / 4) - Math.cos(Math.PI / 3);
-
-        System.out.println("Expression Result: " + expressionResult);
-        System.out.println("Signum Value: " + Math.signum(expressionResult));
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter an angle in degrees: ");
+        double angleInDegrees = scanner.nextDouble();
+        double angleInRadians = Math.toRadians(angleInDegrees);
+        double sinValue = Math.sin(angleInRadians);
+        System.out.println("Sine of " + angleInDegrees + " degrees: " + sinValue);
     }
 }
- 
