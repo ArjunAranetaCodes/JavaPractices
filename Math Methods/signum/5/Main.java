@@ -1,9 +1,9 @@
 public class Main {
     public static void main(String[] args) {
-        double input = -3.7;
-        double roundedInput = Math.rint(input);
-        System.out.println("Original Input: " + input);
-        System.out.println("Rounded Input: " + roundedInput);
+        double temperature = -5.0;
+        String weather = (Math.signum(temperature) > 0) ? "Warm" : "Cold";
+
+        System.out.println("Temperature: " + temperature);
+        System.out.println("Weather: " + weather);
     }
 }
-    
