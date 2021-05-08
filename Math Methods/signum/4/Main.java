@@ -1,9 +1,13 @@
 public class Main {
     public static void main(String[] args) {
-        double num = 9.2;
-        double roundedNum = Math.rint(num);
-        System.out.println("Original Number: " + num);
-        System.out.println("Rounded Number: " + roundedNum);
+        double value = -7.2;
+
+        if (Math.signum(value) > 0) {
+            System.out.println(value + " is positive.");
+        } else if (Math.signum(value) < 0) {
+            System.out.println(value + " is negative.");
+        } else {
+            System.out.println(value + " is zero.");
+        }
     }
 }
-    
