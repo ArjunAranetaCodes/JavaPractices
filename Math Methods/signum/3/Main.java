@@ -1,8 +1,8 @@
 public class Main {
     public static void main(String[] args) {
-        double x = -7.6;
-        double roundedX = Math.rint(x);
-        System.out.println("Original Value: " + x);
-        System.out.println("Rounded Value: " + roundedX);
+        double expressionResult = Math.sin(Math.PI / 4) - Math.cos(Math.PI / 3);
+
+        System.out.println("Expression Result: " + expressionResult);
+        System.out.println("Signum Value: " + Math.signum(expressionResult));
     }
 }
