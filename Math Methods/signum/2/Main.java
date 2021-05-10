@@ -1,9 +1,9 @@
 public class Main {
     public static void main(String[] args) {
-        double value = 12.3;
-        double result = Math.rint(value);
-        System.out.println("Original Value: " + value);
-        System.out.println("Rounded Value: " + result);
+        double x = 8.5;
+        double y = -3.0;
+
+        System.out.println("Comparison result using signum:");
+        System.out.println("Compare " + x + " and " + y + ": " + Math.signum(x - y));
     }
 }
-   
