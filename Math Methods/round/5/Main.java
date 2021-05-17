@@ -1,16 +1,15 @@
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.List;
-import java.util.Random;
+import java.text.DecimalFormat;
+import java.text.DecimalFormatSymbols;
+import java.util.Locale;
 
 public class Main {
     public static void main(String[] args) {
-        Integer[] array = {1, 2, 3, 4, 5};
-        List<Integer> list = Arrays.asList(array);
-        
-        // Shuffle the elements in the list randomly
-        Collections.shuffle(list, new Random());
-        
-        System.out.println("Randomly Shuffled Array: " + list);
-    } 
+        double number = 9.8765;
+        DecimalFormatSymbols symbols = new DecimalFormatSymbols(Locale.getDefault());
+        symbols.setDecimalSeparator('.');
+        DecimalFormat decimalFormat = new DecimalFormat("#.##", symbols);
+        String roundedNumber = decimalFormat.format(number);
+        System.out.println("Original number: " + number);
+        System.out.println("Rounded number: " + roundedNumber);
+    }
 }
