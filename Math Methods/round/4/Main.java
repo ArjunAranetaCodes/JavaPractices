@@ -11,3 +11,4 @@ public class Main {
         return Math.round(value * scale) / scale;
     }
 }
+ 
