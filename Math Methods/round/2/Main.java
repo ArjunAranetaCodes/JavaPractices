@@ -1,10 +1,11 @@
-import java.util.Random;
+import java.text.DecimalFormat;
 
 public class Main {
     public static void main(String[] args) {
-        Random random = new Random();
-        double randomDouble = random.nextDouble(); // Generates a random double between 0.0 (inclusive) and 1.0 (exclusive)
-        System.out.println("Random Double: " + randomDouble);
+        double number = 15.6789;
+        DecimalFormat decimalFormat = new DecimalFormat("#.##");
+        String roundedNumber = decimalFormat.format(number);
+        System.out.println("Original number: " + number);
+        System.out.println("Rounded number: " + roundedNumber);
     }
 }
-    
