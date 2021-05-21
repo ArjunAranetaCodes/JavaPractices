@@ -1,8 +1,16 @@
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.List;
+import java.util.Random;
+
 public class Main {
     public static void main(String[] args) {
-        double base = 3.0;
-        double exponent = 4.0;
-        double result = Math.pow(base, exponent);
-        System.out.println("Result: " + result);
+        Integer[] array = {1, 2, 3, 4, 5};
+        List<Integer> list = Arrays.asList(array);
+        
+        // Shuffle the elements in the list randomly
+        Collections.shuffle(list, new Random());
+        
+        System.out.println("Randomly Shuffled Array: " + list);
     }
 }
