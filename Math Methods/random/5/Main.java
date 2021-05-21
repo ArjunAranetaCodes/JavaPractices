@@ -12,5 +12,5 @@ public class Main {
         Collections.shuffle(list, new Random());
         
         System.out.println("Randomly Shuffled Array: " + list);
-    }
+    } 
 }
