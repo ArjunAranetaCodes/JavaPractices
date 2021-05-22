@@ -13,6 +13,6 @@ public class Main {
         System.out.print("Random Array: ");
         for (int num : randomArray) {
             System.out.print(num + " ");
-        }
+        } 
     }
 }
