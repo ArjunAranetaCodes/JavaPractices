@@ -1,8 +1,8 @@
 public class Main {
     public static void main(String[] args) {
-        double num = -5.0;
-        double nextUpValue = Math.nextUp(num);
-        System.out.println("Original value: " + num);
-        System.out.println("Next Up value: " + nextUpValue);
+        double base = 10.5;
+        double exponent = 2.0;
+        double result = Math.pow(base, exponent);
+        System.out.println("Result: " + result);
     }
 }
