@@ -1,8 +1,8 @@
 public class Main {
     public static void main(String[] args) {
-        float startValue = 2.0f;
-        float nextAfterValue = Math.nextAfter(startValue, Double.NEGATIVE_INFINITY);
-        System.out.println("Next after " + startValue + " towards negative infinity: " + nextAfterValue);
+        float num = 2.718f;
+        float nextUpValue = Math.nextUp(num);
+        System.out.println("Original value: " + num);
+        System.out.println("Next Up value: " + nextUpValue);
     }
 }
-   
