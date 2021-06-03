@@ -6,3 +6,4 @@ public class Main {
         System.out.println("Next Up value: " + nextUpValue);
     }
 }
+ 
