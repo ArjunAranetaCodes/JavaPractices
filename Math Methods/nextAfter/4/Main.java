@@ -5,3 +5,4 @@ public class Main {
         System.out.println("Next after " + startValue + " towards positive infinity: " + nextAfterValue);
     }
 }
+ 
