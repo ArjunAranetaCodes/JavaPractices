@@ -6,3 +6,4 @@ public class Main {
         System.out.println("Next after " + startValue + " towards " + directionValue + ": " + nextAfterValue);
     }
 }
+ 
