@@ -1,11 +1,8 @@
-import java.util.Arrays;
-import java.util.List;
-import java.util.Collections;
-
 public class Main {
     public static void main(String[] args) {
-        List<Integer> numbers = Arrays.asList(3, 9, 1, 6, 4);
-        int min = Collections.min(numbers);
-        System.out.println("Minimum value in the list: " + min);
+        double startValue = 10.0;
+        double directionValue = 15.0;
+        double nextAfterValue = Math.nextAfter(startValue, directionValue);
+        System.out.println("Next after " + startValue + " towards " + directionValue + ": " + nextAfterValue);
     }
 }
