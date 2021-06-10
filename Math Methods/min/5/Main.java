@@ -1,8 +1,16 @@
 public class Main {
     public static void main(String[] args) {
-        double num1 = 14.5, num2 = 11.2;
-        double max = Math.max(num1, num2);
-        System.out.println("Maximum value between " + num1 + " and " + num2 + ": " + max);
+        int min = findMin(7, 2, 9, 1, 5);
+        System.out.println("Minimum value using varargs: " + min);
+    }
+
+    static int findMin(int... numbers) {
+        int min = numbers[0];
+        for (int num : numbers) {
+            if (num < min) {
+                min = num;
+            }
+        }
+        return min;
     }
 }
-  
