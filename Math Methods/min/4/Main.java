@@ -1,8 +1,8 @@
 public class Main {
     public static void main(String[] args) {
-        int num1 = 15, num2 = 9;
-        int max = (num1 > num2) ? num1 : num2;
-        System.out.println("Maximum value between " + num1 + " and " + num2 + ": " + max);
+        int x = 6;
+        int y = 10;
+        int min = (x < y) ? x : y;
+        System.out.println("Minimum value between " + x + " and " + y + ": " + min);
     }
 }
-  
