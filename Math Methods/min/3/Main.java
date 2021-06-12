@@ -1,8 +1,11 @@
+import java.util.Arrays;
+import java.util.List;
+import java.util.Collections;
+
 public class Main {
     public static void main(String[] args) {
-        int num1 = 7, num2 = 12, num3 = 5;
-        int max = Math.max(Math.max(num1, num2), num3);
-        System.out.println("Maximum value among " + num1 + ", " + num2 + ", and " + num3 + ": " + max);
+        List<Integer> numbers = Arrays.asList(3, 9, 1, 6, 4);
+        int min = Collections.min(numbers);
+        System.out.println("Minimum value in the list: " + min);
     }
 }
-   
