@@ -5,4 +5,4 @@ public class Main {
         System.out.println("Maximum value among " + num1 + ", " + num2 + ", and " + num3 + ": " + max);
     }
 }
- 
+  
