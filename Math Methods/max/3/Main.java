@@ -1,7 +1,7 @@
 public class Main {
     public static void main(String[] args) {
-        double x = 1.0;
-        double result = Math.log1p(x);
-        System.out.println("The result of log1p(" + x + ") is: " + result);
+        int num1 = 7, num2 = 12, num3 = 5;
+        int max = Math.max(Math.max(num1, num2), num3);
+        System.out.println("Maximum value among " + num1 + ", " + num2 + ", and " + num3 + ": " + max);
     }
 }
