@@ -1,8 +1,7 @@
 public class Main {
     public static void main(String[] args) {
-        double input = 1024;
-        double logBase10 = Math.log10(input);
-        System.out.println("Logarithm base 10 of " + input + " is: " + logBase10);
+        double x = -0.5;
+        double result = Math.log1p(x);
+        System.out.println("The result of log1p(" + x + ") is: " + result);
     }
 }
-   
