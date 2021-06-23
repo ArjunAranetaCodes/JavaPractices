@@ -5,3 +5,4 @@ public class Main {
         System.out.println("The result of log1p(" + x + ") is: " + result);
     }
 }
+ 
