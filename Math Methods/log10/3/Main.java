@@ -1,10 +1,7 @@
-import org.apache.log4j.Logger;
-
 public class Main {
-    private static final Logger log = Logger.getLogger(Main.class);
-
     public static void main(String[] args) {
-        log.info("Log4j logging example.");
+        double x = 1000;
+        double logResult = Math.log10(x);
+        System.out.println("Log base 10 of " + x + " is: " + logResult);
     }
 }
-  
