@@ -1,13 +1,7 @@
-import java.util.logging.Level;
-import java.util.logging.Logger;
-
 public class Main {
-    private static final Logger log = Logger.getLogger(Main.class.getName());
-
     public static void main(String[] args) {
-        log.info("This is an informational message.");
-        log.warning("This is a warning message.");
-        log.log(Level.SEVERE, "This is a severe message.");
+        double value = 256;
+        double logarithm = Math.log10(value);
+        System.out.println("Logarithm base 10 of " + value + " is: " + logarithm);
     }
 }
-   
