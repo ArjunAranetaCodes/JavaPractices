@@ -5,4 +5,4 @@ public class Main {
         System.out.println("Logarithm base 10 of " + value + " is: " + logarithm);
     }
 }
- 
+  
