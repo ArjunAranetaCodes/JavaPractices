@@ -1,4 +1,4 @@
 #!/bin/sh
 git add .
-git commit --date "2021-07-01" -m "Java Programming Exercises"
+git commit --date "2021-06-30" -m "Java Programming Exercises"
 git push origin

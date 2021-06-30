@@ -1,10 +1,17 @@
+import java.util.logging.Logger;
+
 public class Main {
+    private static final Logger log = Logger.getLogger(Main.class.getName());
+
     public static void main(String[] args) {
-        double dividend = 25.6;
-        double divisor = 7.3;
-        
-        double result = Math.IEEEremainder(dividend, divisor);
-        
-        System.out.println("The IEEE remainder of " + dividend + " divided by " + divisor + " is: " + result);
+        log.info("Starting application...");
+        performSomeTask();
+        log.info("Application completed successfully.");
+    }
+
+    private static void performSomeTask() {
+        log.info("Performing some task...");
+        // Simulating some task execution
+        log.warning("Task execution encountered a warning.");
     }
 }
