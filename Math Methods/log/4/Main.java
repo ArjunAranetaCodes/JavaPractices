@@ -8,4 +8,4 @@ public class Main {
         log.info("SLF4J and Logback logging example.");
     }
 }
- 
+  
