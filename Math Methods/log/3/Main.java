@@ -7,3 +7,4 @@ public class Main {
         log.info("Log4j logging example.");
     }
 }
+ 
