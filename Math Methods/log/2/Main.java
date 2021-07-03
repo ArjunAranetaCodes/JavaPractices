@@ -10,4 +10,4 @@ public class Main {
         log.log(Level.SEVERE, "This is a severe message.");
     }
 }
-  
+   
