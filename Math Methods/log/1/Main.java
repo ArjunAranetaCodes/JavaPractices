@@ -7,4 +7,4 @@ public class Main {
         log.info("Hello, logging world!");
     }
 }
- 
+  
