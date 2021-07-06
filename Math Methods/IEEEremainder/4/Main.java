@@ -1,10 +1,10 @@
 public class Main {
     public static void main(String[] args) {
-        double side1 = 7.0;
-        double side2 = 24.0;
-        double hypotenuse = Math.hypot(side1, side2);
-
-        System.out.println("Hypotenuse of the right-angled triangle: " + hypotenuse);
+        double dividend = 17.3;
+        double divisor = 5.6;
+        
+        double result = Math.IEEEremainder(dividend, divisor);
+        
+        System.out.println("The IEEE remainder of " + dividend + " divided by " + divisor + " is: " + result);
     }
 }
-   
