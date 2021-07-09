@@ -8,4 +8,4 @@ public class Main {
         System.out.println("The IEEE remainder of " + dividend + " divided by " + divisor + " is: " + result);
     }
 }
-  
+   
