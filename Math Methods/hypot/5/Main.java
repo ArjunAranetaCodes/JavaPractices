@@ -1,14 +1,9 @@
 public class Main {
     public static void main(String[] args) {
-        double base = 2;
-        double exponent = 3;
-        double result = 1;
+        double side1 = 9.0;
+        double side2 = 12.0;
+        double hypotenuse = Math.hypot(side1, side2);
 
-        for (int i = 0; i < exponent; i++) {
-            result *= Math.pow(base, 1);
-        }
-
-        System.out.println("Result: " + result);
+        System.out.println("Hypotenuse of the right-angled triangle: " + hypotenuse);
     }
 }
- 
