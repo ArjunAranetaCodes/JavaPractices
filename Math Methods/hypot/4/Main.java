@@ -7,3 +7,4 @@ public class Main {
         System.out.println("Hypotenuse of the right-angled triangle: " + hypotenuse);
     }
 }
+ 
