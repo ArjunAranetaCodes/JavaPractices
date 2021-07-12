@@ -1,16 +1,9 @@
-import java.util.Scanner;
-
 public class Main {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        
-        System.out.print("Enter the base: ");
-        double base = scanner.nextDouble();
-        
-        System.out.print("Enter the exponent: ");
-        double exponent = scanner.nextDouble();
-        
-        double result = Math.pow(base, exponent);
-        System.out.println("Result: " + result);
+        double side1 = 8.0;
+        double side2 = 15.0;
+        double hypotenuse = Math.hypot(side1, side2);
+
+        System.out.println("Hypotenuse of the right-angled triangle: " + hypotenuse);
     }
-} 
+}
