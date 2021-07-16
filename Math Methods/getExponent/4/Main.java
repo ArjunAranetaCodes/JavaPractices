@@ -1,14 +1,16 @@
-import java.util.Random;
-
 public class Main {
+    static double calculateExponent(double base, double exponent) {
+        double result = 1;
+        for (int i = 0; i < exponent; i++) {
+            result *= base;
+        }
+        return result;
+    }
+
     public static void main(String[] args) {
-        Random random = new Random();
-
-        double randomNumber = random.nextDouble() * 100; // Generate a random double between 0 and 100
-        double floorValue = Math.floor(randomNumber);
-
-        System.out.println("Random Number: " + randomNumber);
-        System.out.println("Floor Value: " + floorValue);
+        double base = 2;
+        double exponent = 3;
+        double result = calculateExponent(base, exponent);
+        System.out.println("Result: " + result);
     }
 }
- 
