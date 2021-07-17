@@ -1,16 +1,16 @@
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
-        double[] numbers = { 5.8, 9.2, 3.7, 12.1 };
+        Scanner scanner = new Scanner(System.in);
         
-        System.out.println("Original Numbers:");
-        for (double num : numbers) {
-            System.out.print(num + " ");
-        }
+        System.out.print("Enter the base: ");
+        double base = scanner.nextDouble();
         
-        System.out.println("\nFloor Values:");
-        for (double num : numbers) {
-            System.out.print(Math.floor(num) + " ");
-        }
+        System.out.print("Enter the exponent: ");
+        double exponent = scanner.nextDouble();
+        
+        double result = Math.pow(base, exponent);
+        System.out.println("Result: " + result);
     }
 }
-   
