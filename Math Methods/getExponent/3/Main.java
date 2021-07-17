@@ -13,4 +13,4 @@ public class Main {
         double result = Math.pow(base, exponent);
         System.out.println("Result: " + result);
     }
-}
+} 
