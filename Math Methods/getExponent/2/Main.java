@@ -1,15 +1,12 @@
-import java.util.Scanner;
-
 public class Main {
+    static double calculateExponent(double base, double exponent) {
+        return Math.pow(base, exponent);
+    }
+
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-
-        System.out.print("Enter a decimal number: ");
-        double userInput = scanner.nextDouble();
-
-        double floorValue = Math.floor(userInput);
-
-        System.out.println("Entered Number: " + userInput);
-        System.out.println("Floor Value: " + floorValue);
+        double base = 2;
+        double exponent = 3;
+        double result = calculateExponent(base, exponent);
+        System.out.println("Result: " + result);
     }
 }
