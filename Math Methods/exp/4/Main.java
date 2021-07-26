@@ -1,13 +1,10 @@
-import java.util.Scanner;
-
 public class Main {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        System.out.print("Enter an angle in degrees: ");
-        double angleInDegrees = scanner.nextDouble();
-        double angleInRadians = Math.toRadians(angleInDegrees);
-        double cosineValue = Math.cos(angleInRadians);
-        System.out.println("Cosine value of " + angleInDegrees + " degrees: " + cosineValue);
+        try {
+            int result = 10 / 0; // This will cause an ArithmeticException
+            System.out.println("Result: " + result);
+        } catch (ArithmeticException e) {
+            System.out.println("Exception caught: " + e.getMessage());
+        }
     }
 }
- 
