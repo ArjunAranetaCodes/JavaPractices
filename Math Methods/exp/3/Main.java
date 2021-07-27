@@ -1,12 +1,10 @@
-import java.util.Random;
+import java.util.regex.*;
 
 public class Main {
     public static void main(String[] args) {
-        Random random = new Random();
-        double randomAngle = random.nextDouble() * 360;
-        double angleInRadians = Math.toRadians(randomAngle);
-        double cosineValue = Math.cos(angleInRadians);
-        System.out.println("Cosine value of a random angle (" + randomAngle + " degrees): " + cosineValue);
+        String text = "This is an example expression.";
+        String pattern = "exp.*";
+        boolean matches = Pattern.matches(pattern, text);
+        System.out.println("Does the text match the expression pattern? " + matches);
     }
 }
-  
