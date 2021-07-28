@@ -5,3 +5,4 @@ public class Main {
         System.out.println("Exponential of " + x + " is: " + result);
     }
 }
+ 
