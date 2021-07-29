@@ -6,4 +6,4 @@ public class Main {
         System.out.println("Result of " + base + " raised to the power of " + exponent + " is: " + result);
     }
 }
- 
+  
