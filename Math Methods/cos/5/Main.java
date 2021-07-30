@@ -1,9 +1,12 @@
 public class Main {
     public static void main(String[] args) {
-        double x = 3.14;
-        double y = -2.71;
-        double result = Math.copySign(x, y);
-        System.out.println("Result: " + result);
+        double pi = Math.PI;
+        double halfPi = Math.PI / 2;
+
+        double cosineHalfPi = Math.cos(halfPi);
+        double cosinePi = Math.cos(pi);
+
+        System.out.println("Cosine value of π/2: " + cosineHalfPi);
+        System.out.println("Cosine value of π: " + cosinePi);
     }
 }
-    
