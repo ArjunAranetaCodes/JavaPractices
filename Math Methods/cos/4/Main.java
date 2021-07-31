@@ -1,8 +1,12 @@
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
-        float x = 5.0f;
-        float y = -2.5f;
-        float result = Math.copySign(x, y);
-        System.out.println("Result: " + result);
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter an angle in degrees: ");
+        double angleInDegrees = scanner.nextDouble();
+        double angleInRadians = Math.toRadians(angleInDegrees);
+        double cosineValue = Math.cos(angleInRadians);
+        System.out.println("Cosine value of " + angleInDegrees + " degrees: " + cosineValue);
     }
 }
