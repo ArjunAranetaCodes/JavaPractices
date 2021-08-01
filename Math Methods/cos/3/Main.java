@@ -1,9 +1,11 @@
+import java.util.Random;
+
 public class Main {
     public static void main(String[] args) {
-        double x = -15.3;
-        double y = 8.7;
-        double result = Math.copySign(x, y);
-        System.out.println("Result: " + result);
+        Random random = new Random();
+        double randomAngle = random.nextDouble() * 360;
+        double angleInRadians = Math.toRadians(randomAngle);
+        double cosineValue = Math.cos(angleInRadians);
+        System.out.println("Cosine value of a random angle (" + randomAngle + " degrees): " + cosineValue);
     }
 }
-   
