@@ -9,4 +9,4 @@ public class Main {
         System.out.println("Cosine value of a random angle (" + randomAngle + " degrees): " + cosineValue);
     }
 }
- 
+  
