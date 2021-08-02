@@ -1,9 +1,9 @@
 public class Main {
     public static void main(String[] args) {
-        float x = 7.8f;
-        float y = -3.4f;
-        float result = Math.copySign(x, y);
-        System.out.println("Result: " + result);
+        for (double angle = 0; angle <= 180; angle += 30) {
+            double angleInRadians = Math.toRadians(angle);
+            double cosineValue = Math.cos(angleInRadians);
+            System.out.println("Cosine value of " + angle + " degrees: " + cosineValue);
+        }
     }
 }
-    
