@@ -1,12 +1,8 @@
-import java.util.Scanner;
-
 public class Main {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        System.out.print("Enter a decimal number: ");
-        double input = scanner.nextDouble();
-        double ceilValue = Math.ceil(input);
-        System.out.println("Ceil value of " + input + " is: " + ceilValue);
+        float x = 5.0f;
+        float y = -2.5f;
+        float result = Math.copySign(x, y);
+        System.out.println("Result: " + result);
     }
 }
-  
