@@ -1,7 +1,8 @@
 public class Main {
     public static void main(String[] args) {
-        float number = 5.6f;
-        double ceilValue = Math.ceil(number);
-        System.out.println("Ceil value of " + number + " is: " + ceilValue);
+        float x = 7.8f;
+        float y = -3.4f;
+        float result = Math.copySign(x, y);
+        System.out.println("Result: " + result);
     }
 }
