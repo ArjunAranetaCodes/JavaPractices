@@ -1,10 +1,11 @@
 public class Main {
     public static void main(String[] args) {
-        double[] numbers = {27.0, 64.0, 125.0};
+        double[] numbers = {4.2, 8.7, 6.1, 5.5};
         
-        for (int i = 0; i < numbers.length; i++) {
-            double cubeRoot = Math.cbrt(numbers[i]);
-            System.out.println("Cube root of element at index " + i + " is: " + cubeRoot);
+        System.out.println("Ceil values in the array:");
+        for (double num : numbers) {
+            double ceilValue = Math.ceil(num);
+            System.out.println("Ceil value of " + num + " is: " + ceilValue);
         }
     }
 }
