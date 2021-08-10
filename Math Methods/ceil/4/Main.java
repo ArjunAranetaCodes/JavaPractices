@@ -1,13 +1,11 @@
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
-        double x = 1000.0;
-        double y = 64.0;
-        
-        double cubeRootX = Math.cbrt(x);
-        double cubeRootY = Math.cbrt(y);
-        
-        System.out.println("Cube root of " + x + " is: " + cubeRootX);
-        System.out.println("Cube root of " + y + " is: " + cubeRootY);
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter a decimal number: ");
+        double input = scanner.nextDouble();
+        double ceilValue = Math.ceil(input);
+        System.out.println("Ceil value of " + input + " is: " + ceilValue);
     }
 }
-   
