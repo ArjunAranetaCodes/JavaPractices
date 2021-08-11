@@ -1,11 +1,7 @@
 public class Main {
     public static void main(String[] args) {
-        double[] numbers = {8.0, 64.0, 125.0};
-        
-        for (double num : numbers) {
-            double cubeRoot = Math.cbrt(num);
-            System.out.println("Cube root of " + num + " is: " + cubeRoot);
-        }
+        double x = 9.8;
+        double ceilValue = Math.ceil(x);
+        System.out.println("Ceil value of " + x + " is: " + ceilValue);
     }
 }
-    
