@@ -1,10 +1,7 @@
 public class Main {
     public static void main(String[] args) {
-        double num = 27.0;
-        
-        double cubeRoot = Math.cbrt(num);
-        
-        System.out.println("Cube root of " + num + " is: " + cubeRoot);
+        float number = 5.6f;
+        double ceilValue = Math.ceil(number);
+        System.out.println("Ceil value of " + number + " is: " + ceilValue);
     }
 }
- 
