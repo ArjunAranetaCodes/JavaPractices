@@ -5,3 +5,4 @@ public class Main {
         System.out.println("Ceil value of " + number + " is: " + ceilValue);
     }
 }
+ 
