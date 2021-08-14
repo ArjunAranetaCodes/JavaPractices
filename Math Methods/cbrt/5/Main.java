@@ -1,9 +1,10 @@
 public class Main {
     public static void main(String[] args) {
-        double x = 2.0;
-        double y = -2.0;
-        double result = Math.atan2(y, x);
-        System.out.println("The arctangent of " + y + "/" + x + " is: " + result);
+        double[] numbers = {27.0, 64.0, 125.0};
+        
+        for (int i = 0; i < numbers.length; i++) {
+            double cubeRoot = Math.cbrt(numbers[i]);
+            System.out.println("Cube root of element at index " + i + " is: " + cubeRoot);
+        }
     }
 }
- 
