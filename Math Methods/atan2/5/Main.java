@@ -1,9 +1,8 @@
 public class Main {
     public static void main(String[] args) {
-        double[] angles = {0.3, 0.6, 0.9};
-        for (double angle : angles) {
-            double result = Math.atan(angle);
-            System.out.println("The arctangent of " + angle + " is: " + result);
-        }
+        double x = 2.0;
+        double y = -2.0;
+        double result = Math.atan2(y, x);
+        System.out.println("The arctangent of " + y + "/" + x + " is: " + result);
     }
 }
