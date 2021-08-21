@@ -1,9 +1,8 @@
 public class Main {
     public static void main(String[] args) {
-        double angleDegrees = 45;
-        double angleRadians = Math.toRadians(angleDegrees);
-        double result = Math.atan(angleRadians);
-        System.out.println("The arctangent of " + angleDegrees + " degrees is: " + result);
+        double x = 0.5;
+        double y = -0.5;
+        double result = Math.atan2(y, x);
+        System.out.println("The arctangent of " + y + "/" + x + " is: " + result);
     }
 }
-  
