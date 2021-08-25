@@ -5,4 +5,4 @@ public class Main {
         System.out.println("The arctangent of " + value + " is: " + result);
     }
 }
- 
+  
