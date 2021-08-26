@@ -6,4 +6,4 @@ public class Main {
         System.out.println("The arctangent of " + angleDegrees + " degrees is: " + result);
     }
 }
- 
+  
