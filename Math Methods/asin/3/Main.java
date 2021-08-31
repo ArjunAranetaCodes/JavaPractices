@@ -5,3 +5,4 @@ public class Main {
         System.out.println("The arcsine of " + x + " is: " + arcsinValue);
     }
 }
+ 
