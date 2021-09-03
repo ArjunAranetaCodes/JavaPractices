@@ -6,4 +6,4 @@ public class Main {
         System.out.println("For x=" + x + ", y=" + y + ", the angle is: " + angle);
     }
 }
-  
+   
