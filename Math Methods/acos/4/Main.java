@@ -1,8 +1,9 @@
 public class Main {
     public static void main(String[] args) {
-        double value = -3.14;
-        double absoluteValue = Math.abs(value);
-        System.out.println("Absolute value of " + value + " is: " + absoluteValue);
+        double angle = 0.3; // Input angle in radians
+        double cosineValue = Math.cos(angle);
+        double result = Math.acos(cosineValue);
+        System.out.println("Cosine of " + angle + " is: " + cosineValue);
+        System.out.println("Arccosine of cosine(" + angle + ") is: " + result);
     }
 }
-   
