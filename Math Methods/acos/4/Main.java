@@ -7,3 +7,4 @@ public class Main {
         System.out.println("Arccosine of cosine(" + angle + ") is: " + result);
     }
 }
+ 
