@@ -9,4 +9,4 @@ public class Main {
         System.out.println("The arccosine of " + angle + " is: " + result);
     }
 }
- 
+  
