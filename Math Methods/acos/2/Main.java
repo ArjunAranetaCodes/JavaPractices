@@ -1,10 +1,11 @@
-import java.math.BigDecimal;
+import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        BigDecimal value = new BigDecimal("-123.456");
-        BigDecimal absoluteValue = value.abs();
-        System.out.println("Absolute value of " + value + " is: " + absoluteValue);
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter an angle in radians: ");
+        double angle = scanner.nextDouble();
+        double result = Math.acos(angle);
+        System.out.println("The arccosine of " + angle + " is: " + result);
     }
 }
-    
