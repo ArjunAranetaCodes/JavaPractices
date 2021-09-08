@@ -1,8 +1,7 @@
 public class Main {
     public static void main(String[] args) {
-        int intValue = 42;
-        String strValue = String.valueOf(intValue);
-        System.out.println("Converted String: " + strValue);
+        float value = -2.71828f;
+        float absoluteValue = Math.abs(value);
+        System.out.println("Absolute value of " + value + " is: " + absoluteValue);
     }
 }
-  
