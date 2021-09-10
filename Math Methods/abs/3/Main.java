@@ -7,4 +7,4 @@ public class Main {
         System.out.println("Absolute value of " + number + " is: " + absoluteValue);
     }
 }
-  
+   
