@@ -1,8 +1,9 @@
+import java.math.BigDecimal;
+
 public class Main {
     public static void main(String[] args) {
-        double doubleValue = 3.14;
-        String strValue = String.valueOf(doubleValue);
-        System.out.println("Converted String: " + strValue);
+        BigDecimal value = new BigDecimal("-123.456");
+        BigDecimal absoluteValue = value.abs();
+        System.out.println("Absolute value of " + value + " is: " + absoluteValue);
     }
 }
-    
