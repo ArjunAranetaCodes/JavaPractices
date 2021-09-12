@@ -5,4 +5,4 @@ public class Main {
         System.out.println("Absolute value of " + num + " is: " + absoluteValue);
     }
 }
-  
+   
