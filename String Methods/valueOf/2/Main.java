@@ -1,17 +1,7 @@
 public class Main {
     public static void main(String[] args) {
-        String[] words = {"   Apple  ", "Banana  ", "   Orange"};
-        
-        System.out.println("Original Array:");
-        for (String word : words) {
-            System.out.println("'" + word + "'");
-        }
-        
-        System.out.println("\nTrimmed Array:");
-        for (int i = 0; i < words.length; i++) {
-            words[i] = words[i].trim();
-            System.out.println("'" + words[i] + "'");
-        }
+        double doubleValue = 3.14;
+        String strValue = String.valueOf(doubleValue);
+        System.out.println("Converted String: " + strValue);
     }
 }
-   
