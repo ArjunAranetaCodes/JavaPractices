@@ -1,9 +1,12 @@
 public class Main {
     public static void main(String[] args) {
-        String sampleString = "openai GPT-3";
-        String upperCaseString = sampleString.toUpperCase();
-        System.out.println("Original String: " + sampleString);
-        System.out.println("UpperCase String: " + upperCaseString);
+        String str1 = "   Hello   ";
+        String str2 = "   World   ";
+        
+        String trimmedConcatenation = str1.trim() + " " + str2.trim();
+        
+        System.out.println("Original String 1: '" + str1 + "'");
+        System.out.println("Original String 2: '" + str2 + "'");
+        System.out.println("Trimmed Concatenation: '" + trimmedConcatenation + "'");
     }
 }
- 
