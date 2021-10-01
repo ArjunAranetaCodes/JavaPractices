@@ -1,9 +1,12 @@
 public class Main {
     public static void main(String[] args) {
-        String original = "programming in Java";
-        String upper = original.toUpperCase();
-        System.out.println("Original String: " + original);
-        System.out.println("UpperCase String: " + upper);
+        String str1 = "   Hello   ";
+        String str2 = "Hello";
+        
+        boolean isEqual = str1.trim().equals(str2.trim());
+        
+        System.out.println("Original String 1: '" + str1 + "'");
+        System.out.println("Original String 2: '" + str2 + "'");
+        System.out.println("Trimmed Strings are equal: " + isEqual);
     }
 }
- 
