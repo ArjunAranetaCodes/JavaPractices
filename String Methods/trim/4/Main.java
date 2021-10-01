@@ -10,4 +10,4 @@ public class Main {
         System.out.println("Trimmed Strings are equal: " + isEqual);
     }
 }
- 
+  
