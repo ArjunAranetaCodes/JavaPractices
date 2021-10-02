@@ -1,9 +1,14 @@
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
-        String text = "sample text";
-        String upperText = text.toUpperCase();
-        System.out.println("Original Text: " + text);
-        System.out.println("UpperCase Text: " + upperText);
+        Scanner scanner = new Scanner(System.in);
+        
+        System.out.print("Enter a string: ");
+        String userInput = scanner.nextLine();
+        
+        String trimmedInput = userInput.trim();
+        System.out.println("Original Input: '" + userInput + "'");
+        System.out.println("Trimmed Input: '" + trimmedInput + "'");
     }
 }
-   
