@@ -1,7 +1,8 @@
 public class Main {
     public static void main(String[] args) {
-        StringBuilder sb = new StringBuilder("StringBuilder");
-        System.out.println(sb.toString());
+        String original = "programming in Java";
+        String upper = original.toUpperCase();
+        System.out.println("Original String: " + original);
+        System.out.println("UpperCase String: " + upper);
     }
 }
-  
