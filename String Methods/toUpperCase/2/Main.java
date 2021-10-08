@@ -1,7 +1,8 @@
 public class Main {
     public static void main(String[] args) {
-        int[] numbers = {1, 2, 3, 4, 5};
-        System.out.println(java.util.Arrays.toString(numbers));
+        String input = "java programming";
+        String upperCaseResult = input.toUpperCase();
+        System.out.println("Original String: " + input);
+        System.out.println("UpperCase Result: " + upperCaseResult);
     }
 }
- 
