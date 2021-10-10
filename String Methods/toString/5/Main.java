@@ -1,12 +1,19 @@
-public class Main {
-    public static void main(String[] args) {
-        String input = "OpenAI";
+class MyClass {
+    private String name;
 
-        if (input.toLowerCase().equals("openai")) {
-            System.out.println("The input matches 'OpenAI' (case-insensitive).");
-        } else {
-            System.out.println("The input does not match 'OpenAI'.");
-        }
+    public MyClass(String name) {
+        this.name = name;
+    }
+
+    @Override
+    public String toString() {
+        return "MyClass [name=" + name + "]";
     }
 }
- 
+
+public class Main {
+    public static void main(String[] args) {
+        MyClass obj = new MyClass("Object Example");
+        System.out.println(obj.toString());
+    }
+}
