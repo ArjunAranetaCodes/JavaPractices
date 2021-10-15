@@ -1,15 +1,11 @@
 public class Main {
     public static void main(String[] args) {
-        String str = "Programming is Fun";
-        char[] charArray = str.toCharArray();
+        String input = "OpenAI";
 
-        int vowelCount = 0;
-        for (char c : charArray) {
-            if ("aeiouAEIOU".indexOf(c) != -1) {
-                vowelCount++;
-            }
+        if (input.toLowerCase().equals("openai")) {
+            System.out.println("The input matches 'OpenAI' (case-insensitive).");
+        } else {
+            System.out.println("The input does not match 'OpenAI'.");
         }
-
-        System.out.println("Number of vowels in \"" + str + "\": " + vowelCount);
     }
 }
