@@ -1,17 +1,12 @@
 public class Main {
     public static void main(String[] args) {
-        String str = "level";
-        char[] charArray = str.toCharArray();
+        String str1 = "Hello";
+        String str2 = "HELLO";
 
-        boolean isPalindrome = true;
-        for (int i = 0, j = charArray.length - 1; i < j; i++, j--) {
-            if (charArray[i] != charArray[j]) {
-                isPalindrome = false;
-                break;
-            }
+        if (str1.toLowerCase().equals(str2.toLowerCase())) {
+            System.out.println("The strings are equal (case-insensitive).");
+        } else {
+            System.out.println("The strings are not equal.");
         }
-
-        System.out.println("Is \"" + str + "\" a palindrome? " + isPalindrome);
     }
 }
-    
