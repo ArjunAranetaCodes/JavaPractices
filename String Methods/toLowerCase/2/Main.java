@@ -1,13 +1,16 @@
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
-        String str = "Java Programming";
-        char[] charArray = str.toCharArray();
+        Scanner scanner = new Scanner(System.in);
 
-        System.out.print("Original String: " + str);
-        System.out.print("\nReversed String: ");
-        for (int i = charArray.length - 1; i >= 0; i--) {
-            System.out.print(charArray[i]);
-        }
+        System.out.print("Enter a string: ");
+        String userInput = scanner.nextLine();
+        String lowerCaseInput = userInput.toLowerCase();
+
+        System.out.println("Original Input: " + userInput);
+        System.out.println("Lowercase Input: " + lowerCaseInput);
+
+        scanner.close();
     }
 }
-    
