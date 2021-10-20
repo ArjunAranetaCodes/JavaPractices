@@ -1,14 +1,9 @@
 public class Main {
     public static void main(String[] args) {
-        String originalString = "java programming";
-        int startIndex = 0;
-        int endIndex = 4;
-        
-        String substring = originalString.substring(startIndex, endIndex);
-        String uppercaseSubstring = substring.toUpperCase();
+        char[] charArray = {'H', 'e', 'l', 'l', 'o'};
+        String str = new String(charArray);
 
-        System.out.println("Original String: " + originalString);
-        System.out.println("Uppercase Substring: " + uppercaseSubstring);
+        System.out.println("Char Array: " + new String(charArray));
+        System.out.println("Converted String: " + str);
     }
 }
-  
