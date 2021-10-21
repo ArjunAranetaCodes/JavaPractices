@@ -14,3 +14,4 @@ public class Main {
         System.out.println("Is \"" + str + "\" a palindrome? " + isPalindrome);
     }
 }
+ 
