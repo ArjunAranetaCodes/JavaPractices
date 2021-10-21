@@ -1,13 +1,16 @@
 public class Main {
     public static void main(String[] args) {
-        String originalString = "Java is a powerful programming language.";
-        String oldSubstring = "powerful";
-        String newSubstring = "awesome";
+        String str = "level";
+        char[] charArray = str.toCharArray();
 
-        String modifiedString = originalString.replace(oldSubstring, newSubstring);
+        boolean isPalindrome = true;
+        for (int i = 0, j = charArray.length - 1; i < j; i++, j--) {
+            if (charArray[i] != charArray[j]) {
+                isPalindrome = false;
+                break;
+            }
+        }
 
-        System.out.println("Original String: " + originalString);
-        System.out.println("Modified String: " + modifiedString);
+        System.out.println("Is \"" + str + "\" a palindrome? " + isPalindrome);
     }
 }
-  
