@@ -1,16 +1,13 @@
 public class Main {
     public static void main(String[] args) {
-        String values = "5 12 8 24 17";
-        String[] valueArray = values.split(" ");
+        String sentence = "Java is a powerful programming language";
         
-        int max = Integer.MIN_VALUE;
-        for (String val : valueArray) {
-            int current = Integer.parseInt(val);
-            if (current > max) {
-                max = current;
-            }
+        // Check if the substring "Java" is at the beginning of the sentence
+        String substring = sentence.substring(0, 4);
+        if (substring.equals("Java")) {
+            System.out.println("The substring 'Java' is at the beginning of the sentence");
+        } else {
+            System.out.println("The substring 'Java' is not at the beginning of the sentence");
         }
-        
-        System.out.println("Maximum value: " + max);
     }
 }
