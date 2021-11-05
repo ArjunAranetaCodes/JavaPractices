@@ -1,14 +1,12 @@
 public class Main {
     public static void main(String[] args) {
-        String numbers = "10 20 30 40 50";
-        String[] numberArray = numbers.split(" ");
+        String[] words = {"Apple", "Banana", "Cherry", "Orange"};
         
-        int sum = 0;
-        for (String num : numberArray) {
-            sum += Integer.parseInt(num);
+        // Check if any word in the array starts with "B"
+        for (String word : words) {
+            if (word.startsWith("B")) {
+                System.out.println("Found a word in the array starting with 'B': " + word);
+            }
         }
-        
-        System.out.println("Sum of numbers: " + sum);
     }
 }
-   
