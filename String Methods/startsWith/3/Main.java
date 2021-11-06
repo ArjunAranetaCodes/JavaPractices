@@ -1,11 +1,12 @@
 public class Main {
     public static void main(String[] args) {
-        String date = "2022-01-24";
-        String[] dateComponents = date.split("-");
+        StringBuilder stringBuilder = new StringBuilder("OpenAI is amazing!");
         
-        System.out.println("Year: " + dateComponents[0]);
-        System.out.println("Month: " + dateComponents[1]);
-        System.out.println("Day: " + dateComponents[2]);
+        // Check if the StringBuilder content starts with "Open"
+        if (stringBuilder.toString().startsWith("Open")) {
+            System.out.println("The StringBuilder content starts with 'Open'");
+        } else {
+            System.out.println("The StringBuilder content does not start with 'Open'");
+        }
     }
 }
-   
