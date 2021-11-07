@@ -1,9 +1,12 @@
 public class Main {
     public static void main(String[] args) {
-        String sentence = "Java programming is fun";
-        String[] words = sentence.split(" ");
+        String str = "Java Programming";
         
-        System.out.println("Number of words: " + words.length);
+        // Case-insensitive check if the string starts with "java"
+        if (str.toLowerCase().startsWith("java")) {
+            System.out.println("The string starts with 'java' (case-insensitive)");
+        } else {
+            System.out.println("The string does not start with 'java'");
+        }
     }
 }
- 
