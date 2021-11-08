@@ -11,4 +11,4 @@ public class Main {
         System.out.println("Sum of numbers: " + sum);
     }
 }
- 
+  
