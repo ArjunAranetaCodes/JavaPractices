@@ -1,8 +1,13 @@
 public class Main {
     public static void main(String[] args) {
-        String input = "12345 is a number";
-        String replacedString = input.replaceAll("\\d", "*");
-        System.out.println(replacedString);
+        String numbers = "10 20 30 40 50";
+        String[] numberArray = numbers.split(" ");
+        
+        int sum = 0;
+        for (String num : numberArray) {
+            sum += Integer.parseInt(num);
+        }
+        
+        System.out.println("Sum of numbers: " + sum);
     }
 }
- 
