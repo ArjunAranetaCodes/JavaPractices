@@ -1,12 +1,8 @@
-import java.util.regex.*;
-
 public class Main {
     public static void main(String[] args) {
-        String input = "The quick brown fox jumps over the lazy dog.";
-        String pattern = "\\bfox\\b";
-        String replacement = "cat";
-        String result = input.replaceAll(pattern, replacement);
-        System.out.println(result);
+        String sentence = "Java programming is fun";
+        String[] words = sentence.split(" ");
+        
+        System.out.println("Number of words: " + words.length);
     }
 }
-  
