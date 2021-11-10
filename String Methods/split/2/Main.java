@@ -6,3 +6,4 @@ public class Main {
         System.out.println("Number of words: " + words.length);
     }
 }
+ 
