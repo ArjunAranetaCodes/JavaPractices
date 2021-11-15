@@ -1,10 +1,11 @@
+import java.util.regex.*;
+
 public class Main {
     public static void main(String[] args) {
-        String originalString = "apple orange apple orange";
-        String replacedString = originalString.replaceFirst("apple", "banana");
-        System.out.println("Original: " + originalString);
-        System.out.println("Replaced: " + replacedString);
+        String input = "The quick brown fox jumps over the lazy dog.";
+        String pattern = "\\bfox\\b";
+        String replacement = "cat";
+        String result = input.replaceAll(pattern, replacement);
+        System.out.println(result);
     }
-
 }
-   
