@@ -5,4 +5,6 @@ public class Main {
         System.out.println("Original: " + originalString);
         System.out.println("Replaced: " + replacedString);
     }
+
 }
+ 
