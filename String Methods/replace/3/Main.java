@@ -1,11 +1,7 @@
 public class Main {
     public static void main(String[] args) {
-        String str1 = "OpenAI is amazing!";
-        String str2 = "OpenAI";
-
-        boolean result = str1.regionMatches(0, str2, 0, 6);
-
-        System.out.println("Do the regions match? " + result);
+        StringBuilder stringBuilder = new StringBuilder("This is a sample sentence.");
+        stringBuilder.replace(11, 17, "example");
+        System.out.println(stringBuilder.toString());
     }
 }
-  
