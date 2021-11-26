@@ -1,8 +1,10 @@
 public class Main {
     public static void main(String[] args) {
-        String str = "Programming is fascinating!";
-        int index = str.offsetByCodePoints(0, 5);
-        System.out.println("Offset of the sixth code point from the first code point: " + index);
+        String str1 = "Java is versatile";
+        String str2 = "Java";
+
+        boolean result = str1.regionMatches(false, 0, str2, 0, 4);
+
+        System.out.println("Do the regions (case-insensitive) match? " + result);
     }
 }
-  
