@@ -1,7 +1,10 @@
 public class Main {
     public static void main(String[] args) {
-        String str = "OpenAI GPT-3";
-        int index = str.offsetByCodePoints(6, -2);
-        System.out.println("Offset of the fourth code point from the fourth code point (backward): " + index);
+        String str1 = "Programming is fun";
+        String str2 = "Fun";
+
+        boolean result = str1.regionMatches(14, str2, 0, 3);
+
+        System.out.println("Do the regions match? " + result);
     }
 }
