@@ -1,11 +1,7 @@
 public class Main {
     public static void main(String[] args) {
-        String sentence = "The quick brown fox jumps over the lazy dog.";
-        if (sentence.matches(".*\\bfox\\b.*")) {
-            System.out.println("The sentence contains the word 'fox'.");
-        } else {
-            System.out.println("The sentence does not contain the word 'fox'.");
-        }
+        String str = "Coding in Java is awesome!";
+        int index = str.offsetByCodePoints(10, 3);
+        System.out.println("Offset of the fourteenth code point from the eleventh code point: " + index);
     }
 }
-  
