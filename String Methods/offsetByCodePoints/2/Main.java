@@ -5,4 +5,4 @@ public class Main {
         System.out.println("Offset of the eighth code point from the sixth code point: " + index);
     }
 }
-  
+   
