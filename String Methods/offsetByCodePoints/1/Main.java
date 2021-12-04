@@ -5,4 +5,4 @@ public class Main {
         System.out.println("Offset of the third code point from the second code point: " + index);
     }
 }
- 
+  
