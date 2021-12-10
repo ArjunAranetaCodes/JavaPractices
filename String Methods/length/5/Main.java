@@ -6,4 +6,4 @@ public class Main {
         System.out.println("StringBuilder length: " + builderLength);
     }
 }
- 
+  
