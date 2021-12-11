@@ -7,3 +7,4 @@ public class Main {
         System.out.println("Number of columns: " + columns);
     }
 }
+ 
