@@ -1,8 +1,9 @@
 public class Main {
     public static void main(String[] args) {
-        String text = "Java is a powerful programming language. Java is versatile.";
-        int lastIndex = text.lastIndexOf("Java");
-        System.out.println("Last index of 'Java': " + lastIndex);
+        int[][] matrix = {{1, 2, 3}, {4, 5, 6}, {7, 8, 9}};
+        int rows = matrix.length;
+        int columns = matrix[0].length;
+        System.out.println("Number of rows: " + rows);
+        System.out.println("Number of columns: " + columns);
     }
 }
- 
