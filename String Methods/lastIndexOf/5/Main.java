@@ -5,4 +5,4 @@ public class Main {
         System.out.println("Last index of 'b' before index 30: " + lastIndex);
     }
 }
-  
+   
