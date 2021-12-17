@@ -1,12 +1,7 @@
 public class Main {
     public static void main(String[] args) {
-        int[] array = new int[0];
-        
-        if (array.length == 0) {
-            System.out.println("Array is empty");
-        } else {
-            System.out.println("Array is not empty");
-        }
+        String text = "Java is a powerful programming language. Java is versatile.";
+        int lastIndex = text.lastIndexOf("Java");
+        System.out.println("Last index of 'Java': " + lastIndex);
     }
 }
-   
