@@ -1,15 +1,7 @@
-import java.util.HashMap;
-import java.util.Map;
-
 public class Main {
     public static void main(String[] args) {
-        Map<String, Integer> map = new HashMap<>();
-        
-        if (map.isEmpty()) {
-            System.out.println("Map is empty");
-        } else {
-            System.out.println("Map is not empty");
-        }
+        String sentence = "The quick brown fox jumps over the lazy dog.";
+        int lastIndex = sentence.lastIndexOf("fox");
+        System.out.println("Last index of 'fox': " + lastIndex);
     }
 }
- 
