@@ -4,4 +4,6 @@ public class Main {
         int lastIndex = sentence.lastIndexOf("fox");
         System.out.println("Last index of 'fox': " + lastIndex);
     }
+
 }
+  
