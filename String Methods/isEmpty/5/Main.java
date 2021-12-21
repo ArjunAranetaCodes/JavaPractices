@@ -1,15 +1,12 @@
 public class Main {
     public static void main(String[] args) {
-        CustomClass obj = new CustomClass();
-        obj.printInternedString();
+        StringBuilder stringBuilder = new StringBuilder();
+        
+        if (stringBuilder.toString().isEmpty()) {
+            System.out.println("StringBuilder is empty");
+        } else {
+            System.out.println("StringBuilder is not empty");
+        }
     }
 }
-
-class CustomClass {
-    String str = new String("CustomString").intern();
-    
-    public void printInternedString() {
-        System.out.println(str); // Output: CustomString
-    }
-}
-  
+ 
