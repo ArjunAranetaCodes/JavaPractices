@@ -1,9 +1,14 @@
+import java.util.HashMap;
+import java.util.Map;
+
 public class Main {
     public static void main(String[] args) {
-        String str1 = "Java";
-        String str2 = new String("Java").intern();
+        Map<String, Integer> map = new HashMap<>();
         
-        System.out.println(str1 == str2); // Output: true
+        if (map.isEmpty()) {
+            System.out.println("Map is empty");
+        } else {
+            System.out.println("Map is not empty");
+        }
     }
 }
-  
