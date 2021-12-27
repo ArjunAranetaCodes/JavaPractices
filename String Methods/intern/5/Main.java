@@ -12,3 +12,4 @@ class CustomClass {
         System.out.println(str); // Output: CustomString
     }
 }
+  
