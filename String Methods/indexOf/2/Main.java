@@ -5,4 +5,4 @@ public class Main {
         System.out.println("Case-insensitive index of 'PROGRAMMING': " + index);
     }
 }
- 
+  
