@@ -5,3 +5,4 @@ public class Main {
         System.out.println("Index of 'World' in the string: " + index);
     }
 }
+ 
