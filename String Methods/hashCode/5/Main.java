@@ -1,12 +1,9 @@
+import java.util.Objects;
+
 public class Main {
     public static void main(String[] args) {
-        String sourceString = "Java Examples";
-        char[] targetArray = new char[7];
-
-        // Using getChars to copy characters from sourceString to targetArray
-        sourceString.getChars(5, 12, targetArray, 0);
-
-        // Displaying the content of targetArray
-        System.out.println(targetArray);
+        // Using Objects.hash() to calculate hashCode for multiple values
+        int hashCode = Objects.hash(10, "Sample", true);
+        System.out.println("Combined HashCode: " + hashCode);
     }
 }
