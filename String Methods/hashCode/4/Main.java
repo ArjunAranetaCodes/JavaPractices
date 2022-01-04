@@ -1,12 +1,15 @@
+import java.util.HashMap;
+
 public class Main {
     public static void main(String[] args) {
-        String sourceString = "Programming is fun";
-        char[] targetArray = new char[6];
+        // Creating a HashMap with String keys and values
+        HashMap<String, Integer> hashMap = new HashMap<>();
+        hashMap.put("One", 1);
+        hashMap.put("Two", 2);
+        hashMap.put("Three", 3);
 
-        // Using getChars to copy characters from sourceString to targetArray
-        sourceString.getChars(13, 19, targetArray, 0);
-
-        // Displaying the content of targetArray
-        System.out.println(targetArray);
+        for (String key : hashMap.keySet()) {
+            System.out.println("HashCode of key '" + key + "': " + key.hashCode());
+        }
     }
 }
