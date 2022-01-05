@@ -1,13 +1,14 @@
+import java.util.HashSet;
+
 public class Main {
     public static void main(String[] args) {
-        String sourceString = "OpenAI GPT-3.5";
-        char[] targetArray = new char[8];
+        HashSet<String> hashSet = new HashSet<>();
+        hashSet.add("Apple");
+        hashSet.add("Banana");
+        hashSet.add("Orange");
 
-        // Using getChars to copy characters from sourceString to targetArray
-        sourceString.getChars(7, 15, targetArray, 0);
-
-        // Displaying the content of targetArray
-        System.out.println(targetArray);
+        for (String fruit : hashSet) {
+            System.out.println("HashCode of " + fruit + ": " + fruit.hashCode());
+        }
     }
 }
- 
