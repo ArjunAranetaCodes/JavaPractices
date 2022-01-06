@@ -14,7 +14,7 @@ class CustomClass {
     public CustomClass(int number, String name) {
         this.number = number; 
         this.name = name;
-    }
+    } 
 
     @Override
     public int hashCode() {
