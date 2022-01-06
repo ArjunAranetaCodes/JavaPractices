@@ -16,7 +16,7 @@ class CustomClass {
         this.name = name;
     } 
 
-    @Override
+    @Override 
     public int hashCode() {
         // Custom hashCode implementation for the object
         return Objects.hash(number, name);
