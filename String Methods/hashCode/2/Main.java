@@ -12,7 +12,7 @@ class CustomClass {
     private String name;
 
     public CustomClass(int number, String name) {
-        this.number = number;
+        this.number = number; 
         this.name = name;
     }
 
