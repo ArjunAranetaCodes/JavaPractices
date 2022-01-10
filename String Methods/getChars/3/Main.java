@@ -1,13 +1,12 @@
 public class Main {
     public static void main(String[] args) {
-        int number = 12345;
-        byte[] byteArray = Integer.toString(number).getBytes();
-        
-        System.out.println("Original Integer: " + number);
-        System.out.print("Byte Array: ");
-        for (byte b : byteArray) {
-            System.out.print(b + " ");
-        }
+        String sourceString = "OpenAI GPT-3.5";
+        char[] targetArray = new char[8];
+
+        // Using getChars to copy characters from sourceString to targetArray
+        sourceString.getChars(7, 15, targetArray, 0);
+
+        // Displaying the content of targetArray
+        System.out.println(targetArray);
     }
 }
-   
