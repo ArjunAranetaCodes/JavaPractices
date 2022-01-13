@@ -1,10 +1,16 @@
+import java.io.FileOutputStream;
+import java.io.IOException;
+
 public class Main {
     public static void main(String[] args) {
-        String itemName = "Widget";
-        int quantity = 5;
-        double price = 12.99;
-
-        System.out.printf("Item: %-10s | Quantity: %d | Price: $%.2f%n", itemName, quantity, price);
+        String inputString = "Writing to File";
+        byte[] byteArray = inputString.getBytes();
+        
+        try (FileOutputStream fos = new FileOutputStream("output.txt")) {
+            fos.write(byteArray);
+            System.out.println("Byte Array written to file successfully.");
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 }
-  
