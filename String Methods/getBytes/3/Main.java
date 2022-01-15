@@ -1,12 +1,12 @@
-import java.text.NumberFormat;
-
 public class Main {
     public static void main(String[] args) {
-        double amount = 12345.67;
-        NumberFormat currencyFormatter = NumberFormat.getCurrencyInstance();
-
-        String formattedAmount = currencyFormatter.format(amount);
-        System.out.println("Formatted Amount: " + formattedAmount);
+        int number = 12345;
+        byte[] byteArray = Integer.toString(number).getBytes();
+        
+        System.out.println("Original Integer: " + number);
+        System.out.print("Byte Array: ");
+        for (byte b : byteArray) {
+            System.out.print(b + " ");
+        }
     }
 }
-   
