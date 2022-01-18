@@ -7,4 +7,4 @@ public class Main {
         System.out.printf("Item: %-10s | Quantity: %d | Price: $%.2f%n", itemName, quantity, price);
     }
 }
- 
+  
