@@ -1,17 +1,10 @@
 public class Main {
     public static void main(String[] args) {
-        String day = "MONday";
+        String itemName = "Widget";
+        int quantity = 5;
+        double price = 12.99;
 
-        switch (day.toLowerCase()) {
-            case "monday":
-                System.out.println("It's the first day of the week.");
-                break;
-            case "friday":
-                System.out.println("It's almost the weekend!");
-                break;
-            default:
-                System.out.println("It's a regular day.");
-        }
+        System.out.printf("Item: %-10s | Quantity: %d | Price: $%.2f%n", itemName, quantity, price);
     }
 }
-   
+ 
