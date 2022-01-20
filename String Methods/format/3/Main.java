@@ -1,19 +1,11 @@
-import java.util.Scanner;
+import java.text.NumberFormat;
 
 public class Main {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+        double amount = 12345.67;
+        NumberFormat currencyFormatter = NumberFormat.getCurrencyInstance();
 
-        String correctUsername = "admin";
-
-        System.out.print("Enter your username: ");
-        String enteredUsername = scanner.next();
-
-        if (correctUsername.equalsIgnoreCase(enteredUsername)) {
-            System.out.println("Login successful (case-insensitive).");
-        } else {
-            System.out.println("Incorrect username. Login failed.");
-        }
+        String formattedAmount = currencyFormatter.format(amount);
+        System.out.println("Formatted Amount: " + formattedAmount);
     }
 }
-  
