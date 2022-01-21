@@ -1,16 +1,12 @@
-import java.util.Scanner;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 
 public class Main {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+        Date currentDate = new Date();
+        SimpleDateFormat dateFormat = new SimpleDateFormat("dd/MM/yyyy");
 
-        System.out.print("Enter a word: ");
-        String userInput = scanner.next();
-
-        if ("java".equalsIgnoreCase(userInput)) {
-            System.out.println("You entered 'Java' (case-insensitive).");
-        } else {
-            System.out.println("You did not enter 'Java'.");
-        }
+        String formattedDate = dateFormat.format(currentDate);
+        System.out.println("Current Date: " + formattedDate);
     }
 }
