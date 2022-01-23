@@ -1,10 +1,16 @@
 public class Main {
     public static void main(String[] args) {
-        String str1 = "Java";
-        String str2 = "java";
-        
-        boolean result = str1.equalsIgnoreCase(str2);
-        System.out.println("Are str1 and str2 equal (case-insensitive)? " + result);
+        String day = "MONday";
+
+        switch (day.toLowerCase()) {
+            case "monday":
+                System.out.println("It's the first day of the week.");
+                break;
+            case "friday":
+                System.out.println("It's almost the weekend!");
+                break;
+            default:
+                System.out.println("It's a regular day.");
+        }
     }
 }
-   
