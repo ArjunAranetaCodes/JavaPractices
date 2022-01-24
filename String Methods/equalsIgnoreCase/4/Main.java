@@ -17,5 +17,5 @@ public class Main {
         } else {
             System.out.println("Arrays are not equal.");
         }
-    }
+    } 
 }
