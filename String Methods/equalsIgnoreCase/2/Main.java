@@ -1,10 +1,16 @@
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
-        Integer num1 = 5;
-        Integer num2 = 5;
-        
-        boolean result = num1.equals(num2);
-        System.out.println("Are num1 and num2 equal? " + result);
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Enter a word: ");
+        String userInput = scanner.next();
+
+        if ("java".equalsIgnoreCase(userInput)) {
+            System.out.println("You entered 'Java' (case-insensitive).");
+        } else {
+            System.out.println("You did not enter 'Java'.");
+        }
     }
 }
- 
