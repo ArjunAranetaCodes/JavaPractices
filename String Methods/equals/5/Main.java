@@ -7,3 +7,4 @@ public class Main {
         System.out.println("Are str1 and str2 equal (case-insensitive)? " + result);
     }
 }
+ 
