@@ -1,7 +1,9 @@
 public class Main {
     public static void main(String[] args) {
-        String email = "user@example.com";
-        boolean endsWithCom = email.endsWith(".com");
-        System.out.println("Is the email address from a .com domain: " + endsWithCom);
+        int[] arr1 = {1, 2, 3};
+        int[] arr2 = {1, 2, 3};
+        
+        boolean result = java.util.Arrays.equals(arr1, arr2);
+        System.out.println("Are arr1 and arr2 equal? " + result);
     }
 }
