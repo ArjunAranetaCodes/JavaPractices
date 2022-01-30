@@ -16,7 +16,7 @@ class Person {
 
 public class Main {
     public static void main(String[] args) {
-        Person person1 = new Person("John"); 
+        Person person1 = new Person("John");  
         Person person2 = new Person("John");
         
         boolean result = person1.equals(person2);
