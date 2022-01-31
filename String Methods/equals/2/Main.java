@@ -7,3 +7,4 @@ public class Main {
         System.out.println("Are num1 and num2 equal? " + result);
     }
 }
+ 
