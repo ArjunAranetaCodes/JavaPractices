@@ -5,4 +5,4 @@ public class Main {
         System.out.println("Is the URL ending with '.com': " + endsWithDotCom);
     }
 }
-  
+   
