@@ -1,8 +1,7 @@
 public class Main {
     public static void main(String[] args) {
-        char[] charArray = {'C', 'o', 'p', 'y', 'V', 'a', 'l', 'u', 'e', 'O', 'f'};
-        String result = String.copyValueOf(charArray, 4, 6);
-        System.out.println(result);
+        String email = "user@example.com";
+        boolean endsWithCom = email.endsWith(".com");
+        System.out.println("Is the email address from a .com domain: " + endsWithCom);
     }
 }
- 
