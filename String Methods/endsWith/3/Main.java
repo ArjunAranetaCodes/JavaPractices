@@ -1,8 +1,7 @@
 public class Main {
     public static void main(String[] args) {
-        char[] charArray = {'1', '2', '3', '4', '5'};
-        String result = String.copyValueOf(charArray, 1, 3);
-        System.out.println(result);
+        String fileName = "document.txt";
+        boolean endsWithTxt = fileName.endsWith(".txt");
+        System.out.println("Is the file a text file: " + endsWithTxt);
     }
 }
-   
