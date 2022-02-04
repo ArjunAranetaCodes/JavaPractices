@@ -5,4 +5,4 @@ public class Main {
         System.out.println("Is the file a text file: " + endsWithTxt);
     }
 }
- 
+  
