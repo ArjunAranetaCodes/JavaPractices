@@ -1,8 +1,7 @@
 public class Main {
     public static void main(String[] args) {
-        char[] charArray = {'J', 'a', 'v', 'a'};
-        String result = String.copyValueOf(charArray);
-        System.out.println(result);
+        String sentence = "Java programming is fun!";
+        boolean endsWithFun = sentence.endsWith("fun!");
+        System.out.println("Does the sentence end with 'fun!': " + endsWithFun);
     }
 }
-   
