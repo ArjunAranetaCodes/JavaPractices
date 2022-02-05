@@ -5,3 +5,4 @@ public class Main {
         System.out.println("Does the sentence end with 'fun!': " + endsWithFun);
     }
 }
+ 
