@@ -1,9 +1,7 @@
 public class Main {
     public static void main(String[] args) {
-        String str = "Hello, World!";
-        CharSequence subSeq = str.subSequence(0, 5);
-        boolean result = "Hello".contentEquals(subSeq);
-        System.out.println("Is the substring equal to 'Hello'? " + result);
+        char[] charArray = {'J', 'a', 'v', 'a', ' ', 'P', 'r', 'o', 'g', 'r', 'a', 'm'};
+        String result = String.copyValueOf(charArray, 0, 4);
+        System.out.println(result);
     }
 }
-   
