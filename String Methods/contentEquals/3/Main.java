@@ -1,20 +1,8 @@
 public class Main {
     public static void main(String[] args) {
-        int[] numbers = {1, 2, 3, 4, 5};
-        int target = 3;
-
-        boolean contains = false;
-        for (int number : numbers) {
-            if (number == target) {
-                contains = true;
-                break;
-            }
-        }
-
-        if (contains) {
-            System.out.println("The array contains the target number.");
-        } else {
-            System.out.println("The array does not contain the target number.");
-        }
+        StringBuffer buffer1 = new StringBuffer("Programming");
+        StringBuffer buffer2 = new StringBuffer("Programming");
+        boolean result = buffer1.toString().contentEquals(buffer2);
+        System.out.println("Are the StringBuffers equal? " + result);
     }
 }
