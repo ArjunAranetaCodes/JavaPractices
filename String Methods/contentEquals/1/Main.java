@@ -6,4 +6,4 @@ public class Main {
         System.out.println("Are the strings equal? " + result);
     }
 }
-  
+   
