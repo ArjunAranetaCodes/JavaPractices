@@ -7,7 +7,7 @@ class Person {
     Person(String name) {
         this.name = name;
     }
-}
+} 
   
 public class Main {
     public static void main(String[] args) {
