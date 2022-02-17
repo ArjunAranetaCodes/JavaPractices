@@ -8,7 +8,7 @@ class Person {
         this.name = name;
     }
 }
-
+ 
 public class Main {
     public static void main(String[] args) {
         Set<Person> personSet = new HashSet<>();
