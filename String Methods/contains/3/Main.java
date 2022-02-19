@@ -1,17 +1,20 @@
-import java.util.Scanner;
-
 public class Main {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        
-        System.out.print("Enter the first string: ");
-        String str1 = scanner.nextLine();
-        
-        System.out.print("Enter the second string: ");
-        String str2 = scanner.nextLine();
-        
-        String result = str1.concat(str2);
-        System.out.println("Concatenated Result: " + result);
+        int[] numbers = {1, 2, 3, 4, 5};
+        int target = 3;
+
+        boolean contains = false;
+        for (int number : numbers) {
+            if (number == target) {
+                contains = true;
+                break;
+            }
+        }
+
+        if (contains) {
+            System.out.println("The array contains the target number.");
+        } else {
+            System.out.println("The array does not contain the target number.");
+        }
     }
 }
-  
