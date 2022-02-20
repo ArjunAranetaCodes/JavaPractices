@@ -1,9 +1,18 @@
+import java.util.ArrayList;
+
 public class Main {
     public static void main(String[] args) {
-        int num1 = 5;
-        int num2 = 10;
-        String result = String.valueOf(num1).concat(String.valueOf(num2));
-        System.out.println("Concatenated Result: " + result);
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Apple");
+        list.add("Banana");
+        list.add("Orange");
+
+        String keyword = "Banana";
+
+        if (list.contains(keyword)) {
+            System.out.println("The ArrayList contains the keyword.");
+        } else {
+            System.out.println("The ArrayList does not contain the keyword.");
+        }
     }
 }
- 
