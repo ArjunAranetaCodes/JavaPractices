@@ -1,11 +1,12 @@
 public class Main {
     public static void main(String[] args) {
-        String str1 = "Java";
-        String str2 = "Python";
+        StringBuilder stringBuilder = new StringBuilder();
         
-        int result = str1.compareToIgnoreCase(str2);
+        stringBuilder.append("Java ");
+        stringBuilder.append("is ");
+        stringBuilder.append("fun!");
         
-        System.out.println("Comparison result: " + result);
+        String result = stringBuilder.toString();
+        System.out.println(result);
     }
 }
- 
