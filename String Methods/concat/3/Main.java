@@ -14,4 +14,4 @@ public class Main {
         System.out.println("Concatenated Result: " + result);
     }
 }
- 
+  
