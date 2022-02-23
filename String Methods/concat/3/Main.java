@@ -1,17 +1,16 @@
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
-        String str1 = "Programming";
-        String str2 = "programming";
+        Scanner scanner = new Scanner(System.in);
         
-        int result = str1.compareToIgnoreCase(str2);
+        System.out.print("Enter the first string: ");
+        String str1 = scanner.nextLine();
         
-        if (result < 0) {
-            System.out.println("str1 comes before str2 ignoring case.");
-        } else if (result > 0) {
-            System.out.println("str1 comes after str2 ignoring case.");
-        } else {
-            System.out.println("str1 and str2 are equal ignoring case.");
-        }
+        System.out.print("Enter the second string: ");
+        String str2 = scanner.nextLine();
+        
+        String result = str1.concat(str2);
+        System.out.println("Concatenated Result: " + result);
     }
 }
-  
