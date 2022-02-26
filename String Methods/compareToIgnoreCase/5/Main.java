@@ -1,12 +1,10 @@
-import java.util.Arrays;
-
 public class Main {
     public static void main(String[] args) {
-        String[] names = {"Alice", "Bob", "Charlie", "David"};
+        String str1 = "Java";
+        String str2 = "Python";
         
-        Arrays.sort(names);
+        int result = str1.compareToIgnoreCase(str2);
         
-        System.out.println("Sorted names: " + Arrays.toString(names));
+        System.out.println("Comparison result: " + result);
     }
 }
-    
