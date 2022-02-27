@@ -1,25 +1,12 @@
-class Person implements Comparable<Person> {
-    String name;
-    int age;
-
-    public Person(String name, int age) {
-        this.name = name;
-        this.age = age;
-    }
-
-    @Override
-    public int compareTo(Person otherPerson) {
-        return Integer.compare(this.age, otherPerson.age);
-    }
-}
-
 public class Main {
     public static void main(String[] args) {
-        Person person1 = new Person("Alice", 25);
-        Person person2 = new Person("Bob", 30);
+        String str1 = "OpenAI";
+        String str2 = "openai";
         
-        int result = person1.compareTo(person2);
-        
-        System.out.println("Comparison result: " + result);
-    } 
+        if (str1.compareToIgnoreCase(str2) == 0) {
+            System.out.println("Strings are equal ignoring case.");
+        } else {
+            System.out.println("Strings are not equal ignoring case.");
+        }
+    }
 }
