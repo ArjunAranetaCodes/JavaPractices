@@ -1,12 +1,16 @@
-import java.util.Date;
-
 public class Main {
     public static void main(String[] args) {
-        Date date1 = new Date();
-        Date date2 = new Date(System.currentTimeMillis() - 100000);
+        String str1 = "Programming";
+        String str2 = "programming";
         
-        int result = date1.compareTo(date2);
+        int result = str1.compareToIgnoreCase(str2);
         
-        System.out.println("Comparison result: " + result);
+        if (result < 0) {
+            System.out.println("str1 comes before str2 ignoring case.");
+        } else if (result > 0) {
+            System.out.println("str1 comes after str2 ignoring case.");
+        } else {
+            System.out.println("str1 and str2 are equal ignoring case.");
+        }
     }
 }
