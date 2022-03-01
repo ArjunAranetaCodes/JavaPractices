@@ -1,11 +1,14 @@
 public class Main {
     public static void main(String[] args) {
-        Integer num1 = 10;
-        Integer num2 = 5;
+        String str1 = "Java";
+        String str2 = "java";
         
-        int result = num1.compareTo(num2);
+        int result = str1.compareToIgnoreCase(str2);
         
-        System.out.println("Comparison result: " + result);
+        if (result == 0) {
+            System.out.println("Strings are equal ignoring case.");
+        } else {
+            System.out.println("Strings are not equal ignoring case.");
+        }
     }
 }
-   
