@@ -21,5 +21,5 @@ public class Main {
         int result = person1.compareTo(person2);
         
         System.out.println("Comparison result: " + result);
-    }
+    } 
 }
