@@ -1,11 +1,12 @@
+import java.util.Date;
+
 public class Main {
     public static void main(String[] args) {
-        String text = "CodePointCount Example";
-        int start = 6;
-        int end = 16;
-        int codePointsCount = text.codePointCount(start, end);
-
-        System.out.println("Code points count in range: " + codePointsCount);
+        Date date1 = new Date();
+        Date date2 = new Date(System.currentTimeMillis() - 100000);
+        
+        int result = date1.compareTo(date2);
+        
+        System.out.println("Comparison result: " + result);
     }
 }
-   
