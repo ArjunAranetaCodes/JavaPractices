@@ -1,10 +1,10 @@
 public class Main {
     public static void main(String[] args) {
-        String str = "Java Programming 🚀";
-        int start = 5;
-        int end = 17;
-        int codePointsCount = str.codePointCount(start, end);
-
-        System.out.println("Number of Unicode code points in substring: " + codePointsCount);
+        Integer num1 = 10;
+        Integer num2 = 5;
+        
+        int result = num1.compareTo(num2);
+        
+        System.out.println("Comparison result: " + result);
     }
 }
