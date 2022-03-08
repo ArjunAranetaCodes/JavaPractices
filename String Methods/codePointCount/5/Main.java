@@ -6,3 +6,4 @@ public class Main {
         System.out.println("Code points count in Unicode text: " + codePointsCount);
     }
 }
+ 
