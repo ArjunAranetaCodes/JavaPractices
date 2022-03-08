@@ -1,11 +1,8 @@
 public class Main {
     public static void main(String[] args) {
-        String input = "Programming";
-        int charIndex = 5;
-        
-        int codePoint = input.codePointBefore(charIndex);
-        
-        System.out.println("Code point before index " + charIndex + ": " + codePoint);
+        String unicodeText = "😃 Unicode Characters 😍";
+        int codePointsCount = unicodeText.codePointCount(0, unicodeText.length());
+
+        System.out.println("Code points count in Unicode text: " + codePointsCount);
     }
 }
- 
