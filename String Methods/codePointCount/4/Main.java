@@ -1,11 +1,9 @@
 public class Main {
     public static void main(String[] args) {
-        String message = "Java is fun!";
-        int endPosition = 7;
-        
-        int codePoint = message.codePointBefore(endPosition);
-        
-        System.out.println("Code point before position " + endPosition + ": " + codePoint);
+        String original = "Java is amazing! 💻";
+        String modified = original.substring(0, 10); // Truncate the string
+        int codePointsCount = modified.codePointCount(0, modified.length());
+
+        System.out.println("Code points count in modified string: " + codePointsCount);
     }
 }
-  
