@@ -7,3 +7,4 @@ public class Main {
         System.out.println("Code points count in modified string: " + codePointsCount);
     }
 }
+ 
