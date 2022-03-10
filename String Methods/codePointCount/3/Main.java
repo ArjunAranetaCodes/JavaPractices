@@ -1,11 +1,10 @@
 public class Main {
     public static void main(String[] args) {
-        String sample = "OpenAI";
-        int lastIndex = sample.length() - 1;
-        
-        int codePoint = sample.codePointBefore(lastIndex);
-        
-        System.out.println("Code point before last index: " + codePoint);
+        String text = "CodePointCount Example";
+        int start = 6;
+        int end = 16;
+        int codePointsCount = text.codePointCount(start, end);
+
+        System.out.println("Code points count in range: " + codePointsCount);
     }
 }
-    
