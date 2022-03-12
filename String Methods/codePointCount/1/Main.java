@@ -8,4 +8,4 @@ public class Main {
         System.out.println("Number of Unicode code points: " + codePointsCount);
     }
 }
-   
+    
