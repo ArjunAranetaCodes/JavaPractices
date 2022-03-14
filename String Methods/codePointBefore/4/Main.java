@@ -8,3 +8,4 @@ public class Main {
         System.out.println("Code point before position " + endPosition + ": " + codePoint);
     }
 }
+ 
