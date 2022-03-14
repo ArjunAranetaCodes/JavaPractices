@@ -1,10 +1,10 @@
 public class Main {
     public static void main(String[] args) {
-        String str = "😊Hello";
-        for (int i = 0; i < str.length(); i++) {
-            int codePoint = str.codePointAt(i);
-            System.out.println("Code point at index " + i + ": " + codePoint + " (Character: " + new String(Character.toChars(codePoint)) + ")");
-        }
+        String message = "Java is fun!";
+        int endPosition = 7;
+        
+        int codePoint = message.codePointBefore(endPosition);
+        
+        System.out.println("Code point before position " + endPosition + ": " + codePoint);
     }
 }
-  
