@@ -8,4 +8,4 @@ public class Main {
         System.out.println("Code point before last index: " + codePoint);
     }
 }
-  
+   
