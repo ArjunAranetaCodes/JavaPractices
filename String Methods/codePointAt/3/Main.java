@@ -1,14 +1,9 @@
 public class Main {
     public static void main(String[] args) {
-        String original = "OpenAI";
-        StringBuilder reversed = new StringBuilder();
-
-        for (int i = original.length() - 1; i >= 0; i--) {
-            reversed.append(original.charAt(i));
+        String str = "Unicode";
+        for (int i = 0; i < str.length(); i++) {
+            int codePoint = str.codePointAt(i);
+            System.out.println("Code point at index " + i + ": " + codePoint + " (Unicode: " + Character.getName(codePoint) + ")");
         }
-
-        System.out.println("Original: " + original);
-        System.out.println("Reversed: " + reversed.toString());
     }
 }
- 
