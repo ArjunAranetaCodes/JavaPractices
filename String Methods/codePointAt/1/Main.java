@@ -6,3 +6,4 @@ public class Main {
         System.out.println("Code point at index " + index + ": " + codePoint);
     }
 }
+ 
