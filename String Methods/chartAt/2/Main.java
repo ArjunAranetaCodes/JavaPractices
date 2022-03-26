@@ -13,4 +13,4 @@ public class Main {
         System.out.println("Occurrences of '" + targetChar + "': " + count);
     }
 }
-  
+   
