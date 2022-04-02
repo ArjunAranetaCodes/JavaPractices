@@ -1,26 +1,11 @@
-class SharedFlag {
-    volatile boolean flag = false;
-}
-
-class Main {
+public class Main {
     public static void main(String[] args) {
-        SharedFlag sharedFlag = new SharedFlag();
+        int[] numbers = {1, 2, 3, 4, 5};
+        int index = 0;
 
-        new Thread(() -> {
-            try {
-                Thread.sleep(2000);
-            } catch (InterruptedException e) {
-                e.printStackTrace();
-            }
-            sharedFlag.flag = true;
-        }).start();
-
-        new Thread(() -> {
-            while (!sharedFlag.flag) {
-                // busy-wait until the flag becomes true
-            }
-            System.out.println("Flag is true now!");
-        }).start();
+        while (index < numbers.length) {
+            System.out.println("Number at index " + index + ": " + numbers[index]);
+            index++;
+        }
     }
 }
- 
