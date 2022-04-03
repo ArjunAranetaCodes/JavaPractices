@@ -1,26 +1,15 @@
-class SharedData {
-    volatile int[] dataArray = new int[10];
-}
+import java.util.Scanner;
 
-class Main {
+public class Main {
     public static void main(String[] args) {
-        SharedData sharedData = new SharedData();
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter a number: ");
+        int n = scanner.nextInt();
 
-        // Thread 1: updates array elements
-        new Thread(() -> {
-            for (int i = 0; i < sharedData.dataArray.length; i++) {
-                sharedData.dataArray[i] = i;
-            }
-        }).start();
-
-        // Thread 2: reads array elements
-        new Thread(() -> {
-            while (sharedData.dataArray[sharedData.dataArray.length - 1] == 0) {
-                // busy-wait until the array is initialized
-            }
-            for (int value : sharedData.dataArray) {
-                System.out.println(value);
-            }
-        }).start(); 
+        int i = 1;
+        while (i <= n) {
+            System.out.println("Square of " + i + ": " + i * i);
+            i++;
+        }
     }
 }
