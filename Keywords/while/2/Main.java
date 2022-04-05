@@ -1,23 +1,12 @@
-class Singleton {
-    private static volatile Singleton instance;
-
-    private Singleton() {}
-
-    public static Singleton getInstance() {
-        if (instance == null) {
-            synchronized (Singleton.class) {
-                if (instance == null) {
-                    instance = new Singleton(); 
-                }
+public class Main {
+    public static void main(String[] args) {
+        int i = 1;
+        while (true) {
+            System.out.println("Iteration: " + i);
+            i++;
+            if (i > 5) {
+                break;
             }
         }
-        return instance;
-    }
-}
-
-class Main {  
-    public static void main(String[] args) { 
-        Singleton singleton = Singleton.getInstance();
-        System.out.println("Singleton instance created.");
     }
 }
