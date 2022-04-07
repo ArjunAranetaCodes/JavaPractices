@@ -6,7 +6,6 @@ class Main {
     public static void main(String[] args) {
         SharedFlag sharedFlag = new SharedFlag();
 
-        // Thread 1: sets the flag to true after a delay
         new Thread(() -> {
             try {
                 Thread.sleep(2000);
