@@ -16,7 +16,6 @@ class Main {
             sharedFlag.flag = true;
         }).start();
 
-        // Thread 2: checks the flag in a loop
         new Thread(() -> {
             while (!sharedFlag.flag) {
                 // busy-wait until the flag becomes true
