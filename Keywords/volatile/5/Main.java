@@ -1,14 +1,27 @@
-public class Main {
-    public static void main(String[] args) {
-        checkNumber(10);
-        checkNumber(3);
-    }
+class SharedFlag {
+    volatile boolean flag = false;
+}
 
-    static void checkNumber(int number) {
-        if (number > 5) {
-            System.out.println(number + " is greater than 5.");
-        } else {
-            System.out.println(number + " is not greater than 5.");
-        }
+class Main {
+    public static void main(String[] args) {
+        SharedFlag sharedFlag = new SharedFlag();
+
+        // Thread 1: sets the flag to true after a delay
+        new Thread(() -> {
+            try {
+                Thread.sleep(2000);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+            sharedFlag.flag = true;
+        }).start();
+
+        // Thread 2: checks the flag in a loop
+        new Thread(() -> {
+            while (!sharedFlag.flag) {
+                // busy-wait until the flag becomes true
+            }
+            System.out.println("Flag is true now!");
+        }).start();
     }
 }
