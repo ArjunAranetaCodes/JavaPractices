@@ -21,6 +21,6 @@ class Main {
             for (int value : sharedData.dataArray) {
                 System.out.println(value);
             }
-        }).start();
+        }).start(); 
     }
 }
