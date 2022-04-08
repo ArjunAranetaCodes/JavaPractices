@@ -21,4 +21,4 @@ class Main {
         System.out.println("Singleton instance created.");
     }
 }
-  
+   
