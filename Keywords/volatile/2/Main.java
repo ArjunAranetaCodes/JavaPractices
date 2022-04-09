@@ -1,10 +1,23 @@
-public class Main {
-    public static void main(String[] args) {
-        greetUser("John");
-    }
+class Singleton {
+    private static volatile Singleton instance;
 
-    static void greetUser(String name) {
-        System.out.println("Hello, " + name + "! Welcome to the void method with parameters.");
+    private Singleton() {}
+
+    public static Singleton getInstance() {
+        if (instance == null) {
+            synchronized (Singleton.class) {
+                if (instance == null) {
+                    instance = new Singleton();
+                }
+            }
+        }
+        return instance;
     }
 }
-  
+
+class Main {
+    public static void main(String[] args) {
+        Singleton singleton = Singleton.getInstance();
+        System.out.println("Singleton instance created.");
+    }
+}
