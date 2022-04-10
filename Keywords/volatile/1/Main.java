@@ -6,7 +6,6 @@ class Main {
     public static void main(String[] args) {
         SharedResource sharedResource = new SharedResource();
 
-        // Thread 1: sets the flag to true
         new Thread(() -> {
             sharedResource.flag = true;
         }).start();
