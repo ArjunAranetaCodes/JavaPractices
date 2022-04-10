@@ -10,7 +10,6 @@ class Main {
             sharedResource.flag = true;
         }).start();
 
-        // Thread 2: reads the flag value
         new Thread(() -> {
             while (!sharedResource.flag) {
                 // busy-wait until the flag becomes true
