@@ -1,11 +1,11 @@
 public class Main {
     public static void main(String[] args) {
-        var result = addNumbers(10, 20);
-        System.out.println("Sum: " + result);
+        for (int i = 0; i < 5; i++) {
+            printIteration(i);
+        }
     }
 
-    private static int addNumbers(int x, int y) {
-        return x + y;
-    } 
+    static void printIteration(int iteration) {
+        System.out.println("Iteration: " + iteration);
+    }
 }
-    
