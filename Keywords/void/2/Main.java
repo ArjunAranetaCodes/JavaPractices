@@ -7,4 +7,4 @@ public class Main {
         System.out.println("Hello, " + name + "! Welcome to the void method with parameters.");
     }
 }
- 
+  
