@@ -7,3 +7,4 @@ public class Main {
         System.out.println("Hello, this is a simple void method!");
     }
 }
+ 
