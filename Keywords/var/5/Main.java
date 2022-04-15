@@ -1,16 +1,10 @@
-class CustomException extends Exception {
-    public CustomException(String message) {
-        super(message);
-    }
-}
+import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
-        try {
-            // Code that may throw a custom exception
-            throw new CustomException("This is a custom exception");
-        } catch (CustomException e) {
-            System.out.println("Custom Exception: " + e.getMessage());
+        var names = List.of("Alice", "Bob", "Charlie");
+        for (var name : names) {
+            System.out.println("Hello, " + name + "!");
         }
     }
 }
