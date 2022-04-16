@@ -6,6 +6,6 @@ public class Main {
 
     private static int addNumbers(int x, int y) {
         return x + y;
-    }
+    } 
 }
-  
+   
