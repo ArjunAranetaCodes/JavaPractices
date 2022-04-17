@@ -8,3 +8,4 @@ public class Main {
         System.out.println("Sum: " + addition.calculate(5, 3));
     }
 }
+ 
