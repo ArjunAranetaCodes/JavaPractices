@@ -1,12 +1,8 @@
 public class Main {
     public static void main(String[] args) {
-        try {
-            int result = 10 / 0; // ArithmeticException
-        } catch (ArithmeticException e) {
-            System.out.println("Error: " + e.getMessage());
-        } finally {
-            System.out.println("Finally block executed");
+        var numbers = new int[]{1, 2, 3, 4, 5};
+        for (var number : numbers) {
+            System.out.print(number + " ");
         }
     }
 }
- 
