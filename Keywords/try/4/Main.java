@@ -1,14 +1,18 @@
-import java.io.*;
-
-class MyClass implements Serializable {
-    transient static int transientStaticVariable = 10;
-    static int nonTransientStaticVariable = 20;
-}
-
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Transient Static Variable: " + MyClass.transientStaticVariable);
-        System.out.println("Non-Transient Static Variable: " + MyClass.nonTransientStaticVariable);
+        try {
+            try {
+                // Code that may throw an exception
+                int result = 10 / 0; // ArithmeticException
+            } catch (ArithmeticException e) {
+                System.out.println("Inner Catch: " + e.getMessage());
+            }
+            
+            // Code outside the inner try-catch block
+            String str = null;
+            System.out.println(str.length()); // NullPointerException
+        } catch (NullPointerException e) {
+            System.out.println("Outer Catch: " + e.getMessage());
+        }
     }
 }
-  
