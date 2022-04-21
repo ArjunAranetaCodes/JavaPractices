@@ -1,18 +1,15 @@
-import java.io.*;
-
-class MyClass implements Serializable {
-    transient int transientVariable = 10;
-
-    private void readObject(ObjectInputStream in) throws IOException, ClassNotFoundException {
-        in.defaultReadObject();
-        transientVariable = 0; // Reset transient variable during deserialization
-    }
-}
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.IOException;
 
 public class Main {
     public static void main(String[] args) {
-        MyClass obj = new MyClass();
-        System.out.println("Transient Variable: " + obj.transientVariable);
+        try (BufferedReader br = new BufferedReader(new FileReader("example.txt"))) {
+            // Code that reads from a file
+            String line = br.readLine();
+            System.out.println(line);
+        } catch (IOException e) {
+            System.out.println("Error reading the file: " + e.getMessage());
+        }
     }
 }
-  
