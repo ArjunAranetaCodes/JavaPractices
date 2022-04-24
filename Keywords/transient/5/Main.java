@@ -1,17 +1,14 @@
+import java.io.*;
+
+class MyClass implements Serializable {
+    transient int[] transientArray = {1, 2, 3};
+    int[] nonTransientArray = {4, 5, 6};
+}
+
 public class Main {
     public static void main(String[] args) {
-        try {
-            processInput(-5);
-        } catch (IllegalArgumentException e) {
-            System.out.println("Caught IllegalArgumentException: " + e.getMessage());
-        }
-    }
-
-    static void processInput(int value) throws IllegalArgumentException {
-        if (value < 0) {
-            throw new IllegalArgumentException("Input value must be non-negative.");
-        }
-        System.out.println("Processing input: " + value);
+        MyClass obj = new MyClass();
+        System.out.println("Transient Array: " + Arrays.toString(obj.transientArray));
+        System.out.println("Non-Transient Array: " + Arrays.toString(obj.nonTransientArray));
     }
 }
-    
