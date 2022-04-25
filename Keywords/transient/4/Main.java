@@ -11,3 +11,4 @@ public class Main {
         System.out.println("Non-Transient Static Variable: " + MyClass.nonTransientStaticVariable);
     }
 }
+  
