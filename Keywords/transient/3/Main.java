@@ -15,4 +15,4 @@ public class Main {
         System.out.println("Transient Variable: " + obj.transientVariable);
     }
 }
- 
+  
