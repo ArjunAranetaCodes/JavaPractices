@@ -13,7 +13,7 @@ public class Main {
         ObjectOutputStream out = new ObjectOutputStream(new FileOutputStream("data.ser"));
         out.writeObject(obj);
         out.close();
-
+ 
         // Deserialization
         ObjectInputStream in = new ObjectInputStream(new FileInputStream("data.ser"));
         MyClass newObj = (MyClass) in.readObject();
