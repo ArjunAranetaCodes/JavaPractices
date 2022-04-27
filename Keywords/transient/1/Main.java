@@ -12,4 +12,4 @@ public class Main {
         System.out.println("Non-Transient Variable: " + obj.nonTransientVariable);
     }
 }
-  
+   
