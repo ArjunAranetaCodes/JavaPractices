@@ -1,9 +1,16 @@
 public class Main {
     public static void main(String[] args) {
-        throwUncheckedException();
+        try {
+            processInput(-5);
+        } catch (IllegalArgumentException e) {
+            System.out.println("Caught IllegalArgumentException: " + e.getMessage());
+        }
     }
 
-    private static void throwUncheckedException() {
-        throw new RuntimeException("Unchecked exception thrown");
+    static void processInput(int value) throws IllegalArgumentException {
+        if (value < 0) {
+            throw new IllegalArgumentException("Input value must be non-negative.");
+        }
+        System.out.println("Processing input: " + value);
     }
 }
