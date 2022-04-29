@@ -22,7 +22,7 @@ class CustomException extends Exception {
     }
 }
   
-class AnotherException extends Exception {
+class AnotherException extends Exception { 
     public AnotherException(String message) {
         super(message);
     }
