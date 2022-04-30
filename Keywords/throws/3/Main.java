@@ -17,7 +17,7 @@ public class Main {
         throw new UncheckedException("This is an unchecked exception.");
     }
 }
-
+ 
 class CheckedException extends Exception {
     public CheckedException(String message) {
         super(message);
