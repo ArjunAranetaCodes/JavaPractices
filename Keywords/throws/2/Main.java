@@ -1,15 +1,17 @@
-class CustomException extends Exception {
-    public CustomException(String message) {
-        super(message);
-    }
-}
-
 public class Main {
     public static void main(String[] args) {
         try {
-            throw new CustomException("This is a custom exception");
-        } catch (CustomException e) {
-            System.out.println("Caught custom exception: " + e.getMessage());
+            method1();
+        } catch (Exception e) {
+            System.out.println("Caught Exception: " + e.getMessage());
         }
+    }
+
+    static void method1() throws Exception {
+        method2();
+    }
+
+    static void method2() throws Exception {
+        throw new Exception("Exception thrown in method2");
     }
 }
