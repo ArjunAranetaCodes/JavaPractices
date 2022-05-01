@@ -15,4 +15,4 @@ public class Main {
         throw new Exception("Exception thrown in method2");
     }
 }
-  
+   
