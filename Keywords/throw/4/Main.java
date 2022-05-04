@@ -1,22 +1,9 @@
-class Main {
-    private int value;
-
-    public Main(int value) {
-        this.value = value;
+public class Main {
+    public static void main(String[] args) throws InterruptedException {
+        throwCheckedException();
     }
 
-    public void printValue() {
-        System.out.println("Value: " + this.value);
-    }
-
-    public void processValue(int newValue) {
-        this.value = newValue;
-        this.printValue();
-    }
-
-    public static void main(String[] args) {
-        Main obj = new Main(10);
-        obj.processValue(20);
+    private static void throwCheckedException() throws InterruptedException {
+        throw new InterruptedException("Checked exception thrown");
     }
 }
- 
