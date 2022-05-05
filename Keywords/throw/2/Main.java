@@ -1,22 +1,15 @@
-class Main {
-    private int x;
-    private int y;
-
-    public Main() {
-        this(0, 0); // Calls another constructor using "this" 
+class CustomException extends Exception {
+    public CustomException(String message) {
+        super(message);
     }
+}
 
-    public Main(int x, int y) {
-        this.x = x;
-        this.y = y;
-    }
-
-    public void displayCoordinates() {
-        System.out.println("X: " + this.x + ", Y: " + this.y);
-    }
-
+public class Main {
     public static void main(String[] args) {
-        Main point = new Main();
-        point.displayCoordinates();
+        try {
+            throw new CustomException("This is a custom exception");
+        } catch (CustomException e) {
+            System.out.println("Caught custom exception: " + e.getMessage());
+        }
     }
 }
