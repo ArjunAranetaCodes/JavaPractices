@@ -14,7 +14,7 @@ class Main {
             return false;
         }
         Main other = (Main) obj;
-        return this.name.equals(other.name);
+        return this.name.equals(other.name); 
     }
 
     public static void main(String[] args) {
