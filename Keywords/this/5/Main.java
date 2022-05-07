@@ -1,35 +1,25 @@
-class SharedResource {
-    private Object lock1 = new Object();
-    private Object lock2 = new Object();
+class Main {
+    private String name;
 
-    void method1() {
-        // Code without synchronization
-
-        synchronized (lock1) {
-            // Code that needs synchronization with lock1
-        }
-
-        // Code without synchronization
+    public Main(String name) {
+        this.name = name;
     }
 
-    void method2() {
-        // Code without synchronization
-
-        synchronized (lock2) {
-            // Code that needs synchronization with lock2
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
         }
-
-        // Code without synchronization
+        if (obj == null || getClass() != obj.getClass()) {
+            return false;
+        }
+        Main other = (Main) obj;
+        return this.name.equals(other.name);
     }
-}
 
-public class Main {
     public static void main(String[] args) {
-        SharedResource sharedResource = new SharedResource();
-
-        synchronized (sharedResource) {
-            sharedResource.method1();
-            sharedResource.method2();
-        }
+        Main obj1 = new Main("John");
+        Main obj2 = new Main("John");
+        System.out.println("Objects are equal: " + obj1.equals(obj2));
     }
 }
