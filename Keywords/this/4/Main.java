@@ -19,3 +19,4 @@ class Main {
         obj.processValue(20);
     }
 }
+ 
