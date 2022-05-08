@@ -1,22 +1,21 @@
-class SharedResource {
-    private Object lock = new Object();
+class Main {
+    private int value;
 
-    void someMethod() {
-        // Code without synchronization
-
-        synchronized (lock) {
-        }
-
+    public Main(int value) {
+        this.value = value;
     }
-}
 
-public class Main {
+    public void printValue() {
+        System.out.println("Value: " + this.value);
+    }
+
+    public void processValue(int newValue) {
+        this.value = newValue;
+        this.printValue();
+    }
+
     public static void main(String[] args) {
-        SharedResource sharedResource = new SharedResource();
-
-        // Use synchronized on object
-        synchronized (sharedResource) {
-            sharedResource.someMethod();
-        }
+        Main obj = new Main(10);
+        obj.processValue(20);
     }
 }
