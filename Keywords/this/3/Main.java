@@ -15,4 +15,4 @@ class Main {
         obj.setMessage("Hello, ").displayMessage();
     }
 }
-  
+   
