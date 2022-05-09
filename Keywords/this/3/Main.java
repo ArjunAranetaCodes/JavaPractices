@@ -1,13 +1,17 @@
-class SharedResource {
-    synchronized static void synchronizedStaticMethod() {
-        // Code that needs synchronization
-    }
-}
+class Main {
+    private String message;
 
-public class Main {
+    public Main setMessage(String message) {
+        this.message = message;
+        return this;
+    }
+
+    public void displayMessage() {
+        System.out.println("Message: " + this.message);
+    }
 
     public static void main(String[] args) {
-        SharedResource.synchronizedStaticMethod();
+        Main obj = new Main();
+        obj.setMessage("Hello, ").displayMessage();
     }
 }
-   
