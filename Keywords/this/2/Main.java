@@ -3,7 +3,7 @@ class Main {
     private int y;
 
     public Main() {
-        this(0, 0); // Calls another constructor using "this"
+        this(0, 0); // Calls another constructor using "this" 
     }
 
     public Main(int x, int y) {
