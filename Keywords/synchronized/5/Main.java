@@ -1,21 +1,36 @@
+class SharedResource {
+    private Object lock1 = new Object();
+    private Object lock2 = new Object();
+
+    void method1() {
+        // Code without synchronization
+
+        synchronized (lock1) {
+            // Code that needs synchronization with lock1
+        }
+
+        // Code without synchronization
+    }
+
+    void method2() {
+        // Code without synchronization
+
+        synchronized (lock2) {
+            // Code that needs synchronization with lock2
+        }
+
+        // Code without synchronization
+    }
+}
+
 public class Main {
     public static void main(String[] args) {
-        int dayOfWeek = 3;
+        SharedResource sharedResource = new SharedResource();
 
-        switch (dayOfWeek) {
-            case 1:
-            case 2:
-            case 3:
-            case 4:
-            case 5:
-                System.out.println("Weekday");
-                break;
-            case 6:
-            case 7:
-                System.out.println("Weekend");
-                break;
-            default:
-                System.out.println("Invalid day"); 
+        // Use synchronized blocks with different objects
+        synchronized (sharedResource) {
+            sharedResource.method1();
+            sharedResource.method2();
         }
     }
 }
