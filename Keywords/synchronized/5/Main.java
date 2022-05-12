@@ -27,7 +27,6 @@ public class Main {
     public static void main(String[] args) {
         SharedResource sharedResource = new SharedResource();
 
-        // Use synchronized blocks with different objects
         synchronized (sharedResource) {
             sharedResource.method1();
             sharedResource.method2();
