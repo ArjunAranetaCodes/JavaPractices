@@ -1,23 +1,24 @@
-public class Main {
-    public enum Color {
-        RED, GREEN, BLUE
+class SharedResource {
+    private Object lock = new Object();
+
+    void someMethod() {
+        // Code without synchronization
+
+        synchronized (lock) {
+            // Code that needs synchronization
+        }
+
+        // Code without synchronization
     }
+}
 
+public class Main {
     public static void main(String[] args) {
-        Color color = Color.BLUE;
+        SharedResource sharedResource = new SharedResource();
 
-        switch (color) {
-            case RED:
-                System.out.println("Red color");
-                break;
-            case GREEN:
-                System.out.println("Green color");
-                break;
-            case BLUE:
-                System.out.println("Blue color");
-                break;
-            default:
-                System.out.println("Unknown color"); 
+        // Use synchronized on object
+        synchronized (sharedResource) {
+            sharedResource.someMethod();
         }
     }
 }
