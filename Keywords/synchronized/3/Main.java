@@ -5,8 +5,9 @@ class SharedResource {
 }
 
 public class Main {
+
     public static void main(String[] args) {
-        // Use synchronized static method
         SharedResource.synchronizedStaticMethod();
     }
 }
+ 
