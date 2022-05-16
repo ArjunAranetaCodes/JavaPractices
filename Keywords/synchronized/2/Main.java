@@ -2,7 +2,6 @@ class SharedResource {
     private Object lock = new Object();
 
     void someMethod() {
-        // Code without synchronization
 
         synchronized (lock) {
         }
