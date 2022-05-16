@@ -8,7 +8,6 @@ class SharedResource {
             // Code that needs synchronization
         }
 
-        // Code without synchronization
     }
 }
 
