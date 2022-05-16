@@ -5,7 +5,6 @@ class SharedResource {
         // Code without synchronization
 
         synchronized (lock) {
-            // Code that needs synchronization
         }
 
     }
