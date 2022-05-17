@@ -1,19 +1,22 @@
+class SharedResource {
+    private Object lock = new Object();
+
+    void someMethod() {
+        // Code without synchronization
+
+        synchronized (lock) {
+            // Code that needs synchronization
+        }
+
+        // Code without synchronization
+    }
+}
+
 public class Main {
     public static void main(String[] args) {
-        char grade = 'B';
+        SharedResource sharedResource = new SharedResource();
 
-        switch (grade) {
-            case 'A':
-                System.out.println("Excellent");
-                break;
-            case 'B':
-                System.out.println("Good");
-                break;
-            case 'C':
-                System.out.println("Average");
-                break;
-            default:
-                System.out.println("Need Improvement");
-        }
+        // Use synchronized block
+        sharedResource.someMethod();
     }
 }
