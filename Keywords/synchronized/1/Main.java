@@ -1,6 +1,6 @@
 class SharedResource {
     synchronized void synchronizedMethod() {
-        // Code that needs synchronization
+        // Code that needs synchronization 
     }
 }
 
