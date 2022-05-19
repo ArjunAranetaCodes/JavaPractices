@@ -15,7 +15,7 @@ public class Main {
                 System.out.println("Weekend");
                 break;
             default:
-                System.out.println("Invalid day");
+                System.out.println("Invalid day"); 
         }
     }
 }
