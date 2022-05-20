@@ -17,7 +17,7 @@ public class Main {
                 System.out.println("Blue color");
                 break;
             default:
-                System.out.println("Unknown color");
+                System.out.println("Unknown color"); 
         }
     }
 }
