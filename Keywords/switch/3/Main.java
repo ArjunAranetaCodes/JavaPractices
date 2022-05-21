@@ -10,6 +10,7 @@ public class Main {
                 System.out.println("End of the week");
                 break;
             default:
+                System.out.println("Some other day");
         }
     }
 }
