@@ -16,3 +16,4 @@ public class Main {
         Child.staticMethod();
     }
 }
+ 
