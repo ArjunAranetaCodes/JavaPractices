@@ -1,15 +1,31 @@
-interface Calculator {
-    strictfp double calculate(double num1, double num2);
+interface Shape {
+    void draw();
 }
 
-public class Main implements Calculator {
-    public strictfp double calculate(double num1, double num2) {
-        return num1 / num2;
+class Circle implements Shape {
+    @Override
+    public void draw() {
+        System.out.println("Drawing a circle");
+    }
+}
+
+class ColoredCircle extends Circle {
+    String color;
+
+    ColoredCircle(String color) {
+        this.color = color;
     }
 
+    @Override
+    public void draw() {
+        super.draw(); // Using super to call the method of the superclass (from the interface)
+        System.out.println("Color: " + color);
+    }
+}
+
+public class Main {
     public static void main(String[] args) {
-        Main calculator = new Main();
-        double result = calculator.calculate(15.0, 3.0);
-        System.out.println("Result: " + result);
+        ColoredCircle coloredCircle = new ColoredCircle("Red");
+        coloredCircle.draw();
     }
 }
