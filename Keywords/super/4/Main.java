@@ -18,8 +18,9 @@ class ColoredCircle extends Circle {
 
     @Override
     public void draw() {
+        super.draw(); // Using super to call the method of the superclass (from the interface)
         System.out.println("Color: " + color);
-    } 
+    }
 }
 
 public class Main {
