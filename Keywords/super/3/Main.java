@@ -10,7 +10,6 @@ class Employee extends Person {
     String department;
 
     Employee(String name, String department) {
-        super(name); // Using super to call the constructor of the superclass
         this.department = department;
     }
 
