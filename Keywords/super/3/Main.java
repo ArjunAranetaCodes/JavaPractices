@@ -1,17 +1,28 @@
+class Person {
+    String name;
+
+    Person(String name) {
+        this.name = name;
+    }
+}
+
+class Employee extends Person {
+    String department;
+
+    Employee(String name, String department) {
+        super(name); // Using super to call the constructor of the superclass
+        this.department = department;
+    }
+
+    void displayInfo() {
+        System.out.println("Employee name: " + super.name); // Using super to access superclass field
+        System.out.println("Department: " + department);
+    }
+}
+
 public class Main {
-    strictfp static double calculateSquare(double num) {
-        return num * num;
-    }
-
-    strictfp static float calculateCube(float num) {
-        return num * num * num;
-    }
-
     public static void main(String[] args) {
-        double squareResult = calculateSquare(3.5);
-        float cubeResult = calculateCube(2.0f);
-
-        System.out.println("Square Result: " + squareResult);
-        System.out.println("Cube Result: " + cubeResult);
+        Employee emp = new Employee("John", "IT");
+        emp.displayInfo();
     }
 }
