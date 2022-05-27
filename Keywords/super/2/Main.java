@@ -1,18 +1,20 @@
-public class Main {
-    strictfp static double calculateSquare(double num) {
-        return num * num;
-    }
-
-    strictfp static float calculateCube(float num) {
-        return num * num * num;
-    }
-
-    public static void main(String[] args) {
-        double squareResult = calculateSquare(3.5);
-        float cubeResult = calculateCube(2.0f);
-
-        System.out.println("Square Result: " + squareResult);
-        System.out.println("Cube Result: " + cubeResult); 
+class Shape {
+    void draw() {
+        System.out.println("Drawing a shape");
     }
 }
-    
+
+class Circle extends Shape {
+    @Override
+    void draw() {
+        super.draw(); // Using super to call the overridden method of the superclass
+        System.out.println("Drawing a circle");
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Circle myCircle = new Circle();
+        myCircle.draw();
+    }
+}
