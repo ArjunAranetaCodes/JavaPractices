@@ -1,15 +1,10 @@
-import static java.lang.Math.PI;
-import static java.lang.Math.sqrt;
-
 public class Main {
+    static final strictfp double PI = 3.141592653589793;
+
     public static void main(String[] args) {
-        double radius = 5.0;
-        double area = PI * Math.pow(radius, 2);
-        double side = 4.0;
-        double diagonal = sqrt(2 * Math.pow(side, 2));
+        double radius = 2.0;
+        double area = PI * radius * radius;
 
         System.out.println("Area of the circle: " + area);
-        System.out.println("Diagonal of the square: " + diagonal);
     }
 }
- 
