@@ -12,6 +12,6 @@ public class Main {
         float cubeResult = calculateCube(2.0f);
 
         System.out.println("Square Result: " + squareResult);
-        System.out.println("Cube Result: " + cubeResult);
+        System.out.println("Cube Result: " + cubeResult); 
     }
 }
