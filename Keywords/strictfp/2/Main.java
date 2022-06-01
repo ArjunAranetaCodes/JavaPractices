@@ -1,12 +1,17 @@
 public class Main {
-    // Static variable
-    static int counter = 0;
+    strictfp static double calculateSquare(double num) {
+        return num * num;
+    }
+
+    strictfp static float calculateCube(float num) {
+        return num * num * num;
+    }
 
     public static void main(String[] args) {
-        // Accessing a static variable
-        System.out.println("Counter value: " + counter);
+        double squareResult = calculateSquare(3.5);
+        float cubeResult = calculateCube(2.0f);
 
-        counter++;
-        System.out.println("Updated counter value: " + counter);
+        System.out.println("Square Result: " + squareResult);
+        System.out.println("Cube Result: " + cubeResult);
     }
 }
