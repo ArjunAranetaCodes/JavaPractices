@@ -3,7 +3,6 @@ import static java.lang.Math.sqrt;
 
 public class Main {
     public static void main(String[] args) {
-        // Using static import for constants and methods
         double radius = 5.0;
         double area = PI * Math.pow(radius, 2);
         double side = 4.0;
