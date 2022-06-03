@@ -12,3 +12,4 @@ public class Main {
         System.out.println("Diagonal of the square: " + diagonal);
     }
 }
+ 
