@@ -5,7 +5,6 @@ public class Main {
         nestedObj.display();
     }
 
-    // Static nested class
     static class StaticNestedClass {
         void display() {
             System.out.println("Inside the static nested class.");
