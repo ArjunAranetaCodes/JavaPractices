@@ -1,7 +1,10 @@
 public class Main {
+    static {
+        // Static block
+        System.out.println("This is a static block.");
+    }
+
     public static void main(String[] args) {
-        int intValue = 200;
-        short shortValue = (short) intValue;
-        System.out.println("Short value: " + shortValue); 
+        System.out.println("Inside the main method.");
     }
 }
