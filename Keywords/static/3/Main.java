@@ -7,3 +7,4 @@ public class Main {
         System.out.println("Inside the main method.");
     }
 }
+ 
