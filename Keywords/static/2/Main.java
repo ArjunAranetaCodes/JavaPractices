@@ -6,7 +6,6 @@ public class Main {
         // Accessing a static variable
         System.out.println("Counter value: " + counter);
 
-        // Modifying the static variable
         counter++;
         System.out.println("Updated counter value: " + counter);
     }
