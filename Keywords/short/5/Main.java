@@ -4,6 +4,6 @@ public class Main {
         System.out.println("Array elements:");
         for (short num : numbers) {
             System.out.println(num);
-        }
+        } 
     }
 }
