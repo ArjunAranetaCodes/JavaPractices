@@ -3,4 +3,4 @@ public class Main {
         short num = 100;
         System.out.println("Value of num: " + num);
     }
-}
+} 
