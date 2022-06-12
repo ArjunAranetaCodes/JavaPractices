@@ -4,4 +4,4 @@ public class Main {
         System.out.println("Value of num: " + num);
     }
 } 
- 
+  
