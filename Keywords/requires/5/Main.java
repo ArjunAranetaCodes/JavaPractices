@@ -6,4 +6,4 @@ public class MainApp {
         System.out.println("MainApp running with ModuleC: " + moduleC);
     }
 }
-  
+   
