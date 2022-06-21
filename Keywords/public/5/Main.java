@@ -1,11 +1,9 @@
 public class Main {
-    protected Main() {
-        System.out.println("Protected constructor called.");
-    }
-
     public static void main(String[] args) {
-        Main mainObj = new Main();
+        int[] numbers = {1, 2, 3, 4, 5};
+        System.out.print("Numbers: ");
+        for (int num : numbers) {
+            System.out.print(num + " ");
+        }
     }
 }
-
-   
