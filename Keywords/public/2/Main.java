@@ -1,11 +1,8 @@
-class Main {
-    private void displayMessage() {
-        System.out.println("This is a private method.");
-    }
-
+public class Main {
     public static void main(String[] args) {
-        Main obj = new Main();
-        obj.displayMessage();
+        int x = 5;
+        int y = 10;
+        int sum = x + y;
+        System.out.println("Sum: " + sum);
     }
 }
- 
