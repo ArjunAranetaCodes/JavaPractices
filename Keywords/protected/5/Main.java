@@ -1,9 +1,9 @@
-class Main {
-    private static void staticMethod() {
-        System.out.println("This is a private static method.");
+public class Main {
+    protected Main() {
+        System.out.println("Protected constructor called.");
     }
 
     public static void main(String[] args) {
-        staticMethod();
+        Main mainObj = new Main();
     }
 }
