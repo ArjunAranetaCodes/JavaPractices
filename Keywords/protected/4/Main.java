@@ -9,5 +9,5 @@ public class Main {
         Main mainObj = new Main();
         ProtectedInnerClass innerObj = mainObj.new ProtectedInnerClass();
         innerObj.display();
-    }
+    } 
 }
