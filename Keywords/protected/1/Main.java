@@ -5,4 +5,4 @@ public class Main {
         Main mainObj = new Main();  
         System.out.println("Protected Variable: " + mainObj.protectedVariable);
     }
-}
+} 
