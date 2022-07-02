@@ -1,8 +1,9 @@
-package com.example.program5;
+class Main {
+    private static void staticMethod() {
+        System.out.println("This is a private static method.");
+    }
 
-public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello from Program 5!");
+        staticMethod();
     }
 }
-  
