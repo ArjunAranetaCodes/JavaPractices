@@ -1,9 +1,12 @@
-package com.example.program4;
+class Main {
+    private static class InnerClass {
+        void display() {
+            System.out.println("This is a private inner class.");
+        }
+    }
 
-public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello from Program 4!");
+        InnerClass innerObj = new InnerClass();
+        innerObj.display();
     }
 }
-
-   
