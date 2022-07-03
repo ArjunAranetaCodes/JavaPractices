@@ -7,6 +7,6 @@ class Main {
 
     public static void main(String[] args) {
         InnerClass innerObj = new InnerClass();  
-        innerObj.display();
+        innerObj.display(); 
     }
 }
