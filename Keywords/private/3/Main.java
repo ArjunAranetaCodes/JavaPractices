@@ -1,8 +1,10 @@
-package com.example.program3;
+class Main {
+    private Main() {
+        System.out.println("This is a private constructor.");
+    }
 
-public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello from Program 3!");  
+        // Cannot create an instance of Main using private constructor
+        // Main obj = new Main(); // Uncommenting this line will result in a compilation error
     }
 }
-  
