@@ -1,7 +1,10 @@
-package com.example.program2;
+class Main {
+    private void displayMessage() {
+        System.out.println("This is a private method.");
+    }
 
-public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello from Program 2!"); 
+        Main obj = new Main();
+        obj.displayMessage();
     }
 }
