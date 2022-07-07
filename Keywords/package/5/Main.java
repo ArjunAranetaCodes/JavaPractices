@@ -1,13 +1,7 @@
-import java.util.ArrayList;
+package com.example.program5;
 
 public class Main {
     public static void main(String[] args) {
-        ArrayList<String> fruits = new ArrayList<>();
-        
-        fruits.add("Apple");
-        fruits.add("Banana");
-        fruits.add("Orange");
-        
-        System.out.println("Fruits: " + fruits);
+        System.out.println("Hello from Program 5!");
     }
 }
