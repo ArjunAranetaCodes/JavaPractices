@@ -1,12 +1,23 @@
 public class Main {
-    public native void myNativeMethod(); 
-
     public static void main(String[] args) {
-        Main main = new Main();
-        main.myNativeMethod(); 
+        // Instantiating a class with parameterized constructor using the new keyword
+        Car myCar = new Car("Toyota", "Camry");
+        
+        // Accessing and printing the details of the car
+        System.out.println("Car Details: " + myCar.getDetails());
+    }
+}
+
+class Car {
+    String make;
+    String model;
+
+    public Car(String make, String model) {
+        this.make = make;
+        this.model = model;
     }
 
-    static {
-        System.loadLibrary("MyLibrary");
+    public String getDetails() {
+        return make + " " + model;
     }
 }
