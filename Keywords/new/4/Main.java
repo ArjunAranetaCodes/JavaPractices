@@ -1,6 +1,5 @@
 public class Main {
     public static void main(String[] args) {
-        // Instantiating a class with parameterized constructor using the new keyword
         Car myCar = new Car("Toyota", "Camry");
         
         System.out.println("Car Details: " + myCar.getDetails());
