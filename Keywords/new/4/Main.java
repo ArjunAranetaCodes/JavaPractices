@@ -3,7 +3,6 @@ public class Main {
         // Instantiating a class with parameterized constructor using the new keyword
         Car myCar = new Car("Toyota", "Camry");
         
-        // Accessing and printing the details of the car
         System.out.println("Car Details: " + myCar.getDetails());
     }
 }
