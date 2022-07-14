@@ -1,13 +1,9 @@
 public class Main {
-    // Loading a native library
-    static {
-        System.loadLibrary("MyLibrary");
-    }
-
-    public native void myNativeMethod();
-
     public static void main(String[] args) {
-        Main main = new Main();
-        main.myNativeMethod();
+        // Creating a new String object using the new keyword
+        String greeting = new String("Hello, World!");
+        
+        // Printing the String
+        System.out.println(greeting);
     }
 }
