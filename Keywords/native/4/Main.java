@@ -1,9 +1,14 @@
-module MyModule {
-    requires someOtherModule;
- 
-    public class Main {
-        public static void main(String[] args) {
-            System.out.println("Hello from MyModule with dependencies!");
-        }
+public class Main {
+    // Native method declaration
+    public native void myNativeMethod();
+
+    public static void main(String[] args) {
+        Main main = new Main();
+        main.myNativeMethod();
+    }
+
+    // Load the native library
+    static {
+        System.loadLibrary("MyLibrary");
     }
 }
