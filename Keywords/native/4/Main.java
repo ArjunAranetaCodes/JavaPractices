@@ -7,7 +7,6 @@ public class Main {
         main.myNativeMethod();
     }
 
-    // Load the native library
     static {
         System.loadLibrary("MyLibrary");
     }
