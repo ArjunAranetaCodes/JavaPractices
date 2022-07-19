@@ -4,7 +4,6 @@ public class Main {
         System.loadLibrary("MyLibrary");
     }
 
-    // Native method declaration
     public native void myNativeMethod();
 
     public static void main(String[] args) {
