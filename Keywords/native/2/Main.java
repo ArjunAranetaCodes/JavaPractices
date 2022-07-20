@@ -1,10 +1,14 @@
-// Module declaration
-module MyModule {
-    package com.example;
+public class Main {
+    // Native method declaration
+    public native void myNativeMethod();
 
-    public class Main {
-        public static void main(String[] args) {
-            System.out.println("Hello from MyModule in com.example package!");
-        }
+    // Native method implementation
+    static {
+        System.loadLibrary("MyLibrary"); // Load the native library
+    }
+
+    public static void main(String[] args) {
+        Main main = new Main();
+        main.myNativeMethod();
     }
 }
