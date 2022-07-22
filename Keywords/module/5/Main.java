@@ -1,4 +1,3 @@
-// Module declaration with services
 module MyModule {
     uses com.example.MyService;
 
