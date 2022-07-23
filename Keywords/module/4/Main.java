@@ -1,4 +1,3 @@
-// Module declaration with dependencies
 module MyModule {
     requires someOtherModule;
 
