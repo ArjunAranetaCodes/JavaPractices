@@ -1,10 +1,11 @@
-public class Main {
-    public static void main(String[] args) {
-        long result = addTwoNumbers(123456789L, 987654321L);
-        System.out.println("Sum: " + result);
-    }
+// Module declaration with dependencies
+module MyModule {
+    requires someOtherModule;
 
-    private static long addTwoNumbers(long num1, long num2) {
-        return num1 + num2;
+    // Main class
+    public class Main {
+        public static void main(String[] args) {
+            System.out.println("Hello from MyModule with dependencies!");
+        }
     }
 }
