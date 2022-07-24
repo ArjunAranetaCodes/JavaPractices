@@ -1,6 +1,5 @@
 // Module declaration
 module MyModule {
-    // Package declaration with export
     exports com.example;
 
     public class Main {
