@@ -1,4 +1,3 @@
-// Module declaration
 module MyModule {
     exports com.example;
 
