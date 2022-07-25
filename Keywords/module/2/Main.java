@@ -1,8 +1,12 @@
-public class Main {
-    public static void main(String[] args) {
-        long num1 = 1000000L;
-        long num2 = 500000L;
-        long result = num1 + num2;
-        System.out.println("Result of addition: " + result);
+// Module declaration
+module MyModule {
+    // Package declaration
+    package com.example;
+
+    // Main class
+    public class Main {
+        public static void main(String[] args) {
+            System.out.println("Hello from MyModule in com.example package!");
+        }
     }
 }
