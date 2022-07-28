@@ -1,22 +1,10 @@
-// Program 4
-interface MyInterface {
-    void myMethod();
-
-    static void staticMethod() {
-        System.out.println("Static method in MyInterface");
-    }
-}
-
-class MyClass implements MyInterface {
-    public void myMethod() {
-        System.out.println("Implementation of myMethod"); 
-    }
-}
-
 public class Main {
     public static void main(String[] args) {
-        MyClass obj = new MyClass();
-        obj.myMethod();
-        MyInterface.staticMethod();
+        long result = addTwoNumbers(123456789L, 987654321L);
+        System.out.println("Sum: " + result);
+    }
+
+    private static long addTwoNumbers(long num1, long num2) {
+        return num1 + num2;
     }
 }
