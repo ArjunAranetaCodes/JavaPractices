@@ -21,6 +21,7 @@ class MyClass implements CombinedInterface {
     }
 
     public void combinedMethod() {
+        System.out.println("Implementation of combinedMethod");
     }
 }
 
