@@ -1,15 +1,22 @@
-import java.util.Scanner;
+// Program 4
+interface MyInterface {
+    void myMethod();
+
+    static void staticMethod() {
+        System.out.println("Static method in MyInterface");
+    }
+}
+
+class MyClass implements MyInterface {
+    public void myMethod() {
+        System.out.println("Implementation of myMethod");
+    }
+}
 
 public class Main {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        System.out.print("Enter an integer: ");
-        int num = scanner.nextInt();
-
-        if (num % 2 == 0) {
-            System.out.println(num + " is an even number.");
-        } else {
-            System.out.println(num + " is an odd number.");
-        }
+        MyClass obj = new MyClass();
+        obj.myMethod();
+        MyInterface.staticMethod();
     }
 }
