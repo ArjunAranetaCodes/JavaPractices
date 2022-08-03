@@ -1,10 +1,22 @@
-import java.util.Scanner;
+// Program 3
+interface MyInterface {
+    void myMethod();
+
+    default void defaultMethod() {
+        System.out.println("Default implementation of defaultMethod");
+    }
+}
+
+class MyClass implements MyInterface {
+    public void myMethod() {
+        System.out.println("Implementation of myMethod");
+    }
+}
 
 public class Main {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        System.out.print("Enter an integer: ");
-        int userInput = scanner.nextInt();
-        System.out.println("You entered: " + userInput);
+        MyClass obj = new MyClass();
+        obj.myMethod();
+        obj.defaultMethod();
     }
 }
