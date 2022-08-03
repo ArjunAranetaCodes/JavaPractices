@@ -9,7 +9,6 @@ interface MyInterface {
 
 class MyClass implements MyInterface {
     public void myMethod() {
-        System.out.println("Implementation of myMethod");
     }
 }
 
