@@ -1,8 +1,26 @@
+// Program 2
+interface Interface1 {
+    void method1();
+}
+
+interface Interface2 {
+    void method2();
+}
+
+class MyClass implements Interface1, Interface2 {
+    public void method1() {
+        System.out.println("Implementation of method1");
+    }
+
+    public void method2() {
+        System.out.println("Implementation of method2");
+    }
+}
+
 public class Main {
     public static void main(String[] args) {
-        int a = 5;
-        int b = 7;
-        int sum = a + b;
-        System.out.println("The sum of " + a + " and " + b + " is: " + sum);
+        MyClass obj = new MyClass();
+        obj.method1();
+        obj.method2();
     }
 }
