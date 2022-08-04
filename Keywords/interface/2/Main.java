@@ -12,7 +12,6 @@ class MyClass implements Interface1, Interface2 {
     }
 
     public void method2() {
-        System.out.println("Implementation of method2");
     }
 }
 
