@@ -5,6 +5,5 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Enter an integer: ");
         int userInput = scanner.nextInt();
-        System.out.println("You entered: " + userInput);
     }
 }
