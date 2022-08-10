@@ -6,7 +6,6 @@ class Vehicle {
 
 class Car extends Vehicle {
     void drive() {
-        System.out.println("Car driving...");
     }
 }
 
