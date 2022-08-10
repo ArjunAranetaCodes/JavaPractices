@@ -15,7 +15,6 @@ public class Main {
         Vehicle myCar = new Car();
 
         if (myCar instanceof Car) {
-            ((Car) myCar).drive();
         } else {
             System.out.println("Not a valid operation on this vehicle type");
         }
