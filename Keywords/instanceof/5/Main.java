@@ -12,7 +12,6 @@ class Car extends Vehicle {
 
 public class Main {
     public static void main(String[] args) {
-        Vehicle myCar = new Car();
 
         if (myCar instanceof Car) {
         } else {
