@@ -1,21 +1,15 @@
-interface Shape {
-    void draw();
-}
-
-class Circle implements Shape {
-    public void draw() {
-        System.out.println("Drawing a circle");
-    }
-}
-
 public class Main {
     public static void main(String[] args) {
-        Shape myShape = new Circle();
+        Object[] objects = {"Hello", 42, 3.14, new Main()};
 
-        if (myShape instanceof Circle) {
-            System.out.println("My shape is a circle!");
-        } else {
-            System.out.println("My shape is not a circle.");
+        for (Object obj : objects) {
+            if (obj instanceof String) {
+                System.out.println(obj + " is a String");
+            } else if (obj instanceof Integer) {
+                System.out.println(obj + " is an Integer");
+            } else {
+                System.out.println(obj + " is of unknown type");
+            }
         }
     }
 }
