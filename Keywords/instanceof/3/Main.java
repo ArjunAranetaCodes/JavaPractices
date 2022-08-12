@@ -1,12 +1,21 @@
-import java.time.LocalDateTime;
-import java.time.format.DateTimeFormatter;
+interface Shape {
+    void draw();
+}
+
+class Circle implements Shape {
+    public void draw() {
+        System.out.println("Drawing a circle");
+    }
+}
 
 public class Main {
     public static void main(String[] args) {
-        LocalDateTime now = LocalDateTime.now();
-        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
-        String formattedDateTime = now.format(formatter); 
-        
-        System.out.println("Current date and time: " + formattedDateTime);
+        Shape myShape = new Circle();
+
+        if (myShape instanceof Circle) {
+            System.out.println("My shape is a circle!");
+        } else {
+            System.out.println("My shape is not a circle.");
+        }
     }
 }
