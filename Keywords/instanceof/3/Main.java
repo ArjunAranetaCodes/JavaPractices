@@ -13,9 +13,7 @@ public class Main {
         Shape myShape = new Circle();
 
         if (myShape instanceof Circle) {
-            System.out.println("My shape is a circle!");
         } else {
-            System.out.println("My shape is not a circle.");
         }
     }
 }
