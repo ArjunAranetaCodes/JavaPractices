@@ -1,21 +1,21 @@
-import java.io.File;
-import java.io.FileNotFoundException;
-import java.util.Scanner;
+interface Shape {
+    void draw();
+}
+
+class Circle implements Shape {
+    public void draw() {
+        System.out.println("Drawing a circle");
+    }
+}
 
 public class Main {
     public static void main(String[] args) {
-        try {
-            File file = new File("sample.txt");
-            Scanner scanner = new Scanner(file);
-            
-            while (scanner.hasNextLine()) {
-                String line = scanner.nextLine();
-                System.out.println(line);
-            }
-            
-            scanner.close();
-        } catch (FileNotFoundException e) {
-            System.err.println("File not found!");
+        Shape myShape = new Circle();
+
+        if (myShape instanceof Circle) {
+            System.out.println("My shape is a circle!");
+        } else {
+            System.out.println("My shape is not a circle.");
         }
     }
 }
