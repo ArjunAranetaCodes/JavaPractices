@@ -9,7 +9,6 @@ public class Main {
         Animal myPet = new Dog();
 
         if (myPet instanceof Dog) {
-            System.out.println("My pet is a dog!");
         } else {
         }
     }
