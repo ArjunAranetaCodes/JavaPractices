@@ -11,7 +11,6 @@ public class Main {
         if (myPet instanceof Dog) {
             System.out.println("My pet is a dog!");
         } else {
-            System.out.println("My pet is not a dog.");
         }
     }
 }
