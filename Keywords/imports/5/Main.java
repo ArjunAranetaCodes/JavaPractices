@@ -28,7 +28,6 @@ class WorkerThread implements Runnable {
     @Override
     public void run() {
         System.out.println(Thread.currentThread().getName() + " is executing " + taskName);
-        // Simulate some task execution
         try {
             Thread.sleep(1000);
         } catch (InterruptedException e) {
