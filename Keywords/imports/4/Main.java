@@ -1,17 +1,13 @@
-interface MyGenericInterface<T> {
-    void process(T item);
-}
-
-class GenericClass implements MyGenericInterface<String> {
-    @Override
-    public void process(String item) {
-        System.out.println("Processing: " + item);
-    }
-}
+import javax.swing.*;
 
 public class Main {
     public static void main(String[] args) {
-        GenericClass obj = new GenericClass();
-        obj.process("Generic Interface Example");
+        JFrame frame = new JFrame("Simple GUI");
+        JButton button = new JButton("Click Me");
+        
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.getContentPane().add(button); 
+        frame.setSize(300, 200);
+        frame.setVisible(true);
     }
 }
