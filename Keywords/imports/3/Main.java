@@ -1,24 +1,12 @@
-class MyBaseClass {
-    void baseMethod() {
-        System.out.println("Base class method");
-    }
-}
-
-interface MyExtendedInterface {
-    void extendedMethod();
-}
-
-class CombinedClass extends MyBaseClass implements MyExtendedInterface {
-    @Override
-    public void extendedMethod() {
-        System.out.println("Implementing MyExtendedInterface");
-    }
-}
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 
 public class Main {
     public static void main(String[] args) {
-        CombinedClass obj = new CombinedClass(); 
-        obj.baseMethod(); 
-        obj.extendedMethod();
+        LocalDateTime now = LocalDateTime.now();
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
+        String formattedDateTime = now.format(formatter); 
+        
+        System.out.println("Current date and time: " + formattedDateTime);
     }
 }
