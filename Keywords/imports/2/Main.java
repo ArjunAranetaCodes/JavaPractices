@@ -10,7 +10,6 @@ public class Main {
             
             while (scanner.hasNextLine()) {
                 String line = scanner.nextLine();
-                System.out.println(line);
             }
             
             scanner.close();
