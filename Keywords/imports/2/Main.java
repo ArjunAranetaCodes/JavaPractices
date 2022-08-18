@@ -9,7 +9,6 @@ public class Main {
             Scanner scanner = new Scanner(file);
             
             while (scanner.hasNextLine()) {
-                String line = scanner.nextLine();
             }
             
             scanner.close();
