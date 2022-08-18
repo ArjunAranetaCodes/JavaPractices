@@ -1,27 +1,20 @@
-interface Interface1 {
-    void method1();
-}
-
-interface Interface2 {
-    void method2();
-}
-
-class MultiInterfaceClass implements Interface1, Interface2 {
-    @Override
-    public void method1() {
-        System.out.println("Implementing Interface1");
-    }
-
-    @Override
-    public void method2() {
-        System.out.println("Implementing Interface2");
-    }
-}
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        MultiInterfaceClass obj = new MultiInterfaceClass(); 
-        obj.method1();
-        obj.method2();
+        try {
+            File file = new File("sample.txt");
+            Scanner scanner = new Scanner(file);
+            
+            while (scanner.hasNextLine()) {
+                String line = scanner.nextLine();
+                System.out.println(line);
+            }
+            
+            scanner.close();
+        } catch (FileNotFoundException e) {
+        }
     }
 }
