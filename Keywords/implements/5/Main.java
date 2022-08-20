@@ -11,7 +11,7 @@ abstract class AbstractClass implements MyInterface2 {
 class ConcreteClass extends AbstractClass {
     @Override
     public void method2() {
-        System.out.println("Implementing MyInterface2");
+        System.out.println("Implementing MyInterface2"); 
     }
 }
 
