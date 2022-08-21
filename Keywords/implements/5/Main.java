@@ -18,7 +18,7 @@ class ConcreteClass extends AbstractClass {
 public class Main {
     public static void main(String[] args) {
         ConcreteClass obj = new ConcreteClass(); 
-        obj.commonMethod();
+        obj.commonMethod(); 
         obj.method2();
     }
 }
