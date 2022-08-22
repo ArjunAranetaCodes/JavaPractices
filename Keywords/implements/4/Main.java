@@ -1,15 +1,17 @@
+interface MyGenericInterface<T> {
+    void process(T item);
+}
+
+class GenericClass implements MyGenericInterface<String> {
+    @Override
+    public void process(String item) {
+        System.out.println("Processing: " + item);
+    }
+}
+
 public class Main {
     public static void main(String[] args) {
-        int score = 75;
-
-        if (score >= 90) {
-            System.out.println("Grade: A");
-        } else if (score >= 80) {
-            System.out.println("Grade: B"); 
-        } else if (score >= 70) { 
-            System.out.println("Grade: C");
-        } else { 
-            System.out.println("Grade: D"); 
-        }
+        GenericClass obj = new GenericClass();
+        obj.process("Generic Interface Example");
     }
 }
