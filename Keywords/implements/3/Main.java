@@ -18,7 +18,7 @@ class CombinedClass extends MyBaseClass implements MyExtendedInterface {
 public class Main {
     public static void main(String[] args) {
         CombinedClass obj = new CombinedClass(); 
-        obj.baseMethod();
+        obj.baseMethod(); 
         obj.extendedMethod();
     }
 }
