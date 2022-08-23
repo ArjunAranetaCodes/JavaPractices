@@ -20,7 +20,7 @@ class MultiInterfaceClass implements Interface1, Interface2 {
 
 public class Main {
     public static void main(String[] args) {
-        MultiInterfaceClass obj = new MultiInterfaceClass();
+        MultiInterfaceClass obj = new MultiInterfaceClass(); 
         obj.method1();
         obj.method2();
     }
