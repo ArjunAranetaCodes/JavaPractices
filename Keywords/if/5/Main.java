@@ -3,6 +3,6 @@ public class Main {
         int number = 8;
         String result = (number % 2 == 0) ? "Even" : "Odd";
 
-        System.out.println("The number is " + result + ".");
+        System.out.println("The number is " + result + "."); 
     }
 }
