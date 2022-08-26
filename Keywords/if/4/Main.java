@@ -9,7 +9,7 @@ public class Main {
         } else if (score >= 70) {
             System.out.println("Grade: C");
         } else { 
-            System.out.println("Grade: D");
+            System.out.println("Grade: D"); 
         }
     }
 }
