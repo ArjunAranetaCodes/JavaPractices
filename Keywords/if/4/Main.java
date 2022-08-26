@@ -1,38 +1,15 @@
-import java.util.Scanner;
-
 public class Main {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+        int score = 75;
 
-        System.out.print("Enter first number: ");
-        double num1 = scanner.nextDouble();
-
-        System.out.print("Enter second number: ");
-        double num2 = scanner.nextDouble();
-
-        System.out.print("Enter operator (+, -, *, /): ");
-        char operator = scanner.next().charAt(0);
-
-        double result;
-
-        switch (operator) {
-            case '+':
-                result = num1 + num2;
-                break;
-            case '-':
-                result = num1 - num2;
-                break;
-            case '*':
-                result = num1 * num2;
-                break;
-            case '/':
-                result = num1 / num2;
-                break;
-            default: 
-                System.out.println("Invalid operator");
-                return;
+        if (score >= 90) {
+            System.out.println("Grade: A");
+        } else if (score >= 80) {
+            System.out.println("Grade: B");
+        } else if (score >= 70) {
+            System.out.println("Grade: C");
+        } else {
+            System.out.println("Grade: D");
         }
-
-        System.out.println("Result: " + result);
     }
 }
