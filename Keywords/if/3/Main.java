@@ -9,7 +9,7 @@ public class Main {
                 System.out.println("Num1 is positive, but num2 is non-positive.");
             }
         } else {
-            System.out.println("Num1 is non-positive.");
+            System.out.println("Num1 is non-positive."); 
         }
     }
 }
