@@ -1,18 +1,15 @@
-import java.util.Scanner;
-
 public class Main {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+        int num1 = 5, num2 = 10;
 
-        System.out.print("Enter a number: "); 
-        int n = scanner.nextInt();
-
-        long factorial = 1;
- 
-        for (int i = 1; i <= n; ++i) {
-            factorial *= i;  
+        if (num1 > 0) {
+            if (num2 > 0) {
+                System.out.println("Both numbers are positive.");
+            } else {
+                System.out.println("Num1 is positive, but num2 is non-positive.");
+            }
+        } else {
+            System.out.println("Num1 is non-positive.");
         }
-
-        System.out.println("Factorial of " + n + " = " + factorial);
     }
 }
