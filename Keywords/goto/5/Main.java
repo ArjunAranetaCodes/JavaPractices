@@ -15,7 +15,7 @@ public class Main {
             int nextTerm = firstTerm + secondTerm;
             System.out.print(", " + nextTerm);  
 
-            firstTerm = secondTerm;
+            firstTerm = secondTerm; 
             secondTerm = nextTerm;
         }
 
