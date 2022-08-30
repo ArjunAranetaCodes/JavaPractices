@@ -13,7 +13,7 @@ public class Main {
 
         for (int i = 2; i < n; ++i) {
             int nextTerm = firstTerm + secondTerm;
-            System.out.print(", " + nextTerm); 
+            System.out.print(", " + nextTerm);  
 
             firstTerm = secondTerm;
             secondTerm = nextTerm;
