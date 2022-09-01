@@ -1,9 +1,18 @@
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
-        int num = 5;
-        System.out.println("Multiplication table of " + num + ":");
-        for (int i = 1; i <= 10; i++) {
-            System.out.println(num + " x " + i + " = " + (num * i));
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Enter a number: ");
+        int n = scanner.nextInt();
+
+        long factorial = 1;
+
+        for (int i = 1; i <= n; ++i) {
+            factorial *= i;
         }
+
+        System.out.println("Factorial of " + n + " = " + factorial);
     }
 }
