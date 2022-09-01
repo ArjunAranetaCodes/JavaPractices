@@ -8,7 +8,7 @@ public class Main {
         int n = scanner.nextInt();
 
         long factorial = 1;
-
+ 
         for (int i = 1; i <= n; ++i) {
             factorial *= i;
         }
