@@ -1,14 +1,9 @@
-import java.util.Scanner;
-
 public class Main {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-
-        System.out.print("Enter a float number: ");
-        float userInput = scanner.nextFloat();
-
-        System.out.println("You entered: " + userInput);
-
-        scanner.close();
+        String original = "Hello";
+        System.out.print("Reversed string: ");
+        for (int i = original.length() - 1; i >= 0; i--) {
+            System.out.print(original.charAt(i));
+        }
     }
 }
