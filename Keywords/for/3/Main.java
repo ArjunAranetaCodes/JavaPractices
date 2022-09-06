@@ -1,11 +1,9 @@
 public class Main {
     public static void main(String[] args) {
-        float temperature = 27.5f;
-
-        if (temperature > 30.0f) {
-            System.out.println("It's a hot day!");
-        } else {
-            System.out.println("The weather is pleasant.");
+        int num = 5;
+        System.out.println("Multiplication table of " + num + ":");
+        for (int i = 1; i <= 10; i++) {
+            System.out.println(num + " x " + i + " = " + (num * i));
         }
     }
 }
