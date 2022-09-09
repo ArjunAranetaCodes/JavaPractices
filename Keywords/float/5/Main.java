@@ -7,7 +7,6 @@ public class Main {
         System.out.print("Enter a float number: ");
         float userInput = scanner.nextFloat();
 
-        System.out.println("You entered: " + userInput);
 
         scanner.close();
     }
