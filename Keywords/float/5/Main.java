@@ -5,7 +5,6 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
 
         System.out.print("Enter a float number: ");
-        float userInput = scanner.nextFloat();
 
 
         scanner.close();
