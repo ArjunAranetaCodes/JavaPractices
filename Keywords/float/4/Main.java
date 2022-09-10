@@ -4,7 +4,6 @@ public class Main {
 
         System.out.println("Float Array Elements:");
         for (float element : floatArray) {
-            System.out.println(element);
         }
     }
 }
