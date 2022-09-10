@@ -1,19 +1,10 @@
-class Main {
+public class Main {
     public static void main(String[] args) {
-        try {
-            try {
-                // Code that may throw an exception
-                int result = 10 / 0;
-                System.out.println("Result: " + result);
-            } catch (ArithmeticException e) {
-                System.err.println("Inner catch block: " + e.getMessage());
-            } finally {
-                System.out.println("Inner finally block executed.");
-            }
-        } catch (Exception ex) {
-            System.err.println("Outer catch block: " + ex.getMessage());
-        } finally {
-            System.out.println("Outer finally block executed.");
+        float[] floatArray = { 1.2f, 3.5f, 4.8f, 2.7f, 6.0f };
+
+        System.out.println("Float Array Elements:");
+        for (float element : floatArray) {
+            System.out.println(element);
         }
     }
 }
