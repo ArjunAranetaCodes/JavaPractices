@@ -1,17 +1,16 @@
-class Main {
+public class Main {
     public static void main(String[] args) {
-        System.out.println("Result: " + divideNumbers());
-    }
+        float num1 = 5.5f;
+        float num2 = 2.0f;
 
-    static int divideNumbers() {
-        try {
-            // Code that may throw an exception
-            return 10 / 0;
-        } catch (ArithmeticException e) {
-            System.err.println("Exception caught: " + e.getMessage());
-            return -1; // Default value in case of an exception
-        } finally {
-            System.out.println("Finally block executed.");
-        }
+        float sum = num1 + num2;
+        float difference = num1 - num2;
+        float product = num1 * num2;
+        float quotient = num1 / num2;
+
+        System.out.println("Sum: " + sum);
+        System.out.println("Difference: " + difference);
+        System.out.println("Product: " + product);
+        System.out.println("Quotient: " + quotient);
     }
 }
