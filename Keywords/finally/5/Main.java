@@ -1,12 +1,23 @@
-public class Main {
-    final int instanceVariable;
-
-    public Main() {
-        instanceVariable = 42;
+class Main {
+    public static void main(String[] args) {
+        try {
+            // Code that may throw an exception
+            int result = performOperation();
+            System.out.println("Result: " + result);
+        } finally {
+            System.out.println("Finally block executed.");
+        }
     }
 
-    public static void main(String[] args) {
-        Main obj = new Main();
-        System.out.println("Final Instance Variable: " + obj.instanceVariable);
+    static int performOperation() {
+        try {
+            // Code that may throw an exception
+            int result = 10 / 0;
+            return result;
+        } catch (ArithmeticException e) {
+            System.err.println("Exception caught: " + e.getMessage());
+            System.exit(1); // Terminate the program in case of an exception
+            return -1; // This line will not be reached
+        }
     }
 }
