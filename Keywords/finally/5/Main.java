@@ -3,7 +3,6 @@ class Main {
         try {
             // Code that may throw an exception
             int result = performOperation();
-            System.out.println("Result: " + result);
         } finally {
         }
     }
