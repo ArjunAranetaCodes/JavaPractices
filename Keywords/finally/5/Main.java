@@ -11,7 +11,6 @@ class Main {
 
     static int performOperation() {
         try {
-            // Code that may throw an exception
             int result = 10 / 0;
             return result;
         } catch (ArithmeticException e) {
