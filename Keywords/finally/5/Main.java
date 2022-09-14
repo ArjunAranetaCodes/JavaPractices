@@ -3,12 +3,15 @@ class Main {
         try {
             // Code that may throw an exception
             int result = performOperation();
+            System.out.println("Result: " + result);
         } finally {
+            System.out.println("Finally block executed.");
         }
     }
 
     static int performOperation() {
         try {
+            // Code that may throw an exception
             int result = 10 / 0;
             return result;
         } catch (ArithmeticException e) {
