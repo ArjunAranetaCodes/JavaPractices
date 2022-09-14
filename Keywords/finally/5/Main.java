@@ -5,7 +5,6 @@ class Main {
             int result = performOperation();
             System.out.println("Result: " + result);
         } finally {
-            System.out.println("Finally block executed.");
         }
     }
 
