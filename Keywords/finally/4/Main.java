@@ -2,6 +2,9 @@ class Main {
     public static void main(String[] args) {
         try {
             try {
+                // Code that may throw an exception
+                int result = 10 / 0;
+                System.out.println("Result: " + result);
             } catch (ArithmeticException e) {
                 System.err.println("Inner catch block: " + e.getMessage());
             } finally {
