@@ -2,7 +2,6 @@ class Main {
     public static void main(String[] args) {
         try {
             try {
-                int result = 10 / 0;
                 System.out.println("Result: " + result);
             } catch (ArithmeticException e) {
                 System.err.println("Inner catch block: " + e.getMessage());
