@@ -1,12 +1,19 @@
-public class Main {
+class Main {
     public static void main(String[] args) {
-        final int initialValue = 5;
-        displayValue(initialValue);
-    }
-
-    public static void displayValue(final int value) {
-        // Compilation error if you try to modify 'value'
-        // value = value + 1;
-        System.out.println("Final Parameter: " + value);
+        try {
+            try {
+                // Code that may throw an exception
+                int result = 10 / 0;
+                System.out.println("Result: " + result);
+            } catch (ArithmeticException e) {
+                System.err.println("Inner catch block: " + e.getMessage());
+            } finally {
+                System.out.println("Inner finally block executed.");
+            }
+        } catch (Exception ex) {
+            System.err.println("Outer catch block: " + ex.getMessage());
+        } finally {
+            System.out.println("Outer finally block executed.");
+        }
     }
 }
