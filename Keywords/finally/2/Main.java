@@ -11,7 +11,6 @@ class Main {
             System.err.println("Exception caught: " + e.getMessage());
             return -1; // Default value in case of an exception
         } finally {
-            System.out.println("Finally block executed.");
         }
     }
 }
