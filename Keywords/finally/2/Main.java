@@ -9,7 +9,6 @@ class Main {
             return 10 / 0;
         } catch (ArithmeticException e) {
             System.err.println("Exception caught: " + e.getMessage());
-            return -1; // Default value in case of an exception
         } finally {
         }
     }
