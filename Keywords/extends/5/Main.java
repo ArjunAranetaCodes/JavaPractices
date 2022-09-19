@@ -2,7 +2,6 @@ public class Main {
     final int instanceVariable;
 
     public Main() {
-        // Initialization is required in the constructor for final instance variable
         instanceVariable = 42;
     }
 
