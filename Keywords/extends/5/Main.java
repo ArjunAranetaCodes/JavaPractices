@@ -1,16 +1,13 @@
-abstract class Shape {
-    abstract void draw();
-}
-
-class Circle extends Shape {
-    void draw() {
-        System.out.println("Drawing a circle");
-    }
-}
-
 public class Main {
+    final int instanceVariable;
+
+    public Main() {
+        // Initialization is required in the constructor for final instance variable
+        instanceVariable = 42;
+    }
+
     public static void main(String[] args) {
-        Circle myCircle = new Circle();
-        myCircle.draw();
+        Main obj = new Main();
+        System.out.println("Final Instance Variable: " + obj.instanceVariable);
     }
 }
