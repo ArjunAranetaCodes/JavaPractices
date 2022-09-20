@@ -1,24 +1,6 @@
-class Box<T> {
-    private T value;
-
-    public Box(T value) {
-        this.value = value;
-    }
-
-    public T getValue() {
-        return value;
-    }
+final class FinalClass {
+    // Some code here
 }
 
-class StringBox extends Box<String> {
-    public StringBox(String value) {
-        super(value); 
-    }
-} 
-
-public class Main {
-    public static void main(String[] args) {
-        StringBox myStringBox = new StringBox("Hello, Generics!");
-        System.out.println("Value in the box: " + myStringBox.getValue());
-    }
-}
+// This will result in a compilation error as a final class cannot be extended
+// class SubClass extends FinalClass {}
