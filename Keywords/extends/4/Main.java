@@ -1,17 +1,12 @@
-class Parent {
-    Parent() {
-        System.out.println("Parent constructor");
-    }
-}
-
-class Child extends Parent {
-    Child() {
-        System.out.println("Child constructor");
-    }
-}
-
 public class Main {
     public static void main(String[] args) {
-        Child myChild = new Child();
+        final int initialValue = 5;
+        displayValue(initialValue);
+    }
+
+    public static void displayValue(final int value) {
+        // Compilation error if you try to modify 'value'
+        // value = value + 1;
+        System.out.println("Final Parameter: " + value);
     }
 }
