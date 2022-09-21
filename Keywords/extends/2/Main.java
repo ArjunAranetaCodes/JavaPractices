@@ -1,6 +1,6 @@
 public class Main {
     public final void finalMethod() {
-        System.out.println("This is a final method.");
+        System.out.println("This is a final method."); 
     }
 
     public static void main(String[] args) {
