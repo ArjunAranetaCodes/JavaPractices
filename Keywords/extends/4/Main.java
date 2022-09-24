@@ -1,8 +1,17 @@
-// Main.java
-package com.example;
+class Parent {
+    Parent() {
+        System.out.println("Parent constructor");
+    }
+}
+
+class Child extends Parent {
+    Child() {
+        System.out.println("Child constructor");
+    }
+}
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello from Main class!");
+        Child myChild = new Child();
     }
 }
