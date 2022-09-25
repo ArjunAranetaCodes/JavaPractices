@@ -14,7 +14,7 @@ class StringBox extends Box<String> {
     public StringBox(String value) {
         super(value);
     }
-}
+} 
 
 public class Main {
     public static void main(String[] args) {
