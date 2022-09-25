@@ -12,7 +12,7 @@ class Box<T> {
 
 class StringBox extends Box<String> {
     public StringBox(String value) {
-        super(value);
+        super(value); 
     }
 } 
 
