@@ -1,8 +1,16 @@
-// Main.java
-package com.example.mymodule;
+interface Flyable {
+    void fly();
+}
+
+class Bird implements Flyable {
+    public void fly() {
+        System.out.println("Bird is flying");
+    }
+}
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello from Main class!");
+        Bird myBird = new Bird();
+        myBird.fly();
     }
 }
