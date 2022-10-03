@@ -1,15 +1,8 @@
-// Program 2
+// Main.java
+package com.example.mymodule;
+
 public class Main {
-    enum Color {
-        RED, GREEN, BLUE;
-
-        public void display() {
-            System.out.println("Color: " + this);
-        }
-    }
-
     public static void main(String[] args) {
-        Color myColor = Color.BLUE;
-        myColor.display();
+        System.out.println("Hello from Main class!");
     }
 }
