@@ -25,7 +25,6 @@ public class Main {
                 double width = dimensions[1];
                 return length * width;
             } else if (this == SQUARE) {
-                return side * side;
             }
             return 0.0;
         }
