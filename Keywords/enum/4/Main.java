@@ -15,7 +15,6 @@ public class Main {
                 System.out.println("Heading South");
                 break;
             case EAST:
-                System.out.println("Heading East");
                 break;
             case WEST:
                 break;
