@@ -20,7 +20,6 @@ public class Main {
             case WEST:
                 break;
             default:
-                System.out.println("Invalid direction");
         }
     }
 }
