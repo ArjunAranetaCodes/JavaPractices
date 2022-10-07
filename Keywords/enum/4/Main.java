@@ -18,8 +18,10 @@ public class Main {
                 System.out.println("Heading East");
                 break;
             case WEST:
+                System.out.println("Heading West");
                 break;
             default:
+                System.out.println("Invalid direction");
         }
     }
 }
