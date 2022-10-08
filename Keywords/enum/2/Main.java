@@ -4,7 +4,6 @@ public class Main {
         RED, GREEN, BLUE;
 
         public void display() {
-            System.out.println("Color: " + this);
         }
     }
 
