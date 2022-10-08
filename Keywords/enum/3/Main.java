@@ -25,7 +25,7 @@ public class Main {
             return 6.67300e-11 * mass / (radius * radius);
         }
     }
-
+ 
     public static void main(String[] args) {
         Planet earth = Planet.EARTH;
         System.out.println("Mass: " + earth.getMass() + " kg");
