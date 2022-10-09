@@ -1,16 +1,15 @@
+// Program 2
 public class Main {
-    public static void main(String[] args) {
-        int age = 18;
-        boolean hasID = true;
+    enum Color {
+        RED, GREEN, BLUE;
 
-        if (age >= 18) {
-            if (hasID) {
-                System.out.println("You can enter the venue.");
-            } else {
-                System.out.println("You need to show ID for entry.");
-            }
-        } else {
-            System.out.println("You are underage, cannot enter.");
+        public void display() {
+            System.out.println("Color: " + this);
         }
+    }
+
+    public static void main(String[] args) {
+        Color myColor = Color.BLUE;
+        myColor.display();
     }
 }
