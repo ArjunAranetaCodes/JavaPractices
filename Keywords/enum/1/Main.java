@@ -6,5 +6,6 @@ public class Main {
 
     public static void main(String[] args) {
         Days today = Days.MONDAY;
+        System.out.println("Today is: " + today);
     }
 }
