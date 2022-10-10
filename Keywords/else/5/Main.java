@@ -1,10 +1,19 @@
 public class Main {
     public static void main(String[] args) {
-        int integerValue = 10;
+        int day = 3;
 
-        double doubleValue = (double) integerValue;
-
-        System.out.println("Integer value: " + integerValue);
-        System.out.println("Converted to double: " + doubleValue);
+        switch (day) {
+            case 1:
+                System.out.println("Monday");
+                break;
+            case 2:
+                System.out.println("Tuesday");
+                break;
+            case 3:
+                System.out.println("Wednesday");
+                break;
+            default:
+                System.out.println("Invalid day");
+        }
     }
 }
