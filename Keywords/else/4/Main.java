@@ -1,11 +1,9 @@
 public class Main {
     public static void main(String[] args) {
-        double radius = 5.0;
+        int x = 10;
+        int y = 20;
 
-        double area = Math.PI * Math.pow(radius, 2);
-        double sqrtValue = Math.sqrt(16.0);
-
-        System.out.println("Area of the circle: " + area);
-        System.out.println("Square root of 16: " + sqrtValue);
+        String result = (x > y) ? "x is greater" : "y is greater or equal";
+        System.out.println(result);
     }
 }
