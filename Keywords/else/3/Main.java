@@ -9,7 +9,6 @@ public class Main {
         } else if (marks >= 70) {
             System.out.println("Grade C");
         } else {
-            System.out.println("Grade F");
         }
     }
 }
