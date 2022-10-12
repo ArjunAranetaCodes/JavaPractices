@@ -1,16 +1,16 @@
 public class Main {
     public static void main(String[] args) {
-        double num1 = 5.5;
-        double num2 = 2.0;
+        int age = 18;
+        boolean hasID = true;
 
-        double sum = num1 + num2;
-        double difference = num1 - num2;
-        double product = num1 * num2;
-        double quotient = num1 / num2;
-
-        System.out.println("Sum: " + sum);
-        System.out.println("Difference: " + difference);
-        System.out.println("Product: " + product);
-        System.out.println("Quotient: " + quotient);
+        if (age >= 18) {
+            if (hasID) {
+                System.out.println("You can enter the venue.");
+            } else {
+                System.out.println("You need to show ID for entry.");
+            }
+        } else {
+            System.out.println("You are underage, cannot enter.");
+        }
     }
 }
