@@ -5,9 +5,12 @@ public class Main {
 
         if (age >= 18) {
             if (hasID) {
+                System.out.println("You can enter the venue.");
             } else {
+                System.out.println("You need to show ID for entry.");
             }
         } else {
+            System.out.println("You are underage, cannot enter.");
         }
     }
 }
