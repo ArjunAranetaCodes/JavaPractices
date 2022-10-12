@@ -10,7 +10,6 @@ public class Main {
                 System.out.println("You need to show ID for entry.");
             }
         } else {
-            System.out.println("You are underage, cannot enter.");
         }
     }
 }
