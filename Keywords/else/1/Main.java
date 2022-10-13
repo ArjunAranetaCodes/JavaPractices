@@ -3,7 +3,6 @@ public class Main {
         int number = 10;
 
         if (number % 2 == 0) {
-            System.out.println("Even number");
         } else {
         }
     }
