@@ -1,15 +1,16 @@
-import java.util.Scanner;
-
 public class Main {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        int count = 0;
-        do {
-            System.out.print("Enter a number (0 to exit): ");
-            int num = scanner.nextInt();
-            System.out.println("You entered: " + num);
-            count++;
-        } while (count < 3);
-        scanner.close();
+        double num1 = 5.5;
+        double num2 = 2.0;
+
+        double sum = num1 + num2;
+        double difference = num1 - num2;
+        double product = num1 * num2;
+        double quotient = num1 / num2;
+
+        System.out.println("Sum: " + sum);
+        System.out.println("Difference: " + difference);
+        System.out.println("Product: " + product);
+        System.out.println("Quotient: " + quotient);
     }
 }
