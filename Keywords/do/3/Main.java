@@ -4,7 +4,6 @@ public class Main {
 
         System.out.println("Printing double array elements:");
         for (double num : numbers) {
-            System.out.println(num);
         }
     }
 }
