@@ -16,7 +16,6 @@ public class Main {
                     System.out.println("Hello!");
                     break;
                 case 2:
-                    System.out.println("Goodbye!");
                     break;
                 case 3:
                     break;
