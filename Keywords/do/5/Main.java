@@ -19,7 +19,6 @@ public class Main {
                     System.out.println("Goodbye!");
                     break;
                 case 3:
-                    System.out.println("Exiting program.");
                     break;
                 default:
                     System.out.println("Invalid choice. Try again.");
