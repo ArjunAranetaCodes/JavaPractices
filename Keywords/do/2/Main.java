@@ -7,7 +7,6 @@ public class Main {
         do {
             System.out.print("Enter a number (0 to exit): ");
             int num = scanner.nextInt();
-            System.out.println("You entered: " + num);
             count++;
         } while (count < 3);
         scanner.close();
