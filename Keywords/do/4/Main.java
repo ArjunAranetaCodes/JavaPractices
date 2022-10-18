@@ -1,10 +1,12 @@
-class Sample {
-    int num = 20;
-}
-
-class Main {
+public class Main {
     public static void main(String[] args) {
-        Sample obj = new Sample();
-        System.out.println("Value of num: " + obj.num);
+        int n = 5; // Change the value for a different factorial
+        int factorial = 1;
+        int i = 1;
+        do {
+            factorial *= i;
+            i++;
+        } while (i <= n);
+        System.out.println("Factorial of " + n + ": " + factorial);
     }
 }
