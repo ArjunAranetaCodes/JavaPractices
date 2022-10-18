@@ -11,6 +11,6 @@ public class Main {
             sum += randomNumber;
             i++;
         } while (i < 5);
-        System.out.println("Sum of random numbers: " + sum);
+        System.out.println("Sum of random numbers: " + sum); 
     }
 }
