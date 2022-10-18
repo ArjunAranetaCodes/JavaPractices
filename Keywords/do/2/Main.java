@@ -1,13 +1,15 @@
-class Sample {
-    int num;
-    Sample() {
-        num = 10;
-    }
-}
+import java.util.Scanner;
 
-class Main {
+public class Main {
     public static void main(String[] args) {
-        Sample obj = new Sample();
-        System.out.println("Value of num: " + obj.num);
+        Scanner scanner = new Scanner(System.in);
+        int count = 0;
+        do {
+            System.out.print("Enter a number (0 to exit): ");
+            int num = scanner.nextInt();
+            System.out.println("You entered: " + num);
+            count++;
+        } while (count < 3);
+        scanner.close();
     }
 }
