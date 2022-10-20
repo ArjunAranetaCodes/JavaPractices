@@ -1,6 +1,10 @@
-public class Main {
+class Sample {
+    int num = 20;
+}
+
+class Main {
     public static void main(String[] args) {
-        final int[] MY_ARRAY = {1, 2, 3, 4, 5};
-        System.out.println("Array elements: " + Arrays.toString(MY_ARRAY));
+        Sample obj = new Sample();
+        System.out.println("Value of num: " + obj.num);
     }
 }
