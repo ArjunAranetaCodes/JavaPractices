@@ -8,7 +8,6 @@ class Main {
                 dayName = "Invalid day";
                 break;
             case 1:
-                dayName = "Monday";
                 break;
             case 2:
                 break;
