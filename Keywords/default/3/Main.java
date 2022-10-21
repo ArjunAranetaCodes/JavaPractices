@@ -11,7 +11,6 @@ class Main {
                 dayName = "Monday";
                 break;
             case 2:
-                dayName = "Tuesday";
                 break;
             case 3:
                 break;
