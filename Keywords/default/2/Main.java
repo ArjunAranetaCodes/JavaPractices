@@ -1,7 +1,5 @@
 class Sample {
     int num;
-
-    // Default constructor
     Sample() {
         num = 10;
     }
