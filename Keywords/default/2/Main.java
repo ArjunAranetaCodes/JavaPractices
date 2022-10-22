@@ -1,9 +1,15 @@
-public class Main {
-    public static void main(String[] args) {
-        System.out.println("Result: " + calculateConstant());
+class Sample {
+    int num;
+
+    // Default constructor
+    Sample() {
+        num = 10;
     }
- 
-    private static final int calculateConstant() {
-        return 5 * 8;
+}
+
+class Main {
+    public static void main(String[] args) {
+        Sample obj = new Sample();
+        System.out.println("Value of num: " + obj.num);
     }
 }
