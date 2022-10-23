@@ -1,6 +1,12 @@
-public class Main {
+interface MyInterface {
+    default void display() {
+        System.out.println("Default method in interface");
+    }
+}
+
+class Main implements MyInterface {
     public static void main(String[] args) {
-        final int MY_CONSTANT = 42;
-        System.out.println("Constant value: " + MY_CONSTANT); 
+        Main obj = new Main();
+        obj.display();
     }
 }
