@@ -6,10 +6,13 @@ public class Main {
 }
 
 class MyClass {
+    private final int CONSTANT_VALUE;
 
     public MyClass() {
+        CONSTANT_VALUE = 7;
     }
 
     public int getConstantValue() {
+        return CONSTANT_VALUE;
     }
 }
