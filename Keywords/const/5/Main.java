@@ -1,17 +1,18 @@
 public class Main {
     public static void main(String[] args) {
-        for (int i = 1; i <= 3; i++) {
-            switch (i) {
-                case 1:
-                    System.out.println("Processing case 1");
-                    break;
-                case 2:
-                    System.out.println("Skipping case 2");
-                    continue;
-                case 3:
-                    System.out.println("Processing case 3");
-                    break;
-            }
-        }
+        MyClass myObject = new MyClass();
+        System.out.println("Constant value from constructor: " + myObject.getConstantValue());
+    }
+}
+
+class MyClass {
+    private final int CONSTANT_VALUE;
+
+    public MyClass() {
+        CONSTANT_VALUE = 7;
+    }
+
+    public int getConstantValue() {
+        return CONSTANT_VALUE;
     }
 }
