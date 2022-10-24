@@ -13,6 +13,5 @@ class MyClass {
     }
 
     public int getConstantValue() {
-        return CONSTANT_VALUE;
     }
 }
