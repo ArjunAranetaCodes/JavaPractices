@@ -6,7 +6,6 @@ public class Main {
 }
 
 class MyClass {
-    private final int CONSTANT_VALUE;
 
     public MyClass() {
     }
