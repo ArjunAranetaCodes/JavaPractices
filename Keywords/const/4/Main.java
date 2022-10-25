@@ -1,14 +1,6 @@
 public class Main {
     public static void main(String[] args) {
-        outerLoop:
-        for (int i = 1; i <= 3; i++) {
-            for (int j = 1; j <= 3; j++) {
-                if (j == 2) {
-                    System.out.println("Skipping inner loop iteration " + j + " in outer loop " + i);
-                    continue;
-                }
-                System.out.println("Executing inner loop iteration " + j + " in outer loop " + i);
-            }
-        }
+        final int[] MY_ARRAY = {1, 2, 3, 4, 5};
+        System.out.println("Array elements: " + Arrays.toString(MY_ARRAY));
     }
 }
