@@ -3,7 +3,7 @@ public class Main {
         System.out.println("Constant value from class: " + Constants.MY_CONSTANT);
     }
 }
-
+ 
 class Constants {
     static final int MY_CONSTANT = 99;
 }
