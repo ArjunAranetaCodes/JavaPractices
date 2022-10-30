@@ -7,6 +7,8 @@ public class Main {
                     System.out.println("Skipping inner loop iteration " + j + " in outer loop " + i);
                     continue;
                 }
+                System.out.println("Executing inner loop iteration " + j + " in outer loop " + i);
+            }
         }
     }
 }
