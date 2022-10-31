@@ -1,8 +1,13 @@
 public class Main {
     public static void main(String[] args) {
-        int num1 = 5;
-        int num2 = 10;
-        int sum = num1 + num2;
-        System.out.println("Sum: " + sum);
+        int i = 0;
+        while (i < 5) {
+            i++;
+            if (i == 2 || i == 4) {
+                System.out.println("Skipping iteration " + i);
+                continue;
+            }
+            System.out.println("Executing iteration " + i);
+        }
     }
 }
