@@ -5,6 +5,7 @@ public class Main {
                 System.out.println("Skipping iteration " + i);
                 continue;
             }
+            System.out.println("Executing iteration " + i);
         }
     }
 }
