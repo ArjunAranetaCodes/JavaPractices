@@ -3,7 +3,6 @@ public class Main {
         for (int i = 1; i <= 5; i++) {
             if (i == 3) {
                 System.out.println("Skipping iteration " + i);
-                continue;
             }
         }
     }
