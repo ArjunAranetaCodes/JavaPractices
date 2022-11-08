@@ -1,8 +1,8 @@
 public class Main {
     public static void main(String[] args) {
-        char firstChar = 'A';
-        char secondChar = 'B';
-        char result = (char) (firstChar + secondChar);
-        System.out.println("Result of char arithmetic: " + result);
+        int num1 = 5;
+        int num2 = 10;
+        int sum = num1 + num2;
+        System.out.println("Sum: " + sum);
     }
 }
