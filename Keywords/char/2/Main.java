@@ -1,10 +1,8 @@
 public class Main {
     public static void main(String[] args) {
-        try {
-            String str = null;
-            int length = str.length(); // NullPointerException will be thrown
-        } catch (NullPointerException e) {
-            System.out.println("Caught NullPointerException: " + e.getMessage());
-        }
+        char firstChar = 'A';
+        char secondChar = 'B';
+        char result = (char) (firstChar + secondChar);
+        System.out.println("Result of char arithmetic: " + result);
     }
 }
