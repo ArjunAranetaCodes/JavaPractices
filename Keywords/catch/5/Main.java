@@ -1,28 +1,14 @@
 public class Main {
-    enum Season {
-        SPRING, SUMMER, AUTUMN, WINTER
-    }
-
     public static void main(String[] args) {
-        Season currentSeason = Season.SUMMER;
-
-        switchSeason(currentSeason);
-    }
-
-    static void switchSeason(Season season) {
-        switch (season) {
-            case SPRING:
-                System.out.println("It's Spring!");
-                break;
-            case SUMMER:
-                System.out.println("It's Summer!");
-                break;
-            case AUTUMN:
-                System.out.println("It's Autumn!");
-                break;
-            case WINTER:
-                System.out.println("It's Winter!");
-                break;
+        try {
+            int[] arr = {1, 2, 3};
+            int element = arr[5]; // ArrayIndexOutOfBoundsException will be thrown
+            String str = null;
+            int length = str.length(); // NullPointerException will be thrown
+        } catch (ArrayIndexOutOfBoundsException e) {
+            System.out.println("Caught ArrayIndexOutOfBoundsException: " + e.getMessage());
+        } catch (NullPointerException e) {
+            System.out.println("Caught NullPointerException: " + e.getMessage());
         }
     }
 }
