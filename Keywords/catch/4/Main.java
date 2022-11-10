@@ -1,17 +1,14 @@
+import java.io.File;
+import java.io.FileReader;
+import java.io.FileNotFoundException;
+
 public class Main {
     public static void main(String[] args) {
-        int number = 2;
-
-        switch (number) {
-            case 1:
-                System.out.println("One");
-            case 2:
-                System.out.println("Two");
-            case 3:
-                System.out.println("Three");
-                break;
-            default:
-                System.out.println("Invalid number");
+        try {
+            File file = new File("nonexistent.txt");
+            FileReader fr = new FileReader(file); // FileNotFoundException will be thrown
+        } catch (FileNotFoundException e) {
+            System.out.println("Caught FileNotFoundException: " + e.getMessage());
         }
     }
 }
