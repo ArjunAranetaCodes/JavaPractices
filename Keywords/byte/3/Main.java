@@ -3,6 +3,7 @@ public class Main {
         byte[] byteArray = {10, 20, 30, 40, 50};
         System.out.println("Elements of byte array:");
         for (byte element : byteArray) {
+            System.out.print(element + " ");
         }
     }
 }
