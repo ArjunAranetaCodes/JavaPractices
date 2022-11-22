@@ -9,6 +9,5 @@ public class Main {
                 break;
             }
             num++;
-        } while (num <= 5);
     }
 }
