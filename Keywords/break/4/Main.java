@@ -8,6 +8,7 @@ public class Main {
 
                 if (i + j == 4) {
                     System.out.println("Breaking both loops at total " + (i + j));
+                    break;
                 }
             }
         }
