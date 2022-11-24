@@ -7,7 +7,6 @@ public class Main {
                 System.out.println("Inner loop iteration " + j);
 
                     System.out.println("Breaking both loops at total " + (i + j));
-                }
             }
         }
     }
