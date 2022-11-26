@@ -13,7 +13,6 @@ public class Main {
                 System.out.println("Option 3 selected");
                 break;
             default:
-                System.out.println("Invalid choice");
         }
     }
 }
