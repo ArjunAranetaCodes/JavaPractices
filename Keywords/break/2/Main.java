@@ -10,8 +10,10 @@ public class Main {
                 System.out.println("Option 2 selected, breaking the switch");
                 break;
             case 3:
+                System.out.println("Option 3 selected");
                 break;
             default:
+                System.out.println("Invalid choice");
         }
     }
 }
