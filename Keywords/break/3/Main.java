@@ -6,7 +6,6 @@ public class Main {
             System.out.println("Count: " + count);
             if (count == 2) {
                 System.out.println("Breaking the loop at count 2");
-                break;
             }
         }
     }
