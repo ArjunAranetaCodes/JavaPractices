@@ -6,6 +6,6 @@ public class Main {
                 System.out.println("Breaking the loop at iteration 3");
                 break; 
             }
-        }
+        } 
     }
 }
