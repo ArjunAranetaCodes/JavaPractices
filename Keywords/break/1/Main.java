@@ -4,7 +4,7 @@ public class Main {
             System.out.println("Iteration " + i);
             if (i == 3) {
                 System.out.println("Breaking the loop at iteration 3");
-                break;
+                break; 
             }
         }
     }
