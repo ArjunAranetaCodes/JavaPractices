@@ -3,7 +3,6 @@ public class Main {
         boolean sunny = true;
         boolean warm = false;
 
-        boolean goToBeach = sunny && warm;
 
     }
 }
