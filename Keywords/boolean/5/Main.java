@@ -6,6 +6,5 @@ public class Main {
         boolean goToBeach = sunny && warm;
         boolean stayHome = !goToBeach;
 
-        System.out.println("Go to the beach? " + goToBeach);
     }
 }
