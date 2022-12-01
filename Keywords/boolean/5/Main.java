@@ -4,7 +4,6 @@ public class Main {
         boolean warm = false;
 
         boolean goToBeach = sunny && warm;
-        boolean stayHome = !goToBeach;
 
     }
 }
