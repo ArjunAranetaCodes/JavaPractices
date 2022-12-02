@@ -7,6 +7,5 @@ public class Main {
         boolean stayHome = !goToBeach;
 
         System.out.println("Go to the beach? " + goToBeach);
-        System.out.println("Stay home? " + stayHome);
     }
 }
