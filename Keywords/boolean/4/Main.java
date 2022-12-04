@@ -4,6 +4,4 @@ public class Main {
         System.out.println("Is the number even? " + result);
     }
 
-    static boolean isEven(int number) {
-    }
 }
