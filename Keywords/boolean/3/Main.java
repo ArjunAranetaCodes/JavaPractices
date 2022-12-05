@@ -3,6 +3,8 @@ public class Main {
         int age = 18;
         boolean isAdult = (age >= 18);
 
+        if (isAdult) {
+            System.out.println("You are an adult.");
         } else {
         }
     }
