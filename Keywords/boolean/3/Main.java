@@ -6,7 +6,6 @@ public class Main {
         if (isAdult) {
             System.out.println("You are an adult.");
         } else {
-            System.out.println("You are not yet an adult.");
         }
     }
 }
