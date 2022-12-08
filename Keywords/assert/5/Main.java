@@ -5,4 +5,3 @@ public class Main {
         assert index >= 0 && index < numbers.length : "Index out of bounds";
         System.out.println("Value at index " + index + ": " + numbers[index]);
     }
-}
