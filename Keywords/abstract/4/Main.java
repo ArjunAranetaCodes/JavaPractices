@@ -1,5 +1,22 @@
-package Keywords.2;
+abstract class Shape {
+    int sides;
 
-public class Main {
-    
+    abstract void calculateArea();
+}
+
+class Square extends Shape {
+    Square(int sides) {
+        this.sides = sides;
+    }
+
+    void calculateArea() {
+        System.out.println("Square Area: " + sides * sides);
+    }
+}
+
+class Main {
+    public static void main(String[] args) {
+        Square square = new Square(4);
+        square.calculateArea();
+    }
 }
