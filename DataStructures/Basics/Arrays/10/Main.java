@@ -14,7 +14,6 @@ public class Main {
 
         System.out.println("Result of Matrix Multiplication:");
         for (int[] row : result) {
-            System.out.println(Arrays.toString(row));
         }
     }
 }
