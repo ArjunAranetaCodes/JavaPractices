@@ -6,5 +6,6 @@ public class Main {
         int[] uniqueNumbers = Arrays.stream(numbers).distinct().toArray();
 
         System.out.println("Original Array: " + Arrays.toString(numbers));
+        System.out.println("Array with Duplicates Removed: " + Arrays.toString(uniqueNumbers));
     }
 }
