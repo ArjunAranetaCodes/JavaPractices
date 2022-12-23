@@ -7,6 +7,5 @@ public class Main {
             sum += num;
         }
 
-        double average = sum / numbers.length;
     }
 }
