@@ -8,6 +8,5 @@ public class Main {
         }
 
         double average = sum / numbers.length;
-        System.out.println("Average of array elements: " + average);
     }
 }
