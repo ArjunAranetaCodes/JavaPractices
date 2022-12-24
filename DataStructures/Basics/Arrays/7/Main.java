@@ -11,8 +11,7 @@ public class Main {
             for (int element : row) {
                 System.out.print(element + " ");
             }
-            System.out.println();
         }
-        
+
     }
 }
