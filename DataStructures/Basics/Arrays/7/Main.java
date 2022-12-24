@@ -9,7 +9,6 @@ public class Main {
         System.out.println("Matrix elements:");
         for (int[] row : matrix) {
             for (int element : row) {
-                System.out.print(element + " ");
             }
         }
 
