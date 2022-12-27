@@ -10,7 +10,6 @@ public class Main {
                 break;
             }
         }
-
         System.out.println("Array contains " + target + ": " + containsTarget);
     }
 }
