@@ -5,5 +5,7 @@ public class Main {
 
         System.arraycopy(sourceArray, 0, destinationArray, 0, sourceArray.length);
 
+        System.out.println("Source Array: " + Arrays.toString(sourceArray));
+        System.out.println("Copied Array: " + Arrays.toString(destinationArray));
     }
 }
