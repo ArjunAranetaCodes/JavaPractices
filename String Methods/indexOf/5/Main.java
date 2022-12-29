@@ -1,10 +1,10 @@
-import java.util.Objects;
-
 public class Main {
     public static void main(String[] args) {
-        // Using Objects.hash() to calculate hashCode for multiple values
-        int hashCode = Objects.hash(10, "Sample", true);
-        System.out.println("Combined HashCode: " + hashCode);
+        String str = "Java programming is interesting";
+        String substring = "ing";
+        int fromIndex = 7;
+        int index = str.indexOf(substring, fromIndex);
+        System.out.println("Index of '" + substring + "' after position " + fromIndex + ": " + index);
     }
 }
-    
+ 
