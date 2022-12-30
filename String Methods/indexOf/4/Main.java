@@ -6,4 +6,4 @@ public class Main {
         System.out.println("Index of '" + target + "' (starting from index 10): " + index);
     }
 }
-  
+   
