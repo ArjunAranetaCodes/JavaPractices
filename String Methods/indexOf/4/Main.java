@@ -1,16 +1,8 @@
-import java.util.HashMap;
-
 public class Main {
     public static void main(String[] args) {
-        // Creating a HashMap with String keys and values
-        HashMap<String, Integer> hashMap = new HashMap<>();
-        hashMap.put("One", 1);
-        hashMap.put("Two", 2);
-        hashMap.put("Three", 3);
-
-        for (String key : hashMap.keySet()) {
-            System.out.println("HashCode of key '" + key + "': " + key.hashCode());
-        }
+        String str = "Java is fun and Java is powerful";
+        String target = "Java";
+        int index = str.indexOf(target, 10); // Start searching from index 10
+        System.out.println("Index of '" + target + "' (starting from index 10): " + index);
     }
 }
-    
