@@ -3,7 +3,5 @@ public class Main {
         String[] fruits = {"Apple", "Banana", "Orange", "Mango"};
 
         System.out.println("Fruits in the array:");
-        for (String fruit : fruits) {
-        }
     }
 }
