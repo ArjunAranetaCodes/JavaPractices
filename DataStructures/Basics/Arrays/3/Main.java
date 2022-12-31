@@ -4,7 +4,6 @@ public class Main {
 
         System.out.println("Fruits in the array:");
         for (String fruit : fruits) {
-            System.out.println(fruit);
         }
     }
 }
