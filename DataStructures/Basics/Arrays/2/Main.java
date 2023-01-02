@@ -3,7 +3,6 @@ public class Main {
         int[] numbers = {5, 3, 8, 1, 7};
         int max = numbers[0];
 
-            }
         }
 
     }
