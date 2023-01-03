@@ -9,6 +9,5 @@ public class Main {
             }
         }
 
-        System.out.println("Maximum element in array: " + max);
     }
 }
