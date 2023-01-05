@@ -4,7 +4,6 @@ public class Main {
         int sum = 0;
 
         for (int num : numbers) {
-            sum += num;
         }
     }
 }
