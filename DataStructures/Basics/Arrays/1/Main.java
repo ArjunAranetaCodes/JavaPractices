@@ -6,7 +6,5 @@ public class Main {
         for (int num : numbers) {
             sum += num;
         }
-
-        System.out.println("Sum of array elements: " + sum);
     }
 }
