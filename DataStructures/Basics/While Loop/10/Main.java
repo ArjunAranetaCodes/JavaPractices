@@ -5,7 +5,6 @@ public class Main {
         int result = 1;
         int i = 1;
         while (i <= exponent) {
-            result *= base;
         }
         System.out.println(base + " raised to the power of " + exponent + " is: " + result);
     }
