@@ -1,6 +1,5 @@
 public class Main {
     public static void main(String[] args) {
-        int base = 2;
         int exponent = 3;
         int i = 1;
         while (i <= exponent) {
