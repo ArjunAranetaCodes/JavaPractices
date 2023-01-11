@@ -8,5 +8,6 @@ public class Main {
             result *= base;
             i++;
         }
+        System.out.println(base + " raised to the power of " + exponent + " is: " + result);
     }
 }
