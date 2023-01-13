@@ -6,7 +6,6 @@ public class Main {
         while (i <= num / 2) {
             if (num % i == 0) {
                 isPrime = false;
-                break;
             }
         }
 
