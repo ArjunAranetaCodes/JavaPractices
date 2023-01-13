@@ -8,9 +8,8 @@ public class Main {
                 isPrime = false;
                 break;
             }
-            i++;
         }
-        
+
         System.out.println(num + " is prime: " + isPrime);
     }
 }
