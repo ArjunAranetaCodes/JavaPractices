@@ -10,6 +10,7 @@ public class Main {
             }
             i++;
         }
+        
         System.out.println(num + " is prime: " + isPrime);
     }
 }
