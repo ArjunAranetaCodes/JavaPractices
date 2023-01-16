@@ -8,7 +8,6 @@ public class Main {
             int next = first + second;
             first = second;
             second = next;
-            i++;
         }
     }
 }
