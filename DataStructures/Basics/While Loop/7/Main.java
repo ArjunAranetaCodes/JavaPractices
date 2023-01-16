@@ -7,7 +7,6 @@ public class Main {
             System.out.println(first);
             int next = first + second;
             first = second;
-            second = next;
         }
     }
 }
