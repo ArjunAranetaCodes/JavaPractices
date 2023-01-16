@@ -5,8 +5,7 @@ public class Main {
         int i = 1;
         while (i <= n) {
             System.out.println(first);
-            int next = first + second;
-            first = second;
+            int next = first + second;x
         }
     }
 }
