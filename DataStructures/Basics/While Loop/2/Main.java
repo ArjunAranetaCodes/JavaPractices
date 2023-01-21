@@ -8,5 +8,6 @@ public class Main {
             i++;
         }
         System.out.println("Factorial of " + n + " is: " + factorial);
+        
     }
 }
