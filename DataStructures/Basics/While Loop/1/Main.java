@@ -14,7 +14,6 @@ public class Main {
                 break;
             // Add cases for other days as needed
             default:
-                System.out.println("Invalid day");
         }
     }
 }
