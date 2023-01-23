@@ -12,6 +12,7 @@ public class Main {
                 break;
             // Add cases for other letters as needed
             default:
+                System.out.println("Unknown letter");
         }
     }
 }
