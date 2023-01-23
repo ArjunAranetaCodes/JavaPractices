@@ -20,7 +20,6 @@ public class Main {
             case 2:
                 System.out.println("Category 2");
                 break;
-            // Add cases for other categories as needed
             default:
                 System.out.println("Unknown category");
         }
