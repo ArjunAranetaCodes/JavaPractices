@@ -10,7 +10,6 @@ public class Main {
                 System.out.println("Ends with 2");
                 break;
             default:
-                System.out.println("Other digit");
         }
     }
 }
