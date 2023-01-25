@@ -9,7 +9,6 @@ public class Main {
             case 2:
                 System.out.println("Ends with 2");
                 break;
-            // Add cases for other digits as needed
             default:
                 System.out.println("Other digit");
         }
