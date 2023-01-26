@@ -4,6 +4,7 @@ public class Main {
         int y = 10;
         char operation = '*';
 
+        
         switch (operation) {
             case '+':
                 System.out.println("Sum: " + (x + y));
