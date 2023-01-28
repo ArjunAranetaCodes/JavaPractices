@@ -15,7 +15,8 @@ public class Main {
             case SATURDAY:
             case SUNDAY:
                 System.out.println("It's a weekend");
-                break;
+                break;  
+                
         }
     }
 }
