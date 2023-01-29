@@ -6,7 +6,6 @@ public class Main {
             case 1:
             case 2:
             case 3:
-                break;
             case 4:
             case 5:
                 break;
