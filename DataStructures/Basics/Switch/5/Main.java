@@ -10,7 +10,6 @@ public class Main {
                 break;
             case 4:
             case 5:
-                System.out.println("Number is between 4 and 5");
                 break;
             default:
         }
