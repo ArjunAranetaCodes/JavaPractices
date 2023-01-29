@@ -6,10 +6,14 @@ public class Main {
             case 1:
             case 2:
             case 3:
+                System.out.println("Number is between 1 and 3");
+                break;
             case 4:
             case 5:
+                System.out.println("Number is between 4 and 5");
                 break;
             default:
+                System.out.println("Number is out of range");
         }
     }
 }
