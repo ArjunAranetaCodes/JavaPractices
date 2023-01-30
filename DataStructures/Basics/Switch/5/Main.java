@@ -13,7 +13,6 @@ public class Main {
                 System.out.println("Number is between 4 and 5");
                 break;
             default:
-                System.out.println("Number is out of range");
         }
     }
 }
