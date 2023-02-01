@@ -9,7 +9,6 @@ public class Main {
             case 'B':
                 System.out.println("Good");
                 break;
-            // Add cases for other grades as needed
             default:
                 System.out.println("Invalid grade");
         }
