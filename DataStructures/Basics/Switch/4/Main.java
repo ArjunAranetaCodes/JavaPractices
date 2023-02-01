@@ -6,8 +6,11 @@ public class Main {
             case 'A':
                 System.out.println("Excellent");
                 break;
+            case 'B':
+                System.out.println("Good");
                 break;
             default:
+                System.out.println("Invalid grade");
         }
     }
 }
