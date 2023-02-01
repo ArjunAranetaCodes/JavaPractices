@@ -10,7 +10,6 @@ public class Main {
                 System.out.println("Good");
                 break;
             default:
-                System.out.println("Invalid grade");
         }
     }
 }
