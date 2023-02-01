@@ -6,8 +6,6 @@ public class Main {
             case 'A':
                 System.out.println("Excellent");
                 break;
-            case 'B':
-                System.out.println("Good");
                 break;
             default:
         }
