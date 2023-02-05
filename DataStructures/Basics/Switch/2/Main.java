@@ -4,7 +4,6 @@ public class Main {
 
         switch (fruit) {
             case "Apple":
-                System.out.println("It's an apple");
                 break;
             case "Banana":
                 break;
