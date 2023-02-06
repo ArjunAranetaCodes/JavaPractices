@@ -11,7 +11,6 @@ public class Main {
                 break;
             // Add cases for other fruits as needed
             default:
-                System.out.println("Unknown fruit");
         }
     }
 }
