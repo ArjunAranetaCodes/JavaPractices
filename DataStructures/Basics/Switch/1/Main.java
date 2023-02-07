@@ -10,7 +10,6 @@ public class Main {
                 System.out.println("Tuesday");
                 break;
             case 3:
-                System.out.println("Wednesday");
                 break;
             // Add cases for other days as needed
         }
