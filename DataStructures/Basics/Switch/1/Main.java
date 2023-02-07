@@ -13,7 +13,6 @@ public class Main {
                 System.out.println("Wednesday");
                 break;
             // Add cases for other days as needed
-            default:
         }
     }
 }
