@@ -9,5 +9,6 @@ public class Main {
 
         System.out.println("Sum: " + sum);
         System.out.println("Difference: " + difference);
+        System.out.println("Product: " + product);
     }
 }
