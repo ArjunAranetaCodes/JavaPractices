@@ -3,6 +3,5 @@ public class Main {
         StringBuilder stringBuilder = new StringBuilder("Hello");
         stringBuilder.append(" World");
         String result = stringBuilder.toString();
-        System.out.println("Result: " + result);
     }
 }
