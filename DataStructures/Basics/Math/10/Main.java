@@ -5,7 +5,6 @@ public class Main {
         if (Character.isDigit(ch)) {
             System.out.println("The character is a digit.");
         } else if (Character.isLetter(ch)) {
-            System.out.println("The character is a letter.");
         } else {
         }
     }
