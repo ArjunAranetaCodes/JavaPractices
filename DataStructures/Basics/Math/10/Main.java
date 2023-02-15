@@ -7,7 +7,6 @@ public class Main {
         } else if (Character.isLetter(ch)) {
             System.out.println("The character is a letter.");
         } else {
-            System.out.println("The character is neither a digit nor a letter.");
         }
     }
 }
