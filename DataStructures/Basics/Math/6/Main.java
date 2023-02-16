@@ -1,9 +1,11 @@
 public class Main {
     public static void main(String[] args) {
-        double number = 3.75;
+        int marks = 75;
 
-        // Round to the nearest integer
-        long roundedNumber = Math.round(number);
-        System.out.println("Rounded value of " + number + ": " + roundedNumber);
+        if (marks >= 90 || marks <= 100) {
+            System.out.println("Excellent performance!");
+        } else {
+            System.out.println("Good performance.");
+        }
     }
 }
