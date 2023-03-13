@@ -5,7 +5,9 @@ public class Main {
         Animal cat = new Animal();
 
         if (cat instanceof Animal) {
+            System.out.println("cat is an instance of Animal");
         } else {
+            System.out.println("cat is not an instance of Animal");
         }
     }
 }
