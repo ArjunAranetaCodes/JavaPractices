@@ -3,6 +3,7 @@ public class Main {
         int x = 5;
 
         x += 3;
+        System.out.println("Updated x: " + x);
 
     }
 }
