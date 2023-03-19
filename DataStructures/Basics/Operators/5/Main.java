@@ -4,5 +4,6 @@ public class Main {
 
         System.out.println("Bitwise AND: " + (x & y));
         System.out.println("Bitwise OR: " + (x | y));
+        System.out.println("Bitwise XOR: " + (x ^ y));
     }
 }
