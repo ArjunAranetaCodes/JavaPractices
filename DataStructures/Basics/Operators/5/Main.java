@@ -3,6 +3,5 @@ public class Main {
         int x = 5, y = 3;
 
         System.out.println("Bitwise AND: " + (x & y));
-        System.out.println("Bitwise OR: " + (x | y));
     }
 }
