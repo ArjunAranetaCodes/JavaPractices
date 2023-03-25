@@ -4,6 +4,5 @@ public class Main {
 
         System.out.println("Logical AND: " + (a && b));
         System.out.println("Logical OR: " + (a || b));
-        System.out.println("Logical NOT for a: " + (!a));
     }
 }
