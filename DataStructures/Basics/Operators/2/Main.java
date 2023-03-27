@@ -7,5 +7,6 @@ public class Main {
         System.out.println("Is x greater than y? " + (x > y));
         System.out.println("Is x less than y? " + (x < y));
         System.out.println("Is x greater than or equal to y? " + (x >= y));
+        System.out.println("Is x less than or equal to y? " + (x <= y));
     }
 }
