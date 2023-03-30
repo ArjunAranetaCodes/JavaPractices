@@ -7,7 +7,6 @@ public class Main {
         int quotient = a / b;
         int remainder = a % b;
 
-        System.out.println("Sum: " + sum);
         System.out.println("Product: " + product);
         System.out.println("Remainder: " + remainder);
     }
