@@ -8,7 +8,6 @@ public class Main {
         int remainder = a % b;
 
         System.out.println("Sum: " + sum);
-        System.out.println("Difference: " + difference);
         System.out.println("Product: " + product);
         System.out.println("Remainder: " + remainder);
     }
