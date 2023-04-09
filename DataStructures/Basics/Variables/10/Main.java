@@ -7,5 +7,6 @@ public class Main {
         System.out.print("Enter a number: ");
         int userInput = scanner.nextInt();
 
+        System.out.println("User input: " + userInput);
     }
 }
