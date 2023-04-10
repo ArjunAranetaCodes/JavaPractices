@@ -1,5 +1,6 @@
-package DataStructures.Basics.Variables.2;
-
 public class Main {
-    
+    public static void main(String[] args) {
+        int[] numbers = {1, 2, 3, 4, 5};
+        System.out.println("Array Variable: " + Arrays.toString(numbers));
+    }
 }
