@@ -1,14 +1,45 @@
-import java.util.ArrayDeque;
+import java.util.LinkedList;
 import java.util.Queue;
 
 public class QueueSample {
     public static void main(String[] args) {
-        Queue<String> arrayDequeQueue = new ArrayDeque<>();
+        final Queue<Integer> sharedQueue = new LinkedList<>();
 
-        arrayDequeQueue.offer("One");
-        arrayDequeQueue.offer("Two");
-        arrayDequeQueue.offer("Three");
+        Thread producerThread = new Thread(() -> {
+            for (int i = 0; i < 5; i++) {
+                produce(sharedQueue, i);
+            }
+        });
 
-        System.out.println("ArrayDeque Queue: " + arrayDequeQueue);
+        Thread consumerThread = new Thread(() -> {
+            for (int i = 0; i < 5; i++) {
+                consume(sharedQueue);
+            }
+        });
+
+        producerThread.start();
+        consumerThread.start();
+    }
+
+    static void produce(Queue<Integer> queue, int item) {
+        synchronized (queue) {
+            queue.add(item);
+            System.out.println("Produced: " + item);
+            queue.notify();
+        }
+    }
+
+    static void consume(Queue<Integer> queue) {
+        synchronized (queue) {
+            while (queue.isEmpty()) {
+                try {
+                    queue.wait();
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+            }
+            int item = queue.poll();
+            System.out.println("Consumed: " + item);
+        }
     }
 }
