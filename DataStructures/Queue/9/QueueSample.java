@@ -1,51 +1,37 @@
+import java.util.LinkedList;
+import java.util.Queue;
+
 public class QueueSample {
-    private static final int MAX_SIZE = 5;
-    private int front, rear;
-    private int[] queue;
-
-    public QueueSample() {
-        queue = new int[MAX_SIZE];
-        front = rear = -1;
-    }
-
-    public void enqueue(int item) {
-        if ((rear + 1) % MAX_SIZE == front) {
-            System.out.println("Queue is full");
-            return;
-        }
-        if (isEmpty()) {
-            front = rear = 0;
-        } else {
-            rear = (rear + 1) % MAX_SIZE;
-        }
-        queue[rear] = item;
-    }
-
-    public int dequeue() {
-        if (isEmpty()) {
-            System.out.println("Queue is empty");
-            return -1;
-        }
-        int item = queue[front];
-        if (front == rear) {
-            front = rear = -1;
-        } else {
-            front = (front + 1) % MAX_SIZE;
-        }
-        return item;
-    }
-
-    public boolean isEmpty() {
-        return front == -1 && rear == -1;
-    }
-
     public static void main(String[] args) {
-        QueueSample circularQueue = new QueueSample();
+        // Assuming a graph represented as an adjacency list
+        int[][] graph = {
+            {1, 2},
+            {0, 3, 4},
+            {0, 4},
+            {1},
+            {1, 2}
+        };
 
-        circularQueue.enqueue(10);
-        circularQueue.enqueue(20);
-        circularQueue.enqueue(30);
+        boolean[] visited = new boolean[5];
 
-        System.out.println("Dequeued item: " + circularQueue.dequeue());
+        bfs(graph, visited, 0);
+    }
+
+    static void bfs(int[][] graph, boolean[] visited, int start) {
+        Queue<Integer> queue = new LinkedList<>();
+        queue.add(start);
+        visited[start] = true;
+
+        while (!queue.isEmpty()) {
+            int current = queue.poll();
+            System.out.print(current + " ");
+
+            for (int neighbor : graph[current]) {
+                if (!visited[neighbor]) {
+                    queue.add(neighbor);
+                    visited[neighbor] = true;
+                }
+            }
+        }
     }
 }
