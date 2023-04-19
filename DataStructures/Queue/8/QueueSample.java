@@ -1,28 +1,19 @@
 import java.util.LinkedList;
 import java.util.Queue;
 
-class Person {
-    private String name;
-
-    public Person(String name) {
-        this.name = name;
-    }
-
-    @Override
-    public String toString() {
-        return "Person{" +
-               "name='" + name + '\'' +
-               '}';
-    }
-}
-
 public class QueueSample {
     public static void main(String[] args) {
-        Queue<Person> personQueue = new LinkedList<>();
+        Queue<Integer> circularQueue = new LinkedList<>();
 
-        personQueue.offer(new Person("John"));
-        personQueue.offer(new Person("Alice"));
+        for (int i = 1; i <= 5; i++) {
+            circularQueue.add(i);
+        }
 
-        System.out.println("Person Queue: " + personQueue);
+        System.out.println("Circular Queue: " + circularQueue);
+
+        int removedElement = circularQueue.poll();
+        circularQueue.add(6);
+
+        System.out.println("Updated Circular Queue: " + circularQueue);
     }
 }
