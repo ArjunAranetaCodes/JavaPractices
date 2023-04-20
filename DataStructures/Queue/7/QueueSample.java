@@ -1,14 +1,14 @@
-import java.util.PriorityQueue;
+import java.util.ArrayDeque;
 import java.util.Queue;
 
 public class QueueSample {
     public static void main(String[] args) {
-        Queue<Integer> priorityQueue = new PriorityQueue<>();
+        Queue<String> arrayDequeQueue = new ArrayDeque<>();
 
-        priorityQueue.offer(30);
-        priorityQueue.offer(10);
-        priorityQueue.offer(20);
+        arrayDequeQueue.add("A");
+        arrayDequeQueue.add("B");
+        arrayDequeQueue.add("C");
 
-        System.out.println("Priority Queue: " + priorityQueue);
+        System.out.println("ArrayDeque Queue: " + arrayDequeQueue);
     }
 }
