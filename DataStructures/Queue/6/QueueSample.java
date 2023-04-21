@@ -1,14 +1,14 @@
-import java.util.LinkedList;
-import java.util.Queue;
+import java.util.concurrent.BlockingQueue;
+import java.util.concurrent.LinkedBlockingQueue;
 
 public class QueueSample {
     public static void main(String[] args) {
-        LinkedList<Integer> linkedList = new LinkedList<>();
-        Queue<Integer> queue = linkedList;
+        BlockingQueue<String> blockingQueue = new LinkedBlockingQueue<>();
 
-        queue.offer(10);
-        queue.offer(20);
+        blockingQueue.offer("First");
+        blockingQueue.offer("Second");
+        blockingQueue.offer("Third");
 
-        System.out.println("Queue: " + queue);
+        System.out.println("Blocking Queue: " + blockingQueue);
     }
 }
