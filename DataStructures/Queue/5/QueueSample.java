@@ -5,9 +5,14 @@ public class QueueSample {
     public static void main(String[] args) {
         Queue<String> queue = new LinkedList<>();
 
-        System.out.println("Is the queue empty? " + queue.isEmpty());
+        queue.add("One");
+        queue.add("Two");
+        queue.add("Three");
 
-        queue.offer("Java");
-        System.out.println("Is the queue empty? " + queue.isEmpty());
+        System.out.println("Queue before clearing: " + queue);
+
+        queue.clear();
+
+        System.out.println("Queue after clearing: " + queue);
     }
 }
