@@ -11,6 +11,7 @@ public class QueueSample {
 
         System.out.println("Queue: " + queue);
 
+        String front = queue.poll();
         System.out.println("Removed from front: " + front);
 
         System.out.println("Queue after removal: " + queue);
