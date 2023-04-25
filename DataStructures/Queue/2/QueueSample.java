@@ -1,14 +1,14 @@
-import java.util.LinkedList;
+import java.util.PriorityQueue;
 import java.util.Queue;
 
 public class QueueSample {
     public static void main(String[] args) {
-        Queue<Integer> queue = new LinkedList<>();
+        Queue<Integer> priorityQueue = new PriorityQueue<>();
 
-        for (int i = 1; i <= 5; i++) {
-            queue.offer(i);
-        }
+        priorityQueue.add(30);
+        priorityQueue.add(10);
+        priorityQueue.add(20);
 
-        System.out.println("Queue size: " + queue.size());
+        System.out.println("Priority Queue: " + priorityQueue);
     }
 }
