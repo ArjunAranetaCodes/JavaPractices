@@ -5,15 +5,18 @@ public class QueueSample {
     public static void main(String[] args) {
         Queue<String> queue = new LinkedList<>();
 
-        queue.offer("Element 1");
-        queue.offer("Element 2");
-        queue.offer("Element 3");
+        queue.add("Apple");
+        queue.add("Banana");
+        queue.add("Orange");
 
         System.out.println("Queue: " + queue);
 
-        String front = queue.poll();
-        System.out.println("Removed from front: " + front);
+        String frontElement = queue.peek();
+        System.out.println("Front element: " + frontElement);
 
-        System.out.println("Queue after removal: " + queue);
+        String removedElement = queue.poll();
+        System.out.println("Removed element: " + removedElement);
+
+        System.out.println("Updated Queue: " + queue);
     }
 }
