@@ -2,43 +2,28 @@ import java.util.Stack;
 
 public class StackSample {
     public static void main(String[] args) {
-        MinStack minStack = new MinStack();
-        minStack.push(3);
-        minStack.push(5);
-        minStack.push(2);
+        Stack<Integer> stack = new Stack<>();
+        stack.push(4);
+        stack.push(2);
+        stack.push(5);
+        stack.push(1);
 
-        System.out.println("Min Element: " + minStack.getMin()); // Output: 2
-
-        minStack.pop();
-        System.out.println("Min Element after pop: " + minStack.getMin()); // Output: 3
-    }
-}
-
-class MinStack {
-    Stack<Integer> stack;
-    Stack<Integer> minStack;
-
-    public MinStack() {
-        stack = new Stack<>();
-        minStack = new Stack<>();
+        System.out.println("Original Stack: " + stack);
+        sortStack(stack);
+        System.out.println("Sorted Stack: " + stack);
     }
 
-    public void push(int x) {
-        stack.push(x);
-        if (minStack.isEmpty() || x <= minStack.peek()) {
-            minStack.push(x);
-        }
-    }
-
-    public void pop() {
-        if (!stack.isEmpty()) {
-            if (stack.pop().equals(minStack.peek())) {
-                minStack.pop();
+    private static void sortStack(Stack<Integer> stack) {
+        Stack<Integer> tempStack = new Stack<>();
+        while (!stack.isEmpty()) {
+            int temp = stack.pop();
+            while (!tempStack.isEmpty() && tempStack.peek() > temp) {
+                stack.push(tempStack.pop());
             }
+            tempStack.push(temp);
         }
-    }
-
-    public int getMin() {
-        return minStack.peek();
+        while (!tempStack.isEmpty()) {
+            stack.push(tempStack.pop());
+        }
     }
 }
