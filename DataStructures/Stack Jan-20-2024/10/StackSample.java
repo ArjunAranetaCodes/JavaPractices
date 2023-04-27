@@ -2,35 +2,23 @@ import java.util.Stack;
 
 public class StackSample {
     public static void main(String[] args) {
+        int[] pushed = {1, 2, 3, 4, 5};
+        int[] popped = {4, 5, 3, 2, 1};
+        System.out.println("Is valid stack sequence: " + validateStackSequences(pushed, popped));
+    }
+
+    private static boolean validateStackSequences(int[] pushed, int[] popped) {
         Stack<Integer> stack = new Stack<>();
-        stack.push(1);
-        stack.push(2);
-        stack.push(3);
-        stack.push(4);
+        int i = 0;
 
-        System.out.println("Original Stack: " + stack);
-        reverseStack(stack);
-        System.out.println("Reversed Stack: " + stack);
-    }
-
-    private static void reverseStack(Stack<Integer> stack) {
-        if (stack.isEmpty()) {
-            return;
+        for (int num : pushed) {
+            stack.push(num);
+            while (!stack.isEmpty() && stack.peek() == popped[i]) {
+                stack.pop();
+                i++;
+            }
         }
 
-        int temp = stack.pop();
-        reverseStack(stack);
-        insertAtBottom(stack, temp);
-    }
-
-    private static void insertAtBottom(Stack<Integer> stack, int value) {
-        if (stack.isEmpty()) {
-            stack.push(value);
-            return;
-        }
-
-        int temp = stack.pop();
-        insertAtBottom(stack, value);
-        stack.push(temp);
+        return stack.isEmpty();
     }
 }
