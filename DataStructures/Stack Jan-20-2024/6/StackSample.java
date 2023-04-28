@@ -1,44 +1,30 @@
+import java.util.HashMap;
+import java.util.Map;
 import java.util.Stack;
 
 public class StackSample {
     public static void main(String[] args) {
-        MinStack minStack = new MinStack();
-        minStack.push(3);
-        minStack.push(5);
-        minStack.push(2);
-
-        System.out.println("Min Element: " + minStack.getMin()); // Output: 2
-
-        minStack.pop();
-        System.out.println("Min Element after pop: " + minStack.getMin()); // Output: 3
-    }
-}
-
-class MinStack {
-    Stack<Integer> stack;
-    Stack<Integer> minStack;
-
-    public MinStack() {
-        stack = new Stack<>();
-        minStack = new Stack<>();
+        int[] array = {4, 5, 2, 10, 8};
+        printNextGreaterElements(array);
     }
 
-    public void push(int x) {
-        stack.push(x);
-        if (minStack.isEmpty() || x <= minStack.peek()) {
-            minStack.push(x);
-        }
-    }
+    private static void printNextGreaterElements(int[] array) {
+        Stack<Integer> stack = new Stack<>();
+        Map<Integer, Integer> nextGreaterMap = new HashMap<>();
 
-    public void pop() {
-        if (!stack.isEmpty()) {
-            if (stack.pop().equals(minStack.peek())) {
-                minStack.pop();
+        for (int num : array) {
+            while (!stack.isEmpty() && num > stack.peek()) {
+                nextGreaterMap.put(stack.pop(), num);
             }
+            stack.push(num);
         }
-    }
 
-    public int getMin() {
-        return minStack.peek();
+        while (!stack.isEmpty()) {
+            nextGreaterMap.put(stack.pop(), -1);
+        }
+
+        for (int num : array) {
+            System.out.println("Next Greater Element for " + num + ": " + nextGreaterMap.get(num));
+        }
     }
 }
