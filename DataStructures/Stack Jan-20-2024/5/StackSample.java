@@ -1,25 +1,40 @@
-import java.util.Stack;
+import java.util.LinkedList;
 
 public class StackSample {
     public static void main(String[] args) {
-        String originalString = "Hello, World!";
-        String reversedString = reverseString(originalString);
-        System.out.println("Original String: " + originalString);
-        System.out.println("Reversed String: " + reversedString);
+        Stack<Integer> stack = new Stack<>();
+        stack.push(1);
+        stack.push(2);
+        stack.push(3);
+
+        while (!stack.isEmpty()) {
+            System.out.println("Popped: " + stack.pop());
+        }
     }
 
-    private static String reverseString(String originalString) {
-        Stack<Character> stack = new Stack<>();
+    static class Stack<T> {
+        private LinkedList<T> list = new LinkedList<>();
 
-        for (char ch : originalString.toCharArray()) {
-            stack.push(ch);
+        public void push(T item) {
+            list.addFirst(item);
         }
 
-        StringBuilder reversedString = new StringBuilder();
-        while (!stack.isEmpty()) {
-            reversedString.append(stack.pop());
+        public T pop() {
+            if (isEmpty()) {
+                throw new IllegalStateException("Stack is empty");
+            }
+            return list.removeFirst();
         }
 
-        return reversedString.toString();
+        public T peek() {
+            if (isEmpty()) {
+                throw new IllegalStateException("Stack is empty");
+            }
+            return list.getFirst();
+        }
+
+        public boolean isEmpty() {
+            return list.isEmpty();
+        }
     }
 }
