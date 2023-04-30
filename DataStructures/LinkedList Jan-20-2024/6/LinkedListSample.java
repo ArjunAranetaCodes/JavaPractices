@@ -2,15 +2,14 @@ import java.util.LinkedList;
 
 public class LinkedListSample {
     public static void main(String[] args) {
-        LinkedList<Integer> linkedList = new LinkedList<>();
-        linkedList.add(1);
-        linkedList.add(2);
-        linkedList.add(3);
+        LinkedList<String> animals = new LinkedList<>();
+        animals.add("Dog");
+        animals.add("Cat");
+        animals.add("Elephant");
 
-        System.out.println("Original LinkedList: " + linkedList);
+        System.out.println("Original LinkedList: " + animals);
 
-        linkedList.clear();
-
-        System.out.println("Cleared LinkedList: " + linkedList);
+        animals.clear();
+        System.out.println("Cleared LinkedList: " + animals);
     }
 }
