@@ -2,15 +2,12 @@ import java.util.LinkedList;
 
 public class LinkedListSample {
     public static void main(String[] args) {
-        LinkedList<String> linkedList = new LinkedList<>();
-        linkedList.add("red");
-        linkedList.add("green");
-        linkedList.add("blue");
+        LinkedList<Integer> numbers = new LinkedList<>();
+        numbers.add(10);
+        numbers.add(20);
+        numbers.add(30);
 
-        System.out.println("Original LinkedList: " + linkedList);
-
-        linkedList.remove("green");
-
-        System.out.println("LinkedList after removal: " + linkedList);
+        System.out.println("First Element: " + numbers.getFirst());
+        System.out.println("Last Element: " + numbers.getLast());
     }
 }
