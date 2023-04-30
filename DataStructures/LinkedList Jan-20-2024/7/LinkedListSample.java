@@ -2,10 +2,14 @@ import java.util.LinkedList;
 
 public class LinkedListSample {
     public static void main(String[] args) {
-        LinkedList<String> linkedList = new LinkedList<>();
+        LinkedList<Integer> sourceList = new LinkedList<>();
+        sourceList.add(1);
+        sourceList.add(2);
+        sourceList.add(3);
 
-        boolean isEmpty = linkedList.isEmpty();
-
-        System.out.println("Is LinkedList empty? " + isEmpty);
+        LinkedList<Integer> targetList = new LinkedList<>(sourceList);
+        
+        System.out.println("Source LinkedList: " + sourceList);
+        System.out.println("Target LinkedList: " + targetList);
     }
 }
