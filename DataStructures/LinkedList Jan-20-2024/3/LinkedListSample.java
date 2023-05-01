@@ -3,14 +3,13 @@ import java.util.Iterator;
 
 public class LinkedListSample {
     public static void main(String[] args) {
-        LinkedList<Double> linkedList = new LinkedList<>();
-        linkedList.add(2.5);
-        linkedList.add(4.7);
-        linkedList.add(6.3);
+        LinkedList<Double> prices = new LinkedList<>();
+        prices.add(25.5);
+        prices.add(30.0);
+        prices.add(15.75);
 
         System.out.println("LinkedList Elements:");
-
-        Iterator<Double> iterator = linkedList.iterator();
+        Iterator<Double> iterator = prices.iterator();
         while (iterator.hasNext()) {
             System.out.println(iterator.next());
         }
