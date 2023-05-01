@@ -2,18 +2,17 @@ import java.util.LinkedList;
 
 public class LinkedListSample {
     public static void main(String[] args) {
-        LinkedList<Integer> linkedList = new LinkedList<>();
-        linkedList.add(5);
-        linkedList.add(10);
-        linkedList.add(15);
+        LinkedList<Integer> numbers = new LinkedList<>();
+        numbers.add(10);
+        numbers.add(20);
+        numbers.add(30);
 
-        System.out.println("Original LinkedList: " + linkedList);
+        System.out.println("Original LinkedList: " + numbers);
 
-        linkedList.addFirst(2);
-        linkedList.addLast(20);
-        linkedList.removeFirst();
-        linkedList.removeLast();
+        numbers.addFirst(5);
+        numbers.addLast(40);
+        numbers.remove(2);
 
-        System.out.println("Modified LinkedList: " + linkedList);
+        System.out.println("Updated LinkedList: " + numbers);
     }
 }
