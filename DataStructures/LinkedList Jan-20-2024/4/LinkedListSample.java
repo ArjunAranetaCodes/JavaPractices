@@ -2,14 +2,16 @@ import java.util.LinkedList;
 
 public class LinkedListSample {
     public static void main(String[] args) {
-        LinkedList<String> linkedList = new LinkedList<>();
-        linkedList.add("apple");
-        linkedList.add("banana");
-        linkedList.add("orange");
+        LinkedList<String> fruits = new LinkedList<>();
+        fruits.add("Apple");
+        fruits.add("Banana");
+        fruits.add("Orange");
 
-        String searchElement = "banana";
-        boolean containsElement = linkedList.contains(searchElement);
-
-        System.out.println("LinkedList contains '" + searchElement + "': " + containsElement);
+        String searchElement = "Banana";
+        if (fruits.contains(searchElement)) {
+            System.out.println(searchElement + " found in the LinkedList.");
+        } else {
+            System.out.println(searchElement + " not found in the LinkedList.");
+        }
     }
 }
