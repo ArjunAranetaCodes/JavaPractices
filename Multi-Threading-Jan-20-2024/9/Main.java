@@ -1,73 +1,32 @@
-class Chopstick {
-    private boolean taken = false;
-
-    public synchronized void take() {
-        while (taken) {
-            try {
-                wait();
-            } catch (InterruptedException e) {
-                e.printStackTrace();
-            }
-        }
-        taken = true;
-    }
-
-    public synchronized void release() {
-        taken = false;
-        notify();
-    }
-}
-
-class Philosopher extends Thread {
-    private Chopstick leftChopstick;
-    private Chopstick rightChopstick;
-
-    public Philosopher(String name, Chopstick leftChopstick, Chopstick rightChopstick) {
-        super(name);
-        this.leftChopstick = leftChopstick;
-        this.rightChopstick = rightChopstick;
-    }
-
-    @Override
-    public void run() {
-        for (int i = 0; i < 5; i++) {
-            think();
-            eat();
-        }
-    }
-
-    private void think() {
-        System.out.println(getName() + " is thinking.");
-        try {
-            Thread.sleep(1000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
-    }
-
-    private void eat() {
-        leftChopstick.take();
-        rightChopstick.take();
-
-        System.out.println(getName() + " is eating.");
-
-        leftChopstick.release();
-        rightChopstick.release();
-    }
-}
+import java.util.concurrent.CountDownLatch;
 
 public class Main {
-    public static void main(String[] args) {
-        Chopstick[] chopsticks = new Chopstick[5];
-        Philosopher[] philosophers = new Philosopher[5];
+    public static void main(String[] args) throws InterruptedException {
+        int threadCount = 3;
+        CountDownLatch startLatch = new CountDownLatch(1);
+        CountDownLatch endLatch = new CountDownLatch(threadCount);
 
-        for (int i = 0; i < 5; i++) {
-            chopsticks[i] = new Chopstick();
+        for (int i = 0; i < threadCount; i++) {
+            Thread workerThread = new Thread(() -> performTask(startLatch, endLatch));
+            workerThread.start();
         }
 
-        for (int i = 0; i < 5; i++) {
-            philosophers[i] = new Philosopher("Philosopher " + (i + 1), chopsticks[i], chopsticks[(i + 1) % 5]);
-            philosophers[i].start();
+        System.out.println("All threads are waiting...");
+        startLatch.countDown(); // Start all threads simultaneously
+
+        endLatch.await(); // Wait for all threads to finish
+        System.out.println("All threads have completed the task.");
+    }
+
+    private static void performTask(CountDownLatch startLatch, CountDownLatch endLatch) {
+        try {
+            startLatch.await(); // Wait for the signal to start
+            // Task logic
+            System.out.println(Thread.currentThread().getName() + ": Performing the task");
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        } finally {
+            endLatch.countDown(); // Signal that the task is complete
         }
     }
 }
