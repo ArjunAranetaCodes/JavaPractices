@@ -14,7 +14,6 @@ public class Main {
     private static void accessSharedResource() {
         try {
             semaphore.acquire(); // Acquire a permit
-            // Access the shared resource (e.g., a database connection)
             System.out.println(Thread.currentThread().getName() + ": Accessing the shared resource");
             Thread.sleep(2000); // Simulate resource usage
         } catch (InterruptedException e) {
