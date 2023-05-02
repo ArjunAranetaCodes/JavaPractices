@@ -1,73 +1,26 @@
-class Chopstick {
-    private boolean taken = false;
-
-    public synchronized void take() {
-        while (taken) {
-            try {
-                wait();
-            } catch (InterruptedException e) {
-                e.printStackTrace();
-            }
-        }
-        taken = true;
-    }
-
-    public synchronized void release() {
-        taken = false;
-        notify();
-    }
-}
-
-class Philosopher extends Thread {
-    private Chopstick leftChopstick;
-    private Chopstick rightChopstick;
-
-    public Philosopher(String name, Chopstick leftChopstick, Chopstick rightChopstick) {
-        super(name);
-        this.leftChopstick = leftChopstick;
-        this.rightChopstick = rightChopstick;
-    }
-
-    @Override
-    public void run() {
-        for (int i = 0; i < 5; i++) {
-            think();
-            eat();
-        }
-    }
-
-    private void think() {
-        System.out.println(getName() + " is thinking.");
-        try {
-            Thread.sleep(1000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
-    }
-
-    private void eat() {
-        leftChopstick.take();
-        rightChopstick.take();
-
-        System.out.println(getName() + " is eating.");
-
-        leftChopstick.release();
-        rightChopstick.release();
-    }
-}
+import java.util.concurrent.Semaphore;
 
 public class Main {
+    private static final int MAX_PERMITS = 3;
+    private static Semaphore semaphore = new Semaphore(MAX_PERMITS);
+
     public static void main(String[] args) {
-        Chopstick[] chopsticks = new Chopstick[5];
-        Philosopher[] philosophers = new Philosopher[5];
-
         for (int i = 0; i < 5; i++) {
-            chopsticks[i] = new Chopstick();
+            Thread workerThread = new Thread(() -> accessSharedResource());
+            workerThread.start();
         }
+    }
 
-        for (int i = 0; i < 5; i++) {
-            philosophers[i] = new Philosopher("Philosopher " + (i + 1), chopsticks[i], chopsticks[(i + 1) % 5]);
-            philosophers[i].start();
+    private static void accessSharedResource() {
+        try {
+            semaphore.acquire(); // Acquire a permit
+            // Access the shared resource (e.g., a database connection)
+            System.out.println(Thread.currentThread().getName() + ": Accessing the shared resource");
+            Thread.sleep(2000); // Simulate resource usage
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        } finally {
+            semaphore.release(); // Release the permit
         }
     }
 }
