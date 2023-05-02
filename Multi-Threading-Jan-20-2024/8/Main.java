@@ -1,73 +1,25 @@
-class Chopstick {
-    private boolean taken = false;
+public class Main {
+    public static void main(String[] args) throws InterruptedException {
+        Thread primeThread = new Thread(() -> generatePrimes());
+        Thread interruptThread = new Thread(() -> interruptAfterDelay(primeThread, 2000));
 
-    public synchronized void take() {
-        while (taken) {
-            try {
-                wait();
-            } catch (InterruptedException e) {
-                e.printStackTrace();
-            }
-        }
-        taken = true;
+        primeThread.start();
+        interruptThread.start();
+
+        primeThread.join();
+        interruptThread.join();
     }
 
-    public synchronized void release() {
-        taken = false;
-        notify();
-    }
-}
-
-class Philosopher extends Thread {
-    private Chopstick leftChopstick;
-    private Chopstick rightChopstick;
-
-    public Philosopher(String name, Chopstick leftChopstick, Chopstick rightChopstick) {
-        super(name);
-        this.leftChopstick = leftChopstick;
-        this.rightChopstick = rightChopstick;
+    private static void generatePrimes() {
+        // Prime number generation logic
     }
 
-    @Override
-    public void run() {
-        for (int i = 0; i < 5; i++) {
-            think();
-            eat();
-        }
-    }
-
-    private void think() {
-        System.out.println(getName() + " is thinking.");
+    private static void interruptAfterDelay(Thread targetThread, long delayMillis) {
         try {
-            Thread.sleep(1000);
+            Thread.sleep(delayMillis);
+            targetThread.interrupt();
         } catch (InterruptedException e) {
             e.printStackTrace();
-        }
-    }
-
-    private void eat() {
-        leftChopstick.take();
-        rightChopstick.take();
-
-        System.out.println(getName() + " is eating.");
-
-        leftChopstick.release();
-        rightChopstick.release();
-    }
-}
-
-public class Main {
-    public static void main(String[] args) {
-        Chopstick[] chopsticks = new Chopstick[5];
-        Philosopher[] philosophers = new Philosopher[5];
-
-        for (int i = 0; i < 5; i++) {
-            chopsticks[i] = new Chopstick();
-        }
-
-        for (int i = 0; i < 5; i++) {
-            philosophers[i] = new Philosopher("Philosopher " + (i + 1), chopsticks[i], chopsticks[(i + 1) % 5]);
-            philosophers[i].start();
         }
     }
 }
