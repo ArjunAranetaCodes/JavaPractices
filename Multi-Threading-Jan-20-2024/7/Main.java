@@ -1,73 +1,31 @@
-class Chopstick {
-    private boolean taken = false;
-
-    public synchronized void take() {
-        while (taken) {
-            try {
-                wait();
-            } catch (InterruptedException e) {
-                e.printStackTrace();
-            }
-        }
-        taken = true;
-    }
-
-    public synchronized void release() {
-        taken = false;
-        notify();
-    }
-}
-
-class Philosopher extends Thread {
-    private Chopstick leftChopstick;
-    private Chopstick rightChopstick;
-
-    public Philosopher(String name, Chopstick leftChopstick, Chopstick rightChopstick) {
-        super(name);
-        this.leftChopstick = leftChopstick;
-        this.rightChopstick = rightChopstick;
-    }
-
-    @Override
-    public void run() {
-        for (int i = 0; i < 5; i++) {
-            think();
-            eat();
-        }
-    }
-
-    private void think() {
-        System.out.println(getName() + " is thinking.");
-        try {
-            Thread.sleep(1000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
-    }
-
-    private void eat() {
-        leftChopstick.take();
-        rightChopstick.take();
-
-        System.out.println(getName() + " is eating.");
-
-        leftChopstick.release();
-        rightChopstick.release();
-    }
-}
+import java.util.concurrent.*;
 
 public class Main {
-    public static void main(String[] args) {
-        Chopstick[] chopsticks = new Chopstick[5];
-        Philosopher[] philosophers = new Philosopher[5];
+    public static void main(String[] args) throws InterruptedException, ExecutionException {
+        ExecutorService executorService = Executors.newSingleThreadExecutor();
+        Future<Long> future = executorService.submit(new FactorialTask(5));
 
-        for (int i = 0; i < 5; i++) {
-            chopsticks[i] = new Chopstick();
+        // Waiting for the result
+        long result = future.get();
+        System.out.println("Factorial result: " + result);
+
+        executorService.shutdown();
+    }
+
+    static class FactorialTask implements Callable<Long> {
+        private int number;
+
+        FactorialTask(int number) {
+            this.number = number;
         }
 
-        for (int i = 0; i < 5; i++) {
-            philosophers[i] = new Philosopher("Philosopher " + (i + 1), chopsticks[i], chopsticks[(i + 1) % 5]);
-            philosophers[i].start();
+        @Override
+        public Long call() {
+            long factorial = 1;
+            for (int i = 1; i <= number; i++) {
+                factorial *= i;
+            }
+            return factorial;
         }
     }
 }
