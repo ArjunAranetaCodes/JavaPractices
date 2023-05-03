@@ -1,5 +1,2 @@
-Problem 3: Dining Philosophers Problem
-Description:
-Implement the dining philosophers problem. Create five philosopher threads and five chopsticks. 
-Each philosopher must alternate between thinking and eating. To eat, a philosopher needs two chopsticks. 
-Ensure that deadlock and contention issues are handled.
+Problem 7: Callable and Future
+Description: Use Callable and Future to implement a task that calculates the factorial of a number.
