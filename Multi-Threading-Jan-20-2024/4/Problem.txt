@@ -1,5 +1,2 @@
-Problem 3: Dining Philosophers Problem
-Description:
-Implement the dining philosophers problem. Create five philosopher threads and five chopsticks. 
-Each philosopher must alternate between thinking and eating. To eat, a philosopher needs two chopsticks. 
-Ensure that deadlock and contention issues are handled.
+Problem 4: Thread Communication
+Description: Implement a program where one thread prints odd numbers, and another thread prints even numbers alternatively.
