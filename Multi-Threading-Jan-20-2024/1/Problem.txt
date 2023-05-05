@@ -1,5 +1,2 @@
-Problem 1: Print Even and Odd Numbers
-Description:
-Create two threads, one printing even numbers and the other printing odd numbers. 
-The threads should run concurrently, and the program should ensure that the even 
-and odd numbers are printed alternately.
+Problem 1: Simple Multithreading
+Description: Create a program with two threads that print numbers from 1 to 10 alternatively.
