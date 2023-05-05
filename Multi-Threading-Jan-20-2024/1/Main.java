@@ -1,60 +1,15 @@
-class NumberPrinter {
-    private int count = 1;
-    private int maxCount;
-
-    public NumberPrinter(int maxCount) {
-        this.maxCount = maxCount;
-    }
-
-    public synchronized void printOdd() {
-        while (count <= maxCount) {
-            if (count % 2 != 0) {
-                System.out.println(Thread.currentThread().getName() + ": " + count);
-                count++;
-                notify();
-            } else {
-                try {
-                    wait();
-                } catch (InterruptedException e) {
-                    e.printStackTrace();
-                }
-            }
-        }
-    }
-
-    public synchronized void printEven() {
-        while (count <= maxCount) {
-            if (count % 2 == 0) {
-                System.out.println(Thread.currentThread().getName() + ": " + count);
-                count++;
-                notify();
-            } else {
-                try {
-                    wait();
-                } catch (InterruptedException e) {
-                    e.printStackTrace();
-                }
-            }
-        }
-    }
-
-    public synchronized void method1(){
-        for(int i = 0; i < 5; i++){
-            System.out.println(i);
-        }
-    }
-}
-
 public class Main {
     public static void main(String[] args) {
-        NumberPrinter numberPrinter = new NumberPrinter(10);
+        Thread t1 = new Thread(() -> printNumbers(1, 10, 2));
+        Thread t2 = new Thread(() -> printNumbers(2, 10, 2));
 
-        Thread evenThread = new Thread(() -> numberPrinter.printEven(), "EvenThread");
-        Thread oddThread = new Thread(() -> numberPrinter.printOdd(), "OddThread");
-        Thread newMethod1 = new Thread(() -> numberPrinter.method1(), "Method1");
+        t1.start();
+        t2.start();
+    }
 
-        evenThread.start();
-        oddThread.start();
-        newMethod1.start();
+    private static void printNumbers(int start, int end, int step) {
+        for (int i = start; i <= end; i += step) {
+            System.out.println(Thread.currentThread().getName() + ": " + i);
+        }
     }
 }
