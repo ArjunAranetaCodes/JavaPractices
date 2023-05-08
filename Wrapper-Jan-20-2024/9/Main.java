@@ -1,16 +1,8 @@
-import java.util.Scanner;
-
 public class Main {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        System.out.print("Enter a binary number: ");
-        String binaryInput = scanner.nextLine();
+        // TODO: Create an array of integers and find the maximum and minimum using wrapper classes
 
-        int decimalValue = binaryToDecimal(binaryInput);
-        System.out.println("Decimal equivalent: " + decimalValue);
-    }
-
-    private static int binaryToDecimal(String binary) {
-        return Integer.parseInt(binary, 2);
+        System.out.println("Maximum value: " + maxValue);
+        System.out.println("Minimum value: " + minValue);
     }
 }
