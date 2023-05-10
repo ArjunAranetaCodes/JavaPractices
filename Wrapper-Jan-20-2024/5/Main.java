@@ -3,14 +3,11 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        System.out.print("Enter a binary number: ");
-        String binaryInput = scanner.nextLine();
+        System.out.print("Enter a decimal number: ");
+        int decimalNumber = scanner.nextInt();
 
-        int decimalValue = binaryToDecimal(binaryInput);
-        System.out.println("Decimal equivalent: " + decimalValue);
-    }
+        // TODO: Convert the decimal number to binary using wrapper classes
 
-    private static int binaryToDecimal(String binary) {
-        return Integer.parseInt(binary, 2);
+        System.out.println("Binary equivalent: " + binaryEquivalent);
     }
 }
