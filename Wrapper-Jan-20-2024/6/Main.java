@@ -3,14 +3,12 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        System.out.print("Enter a binary number: ");
-        String binaryInput = scanner.nextLine();
+        System.out.print("Enter a string: ");
+        String input = scanner.nextLine();
 
-        int decimalValue = binaryToDecimal(binaryInput);
-        System.out.println("Decimal equivalent: " + decimalValue);
-    }
+        // TODO: Count vowels and consonants in the input string using wrapper classes
 
-    private static int binaryToDecimal(String binary) {
-        return Integer.parseInt(binary, 2);
+        System.out.println("Vowels: " + vowelCount);
+        System.out.println("Consonants: " + consonantCount);
     }
 }
