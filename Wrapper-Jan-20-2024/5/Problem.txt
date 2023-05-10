@@ -1,3 +1,2 @@
-Problem 3: Binary to Decimal Converter
-Description:
-Write a Java program to convert a binary number (entered as a string) to its decimal equivalent. Use wrapper classes for conversion.
+Problem 5: Decimal to Binary Conversion
+Description: Write a program that converts a decimal number to its binary equivalent using wrapper classes.
