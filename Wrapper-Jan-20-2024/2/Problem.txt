@@ -1,0 +1,3 @@
+Problem 2: Reverse Number
+Description:
+Write a Java program to reverse a given integer. Use wrapper classes to convert the integer to a string, reverse the string, and convert it back to an integer.
