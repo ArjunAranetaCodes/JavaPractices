@@ -14,7 +14,6 @@ public class LibraryBook {
     }
 
     public boolean isAvailable() {
-        // Implement availability check logic
         return available;
     }
 }
