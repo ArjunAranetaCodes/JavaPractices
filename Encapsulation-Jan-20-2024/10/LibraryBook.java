@@ -6,7 +6,6 @@ public class LibraryBook {
     // Constructor and other methods
 
     public void checkOut() {
-        // Implement book checkout logic
     }
 
     public void returnBook() {
