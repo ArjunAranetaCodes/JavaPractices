@@ -3,8 +3,6 @@ public class LibraryBook {
     private String author;
     private boolean available;
 
-    // Constructor and other methods
-
     public void checkOut() {
     }
 
