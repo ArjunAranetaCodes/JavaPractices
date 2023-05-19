@@ -1,4 +1,186 @@
-Problem 3: Employee Salary Encapsulation
-Description:
-Create an Employee class with private attributes for name, employee ID, and monthly salary. 
-Provide a method to calculate the yearly salary, ensuring that the monthly salary is not negative.
+
+Certainly! Here are 10 Java programming problems related to encapsulation, along with brief descriptions and sample code:
+
+Problem 1: Simple Encapsulation
+Description: Create a class representing a bank account with private fields for account number, balance, and account holder name. Implement encapsulation by providing methods to deposit, withdraw, and get the account balance.
+
+java
+Copy code
+public class BankAccount {
+    private int accountNumber;
+    private double balance;
+    private String accountHolderName;
+
+    // Constructor and other methods
+
+    public void deposit(double amount) {
+        // Implement deposit logic
+    }
+
+    public void withdraw(double amount) {
+        // Implement withdrawal logic
+    }
+
+    public double getBalance() {
+        // Implement balance retrieval logic
+        return balance;
+    }
+}
+Problem 2: Employee Information
+Description: Create an Employee class with private fields for employee ID, name, and salary. Use encapsulation to ensure that these fields are accessible only through getter and setter methods.
+
+java
+Copy code
+public class Employee {
+    private int employeeID;
+    private String name;
+    private double salary;
+
+    // Constructor and other methods
+
+    public void setSalary(double salary) {
+        // Implement salary update logic
+    }
+
+    public double getSalary() {
+        // Implement salary retrieval logic
+        return salary;
+    }
+}
+Problem 3: Book Information
+Description: Develop a Book class with private fields for title, author, and price. Ensure encapsulation by providing methods to set and get these attributes.
+
+java
+Copy code
+public class Book {
+    private String title;
+    private String author;
+    private double price;
+
+    // Constructor and other methods
+
+    public void setPrice(double price) {
+        // Implement price update logic
+    }
+
+    public double getPrice() {
+        // Implement price retrieval logic
+        return price;
+    }
+}
+Problem 4: Student Information
+Description: Design a Student class with private fields for student ID, name, and grade. Use encapsulation to control access to these fields and provide methods to update the grade.
+
+java
+Copy code
+public class Student {
+    private int studentID;
+    private String name;
+    private char grade;
+
+    // Constructor and other methods
+
+    public void updateGrade(char newGrade) {
+        // Implement grade update logic
+    }
+
+    public char getGrade() {
+        // Implement grade retrieval logic
+        return grade;
+    }
+}
+Problem 5: Temperature Converter
+Description: Create a TemperatureConverter class with private fields for Celsius and Fahrenheit temperatures. Implement encapsulation to convert temperatures between these units.
+
+java
+Copy code
+public class TemperatureConverter {
+    private double celsius;
+    private double fahrenheit;
+
+    // Constructor and other methods
+
+    public void setCelsius(double celsius) {
+        // Implement Celsius update logic
+    }
+
+    public double getCelsius() {
+        // Implement Celsius retrieval logic
+        return celsius;
+    }
+
+    public void setFahrenheit(double fahrenheit) {
+        // Implement Fahrenheit update logic
+    }
+
+    public double getFahrenheit() {
+        // Implement Fahrenheit retrieval logic
+        return fahrenheit;
+    }
+}
+Problem 6: Product Information
+Description: Implement a Product class with private fields for product ID, name, and price. Utilize encapsulation to provide methods for setting and retrieving product information.
+
+java
+Copy code
+public class Product {
+    private int productID;
+    private String name;
+    private double price;
+
+    // Constructor and other methods
+
+    public void setPrice(double price) {
+        // Implement price update logic
+    }
+
+    public double getPrice() {
+        // Implement price retrieval logic
+        return price;
+    }
+}
+Problem 7: Password Validator
+Description: Develop a PasswordValidator class with a private field for the password. Implement encapsulation to validate the password against certain criteria (length, complexity, etc.).
+
+java
+Copy code
+public class PasswordValidator {
+    private String password;
+
+    // Constructor and other methods
+
+    public void setPassword(String password) {
+        // Implement password validation logic
+    }
+
+    public boolean isValidPassword() {
+        // Implement password validation check
+        return false;
+    }
+}
+Problem 8: Circle Information
+Description: Create a Circle class with a private radius field. Use encapsulation to provide methods for setting the radius, calculating the area, and retrieving the circumference.
+
+java
+Copy code
+public class Circle {
+    private double radius;
+
+    // Constructor and other methods
+
+    public void setRadius(double radius) {
+        // Implement radius update logic
+    }
+
+    public double getArea() {
+        // Implement area calculation logic
+        return Math.PI * radius * radius;
+    }
+
+    public double getCircumference() {
+        // Implement circumference retrieval logic
+        return 2 * Math.PI * radius;
+    }
+}
+Problem 9: Car Information
+Description: Design a Car class with private fields for make, model, and year. Implement encapsulation by providing methods for updating the year and retrieving the car information.
