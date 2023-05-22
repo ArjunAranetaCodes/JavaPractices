@@ -10,7 +10,6 @@ public class Product {
     }
 
     public double getPrice() {
-        // Implement price retrieval logic
         return price;
     }
 }
