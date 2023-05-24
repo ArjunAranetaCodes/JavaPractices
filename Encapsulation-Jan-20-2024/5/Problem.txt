@@ -1,4 +1,2 @@
-Problem 3: Employee Salary Encapsulation
-Description:
-Create an Employee class with private attributes for name, employee ID, and monthly salary. 
-Provide a method to calculate the yearly salary, ensuring that the monthly salary is not negative.
+Problem 5: Temperature Converter
+Description: Create a TemperatureConverter class with private fields for Celsius and Fahrenheit temperatures. Implement encapsulation to convert temperatures between these units.
