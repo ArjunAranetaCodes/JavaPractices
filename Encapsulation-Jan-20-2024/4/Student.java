@@ -9,6 +9,8 @@ public class Student {
         // Implement grade update logic
     }
 
+    public char getGrade() {
+        // Implement grade retrieval logic
         return grade;
     }
 }
