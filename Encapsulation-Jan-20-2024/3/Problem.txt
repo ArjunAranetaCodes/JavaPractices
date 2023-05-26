@@ -1,4 +1,2 @@
-Problem 3: Employee Salary Encapsulation
-Description:
-Create an Employee class with private attributes for name, employee ID, and monthly salary. 
-Provide a method to calculate the yearly salary, ensuring that the monthly salary is not negative.
+Problem 3: Book Information
+Description: Develop a Book class with private fields for title, author, and price. Ensure encapsulation by providing methods to set and get these attributes.
