@@ -1,27 +1,20 @@
 public class BankAccount {
+    private int accountNumber;
     private double balance;
-    private String accountNumber;
+    private String accountHolderName;
 
-    public BankAccount(String accNumber, double initialBalance) {
-        accountNumber = accNumber;
-        balance = initialBalance;
-    }
+    // Constructor and other methods
 
     public void deposit(double amount) {
-        balance += amount;
+        // Implement deposit logic
     }
 
     public void withdraw(double amount) {
-        if (amount <= balance) {
-            balance -= amount;
-        }
+        // Implement withdrawal logic
     }
 
     public double getBalance() {
+        // Implement balance retrieval logic
         return balance;
-    }
-
-    public String getAccountNumber() {
-        return accountNumber;
     }
 }
