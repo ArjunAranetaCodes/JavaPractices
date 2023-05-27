@@ -11,5 +11,6 @@ public class Employee {
 
     public double getSalary() {
         // Implement salary retrieval logic
+        return salary;
     }
 }
