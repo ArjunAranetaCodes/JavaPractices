@@ -1,4 +1,2 @@
-Problem 2: Student Information Encapsulation
-Description:
-Create a Student class that encapsulates student information such as name, age, and course. 
-Ensure that the age is between 18 and 40, and the course is one of "Computer Science," "Mathematics," or "Physics."
+Problem 2: Employee Information
+Description: Create an Employee class with private fields for employee ID, name, and salary. Use encapsulation to ensure that these fields are accessible only through getter and setter methods.
