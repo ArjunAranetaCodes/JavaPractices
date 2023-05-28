@@ -1,4 +1,2 @@
-Problem 1: Bank Account Encapsulation
-Description:
-Create a simple BankAccount class with private attributes for balance and account number. 
-Provide methods to deposit and withdraw money, ensuring that the balance cannot become negative.
+Problem 1: Simple Encapsulation
+Description: Create a class representing a bank account with private fields for account number, balance, and account holder name. Implement encapsulation by providing methods to deposit, withdraw, and get the account balance.
