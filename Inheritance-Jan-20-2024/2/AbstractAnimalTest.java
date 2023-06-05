@@ -12,6 +12,8 @@ class Dog extends Animal {
     String breed;
 
     Dog(String name, String breed) {
+        this.name = name;
+        this.breed = breed;
     }
 
     void makeSound() {
