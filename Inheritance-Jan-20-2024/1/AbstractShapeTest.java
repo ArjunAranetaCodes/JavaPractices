@@ -16,6 +16,7 @@ class Circle extends Shape {
     }
 
     void calculateArea() {
+        area = Math.PI * radius * radius;
     }
 }
 
