@@ -1,0 +1,5 @@
+Problem 1: Shape Interface
+Description:
+Create an interface called Shape with methods calculateArea() and calculatePerimeter(). 
+Implement this interface in classes for different shapes like Circle, Rectangle, and Triangle. 
+Write a program to demonstrate the use of these classes and the Shape interface.
