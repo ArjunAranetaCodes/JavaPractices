@@ -88,6 +88,7 @@ public class ExpenseTrackerApp extends JFrame {
         for (Map.Entry<String, Double> entry : expenseMap.entrySet()) {
             stringBuilder.append(entry.getKey()).append("\t\t").append(entry.getValue()).append("\n");
         }
+        expenseListTextArea.setText(stringBuilder.toString());
     }
 
     public static void main(String[] args) {
