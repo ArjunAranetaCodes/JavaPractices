@@ -83,7 +83,6 @@ public class ExpenseTrackerApp extends JFrame {
 
     private void updateExpenseListTextArea() {
         StringBuilder stringBuilder = new StringBuilder();
-        stringBuilder.append("Category\t\tAmount\n");
         stringBuilder.append("-----------------------------\n");
         for (Map.Entry<String, Double> entry : expenseMap.entrySet()) {
             stringBuilder.append(entry.getKey()).append("\t\t").append(entry.getValue()).append("\n");
