@@ -104,6 +104,13 @@ class RecipeApp extends JFrame {
     }
 
     private void initializeRecipes() {
+        // Add sample recipes
+        recipes.add(new Recipe("Pasta Carbonara",
+                new ArrayList<>(List.of("200g spaghetti", "100g pancetta", "2 eggs", "50g grated Pecorino cheese")),
+                "1. Cook spaghetti according to package instructions.\n" +
+                        "2. In a pan, cook pancetta until crispy.\n" +
+                        "3. In a bowl, whisk together eggs and grated Pecorino cheese.\n" +
+                        "4. Drain spaghetti and toss with egg mixture. Add pancetta."));
         // Add more recipes as needed
     }
 
