@@ -11,7 +11,7 @@ public class ToDoListApp extends JFrame {
 
     public ToDoListApp() {
         setTitle("To-Do List Application");
-        setSize(400, 300);
+        setSize(600, 300);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
         taskListModel = new DefaultListModel<>();
