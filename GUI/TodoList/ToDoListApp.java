@@ -18,7 +18,7 @@ public class ToDoListApp extends JFrame {
         taskList = new JList<>(taskListModel);
 
         JScrollPane scrollPane = new JScrollPane(taskList);
-        taskInput = new JTextField();
+        taskInput = new JTextField("", 10);
         taskInput.setSize(100, 10);
         JButton addButton = new JButton("Add Task");
         JButton removeButton = new JButton("Remove Task");
