@@ -1,14 +1,14 @@
-import java.util.HashSet;
+import java.util.HashMap;
 
-public class HashSetSample {
+public class HashMapSample {
     public static void main(String[] args) {
-        HashSet<String> set = new HashSet<>();
-        set.add("Java");
-        set.add("Python");
-        set.add("C++");
+        HashMap<String, Integer> population = new HashMap<>();
+        population.put("New York", 8398748);
+        population.put("Los Angeles", 3990456);
+        population.put("Chicago", 2716000);
 
-        System.out.println("HashSet elements: " + set);
-
-        // Other HashSet operations can be performed here
+        // Getting the size of the HashMap
+        int size = population.size();
+        System.out.println("Size of the population HashMap: " + size);
     }
 }
