@@ -1,14 +1,15 @@
-import java.util.HashSet;
+import java.util.HashMap;
 
-public class HashSetSample {
+public class HashMapSample {
     public static void main(String[] args) {
-        HashSet<String> set = new HashSet<>();
-        set.add("Java");
-        set.add("Python");
-        set.add("C++");
+        HashMap<Integer, String> employeeMap = new HashMap<>();
+        employeeMap.put(101, "John Doe");
+        employeeMap.put(102, "Jane Smith");
+        employeeMap.put(103, "Bob Johnson");
 
-        System.out.println("HashSet elements: " + set);
-
-        // Other HashSet operations can be performed here
+        // Displaying employee names using key
+        for (int empId : employeeMap.keySet()) {
+            System.out.println("Employee ID: " + empId + ", Name: " + employeeMap.get(empId));
+        }
     }
 }
