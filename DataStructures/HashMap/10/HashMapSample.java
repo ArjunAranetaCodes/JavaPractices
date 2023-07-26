@@ -1,14 +1,17 @@
-import java.util.HashSet;
+import java.util.HashMap;
 
-public class HashSetSample {
+public class HashMapSample {
     public static void main(String[] args) {
-        HashSet<String> set = new HashSet<>();
-        set.add("Java");
-        set.add("Python");
-        set.add("C++");
+        // Creating a HashMap with chaining (LinkedList as the collision resolution strategy)
+        HashMap<String, Integer> map = new HashMap<>(16, 0.75f);
+        map.put("One", 1);
+        map.put("Two", 2);
+        map.put("Three", 3);
+        map.put("Four", 4);
+        map.put("Five", 5);
+        map.put("Six", 6);
 
-        System.out.println("HashSet elements: " + set);
-
-        // Other HashSet operations can be performed here
+        // Displaying the HashMap
+        System.out.println("HashMap with chaining: " + map);
     }
 }
