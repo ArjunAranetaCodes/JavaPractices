@@ -1,14 +1,15 @@
-import java.util.HashSet;
+import java.util.HashMap;
 
-public class HashSetSample {
+public class HashMapSample {
     public static void main(String[] args) {
-        HashSet<String> set = new HashSet<>();
-        set.add("Java");
-        set.add("Python");
-        set.add("C++");
+        HashMap<String, Double> prices = new HashMap<>();
+        prices.put("Apple", 1.99);
+        prices.put("Banana", 0.99);
+        prices.put("Orange", 2.49);
 
-        System.out.println("HashSet elements: " + set);
+        // Clearing the HashMap
+        prices.clear();
 
-        // Other HashSet operations can be performed here
+        System.out.println("HashMap after clearing: " + prices);
     }
 }
