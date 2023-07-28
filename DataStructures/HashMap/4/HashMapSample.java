@@ -1,14 +1,21 @@
-import java.util.HashSet;
+import java.util.HashMap;
 
-public class HashSetSample {
+class Student {
+    String name;
+
+    Student(String name) {
+        this.name = name;
+    }
+}
+
+public class HashMapSample {
     public static void main(String[] args) {
-        HashSet<String> set = new HashSet<>();
-        set.add("Java");
-        set.add("Python");
-        set.add("C++");
+        HashMap<Integer, Student> studentMap = new HashMap<>();
+        studentMap.put(1, new Student("John"));
+        studentMap.put(2, new Student("Alice"));
+        studentMap.put(3, new Student("Bob"));
 
-        System.out.println("HashSet elements: " + set);
-
-        // Other HashSet operations can be performed here
+        // Accessing custom objects from the HashMap
+        System.out.println("Student with key 2: " + studentMap.get(2).name);
     }
 }
