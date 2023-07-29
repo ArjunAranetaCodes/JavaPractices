@@ -1,14 +1,18 @@
-import java.util.HashSet;
+import java.util.HashMap;
 
-public class HashSetSample {
+public class HashMapSample {
     public static void main(String[] args) {
-        HashSet<String> set = new HashSet<>();
-        set.add("Java");
-        set.add("Python");
-        set.add("C++");
+        HashMap<String, String> map = new HashMap<>();
+        map.put("Java", "Programming");
+        map.put("Python", "Scripting");
+        map.put("C++", "OOP");
 
-        System.out.println("HashSet elements: " + set);
-
-        // Other HashSet operations can be performed here
+        // Checking if a key exists
+        String keyToCheck = "Java";
+        if (map.containsKey(keyToCheck)) {
+            System.out.println(keyToCheck + " is present. Value: " + map.get(keyToCheck));
+        } else {
+            System.out.println(keyToCheck + " is not present in the HashMap.");
+        }
     }
 }
