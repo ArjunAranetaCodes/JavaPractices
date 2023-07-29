@@ -1,14 +1,25 @@
-import java.util.HashSet;
+import java.util.HashMap;
 
-public class HashSetSample {
+public class HashMapSample {
     public static void main(String[] args) {
-        HashSet<String> set = new HashSet<>();
-        set.add("Java");
-        set.add("Python");
-        set.add("C++");
+        // Creating a HashMap
+        HashMap<String, Integer> map = new HashMap<>();
 
-        System.out.println("HashSet elements: " + set);
+        // Adding key-value pairs
+        map.put("One", 1);
+        map.put("Two", 2);
+        map.put("Three", 3);
 
-        // Other HashSet operations can be performed here
+        // Accessing values
+        System.out.println("Value corresponding to key 'Two': " + map.get("Two"));
+
+        // Removing a key-value pair
+        map.remove("Three");
+
+        // Iterating through the HashMap
+        System.out.println("HashMap after removal:");
+        for (String key : map.keySet()) {
+            System.out.println(key + ": " + map.get(key));
+        }
     }
 }
