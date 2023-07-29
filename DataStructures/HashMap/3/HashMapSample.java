@@ -1,14 +1,17 @@
-import java.util.HashSet;
+import java.util.HashMap;
+import java.util.Map;
 
-public class HashSetSample {
+public class HashMapSample {
     public static void main(String[] args) {
-        HashSet<String> set = new HashSet<>();
-        set.add("Java");
-        set.add("Python");
-        set.add("C++");
+        HashMap<Integer, String> map = new HashMap<>();
+        map.put(1, "One");
+        map.put(2, "Two");
+        map.put(3, "Three");
 
-        System.out.println("HashSet elements: " + set);
-
-        // Other HashSet operations can be performed here
+        // Iterating through values
+        System.out.println("Values in the HashMap:");
+        for (String value : map.values()) {
+            System.out.println(value);
+        }
     }
 }
