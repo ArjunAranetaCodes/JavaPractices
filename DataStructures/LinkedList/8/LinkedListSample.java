@@ -2,11 +2,14 @@ import java.util.LinkedList;
 
 public class LinkedListSample {
     public static void main(String[] args) {
-        LinkedList<String> linkedList = new LinkedList<>();
-        linkedList.add("Java");
-        linkedList.add("is");
-        linkedList.add("awesome");
+        LinkedList<Integer> originalList = new LinkedList<>();
+        originalList.add(10);
+        originalList.add(20);
+        originalList.add(30);
 
-        System.out.println("LinkedList: " + linkedList);
+        LinkedList<Integer> copiedList = new LinkedList<>(originalList);
+
+        System.out.println("Original LinkedList: " + originalList);
+        System.out.println("Copied LinkedList: " + copiedList);
     }
 }
