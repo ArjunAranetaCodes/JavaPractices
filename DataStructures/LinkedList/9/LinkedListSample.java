@@ -3,10 +3,14 @@ import java.util.LinkedList;
 public class LinkedListSample {
     public static void main(String[] args) {
         LinkedList<String> linkedList = new LinkedList<>();
-        linkedList.add("Java");
-        linkedList.add("is");
-        linkedList.add("awesome");
+        linkedList.add("red");
+        linkedList.add("green");
+        linkedList.add("blue");
 
-        System.out.println("LinkedList: " + linkedList);
+        System.out.println("Original LinkedList: " + linkedList);
+
+        linkedList.remove("green");
+
+        System.out.println("LinkedList after removal: " + linkedList);
     }
 }
