@@ -55,5 +55,6 @@ public class Main {
 
         evenThread.start();
         oddThread.start();
+        newMethod1.start();
     }
 }
