@@ -37,6 +37,12 @@ class NumberPrinter {
             }
         }
     }
+
+    public synchronized void method1(){
+        for(int i = 0; i < 5; i++){
+            System.out.println(i);
+        }
+    }
 }
 
 public class Main {
@@ -45,6 +51,7 @@ public class Main {
 
         Thread evenThread = new Thread(() -> numberPrinter.printEven(), "EvenThread");
         Thread oddThread = new Thread(() -> numberPrinter.printOdd(), "OddThread");
+        Thread newMethod1 = new Thread(() -> numberPrinter.method1(), "Method1");
 
         evenThread.start();
         oddThread.start();
