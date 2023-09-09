@@ -1,0 +1,3 @@
+Problem 1: Sum of Digits
+Description:
+Write a Java program that takes an integer as input and calculates the sum of its digits. Use wrapper classes to convert the integer to a string and then extract individual digits for the sum.
