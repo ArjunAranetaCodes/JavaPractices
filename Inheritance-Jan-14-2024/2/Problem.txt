@@ -1,0 +1,5 @@
+Problem 2: Payment Gateway Interface
+Description:
+Create an interface called PaymentGateway with methods processPayment() and refundPayment(). 
+Implement this interface in classes for different payment methods like CreditCardPayment, PayPalPayment, 
+and BitcoinPayment. Write a program to demonstrate the use of these classes and the PaymentGateway interface.
