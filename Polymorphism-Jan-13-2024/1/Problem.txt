@@ -1,0 +1,3 @@
+Problem 1: Bank Account
+Description:
+Create a BankAccount class with private instance variables for the account balance and account holder name. Implement methods to deposit and withdraw money, ensuring that the balance cannot be accessed directly. Also, include a method to display the account details.
