@@ -1,0 +1,4 @@
+Problem 2: Student Information Encapsulation
+Description:
+Create a Student class that encapsulates student information such as name, age, and course. 
+Ensure that the age is between 18 and 40, and the course is one of "Computer Science," "Mathematics," or "Physics."
