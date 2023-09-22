@@ -1,0 +1,4 @@
+Problem 2: Employee Hierarchy
+Create a hierarchy of employees with a base class Employee and two derived classes Manager and Developer. 
+Include methods in each class to get and set basic information like name, ID, and salary. 
+Test your classes by creating instances of each and displaying their information.
