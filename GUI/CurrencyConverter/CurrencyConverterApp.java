@@ -14,7 +14,7 @@ public class CurrencyConverterApp extends JFrame {
 
     public CurrencyConverterApp() {
         setTitle("Currency Converter");
-        setSize(400, 200);
+        setSize(400, 400);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setLocationRelativeTo(null);
 
