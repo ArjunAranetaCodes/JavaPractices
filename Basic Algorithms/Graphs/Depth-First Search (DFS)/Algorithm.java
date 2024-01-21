@@ -40,7 +40,6 @@ public class Algorithm {
         graph.addEdge(1, 3);
         graph.addEdge(1, 4);
         graph.addEdge(2, 5);
-        graph.addEdge(2, 6);
 
     }
 }
