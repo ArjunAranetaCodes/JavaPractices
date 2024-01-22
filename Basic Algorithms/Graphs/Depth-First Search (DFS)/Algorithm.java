@@ -43,6 +43,5 @@ public class Algorithm {
         graph.addEdge(2, 6);
 
         System.out.println("Depth-First Search starting from vertex 0:");
-        graph.DFS(0);
     }
 }
