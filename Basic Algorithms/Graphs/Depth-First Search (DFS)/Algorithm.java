@@ -39,7 +39,6 @@ public class Algorithm {
         graph.addEdge(0, 2);
         graph.addEdge(1, 3);
         graph.addEdge(1, 4);
-        graph.addEdge(2, 5);
 
     }
 }
