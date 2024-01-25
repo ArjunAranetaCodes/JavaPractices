@@ -36,7 +36,6 @@ public class Algorithm {
         Algorithm graph = new Algorithm(7);
 
         graph.addEdge(0, 1);
-        graph.addEdge(0, 2);
 
     }
 }
