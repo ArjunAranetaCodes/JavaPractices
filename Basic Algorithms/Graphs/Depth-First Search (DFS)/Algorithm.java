@@ -27,6 +27,7 @@ public class Algorithm {
 
         for (int neighbor : adjacencyList[vertex]) {
             if (!visited[neighbor]) {
+                DFSUtil(neighbor, visited);
             }
         }
     }
