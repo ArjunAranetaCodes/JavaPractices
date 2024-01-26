@@ -33,6 +33,7 @@ public class Algorithm {
     }
 
     public static void main(String[] args) {
+        Algorithm graph = new Algorithm(7);
 
 
     }
