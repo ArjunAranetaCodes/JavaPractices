@@ -36,6 +36,13 @@ public class Algorithm {
         Algorithm graph = new Algorithm(7);
 
         graph.addEdge(0, 1);
+        graph.addEdge(0, 2);
+        graph.addEdge(1, 3);
+        graph.addEdge(1, 4);
+        graph.addEdge(2, 5);
+        graph.addEdge(2, 6);
 
+        System.out.println("Depth-First Search starting from vertex 0:");
+        graph.DFS(0);
     }
 }
