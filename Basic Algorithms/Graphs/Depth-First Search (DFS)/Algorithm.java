@@ -18,23 +18,6 @@ class Graph {
     }
 
     public void breadthFirstSearch(int startVertex) {
-        boolean[] visited = new boolean[vertices];
-        Queue<Integer> queue = new LinkedList<>();
-
-        visited[startVertex] = true;
-        queue.add(startVertex);
-
-        while (!queue.isEmpty()) {
-            int currentVertex = queue.poll();
-            System.out.print(currentVertex + " ");
-
-            for (int neighbor : adjacencyList[currentVertex]) {
-                if (!visited[neighbor]) {
-                    visited[neighbor] = true;
-                    queue.add(neighbor);
-                }
-            }
-        }
     }
 }
 
