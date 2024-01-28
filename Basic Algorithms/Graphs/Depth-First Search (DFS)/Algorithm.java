@@ -1,10 +1,11 @@
-import java.util.*;
+import java.util.LinkedList;
+import java.util.Queue;
 
-public class Algorithm {
+class Graph {
     private int vertices;
-    private LinkedList<Integer> adjacencyList[];
+    private LinkedList<Integer>[] adjacencyList;
 
-    public Algorithm(int vertices) {
+    public Graph(int vertices) {
         this.vertices = vertices;
         adjacencyList = new LinkedList[vertices];
         for (int i = 0; i < vertices; i++) {
@@ -12,37 +13,42 @@ public class Algorithm {
         }
     }
 
-    public void addEdge(int vertex, int neighbor) {
-        adjacencyList[vertex].add(neighbor);
+    public void addEdge(int source, int destination) {
+        adjacencyList[source].add(destination);
     }
 
-    public void DFS(int startVertex) {
-        boolean visited[] = new boolean[vertices];
-        DFSUtil(startVertex, visited);
-    }
+    public void breadthFirstSearch(int startVertex) {
+        boolean[] visited = new boolean[vertices];
+        Queue<Integer> queue = new LinkedList<>();
 
-    private void DFSUtil(int vertex, boolean visited[]) {
-        visited[vertex] = true;
-        System.out.print(vertex + " ");
+        visited[startVertex] = true;
+        queue.add(startVertex);
 
-        for (int neighbor : adjacencyList[vertex]) {
-            if (!visited[neighbor]) {
-                DFSUtil(neighbor, visited);
+        while (!queue.isEmpty()) {
+            int currentVertex = queue.poll();
+            System.out.print(currentVertex + " ");
+
+            for (int neighbor : adjacencyList[currentVertex]) {
+                if (!visited[neighbor]) {
+                    visited[neighbor] = true;
+                    queue.add(neighbor);
+                }
             }
         }
     }
+}
 
+public class Algorithm {
     public static void main(String[] args) {
-        Algorithm graph = new Algorithm(7);
-
+        // Create a sample graph
+        Graph graph = new Graph(6);
         graph.addEdge(0, 1);
         graph.addEdge(0, 2);
         graph.addEdge(1, 3);
-        graph.addEdge(1, 4);
+        graph.addEdge(2, 4);
         graph.addEdge(2, 5);
-        graph.addEdge(2, 6);
 
-        System.out.println("Depth-First Search starting from vertex 0:");
-        graph.DFS(0);
+        System.out.println("Breadth-First Search starting from vertex 0:");
+        graph.breadthFirstSearch(0);
     }
 }
