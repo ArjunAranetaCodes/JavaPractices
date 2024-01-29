@@ -14,6 +14,7 @@ class Graph {
     }
 
     public void addEdge(int source, int destination) {
+        adjacencyList[source].add(destination);
     }
 
     public void breadthFirstSearch(int startVertex) {
