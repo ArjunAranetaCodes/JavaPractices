@@ -18,6 +18,5 @@ public class Algorithm {
         int n = 10;
         int result = fibonacci(n);
 
-        System.out.println("Fibonacci of " + n + " is: " + result);
     }
 }
