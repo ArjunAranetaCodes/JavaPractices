@@ -14,6 +14,7 @@ public class Algorithm {
     }
 
     public static void main(String[] args) {
+        // Test the algorithm with a sample input
 
     }
 }
