@@ -34,7 +34,6 @@ public class Algorithm {
             return hexStringBuilder.toString();
         } catch (NoSuchAlgorithmException e) {
             e.printStackTrace();
-            return null;
         }
     }
 }
