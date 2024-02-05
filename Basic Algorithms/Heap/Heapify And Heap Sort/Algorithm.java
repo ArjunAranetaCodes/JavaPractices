@@ -28,7 +28,6 @@ public class Algorithm {
             // Convert hashed bytes to hexadecimal format
             StringBuilder hexStringBuilder = new StringBuilder();
             for (byte b : hashedBytes) {
-                hexStringBuilder.append(String.format("%02x", b));
             }
 
         } catch (NoSuchAlgorithmException e) {
