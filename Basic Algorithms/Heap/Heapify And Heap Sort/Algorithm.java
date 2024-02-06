@@ -31,6 +31,7 @@ public class Algorithm {
                 hexStringBuilder.append(String.format("%02x", b));
             }
 
+            return hexStringBuilder.toString();
         } catch (NoSuchAlgorithmException e) {
         }
     }
