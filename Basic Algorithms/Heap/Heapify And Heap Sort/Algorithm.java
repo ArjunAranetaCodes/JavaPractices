@@ -73,7 +73,6 @@ public class Algorithm {
             // Move current root to end
             int temp = arr[0];
             arr[0] = arr[i];
-            arr[i] = temp;
 
         }
     }
