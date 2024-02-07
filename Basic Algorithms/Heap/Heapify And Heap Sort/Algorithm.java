@@ -72,7 +72,10 @@ public class Algorithm {
         for (int i = n - 1; i > 0; i--) {
             // Move current root to end
             int temp = arr[0];
+            arr[0] = arr[i];
+            arr[i] = temp;
 
+            // Call max heapify on the reduced heap
         }
     }
 }
