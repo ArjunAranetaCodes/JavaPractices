@@ -76,6 +76,7 @@ public class Algorithm {
             arr[i] = temp;
 
             // Call max heapify on the reduced heap
+            heapifyUtil(arr, i, 0);
         }
     }
 }
