@@ -15,8 +15,8 @@ Documentation: Each project comes with detailed documentation, providing insight
 Whether you're a beginner looking to strengthen your Java foundation or an experienced developer aiming to refine your skills, this repository is a valuable resource for continuous learning and improvement. Happy coding! 🖥️💡
 
 
-| Tables        | Are           | Cool  |
-| ------------- |:-------------:| -----:|
-| col 3 is      | right-aligned | $1600 |
-| col 2 is      | centered      |   $12 |
-| zebra stripes | are neat      |    $1 |
+| Keyword        | Description |
+| ------------- |:-------------:|
+| col 3 is      | right-aligned |
+| col 2 is      | centered      |
+| zebra stripes | are neat      |
