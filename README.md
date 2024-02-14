@@ -15,8 +15,8 @@ Documentation: Each project comes with detailed documentation, providing insight
 Whether you're a beginner looking to strengthen your Java foundation or an experienced developer aiming to refine your skills, this repository is a valuable resource for continuous learning and improvement. Happy coding! 🖥️💡
 
 
-| Keyword        | Description |
-| ------------- |:-------------:|
-| col 3 is      | right-aligned |
-| col 2 is      | centered      |
-| zebra stripes | are neat      |
+| Keyword        | Description   |
+| -------------- |:-------------:|
+| abstract      | A non-access modifier used for classes and methods. Abstract classes cannot be instantiated, and abstract methods within them are meant to be implemented by derived classes. |
+| assert       | centered      |
+| boolean       | are neat      |
