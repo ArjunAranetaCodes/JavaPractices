@@ -18,5 +18,5 @@ Whether you're a beginner looking to strengthen your Java foundation or an exper
 | Keyword        | Description   |
 | -------------- |:-------------:|
 | abstract      | A non-access modifier used for classes and methods. Abstract classes cannot be instantiated, and abstract methods within them are meant to be implemented by derived classes. |
-| assert       | centered      |
+| assert        | centered      |
 | boolean       | are neat      |
