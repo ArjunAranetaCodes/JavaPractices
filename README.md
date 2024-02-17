@@ -21,3 +21,4 @@ Whether you're a beginner looking to strengthen your Java foundation or an exper
 | assert         | Used for debugging. It checks a boolean expression, throwing an error if the result is false. |
 | boolean        | A data type that can store only true and false values. |
 | break          |               |
+| byte           |               |
