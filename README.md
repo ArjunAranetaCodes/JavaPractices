@@ -22,3 +22,4 @@ Whether you're a beginner looking to strengthen your Java foundation or an exper
 | boolean        | A data type that can store only true and false values. |
 | break          |               |
 | byte           |               |
+| case           |               |
