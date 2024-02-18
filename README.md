@@ -27,6 +27,6 @@ Whether you're a beginner looking to strengthen your Java foundation or an exper
 | char           |               |
 | class          |               |
 | const          |               |
-| char           |               |
+| continue       |               |
 | char           |               |
 | char           |               |
