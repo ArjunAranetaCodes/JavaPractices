@@ -29,4 +29,4 @@ Whether you're a beginner looking to strengthen your Java foundation or an exper
 | const          |               |
 | continue       |               |
 | default        |               |
-| char           |               |
+| do             |               |
