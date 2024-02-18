@@ -25,3 +25,8 @@ Whether you're a beginner looking to strengthen your Java foundation or an exper
 | case           |               |
 | catch          |               |
 | char           |               |
+| class          |               |
+| char           |               |
+| char           |               |
+| char           |               |
+| char           |               |
