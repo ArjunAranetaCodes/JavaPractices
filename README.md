@@ -30,3 +30,8 @@ Whether you're a beginner looking to strengthen your Java foundation or an exper
 | continue       |               |
 | default        |               |
 | do             |               |
+| else             |               |
+| enum             |               |
+| exports             |               |
+| extends             |               |
+| final             |               |
