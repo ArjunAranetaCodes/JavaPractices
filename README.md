@@ -38,6 +38,6 @@ Whether you're a beginner looking to strengthen your Java foundation or an exper
 | finally        |               |
 | float        |               |
 | for        |               |
-| finally        |               |
+| goto        |               |
 | finally        |               |
 | finally        |               |
