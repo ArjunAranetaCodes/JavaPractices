@@ -39,5 +39,5 @@ Whether you're a beginner looking to strengthen your Java foundation or an exper
 | float        |               |
 | for        |               |
 | goto        |               |
-| finally        |               |
+| if        |               |
 | finally        |               |
