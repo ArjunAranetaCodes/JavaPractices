@@ -44,3 +44,6 @@ Whether you're a beginner looking to strengthen your Java foundation or an exper
 | imports        |               |
 | instanceof     |               |
 | int            |               |
+| interface            |               |
+| int            |               |
+| int            |               |
