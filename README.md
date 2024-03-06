@@ -55,5 +55,5 @@ Whether you're a beginner looking to strengthen your Java foundation or an exper
 | public         |               |
 | requires       |               |
 | return         |               |
-| short         |               |
+| short          |               |
 | static         |               |
