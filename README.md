@@ -57,3 +57,7 @@ Whether you're a beginner looking to strengthen your Java foundation or an exper
 | return         |               |
 | short          |               |
 | static         |               |
+| strictfp         |               |
+| static         |               |
+| static         |               |
+| static         |               |
