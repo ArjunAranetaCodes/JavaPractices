@@ -58,6 +58,6 @@ Whether you're a beginner looking to strengthen your Java foundation or an exper
 | short          |               |
 | static         |               |
 | strictfp       |               |
-| super         |               |
+| super          |               |
 | switch         |               |
 | synchronized         |               |
