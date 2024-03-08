@@ -60,4 +60,4 @@ Whether you're a beginner looking to strengthen your Java foundation or an exper
 | strictfp       |               |
 | super          |               |
 | switch         |               |
-| synchronized         |               |
+| synchronized   |               |
