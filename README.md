@@ -66,4 +66,4 @@ Whether you're a beginner looking to strengthen your Java foundation or an exper
 | throws         |               |
 | transient      |               |
 | try            |               |
-| var          |               |
+| var            |               |
