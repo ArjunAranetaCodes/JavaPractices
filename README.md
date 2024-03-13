@@ -67,6 +67,6 @@ Whether you're a beginner looking to strengthen your Java foundation or an exper
 | transient      |               |
 | try            |               |
 | var            |               |
-| void            |               |
+| void           |               |
 | volatile            |               |
 | while            |               |
