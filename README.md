@@ -68,5 +68,5 @@ Whether you're a beginner looking to strengthen your Java foundation or an exper
 | try            |               |
 | var            |               |
 | void           |               |
-| volatile            |               |
+| volatile       |               |
 | while            |               |
