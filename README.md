@@ -22,7 +22,7 @@ Whether you're a beginner looking to strengthen your Java foundation or an exper
 | boolean        | A data type that can store only true and false values. |
 | break          | Breaks out of a loop or a switch block, terminating the loop prematurely. |
 | byte           | A data type that can store whole numbers from -128 to 127.|
-| case           |               |
+| case           | Marks a block of code in switch statements, specifying the code to be executed if the switch expression matches the case value. |
 | catch          |               |
 | char           |               |
 | class          |               |
