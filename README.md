@@ -27,7 +27,7 @@ Whether you're a beginner looking to strengthen your Java foundation or an exper
 | char           |A data type that is used to store a single character.|
 | class          |Defines a class.|
 | const          |Defines a constant.|
-| continue       |               |
+| continue       |Used in loops to skip the rest of the code in the current iteration and move on to the next iteration.|
 | default        |               |
 | do             |               |
 | else           |               |
