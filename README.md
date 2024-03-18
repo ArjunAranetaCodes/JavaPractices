@@ -28,7 +28,7 @@ Whether you're a beginner looking to strengthen your Java foundation or an exper
 | class          |Defines a class.|
 | const          |Defines a constant.|
 | continue       |Used in loops to skip the rest of the code in the current iteration and move on to the next iteration.|
-| default        |               |
+| default        |Specifies the default block of code in a switch statement, executed when none of the specified cases match the given value.|
 | do             |               |
 | else           |               |
 | enum           |               |
