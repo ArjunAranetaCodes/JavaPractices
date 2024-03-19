@@ -33,7 +33,7 @@ Whether you're a beginner looking to strengthen your Java foundation or an exper
 | else           |A data type that can store floating-point numbers with double precision.|
 | enum           |Used in conditional statements to specify the block of code to be executed when the 'if' condition is false.|
 | exports        |Declares an enumerated (unchangeable) type, defining a set of named constant values.|
-| extends        |               |
+| extends        |Exports a package with a module. |
 | final          |               |
 | finally        |               |
 | float          |               |
