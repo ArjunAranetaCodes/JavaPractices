@@ -34,7 +34,7 @@ Whether you're a beginner looking to strengthen your Java foundation or an exper
 | enum           |Used in conditional statements to specify the block of code to be executed when the 'if' condition is false.|
 | exports        |Declares an enumerated (unchangeable) type, defining a set of named constant values.|
 | extends        |Exports a package with a module. |
-| final          |               |
+| final          |Extends a class (indicates that a class is inherited from another class).|
 | finally        |               |
 | float          |               |
 | for            |               |
