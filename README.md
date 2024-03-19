@@ -31,7 +31,7 @@ Whether you're a beginner looking to strengthen your Java foundation or an exper
 | default        |Specifies the default block of code in a switch statement, executed when none of the specified cases match the given value.|
 | do             |Used in conjunction with 'while' to create a do-while loop, ensuring the loop body is executed at least once.|
 | else           |A data type that can store floating-point numbers with double precision.|
-| enum           |               |
+| enum           |Used in conditional statements to specify the block of code to be executed when the 'if' condition is false.|
 | exports        |               |
 | extends        |               |
 | final          |               |
