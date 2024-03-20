@@ -36,7 +36,7 @@ Whether you're a beginner looking to strengthen your Java foundation or an exper
 | extends        |Exports a package with a module. |
 | final          |Extends a class (indicates that a class is inherited from another class).|
 | finally        |A non-access modifier used for classes, attributes, and methods, which makes them non-changeable (impossible to inherit or override).|
-| float          |               |
+| float          |Used with exceptions, a block of code that will be executed no matter if there is an exception or not.|
 | for            |               |
 | goto           |               |
 | if             |               |
