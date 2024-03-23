@@ -30,7 +30,7 @@ Whether you're a beginner looking to strengthen your Java foundation or an exper
 | continue       |Used in loops to skip the rest of the code in the current iteration and move on to the next iteration.|
 | default        |Specifies the default block of code in a switch statement, executed when none of the specified cases match the given value.|
 | do             |Used in conjunction with 'while' to create a do-while loop, ensuring the loop body is executed at least once.|
-| else           |Used in conditional statements to specify the block of code to be executed when the 'if' condition is false. A data type that can store floating-point numbers with double precision.|
+| else           |Used in conditional statements to specify the block of code to be executed when the 'if' condition is false. |
 | enum           |Declares an enumerated (unchangeable) type, defining a set of named constant values. |
 | exports        |Exports a package with a module. |
 | extends        |Extends a class (indicates that a class is inherited from another class). |
@@ -38,7 +38,7 @@ Whether you're a beginner looking to strengthen your Java foundation or an exper
 | finally        |Used with exceptions, a block of code that will be executed no matter if there is an exception or not. |
 | float          |A data type that can store whole numbers from 3.4e−038 to 3.4e+038. |
 | for            |Create a for loop.|
-| goto           ||
+| goto           | (Note: Not in use, and has no function) Not in use, and has no functional purpose.|
 | if             |               |
 | implements     |               |
 | imports        |               |
