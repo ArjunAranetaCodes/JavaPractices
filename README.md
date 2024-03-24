@@ -42,7 +42,7 @@ Whether you're a beginner looking to strengthen your Java foundation or an exper
 | if             |Makes a conditional statement, executing a block of code if the specified condition is true.|
 | implements     |Implements an interface.|
 | imports        |Used to import a package, class, or interface, allowing their use in the current Java file.|
-| instanceof     |               |
+| instanceof     |Checks whether an object is an instance of a specific class or an interface.|
 | int            |               |
 | interface      |               |
 | long           |               |
