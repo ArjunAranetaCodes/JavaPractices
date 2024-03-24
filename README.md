@@ -39,7 +39,7 @@ Whether you're a beginner looking to strengthen your Java foundation or an exper
 | float          |A data type that can store whole numbers from 3.4e−038 to 3.4e+038. |
 | for            |Create a for loop.|
 | goto           | (Note: Not in use, and has no function) Not in use, and has no functional purpose.|
-| if             |               |
+| if             |Makes a conditional statement, executing a block of code if the specified condition is true.|
 | implements     |               |
 | imports        |               |
 | instanceof     |               |
