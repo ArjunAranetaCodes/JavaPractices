@@ -43,7 +43,7 @@ Whether you're a beginner looking to strengthen your Java foundation or an exper
 | implements     |Implements an interface.|
 | imports        |Used to import a package, class, or interface, allowing their use in the current Java file.|
 | instanceof     |Checks whether an object is an instance of a specific class or an interface.|
-| int            |               |
+| int            |A data type that can store whole numbers from -2147483648 to 2147483647.|
 | interface      |               |
 | long           |               |
 | module         |               |
