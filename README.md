@@ -41,7 +41,7 @@ Whether you're a beginner looking to strengthen your Java foundation or an exper
 | goto           | (Note: Not in use, and has no function) Not in use, and has no functional purpose.|
 | if             |Makes a conditional statement, executing a block of code if the specified condition is true.|
 | implements     |Implements an interface.|
-| imports        |               |
+| imports        |Used to import a package, class, or interface, allowing their use in the current Java file.|
 | instanceof     |               |
 | int            |               |
 | interface      |               |
