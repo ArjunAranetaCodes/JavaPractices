@@ -44,7 +44,7 @@ Whether you're a beginner looking to strengthen your Java foundation or an exper
 | imports        |Used to import a package, class, or interface, allowing their use in the current Java file.|
 | instanceof     |Checks whether an object is an instance of a specific class or an interface.|
 | int            |A data type that can store whole numbers from -2147483648 to 2147483647.|
-| interface      |               |
+| interface      |Used to declare a special type of class that only contains abstract methods.|
 | long           |               |
 | module         |               |
 | native         |               |
