@@ -46,7 +46,7 @@ Whether you're a beginner looking to strengthen your Java foundation or an exper
 | int            |A data type that can store whole numbers from -2147483648 to 2147483647.|
 | interface      |Used to declare a special type of class that only contains abstract methods.|
 | long           |A data type that can store whole numbers from -9223372036854775808 to 9223372036854775808.|
-| module         |               |
+| module         |Declares a module. |
 | native         |               |
 | new            |               |
 | package        |               |
