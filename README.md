@@ -48,7 +48,7 @@ Whether you're a beginner looking to strengthen your Java foundation or an exper
 | long           |A data type that can store whole numbers from -9223372036854775808 to 9223372036854775808.|
 | module         |Declares a module. |
 | native         |Specifies that a method is not implemented in the same Java source file (but in another language).|
-| new            |               |
+| new            |Creates new objects.|
 | package        |               |
 | private        |               |
 | protected      |               |
