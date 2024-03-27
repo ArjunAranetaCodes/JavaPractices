@@ -50,7 +50,7 @@ Whether you're a beginner looking to strengthen your Java foundation or an exper
 | native         |Specifies that a method is not implemented in the same Java source file (but in another language).|
 | new            |Creates new objects.|
 | package        |Declares a package.|
-| private        |               |
+| private        |An access modifier used for attributes, methods, and constructors, making them only accessible within the declared class.|
 | protected      |               |
 | public         |               |
 | requires       |               |
