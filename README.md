@@ -51,7 +51,7 @@ Whether you're a beginner looking to strengthen your Java foundation or an exper
 | new            |Creates new objects.|
 | package        |Declares a package.|
 | private        |An access modifier used for attributes, methods, and constructors, making them only accessible within the declared class.|
-| protected      |               |
+| protected      |An access modifier used for attributes, methods, and constructors, making them accessible in the same package and subclasses.|
 | public         |               |
 | requires       |               |
 | return         |               |
