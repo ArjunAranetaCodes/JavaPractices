@@ -49,7 +49,7 @@ Whether you're a beginner looking to strengthen your Java foundation or an exper
 | module         |Declares a module. |
 | native         |Specifies that a method is not implemented in the same Java source file (but in another language).|
 | new            |Creates new objects.|
-| package        |               |
+| package        |Declares a package.|
 | private        |               |
 | protected      |               |
 | public         |               |
