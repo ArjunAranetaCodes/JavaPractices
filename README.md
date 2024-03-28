@@ -54,7 +54,7 @@ Whether you're a beginner looking to strengthen your Java foundation or an exper
 | protected      |An access modifier used for attributes, methods, and constructors, making them accessible in the same package and subclasses.|
 | public         |An access modifier used for classes, attributes, methods, and constructors, making them accessible by any other class.|
 | requires       |Specifies required libraries inside a module. |
-| return         |               |
+| return         | Finished the execution of a method and can be used to return a value from a method.|
 | short          |               |
 | static         |               |
 | strictfp       |               |
