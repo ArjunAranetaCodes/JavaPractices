@@ -55,7 +55,7 @@ Whether you're a beginner looking to strengthen your Java foundation or an exper
 | public         |An access modifier used for classes, attributes, methods, and constructors, making them accessible by any other class.|
 | requires       |Specifies required libraries inside a module. |
 | return         | Finished the execution of a method and can be used to return a value from a method.|
-| short          |               |
+| short          |A data type that can store whole numbers from -32768 to 32767.|
 | static         |               |
 | strictfp       |               |
 | super          |               |
