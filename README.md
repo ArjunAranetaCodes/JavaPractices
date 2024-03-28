@@ -53,7 +53,7 @@ Whether you're a beginner looking to strengthen your Java foundation or an exper
 | private        |An access modifier used for attributes, methods, and constructors, making them only accessible within the declared class.|
 | protected      |An access modifier used for attributes, methods, and constructors, making them accessible in the same package and subclasses.|
 | public         |An access modifier used for classes, attributes, methods, and constructors, making them accessible by any other class.|
-| requires       |               |
+| requires       |Specifies required libraries inside a module. |
 | return         |               |
 | short          |               |
 | static         |               |
