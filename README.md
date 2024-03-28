@@ -52,7 +52,7 @@ Whether you're a beginner looking to strengthen your Java foundation or an exper
 | package        |Declares a package.|
 | private        |An access modifier used for attributes, methods, and constructors, making them only accessible within the declared class.|
 | protected      |An access modifier used for attributes, methods, and constructors, making them accessible in the same package and subclasses.|
-| public         |               |
+| public         |An access modifier used for classes, attributes, methods, and constructors, making them accessible by any other class.|
 | requires       |               |
 | return         |               |
 | short          |               |
