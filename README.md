@@ -57,7 +57,7 @@ Whether you're a beginner looking to strengthen your Java foundation or an exper
 | return         | Finished the execution of a method and can be used to return a value from a method.|
 | short          |A data type that can store whole numbers from -32768 to 32767.|
 | static         |A non-access modifier used for methods and attributes. Static methods/attributes can be accessed without creating an object of a class.|
-| strictfp       |               |
+| strictfp       |Restricts the precision and rounding of floating-point calculations.|
 | super          |               |
 | switch         |               |
 | synchronized   |               |
