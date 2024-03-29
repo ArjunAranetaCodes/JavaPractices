@@ -59,7 +59,7 @@ Whether you're a beginner looking to strengthen your Java foundation or an exper
 | static         |A non-access modifier used for methods and attributes. Static methods/attributes can be accessed without creating an object of a class.|
 | strictfp       |Restricts the precision and rounding of floating-point calculations.|
 | super          |Refers to superclass (parent) objects.|
-| switch         |               |
+| switch         |Selects one of many code blocks to be executed.|
 | synchronized   |               |
 | this           |               |
 | throw          |               |
