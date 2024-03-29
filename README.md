@@ -61,7 +61,7 @@ Whether you're a beginner looking to strengthen your Java foundation or an exper
 | super          |Refers to superclass (parent) objects.|
 | switch         |Selects one of many code blocks to be executed.|
 | synchronized   |A non-access modifier that specifies that methods can only be accessed by one thread at a time.|
-| this           |               |
+| this           |Refers to the current object in a method or constructor.|
 | throw          |               |
 | throws         |               |
 | transient      |               |
