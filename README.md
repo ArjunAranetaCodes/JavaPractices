@@ -60,7 +60,7 @@ Whether you're a beginner looking to strengthen your Java foundation or an exper
 | strictfp       |Restricts the precision and rounding of floating-point calculations.|
 | super          |Refers to superclass (parent) objects.|
 | switch         |Selects one of many code blocks to be executed.|
-| synchronized   |               |
+| synchronized   |A non-access modifier that specifies that methods can only be accessed by one thread at a time.|
 | this           |               |
 | throw          |               |
 | throws         |               |
