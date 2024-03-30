@@ -64,7 +64,7 @@ Whether you're a beginner looking to strengthen your Java foundation or an exper
 | this           |Refers to the current object in a method or constructor.|
 | throw          | Creates a custom error.|
 | throws         |Indicates what exceptions may be thrown by a method.|
-| transient      |               |
+| transient      |A non-access modifier that specifies that an attribute is not part of an object's persistent state.|
 | try            |               |
 | var            |               |
 | void           |               |
