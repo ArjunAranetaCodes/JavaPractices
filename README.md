@@ -63,7 +63,7 @@ Whether you're a beginner looking to strengthen your Java foundation or an exper
 | synchronized   |A non-access modifier that specifies that methods can only be accessed by one thread at a time.|
 | this           |Refers to the current object in a method or constructor.|
 | throw          | Creates a custom error.|
-| throws         |               |
+| throws         |Indicates what exceptions may be thrown by a method.|
 | transient      |               |
 | try            |               |
 | var            |               |
