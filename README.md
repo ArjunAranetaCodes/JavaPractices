@@ -65,7 +65,7 @@ Whether you're a beginner looking to strengthen your Java foundation or an exper
 | throw          | Creates a custom error.|
 | throws         |Indicates what exceptions may be thrown by a method.|
 | transient      |A non-access modifier that specifies that an attribute is not part of an object's persistent state.|
-| try            |               |
+| try            |Creates a try...catch statement.|
 | var            |               |
 | void           |               |
 | volatile       |               |
