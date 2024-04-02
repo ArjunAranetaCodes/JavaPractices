@@ -67,6 +67,6 @@ Whether you're a beginner looking to strengthen your Java foundation or an exper
 | transient      |A non-access modifier that specifies that an attribute is not part of an object's persistent state.|
 | try            |Creates a try...catch statement. |
 | var            |Declares a variable. |
-| void           |               |
+| void           |Specifies that a method should not have a return value.|
 | volatile       |               |
 | while          |               |
