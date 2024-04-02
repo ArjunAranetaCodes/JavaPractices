@@ -68,5 +68,5 @@ Whether you're a beginner looking to strengthen your Java foundation or an exper
 | try            |Creates a try...catch statement. |
 | var            |Declares a variable. |
 | void           |Specifies that a method should not have a return value.|
-| volatile       |               |
+| volatile       |Indicates that an attribute is not cached thread-locally and is always read from the "main memory."|
 | while          |               |
