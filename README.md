@@ -18,7 +18,7 @@ Whether you're a beginner looking to strengthen your Java foundation or an exper
 | Keyword        | Description   |
 | -------------- |:-------------:|
 | [abstract](https://github.com/ArjunAranetaCodes/JavaPractices/tree/main/Keywords/abstract)        |   A non-access modifier used for classes and methods. Abstract classes cannot be instantiated, and abstract methods within them are meant to be implemented by derived classes. |
-| assert         | Used for debugging. It checks a boolean expression, throwing an error if the result is false. |
+| [abstract](https://github.com/ArjunAranetaCodes/JavaPractices/tree/main/Keywords/abstract) assert         | Used for debugging. It checks a boolean expression, throwing an error if the result is false. |
 | boolean        | A data type that can store only true and false values. |
 | break          | Breaks out of a loop or a switch block, terminating the loop prematurely. |
 | byte           | A data type that can store whole numbers from -128 to 127.|
