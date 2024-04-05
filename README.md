@@ -28,7 +28,7 @@ Whether you're a beginner looking to strengthen your Java foundation or an exper
 | [abstract](https://github.com/ArjunAranetaCodes/JavaPractices/tree/main/Keywords/abstract)class          |Defines a class.|
 | [abstract](https://github.com/ArjunAranetaCodes/JavaPractices/tree/main/Keywords/abstract)const          |Defines a constant.|
 | [abstract](https://github.com/ArjunAranetaCodes/JavaPractices/tree/main/Keywords/abstract)continue       |Used in loops to skip the rest of the code in the current iteration and move on to the next iteration.|
-| default        |Specifies the default block of code in a switch statement, executed when none of the specified cases match the given value.|
+| [abstract](https://github.com/ArjunAranetaCodes/JavaPractices/tree/main/Keywords/abstract)default        |Specifies the default block of code in a switch statement, executed when none of the specified cases match the given value.|
 | do             |Used in conjunction with 'while' to create a do-while loop, ensuring the loop body is executed at least once.|
 | else           |Used in conditional statements to specify the block of code to be executed when the 'if' condition is false. |
 | enum           |Declares an enumerated (unchangeable) type, defining a set of named constant values. |
