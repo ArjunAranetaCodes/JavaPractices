@@ -35,7 +35,7 @@ Whether you're a beginner looking to strengthen your Java foundation or an exper
 | [abstract](https://github.com/ArjunAranetaCodes/JavaPractices/tree/main/Keywords/abstract)exports        |Exports a package with a module. |
 | [abstract](https://github.com/ArjunAranetaCodes/JavaPractices/tree/main/Keywords/abstract)extends        |Extends a class (indicates that a class is inherited from another class). |
 | [abstract](https://github.com/ArjunAranetaCodes/JavaPractices/tree/main/Keywords/abstract)final          |A non-access modifier used for classes, attributes, and methods, which makes them non-changeable (impossible to inherit or override). |
-| finally        |Used with exceptions, a block of code that will be executed no matter if there is an exception or not. |
+| [abstract](https://github.com/ArjunAranetaCodes/JavaPractices/tree/main/Keywords/abstract)finally        |Used with exceptions, a block of code that will be executed no matter if there is an exception or not. |
 | float          |A data type that can store whole numbers from 3.4e−038 to 3.4e+038. |
 | for            |Create a for loop.|
 | goto           | (Note: Not in use, and has no function) Not in use, and has no functional purpose.|
