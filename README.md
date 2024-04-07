@@ -39,7 +39,7 @@ Whether you're a beginner looking to strengthen your Java foundation or an exper
 | [abstract](https://github.com/ArjunAranetaCodes/JavaPractices/tree/main/Keywords/abstract)float          |A data type that can store whole numbers from 3.4e−038 to 3.4e+038. |
 | [abstract](https://github.com/ArjunAranetaCodes/JavaPractices/tree/main/Keywords/abstract)for            |Create a for loop.|
 | [abstract](https://github.com/ArjunAranetaCodes/JavaPractices/tree/main/Keywords/abstract)goto           | (Note: Not in use, and has no function) Not in use, and has no functional purpose.|
-| if             |Makes a conditional statement, executing a block of code if the specified condition is true.|
+| [abstract](https://github.com/ArjunAranetaCodes/JavaPractices/tree/main/Keywords/abstract)if             |Makes a conditional statement, executing a block of code if the specified condition is true.|
 | implements     |Implements an interface.|
 | imports        |Used to import a package, class, or interface, allowing their use in the current Java file.|
 | instanceof     |Checks whether an object is an instance of a specific class or an interface.|
