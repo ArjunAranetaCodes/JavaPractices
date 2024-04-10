@@ -48,7 +48,7 @@ Whether you're a beginner looking to strengthen your Java foundation or an exper
 | [abstract](https://github.com/ArjunAranetaCodes/JavaPractices/tree/main/Keywords/abstract)long           |A data type that can store whole numbers from -9223372036854775808 to 9223372036854775808.|
 | [abstract](https://github.com/ArjunAranetaCodes/JavaPractices/tree/main/Keywords/abstract)module         |Declares a module. |
 | [abstract](https://github.com/ArjunAranetaCodes/JavaPractices/tree/main/Keywords/abstract)native         |Specifies that a method is not implemented in the same Java source file (but in another language).|
-| new            |Creates new objects.|
+| [abstract](https://github.com/ArjunAranetaCodes/JavaPractices/tree/main/Keywords/abstract)new            |Creates new objects.|
 | package        |Declares a package.|
 | private        |An access modifier used for attributes, methods, and constructors, making them only accessible within the declared class.|
 | protected      |An access modifier used for attributes, methods, and constructors, making them accessible in the same package and subclasses.|
