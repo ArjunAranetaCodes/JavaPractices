@@ -50,7 +50,7 @@ Whether you're a beginner looking to strengthen your Java foundation or an exper
 | [abstract](https://github.com/ArjunAranetaCodes/JavaPractices/tree/main/Keywords/abstract)native         |Specifies that a method is not implemented in the same Java source file (but in another language).|
 | [abstract](https://github.com/ArjunAranetaCodes/JavaPractices/tree/main/Keywords/abstract)new            |Creates new objects.|
 | [abstract](https://github.com/ArjunAranetaCodes/JavaPractices/tree/main/Keywords/abstract)package        |Declares a package.|
-| private        |An access modifier used for attributes, methods, and constructors, making them only accessible within the declared class.|
+| [abstract](https://github.com/ArjunAranetaCodes/JavaPractices/tree/main/Keywords/abstract)private        |An access modifier used for attributes, methods, and constructors, making them only accessible within the declared class.|
 | protected      |An access modifier used for attributes, methods, and constructors, making them accessible in the same package and subclasses.|
 | public         |An access modifier used for classes, attributes, methods, and constructors, making them accessible by any other class.|
 | requires       |Specifies required libraries inside a module. |
