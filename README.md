@@ -51,7 +51,7 @@ Whether you're a beginner looking to strengthen your Java foundation or an exper
 | [abstract](https://github.com/ArjunAranetaCodes/JavaPractices/tree/main/Keywords/abstract)new            |Creates new objects.|
 | [abstract](https://github.com/ArjunAranetaCodes/JavaPractices/tree/main/Keywords/abstract)package        |Declares a package.|
 | [abstract](https://github.com/ArjunAranetaCodes/JavaPractices/tree/main/Keywords/abstract)private        |An access modifier used for attributes, methods, and constructors, making them only accessible within the declared class.|
-| protected      |An access modifier used for attributes, methods, and constructors, making them accessible in the same package and subclasses.|
+| [abstract](https://github.com/ArjunAranetaCodes/JavaPractices/tree/main/Keywords/abstract)protected      |An access modifier used for attributes, methods, and constructors, making them accessible in the same package and subclasses.|
 | public         |An access modifier used for classes, attributes, methods, and constructors, making them accessible by any other class.|
 | requires       |Specifies required libraries inside a module. |
 | return         | Finished the execution of a method and can be used to return a value from a method.|
