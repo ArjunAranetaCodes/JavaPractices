@@ -57,7 +57,7 @@ Whether you're a beginner looking to strengthen your Java foundation or an exper
 | [abstract](https://github.com/ArjunAranetaCodes/JavaPractices/tree/main/Keywords/abstract)return         | Finished the execution of a method and can be used to return a value from a method.|
 | [abstract](https://github.com/ArjunAranetaCodes/JavaPractices/tree/main/Keywords/abstract)short          |A data type that can store whole numbers from -32768 to 32767.|
 | [abstract](https://github.com/ArjunAranetaCodes/JavaPractices/tree/main/Keywords/abstract)static         |A non-access modifier used for methods and attributes. Static methods/attributes can be accessed without creating an object of a class.|
-| strictfp       |Restricts the precision and rounding of floating-point calculations.|
+| [abstract](https://github.com/ArjunAranetaCodes/JavaPractices/tree/main/Keywords/abstract)strictfp       |Restricts the precision and rounding of floating-point calculations.|
 | super          |Refers to superclass (parent) objects.|
 | switch         |Selects one of many code blocks to be executed.|
 | synchronized   |A non-access modifier that specifies that methods can only be accessed by one thread at a time.|
