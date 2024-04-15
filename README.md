@@ -61,7 +61,7 @@ Whether you're a beginner looking to strengthen your Java foundation or an exper
 | [abstract](https://github.com/ArjunAranetaCodes/JavaPractices/tree/main/Keywords/abstract)super          |Refers to superclass (parent) objects.|
 | [abstract](https://github.com/ArjunAranetaCodes/JavaPractices/tree/main/Keywords/abstract)switch         |Selects one of many code blocks to be executed.|
 | [abstract](https://github.com/ArjunAranetaCodes/JavaPractices/tree/main/Keywords/abstract)synchronized   |A non-access modifier that specifies that methods can only be accessed by one thread at a time.|
-| this           |Refers to the current object in a method or constructor.|
+| [abstract](https://github.com/ArjunAranetaCodes/JavaPractices/tree/main/Keywords/abstract)this           |Refers to the current object in a method or constructor.|
 | throw          | Creates a custom error.|
 | throws         |Indicates what exceptions may be thrown by a method.|
 | transient      |A non-access modifier that specifies that an attribute is not part of an object's persistent state.|
