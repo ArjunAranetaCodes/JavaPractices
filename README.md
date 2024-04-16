@@ -64,7 +64,7 @@ Whether you're a beginner looking to strengthen your Java foundation or an exper
 | [abstract](https://github.com/ArjunAranetaCodes/JavaPractices/tree/main/Keywords/abstract)this           |Refers to the current object in a method or constructor.|
 | [abstract](https://github.com/ArjunAranetaCodes/JavaPractices/tree/main/Keywords/abstract)throw          | Creates a custom error.|
 | [abstract](https://github.com/ArjunAranetaCodes/JavaPractices/tree/main/Keywords/abstract)throws         |Indicates what exceptions may be thrown by a method.|
-| transient      |A non-access modifier that specifies that an attribute is not part of an object's persistent state.|
+| [abstract](https://github.com/ArjunAranetaCodes/JavaPractices/tree/main/Keywords/abstract)transient      |A non-access modifier that specifies that an attribute is not part of an object's persistent state.|
 | try            |Creates a try...catch statement. |
 | var            |Declares a variable. |
 | void           |Specifies that a method should not have a return value.|
