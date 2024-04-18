@@ -69,4 +69,4 @@ Whether you're a beginner looking to strengthen your Java foundation or an exper
 | [abstract](https://github.com/ArjunAranetaCodes/JavaPractices/tree/main/Keywords/abstract)var            |Declares a variable. |
 | [abstract](https://github.com/ArjunAranetaCodes/JavaPractices/tree/main/Keywords/abstract)void           |Specifies that a method should not have a return value.|
 | [abstract](https://github.com/ArjunAranetaCodes/JavaPractices/tree/main/Keywords/abstract)volatile       |Indicates that an attribute is not cached thread-locally and is always read from the "main memory."|
-| while          |Creates a while loop.|
+| [abstract](https://github.com/ArjunAranetaCodes/JavaPractices/tree/main/Keywords/abstract)while          |Creates a while loop.|
