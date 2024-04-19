@@ -19,7 +19,7 @@ Whether you're a beginner looking to strengthen your Java foundation or an exper
 | -------------- |:-------------:|
 | [abstract](https://github.com/ArjunAranetaCodes/JavaPractices/tree/main/Keywords/abstract)        |   A non-access modifier used for classes and methods. Abstract classes cannot be instantiated, and abstract methods within them are meant to be implemented by derived classes. |
 | [assert](https://github.com/ArjunAranetaCodes/JavaPractices/tree/main/Keywords/assert)          | Used for debugging. It checks a boolean expression, throwing an error if the result is false. |
-| [abstract](https://github.com/ArjunAranetaCodes/JavaPractices/tree/main/Keywords/abstract)boolean        | A data type that can store only true and false values. |
+| [boolean](https://github.com/ArjunAranetaCodes/JavaPractices/tree/main/Keywords/boolean)        | A data type that can store only true and false values. |
 | [abstract](https://github.com/ArjunAranetaCodes/JavaPractices/tree/main/Keywords/abstract)break          | Breaks out of a loop or a switch block, terminating the loop prematurely. |
 | [abstract](https://github.com/ArjunAranetaCodes/JavaPractices/tree/main/Keywords/abstract)byte           | A data type that can store whole numbers from -128 to 127.|
 | [abstract](https://github.com/ArjunAranetaCodes/JavaPractices/tree/main/Keywords/abstract)case           | Marks a block of code in switch statements, specifying the code to be executed if the switch expression matches the case value. |
