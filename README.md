@@ -29,7 +29,7 @@ Whether you're a beginner looking to strengthen your Java foundation or an exper
 | [const](https://github.com/ArjunAranetaCodes/JavaPractices/tree/main/Keywords/const)          |Defines a constant.|
 | [continue](https://github.com/ArjunAranetaCodes/JavaPractices/tree/main/Keywords/continue)       |Used in loops to skip the rest of the code in the current iteration and move on to the next iteration.|
 | [default](https://github.com/ArjunAranetaCodes/JavaPractices/tree/main/Keywords/default)        |Specifies the default block of code in a switch statement, executed when none of the specified cases match the given value.|
-| [abstract](https://github.com/ArjunAranetaCodes/JavaPractices/tree/main/Keywords/abstract)do             |Used in conjunction with 'while' to create a do-while loop, ensuring the loop body is executed at least once.|
+| [do](https://github.com/ArjunAranetaCodes/JavaPractices/tree/main/Keywords/do)             |Used in conjunction with 'while' to create a do-while loop, ensuring the loop body is executed at least once.|
 | [abstract](https://github.com/ArjunAranetaCodes/JavaPractices/tree/main/Keywords/abstract)else           |Used in conditional statements to specify the block of code to be executed when the 'if' condition is false. |
 | [abstract](https://github.com/ArjunAranetaCodes/JavaPractices/tree/main/Keywords/abstract)enum           |Declares an enumerated (unchangeable) type, defining a set of named constant values. |
 | [abstract](https://github.com/ArjunAranetaCodes/JavaPractices/tree/main/Keywords/abstract)exports        |Exports a package with a module. |
