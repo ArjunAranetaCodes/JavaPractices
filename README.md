@@ -27,7 +27,7 @@ Whether you're a beginner looking to strengthen your Java foundation or an exper
 | [char](https://github.com/ArjunAranetaCodes/JavaPractices/tree/main/Keywords/char)           |A data type that is used to store a single character.|
 | [class](https://github.com/ArjunAranetaCodes/JavaPractices/tree/main/Keywords/class)          |Defines a class.|
 | [const](https://github.com/ArjunAranetaCodes/JavaPractices/tree/main/Keywords/const)          |Defines a constant.|
-| [abstract](https://github.com/ArjunAranetaCodes/JavaPractices/tree/main/Keywords/abstract)continue       |Used in loops to skip the rest of the code in the current iteration and move on to the next iteration.|
+| [continue](https://github.com/ArjunAranetaCodes/JavaPractices/tree/main/Keywords/continue)       |Used in loops to skip the rest of the code in the current iteration and move on to the next iteration.|
 | [abstract](https://github.com/ArjunAranetaCodes/JavaPractices/tree/main/Keywords/abstract)default        |Specifies the default block of code in a switch statement, executed when none of the specified cases match the given value.|
 | [abstract](https://github.com/ArjunAranetaCodes/JavaPractices/tree/main/Keywords/abstract)do             |Used in conjunction with 'while' to create a do-while loop, ensuring the loop body is executed at least once.|
 | [abstract](https://github.com/ArjunAranetaCodes/JavaPractices/tree/main/Keywords/abstract)else           |Used in conditional statements to specify the block of code to be executed when the 'if' condition is false. |
