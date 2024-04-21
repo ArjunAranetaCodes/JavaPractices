@@ -31,7 +31,7 @@ Whether you're a beginner looking to strengthen your Java foundation or an exper
 | [default](https://github.com/ArjunAranetaCodes/JavaPractices/tree/main/Keywords/default)        |Specifies the default block of code in a switch statement, executed when none of the specified cases match the given value.|
 | [do](https://github.com/ArjunAranetaCodes/JavaPractices/tree/main/Keywords/do)             |Used in conjunction with 'while' to create a do-while loop, ensuring the loop body is executed at least once.|
 | [else](https://github.com/ArjunAranetaCodes/JavaPractices/tree/main/Keywords/else)           |Used in conditional statements to specify the block of code to be executed when the 'if' condition is false. |
-| [abstract](https://github.com/ArjunAranetaCodes/JavaPractices/tree/main/Keywords/abstract)enum           |Declares an enumerated (unchangeable) type, defining a set of named constant values. |
+| [enum](https://github.com/ArjunAranetaCodes/JavaPractices/tree/main/Keywords/enum)           |Declares an enumerated (unchangeable) type, defining a set of named constant values. |
 | [abstract](https://github.com/ArjunAranetaCodes/JavaPractices/tree/main/Keywords/abstract)exports        |Exports a package with a module. |
 | [abstract](https://github.com/ArjunAranetaCodes/JavaPractices/tree/main/Keywords/abstract)extends        |Extends a class (indicates that a class is inherited from another class). |
 | [abstract](https://github.com/ArjunAranetaCodes/JavaPractices/tree/main/Keywords/abstract)final          |A non-access modifier used for classes, attributes, and methods, which makes them non-changeable (impossible to inherit or override). |
