@@ -30,7 +30,7 @@ Whether you're a beginner looking to strengthen your Java foundation or an exper
 | [continue](https://github.com/ArjunAranetaCodes/JavaPractices/tree/main/Keywords/continue)       |Used in loops to skip the rest of the code in the current iteration and move on to the next iteration.|
 | [default](https://github.com/ArjunAranetaCodes/JavaPractices/tree/main/Keywords/default)        |Specifies the default block of code in a switch statement, executed when none of the specified cases match the given value.|
 | [do](https://github.com/ArjunAranetaCodes/JavaPractices/tree/main/Keywords/do)             |Used in conjunction with 'while' to create a do-while loop, ensuring the loop body is executed at least once.|
-| [abstract](https://github.com/ArjunAranetaCodes/JavaPractices/tree/main/Keywords/abstract)else           |Used in conditional statements to specify the block of code to be executed when the 'if' condition is false. |
+| [else](https://github.com/ArjunAranetaCodes/JavaPractices/tree/main/Keywords/else)           |Used in conditional statements to specify the block of code to be executed when the 'if' condition is false. |
 | [abstract](https://github.com/ArjunAranetaCodes/JavaPractices/tree/main/Keywords/abstract)enum           |Declares an enumerated (unchangeable) type, defining a set of named constant values. |
 | [abstract](https://github.com/ArjunAranetaCodes/JavaPractices/tree/main/Keywords/abstract)exports        |Exports a package with a module. |
 | [abstract](https://github.com/ArjunAranetaCodes/JavaPractices/tree/main/Keywords/abstract)extends        |Extends a class (indicates that a class is inherited from another class). |
