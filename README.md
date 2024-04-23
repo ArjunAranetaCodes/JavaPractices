@@ -37,7 +37,7 @@ Whether you're a beginner looking to strengthen your Java foundation or an exper
 | [final](https://github.com/ArjunAranetaCodes/JavaPractices/tree/main/Keywords/final)          |A non-access modifier used for classes, attributes, and methods, which makes them non-changeable (impossible to inherit or override). |
 | [finally](https://github.com/ArjunAranetaCodes/JavaPractices/tree/main/Keywords/finally)        |Used with exceptions, a block of code that will be executed no matter if there is an exception or not. |
 | [float](https://github.com/ArjunAranetaCodes/JavaPractices/tree/main/Keywords/float)          |A data type that can store whole numbers from 3.4e−038 to 3.4e+038. |
-| [abstract](https://github.com/ArjunAranetaCodes/JavaPractices/tree/main/Keywords/abstract)for            |Create a for loop.|
+| [for](https://github.com/ArjunAranetaCodes/JavaPractices/tree/main/Keywords/for)            |Create a for loop.|
 | [abstract](https://github.com/ArjunAranetaCodes/JavaPractices/tree/main/Keywords/abstract)goto           | (Note: Not in use, and has no function) Not in use, and has no functional purpose.|
 | [abstract](https://github.com/ArjunAranetaCodes/JavaPractices/tree/main/Keywords/abstract)if             |Makes a conditional statement, executing a block of code if the specified condition is true.|
 | [abstract](https://github.com/ArjunAranetaCodes/JavaPractices/tree/main/Keywords/abstract)implements     |Implements an interface.|
