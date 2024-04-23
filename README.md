@@ -41,7 +41,7 @@ Whether you're a beginner looking to strengthen your Java foundation or an exper
 | [goto](https://github.com/ArjunAranetaCodes/JavaPractices/tree/main/Keywords/goto)           | (Note: Not in use, and has no function) Not in use, and has no functional purpose.|
 | [if](https://github.com/ArjunAranetaCodes/JavaPractices/tree/main/Keywords/if)             |Makes a conditional statement, executing a block of code if the specified condition is true.|
 | [implements](https://github.com/ArjunAranetaCodes/JavaPractices/tree/main/Keywords/implements)     |Implements an interface.|
-| [abstract](https://github.com/ArjunAranetaCodes/JavaPractices/tree/main/Keywords/abstract)imports        |Used to import a package, class, or interface, allowing their use in the current Java file.|
+| [imports](https://github.com/ArjunAranetaCodes/JavaPractices/tree/main/Keywords/imports)        |Used to import a package, class, or interface, allowing their use in the current Java file.|
 | [abstract](https://github.com/ArjunAranetaCodes/JavaPractices/tree/main/Keywords/abstract)instanceof     |Checks whether an object is an instance of a specific class or an interface.|
 | [abstract](https://github.com/ArjunAranetaCodes/JavaPractices/tree/main/Keywords/abstract)int            |A data type that can store whole numbers from -2147483648 to 2147483647.|
 | [abstract](https://github.com/ArjunAranetaCodes/JavaPractices/tree/main/Keywords/abstract)interface      |Used to declare a special type of class that only contains abstract methods.|
