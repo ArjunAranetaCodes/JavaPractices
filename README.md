@@ -44,7 +44,7 @@ Whether you're a beginner looking to strengthen your Java foundation or an exper
 | [imports](https://github.com/ArjunAranetaCodes/JavaPractices/tree/main/Keywords/imports)        |Used to import a package, class, or interface, allowing their use in the current Java file.|
 | [instanceof](https://github.com/ArjunAranetaCodes/JavaPractices/tree/main/Keywords/instanceof)     |Checks whether an object is an instance of a specific class or an interface.|
 | [int](https://github.com/ArjunAranetaCodes/JavaPractices/tree/main/Keywords/int)            |A data type that can store whole numbers from -2147483648 to 2147483647.|
-| [abstract](https://github.com/ArjunAranetaCodes/JavaPractices/tree/main/Keywords/abstract)interface      |Used to declare a special type of class that only contains abstract methods.|
+| [interface](https://github.com/ArjunAranetaCodes/JavaPractices/tree/main/Keywords/interface)      |Used to declare a special type of class that only contains abstract methods.|
 | [abstract](https://github.com/ArjunAranetaCodes/JavaPractices/tree/main/Keywords/abstract)long           |A data type that can store whole numbers from -9223372036854775808 to 9223372036854775808.|
 | [abstract](https://github.com/ArjunAranetaCodes/JavaPractices/tree/main/Keywords/abstract)module         |Declares a module. |
 | [abstract](https://github.com/ArjunAranetaCodes/JavaPractices/tree/main/Keywords/abstract)native         |Specifies that a method is not implemented in the same Java source file (but in another language).|
