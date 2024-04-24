@@ -46,7 +46,7 @@ Whether you're a beginner looking to strengthen your Java foundation or an exper
 | [int](https://github.com/ArjunAranetaCodes/JavaPractices/tree/main/Keywords/int)            |A data type that can store whole numbers from -2147483648 to 2147483647.|
 | [interface](https://github.com/ArjunAranetaCodes/JavaPractices/tree/main/Keywords/interface)      |Used to declare a special type of class that only contains abstract methods.|
 | [long](https://github.com/ArjunAranetaCodes/JavaPractices/tree/main/Keywords/long)           |A data type that can store whole numbers from -9223372036854775808 to 9223372036854775808.|
-| [abstract](https://github.com/ArjunAranetaCodes/JavaPractices/tree/main/Keywords/abstract)module         |Declares a module. |
+| [module](https://github.com/ArjunAranetaCodes/JavaPractices/tree/main/Keywords/module)         |Declares a module. |
 | [abstract](https://github.com/ArjunAranetaCodes/JavaPractices/tree/main/Keywords/abstract)native         |Specifies that a method is not implemented in the same Java source file (but in another language).|
 | [abstract](https://github.com/ArjunAranetaCodes/JavaPractices/tree/main/Keywords/abstract)new            |Creates new objects.|
 | [abstract](https://github.com/ArjunAranetaCodes/JavaPractices/tree/main/Keywords/abstract)package        |Declares a package.|
