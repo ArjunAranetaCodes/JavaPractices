@@ -47,7 +47,7 @@ Whether you're a beginner looking to strengthen your Java foundation or an exper
 | [interface](https://github.com/ArjunAranetaCodes/JavaPractices/tree/main/Keywords/interface)      |Used to declare a special type of class that only contains abstract methods.|
 | [long](https://github.com/ArjunAranetaCodes/JavaPractices/tree/main/Keywords/long)           |A data type that can store whole numbers from -9223372036854775808 to 9223372036854775808.|
 | [module](https://github.com/ArjunAranetaCodes/JavaPractices/tree/main/Keywords/module)         |Declares a module. |
-| [abstract](https://github.com/ArjunAranetaCodes/JavaPractices/tree/main/Keywords/abstract)native         |Specifies that a method is not implemented in the same Java source file (but in another language).|
+| [native](https://github.com/ArjunAranetaCodes/JavaPractices/tree/main/Keywords/native)         |Specifies that a method is not implemented in the same Java source file (but in another language).|
 | [abstract](https://github.com/ArjunAranetaCodes/JavaPractices/tree/main/Keywords/abstract)new            |Creates new objects.|
 | [abstract](https://github.com/ArjunAranetaCodes/JavaPractices/tree/main/Keywords/abstract)package        |Declares a package.|
 | [abstract](https://github.com/ArjunAranetaCodes/JavaPractices/tree/main/Keywords/abstract)private        |An access modifier used for attributes, methods, and constructors, making them only accessible within the declared class.|
