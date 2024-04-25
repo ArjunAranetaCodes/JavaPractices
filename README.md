@@ -51,7 +51,7 @@ Whether you're a beginner looking to strengthen your Java foundation or an exper
 | [new](https://github.com/ArjunAranetaCodes/JavaPractices/tree/main/Keywords/new)            |Creates new objects.|
 | [package](https://github.com/ArjunAranetaCodes/JavaPractices/tree/main/Keywords/package)        |Declares a package.|
 | [private](https://github.com/ArjunAranetaCodes/JavaPractices/tree/main/Keywords/private)        |An access modifier used for attributes, methods, and constructors, making them only accessible within the declared class.|
-| [abstract](https://github.com/ArjunAranetaCodes/JavaPractices/tree/main/Keywords/abstract)protected      |An access modifier used for attributes, methods, and constructors, making them accessible in the same package and subclasses.|
+| [protected](https://github.com/ArjunAranetaCodes/JavaPractices/tree/main/Keywords/protected)      |An access modifier used for attributes, methods, and constructors, making them accessible in the same package and subclasses.|
 | [abstract](https://github.com/ArjunAranetaCodes/JavaPractices/tree/main/Keywords/abstract)public         |An access modifier used for classes, attributes, methods, and constructors, making them accessible by any other class.|
 | [abstract](https://github.com/ArjunAranetaCodes/JavaPractices/tree/main/Keywords/abstract)requires       |Specifies required libraries inside a module. |
 | [abstract](https://github.com/ArjunAranetaCodes/JavaPractices/tree/main/Keywords/abstract)return         | Finished the execution of a method and can be used to return a value from a method.|
