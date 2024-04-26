@@ -53,7 +53,7 @@ Whether you're a beginner looking to strengthen your Java foundation or an exper
 | [private](https://github.com/ArjunAranetaCodes/JavaPractices/tree/main/Keywords/private)        |An access modifier used for attributes, methods, and constructors, making them only accessible within the declared class.|
 | [protected](https://github.com/ArjunAranetaCodes/JavaPractices/tree/main/Keywords/protected)      |An access modifier used for attributes, methods, and constructors, making them accessible in the same package and subclasses.|
 | [public](https://github.com/ArjunAranetaCodes/JavaPractices/tree/main/Keywords/public)         |An access modifier used for classes, attributes, methods, and constructors, making them accessible by any other class.|
-| [abstract](https://github.com/ArjunAranetaCodes/JavaPractices/tree/main/Keywords/abstract)requires       |Specifies required libraries inside a module. |
+| [requires](https://github.com/ArjunAranetaCodes/JavaPractices/tree/main/Keywords/requires)       |Specifies required libraries inside a module. |
 | [abstract](https://github.com/ArjunAranetaCodes/JavaPractices/tree/main/Keywords/abstract)return         | Finished the execution of a method and can be used to return a value from a method.|
 | [abstract](https://github.com/ArjunAranetaCodes/JavaPractices/tree/main/Keywords/abstract)short          |A data type that can store whole numbers from -32768 to 32767.|
 | [abstract](https://github.com/ArjunAranetaCodes/JavaPractices/tree/main/Keywords/abstract)static         |A non-access modifier used for methods and attributes. Static methods/attributes can be accessed without creating an object of a class.|
