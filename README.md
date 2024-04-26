@@ -55,7 +55,7 @@ Whether you're a beginner looking to strengthen your Java foundation or an exper
 | [public](https://github.com/ArjunAranetaCodes/JavaPractices/tree/main/Keywords/public)         |An access modifier used for classes, attributes, methods, and constructors, making them accessible by any other class.|
 | [requires](https://github.com/ArjunAranetaCodes/JavaPractices/tree/main/Keywords/requires)       |Specifies required libraries inside a module. |
 | [return](https://github.com/ArjunAranetaCodes/JavaPractices/tree/main/Keywords/return)         | Finished the execution of a method and can be used to return a value from a method.|
-| [abstract](https://github.com/ArjunAranetaCodes/JavaPractices/tree/main/Keywords/abstract)short          |A data type that can store whole numbers from -32768 to 32767.|
+| [short](https://github.com/ArjunAranetaCodes/JavaPractices/tree/main/Keywords/short)          |A data type that can store whole numbers from -32768 to 32767.|
 | [abstract](https://github.com/ArjunAranetaCodes/JavaPractices/tree/main/Keywords/abstract)static         |A non-access modifier used for methods and attributes. Static methods/attributes can be accessed without creating an object of a class.|
 | [abstract](https://github.com/ArjunAranetaCodes/JavaPractices/tree/main/Keywords/abstract)strictfp       |Restricts the precision and rounding of floating-point calculations.|
 | [abstract](https://github.com/ArjunAranetaCodes/JavaPractices/tree/main/Keywords/abstract)super          |Refers to superclass (parent) objects.|
