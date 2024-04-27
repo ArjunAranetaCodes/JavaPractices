@@ -57,7 +57,7 @@ Whether you're a beginner looking to strengthen your Java foundation or an exper
 | [return](https://github.com/ArjunAranetaCodes/JavaPractices/tree/main/Keywords/return)         | Finished the execution of a method and can be used to return a value from a method.|
 | [short](https://github.com/ArjunAranetaCodes/JavaPractices/tree/main/Keywords/short)          |A data type that can store whole numbers from -32768 to 32767.|
 | [static](https://github.com/ArjunAranetaCodes/JavaPractices/tree/main/Keywords/static)         |A non-access modifier used for methods and attributes. Static methods/attributes can be accessed without creating an object of a class.|
-| [abstract](https://github.com/ArjunAranetaCodes/JavaPractices/tree/main/Keywords/abstract)strictfp       |Restricts the precision and rounding of floating-point calculations.|
+| [strictfp](https://github.com/ArjunAranetaCodes/JavaPractices/tree/main/Keywords/strictfp)       |Restricts the precision and rounding of floating-point calculations.|
 | [abstract](https://github.com/ArjunAranetaCodes/JavaPractices/tree/main/Keywords/abstract)super          |Refers to superclass (parent) objects.|
 | [abstract](https://github.com/ArjunAranetaCodes/JavaPractices/tree/main/Keywords/abstract)switch         |Selects one of many code blocks to be executed.|
 | [abstract](https://github.com/ArjunAranetaCodes/JavaPractices/tree/main/Keywords/abstract)synchronized   |A non-access modifier that specifies that methods can only be accessed by one thread at a time.|
