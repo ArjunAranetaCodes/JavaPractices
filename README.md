@@ -60,7 +60,7 @@ Whether you're a beginner looking to strengthen your Java foundation or an exper
 | [strictfp](https://github.com/ArjunAranetaCodes/JavaPractices/tree/main/Keywords/strictfp)       |Restricts the precision and rounding of floating-point calculations.|
 | [super](https://github.com/ArjunAranetaCodes/JavaPractices/tree/main/Keywords/super)          |Refers to superclass (parent) objects.|
 | [switch](https://github.com/ArjunAranetaCodes/JavaPractices/tree/main/Keywords/switch)         |Selects one of many code blocks to be executed.|
-| [abstract](https://github.com/ArjunAranetaCodes/JavaPractices/tree/main/Keywords/abstract)synchronized   |A non-access modifier that specifies that methods can only be accessed by one thread at a time.|
+| [synchronized](https://github.com/ArjunAranetaCodes/JavaPractices/tree/main/Keywords/synchronized)   |A non-access modifier that specifies that methods can only be accessed by one thread at a time.|
 | [abstract](https://github.com/ArjunAranetaCodes/JavaPractices/tree/main/Keywords/abstract)this           |Refers to the current object in a method or constructor.|
 | [abstract](https://github.com/ArjunAranetaCodes/JavaPractices/tree/main/Keywords/abstract)throw          | Creates a custom error.|
 | [abstract](https://github.com/ArjunAranetaCodes/JavaPractices/tree/main/Keywords/abstract)throws         |Indicates what exceptions may be thrown by a method.|
