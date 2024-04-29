@@ -63,7 +63,7 @@ Whether you're a beginner looking to strengthen your Java foundation or an exper
 | [synchronized](https://github.com/ArjunAranetaCodes/JavaPractices/tree/main/Keywords/synchronized)   |A non-access modifier that specifies that methods can only be accessed by one thread at a time.|
 | [this](https://github.com/ArjunAranetaCodes/JavaPractices/tree/main/Keywords/this)           |Refers to the current object in a method or constructor.|
 | [throw](https://github.com/ArjunAranetaCodes/JavaPractices/tree/main/Keywords/throw)          | Creates a custom error.|
-| [abstract](https://github.com/ArjunAranetaCodes/JavaPractices/tree/main/Keywords/abstract)throws         |Indicates what exceptions may be thrown by a method.|
+| [throws](https://github.com/ArjunAranetaCodes/JavaPractices/tree/main/Keywords/throws)         |Indicates what exceptions may be thrown by a method.|
 | [abstract](https://github.com/ArjunAranetaCodes/JavaPractices/tree/main/Keywords/abstract)transient      |A non-access modifier that specifies that an attribute is not part of an object's persistent state.|
 | [abstract](https://github.com/ArjunAranetaCodes/JavaPractices/tree/main/Keywords/abstract)try            |Creates a try...catch statement. |
 | [abstract](https://github.com/ArjunAranetaCodes/JavaPractices/tree/main/Keywords/abstract)var            |Declares a variable. |
