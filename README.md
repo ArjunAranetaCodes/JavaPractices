@@ -66,7 +66,7 @@ Whether you're a beginner looking to strengthen your Java foundation or an exper
 | [throws](https://github.com/ArjunAranetaCodes/JavaPractices/tree/main/Keywords/throws)         |Indicates what exceptions may be thrown by a method.|
 | [transient](https://github.com/ArjunAranetaCodes/JavaPractices/tree/main/Keywords/transient)      |A non-access modifier that specifies that an attribute is not part of an object's persistent state.|
 | [try](https://github.com/ArjunAranetaCodes/JavaPractices/tree/main/Keywords/try)            |Creates a try...catch statement. |
-| [var](https://github.com/ArjunAranetaCodes/JavaPractices/tree/main/Keywords/var)var            |Declares a variable. |
+| [var](https://github.com/ArjunAranetaCodes/JavaPractices/tree/main/Keywords/var)        |Declares a variable. |
 | [void](https://github.com/ArjunAranetaCodes/JavaPractices/tree/main/Keywords/void)           |Specifies that a method should not have a return value.|
 | [volatile](https://github.com/ArjunAranetaCodes/JavaPractices/tree/main/Keywords/volatile)       |Indicates that an attribute is not cached thread-locally and is always read from the "main memory."|
 | [while](https://github.com/ArjunAranetaCodes/JavaPractices/tree/main/Keywords/while)          |Creates a while loop.|
