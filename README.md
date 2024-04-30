@@ -68,5 +68,5 @@ Whether you're a beginner looking to strengthen your Java foundation or an exper
 | [try](https://github.com/ArjunAranetaCodes/JavaPractices/tree/main/Keywords/try)            |Creates a try...catch statement. |
 | [var](https://github.com/ArjunAranetaCodes/JavaPractices/tree/main/Keywords/var)var            |Declares a variable. |
 | [void](https://github.com/ArjunAranetaCodes/JavaPractices/tree/main/Keywords/void)           |Specifies that a method should not have a return value.|
-| [abstract](https://github.com/ArjunAranetaCodes/JavaPractices/tree/main/Keywords/abstract)volatile       |Indicates that an attribute is not cached thread-locally and is always read from the "main memory."|
+| [volatile](https://github.com/ArjunAranetaCodes/JavaPractices/tree/main/Keywords/volatile)       |Indicates that an attribute is not cached thread-locally and is always read from the "main memory."|
 | [abstract](https://github.com/ArjunAranetaCodes/JavaPractices/tree/main/Keywords/abstract)while          |Creates a while loop.|
