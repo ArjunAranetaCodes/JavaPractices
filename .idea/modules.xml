@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Basic Algorithms/Dynamic Programming/0/0.iml" filepath="$PROJECT_DIR$/Basic Algorithms/Dynamic Programming/0/0.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Keywords/000-folders/000-folders.iml" filepath="$PROJECT_DIR$/Keywords/000-folders/000-folders.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Abstraction-Jan-13-2024/Abstraction-Jan-13-2024.iml" filepath="$PROJECT_DIR$/Abstraction-Jan-13-2024/Abstraction-Jan-13-2024.iml" />
+      <module fileurl="file://$PROJECT_DIR$/DataStructures/Basics/Arrays/Arrays.iml" filepath="$PROJECT_DIR$/DataStructures/Basics/Arrays/Arrays.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Basic Algorithms/Bit Manipulation/Bit Manipulation.iml" filepath="$PROJECT_DIR$/Basic Algorithms/Bit Manipulation/Bit Manipulation.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Basic Algorithms/Sorting Algorithms/BubbleSort/BubbleSort.iml" filepath="$PROJECT_DIR$/Basic Algorithms/Sorting Algorithms/BubbleSort/BubbleSort.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Collections/Collections.iml" filepath="$PROJECT_DIR$/Collections/Collections.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Collections-May-2024/Collections-May-2024.iml" filepath="$PROJECT_DIR$/Collections-May-2024/Collections-May-2024.iml" />
+      <module fileurl="file://$PROJECT_DIR$/DataStructures/Basics/Conditions/Conditions.iml" filepath="$PROJECT_DIR$/DataStructures/Basics/Conditions/Conditions.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Basic Algorithms/Dynamic Programming/Dynamic Programming.iml" filepath="$PROJECT_DIR$/Basic Algorithms/Dynamic Programming/Dynamic Programming.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Encapsulation-Jan-13-2024/Encapsulation-Jan-13-2024.iml" filepath="$PROJECT_DIR$/Encapsulation-Jan-13-2024/Encapsulation-Jan-13-2024.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Encapsulation-Jan-20-2024/Encapsulation-Jan-20-2024.iml" filepath="$PROJECT_DIR$/Encapsulation-Jan-20-2024/Encapsulation-Jan-20-2024.iml" />
+      <module fileurl="file://$PROJECT_DIR$/GUI/GUI.iml" filepath="$PROJECT_DIR$/GUI/GUI.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Generics-Jan-25-2024/Generics-Jan-25-2024.iml" filepath="$PROJECT_DIR$/Generics-Jan-25-2024/Generics-Jan-25-2024.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Basic Algorithms/Graphs/Graphs.iml" filepath="$PROJECT_DIR$/Basic Algorithms/Graphs/Graphs.iml" />
+      <module fileurl="file://$PROJECT_DIR$/DataStructures/HashMap/HashMap.iml" filepath="$PROJECT_DIR$/DataStructures/HashMap/HashMap.iml" />
+      <module fileurl="file://$PROJECT_DIR$/DataStructures/HashSet/HashSet.iml" filepath="$PROJECT_DIR$/DataStructures/HashSet/HashSet.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Basic Algorithms/Heap/Heap.iml" filepath="$PROJECT_DIR$/Basic Algorithms/Heap/Heap.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Math Methods/IEEEremainder/IEEEremainder.iml" filepath="$PROJECT_DIR$/Math Methods/IEEEremainder/IEEEremainder.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Inheritance-Jan-13-2024/Inheritance-Jan-13-2024.iml" filepath="$PROJECT_DIR$/Inheritance-Jan-13-2024/Inheritance-Jan-13-2024.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Inheritance-Jan-14-2024/Inheritance-Jan-14-2024.iml" filepath="$PROJECT_DIR$/Inheritance-Jan-14-2024/Inheritance-Jan-14-2024.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Inheritance-Jan-20-2024/Inheritance-Jan-20-2024.iml" filepath="$PROJECT_DIR$/Inheritance-Jan-20-2024/Inheritance-Jan-20-2024.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JavaPractices.iml" filepath="$PROJECT_DIR$/JavaPractices.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Lamdas/Lamdas.iml" filepath="$PROJECT_DIR$/Lamdas/Lamdas.iml" />
+      <module fileurl="file://$PROJECT_DIR$/DataStructures/LinkedList/LinkedList.iml" filepath="$PROJECT_DIR$/DataStructures/LinkedList/LinkedList.iml" />
+      <module fileurl="file://$PROJECT_DIR$/DataStructures/LinkedList Jan-20-2024/LinkedList Jan-20-2024.iml" filepath="$PROJECT_DIR$/DataStructures/LinkedList Jan-20-2024/LinkedList Jan-20-2024.iml" />
+      <module fileurl="file://$PROJECT_DIR$/DataStructures/Basics/Math/Math.iml" filepath="$PROJECT_DIR$/DataStructures/Basics/Math/Math.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Multi-Threading-Jan-14-2024/Multi-Threading-Jan-14-2024.iml" filepath="$PROJECT_DIR$/Multi-Threading-Jan-14-2024/Multi-Threading-Jan-14-2024.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Multi-Threading-Jan-20-2024/Multi-Threading-Jan-20-2024.iml" filepath="$PROJECT_DIR$/Multi-Threading-Jan-20-2024/Multi-Threading-Jan-20-2024.iml" />
+      <module fileurl="file://$PROJECT_DIR$/DataStructures/Basics/Operators/Operators.iml" filepath="$PROJECT_DIR$/DataStructures/Basics/Operators/Operators.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Polymorphism-Jan-13-2024/Polymorphism-Jan-13-2024.iml" filepath="$PROJECT_DIR$/Polymorphism-Jan-13-2024/Polymorphism-Jan-13-2024.iml" />
+      <module fileurl="file://$PROJECT_DIR$/DataStructures/Queue/Queue.iml" filepath="$PROJECT_DIR$/DataStructures/Queue/Queue.iml" />
+      <module fileurl="file://$PROJECT_DIR$/DataStructures/Queue Jan-20-2024/Queue Jan-20-2024.iml" filepath="$PROJECT_DIR$/DataStructures/Queue Jan-20-2024/Queue Jan-20-2024.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Basic Algorithms/Recursion/Recursion.iml" filepath="$PROJECT_DIR$/Basic Algorithms/Recursion/Recursion.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Basic Algorithms/Searching Algorithms/Searching Algorithms.iml" filepath="$PROJECT_DIR$/Basic Algorithms/Searching Algorithms/Searching Algorithms.iml" />
+      <module fileurl="file://$PROJECT_DIR$/For Interviews/Sort/Sort.iml" filepath="$PROJECT_DIR$/For Interviews/Sort/Sort.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Basic Algorithms/Sorting Algorithms/Sorting Algorithms.iml" filepath="$PROJECT_DIR$/Basic Algorithms/Sorting Algorithms/Sorting Algorithms.iml" />
+      <module fileurl="file://$PROJECT_DIR$/DataStructures/Stack/Stack.iml" filepath="$PROJECT_DIR$/DataStructures/Stack/Stack.iml" />
+      <module fileurl="file://$PROJECT_DIR$/DataStructures/Stack Jan-20-2024/Stack Jan-20-2024.iml" filepath="$PROJECT_DIR$/DataStructures/Stack Jan-20-2024/Stack Jan-20-2024.iml" />
+      <module fileurl="file://$PROJECT_DIR$/For Interviews/String/String.iml" filepath="$PROJECT_DIR$/For Interviews/String/String.iml" />
+      <module fileurl="file://$PROJECT_DIR$/DataStructures/Basics/Strings/Strings.iml" filepath="$PROJECT_DIR$/DataStructures/Basics/Strings/Strings.iml" />
+      <module fileurl="file://$PROJECT_DIR$/DataStructures/Basics/Switch/Switch.iml" filepath="$PROJECT_DIR$/DataStructures/Basics/Switch/Switch.iml" />
+      <module fileurl="file://$PROJECT_DIR$/DataStructures/TreeMap/TreeMap.iml" filepath="$PROJECT_DIR$/DataStructures/TreeMap/TreeMap.iml" />
+      <module fileurl="file://$PROJECT_DIR$/DataStructures/TreeSet/TreeSet.iml" filepath="$PROJECT_DIR$/DataStructures/TreeSet/TreeSet.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Basic Algorithms/Trees/Trees.iml" filepath="$PROJECT_DIR$/Basic Algorithms/Trees/Trees.iml" />
+      <module fileurl="file://$PROJECT_DIR$/DataStructures/Basics/TypeCasting/TypeCasting.iml" filepath="$PROJECT_DIR$/DataStructures/Basics/TypeCasting/TypeCasting.iml" />
+      <module fileurl="file://$PROJECT_DIR$/DataStructures/Basics/Variables/Variables.iml" filepath="$PROJECT_DIR$/DataStructures/Basics/Variables/Variables.iml" />
+      <module fileurl="file://$PROJECT_DIR$/DataStructures/Basics/While Loop/While Loop.iml" filepath="$PROJECT_DIR$/DataStructures/Basics/While Loop/While Loop.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Wrapper-Jan-14-2024/Wrapper-Jan-14-2024.iml" filepath="$PROJECT_DIR$/Wrapper-Jan-14-2024/Wrapper-Jan-14-2024.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Wrapper-Jan-20-2024/Wrapper-Jan-20-2024.iml" filepath="$PROJECT_DIR$/Wrapper-Jan-20-2024/Wrapper-Jan-20-2024.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Math Methods/abs/abs.iml" filepath="$PROJECT_DIR$/Math Methods/abs/abs.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Keywords/abstract/abstract.iml" filepath="$PROJECT_DIR$/Keywords/abstract/abstract.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Math Methods/acos/acos.iml" filepath="$PROJECT_DIR$/Math Methods/acos/acos.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Math Methods/asin/asin.iml" filepath="$PROJECT_DIR$/Math Methods/asin/asin.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Keywords/assert/assert.iml" filepath="$PROJECT_DIR$/Keywords/assert/assert.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Math Methods/atan/atan.iml" filepath="$PROJECT_DIR$/Math Methods/atan/atan.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Math Methods/atan2/atan2.iml" filepath="$PROJECT_DIR$/Math Methods/atan2/atan2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Keywords/boolean/boolean.iml" filepath="$PROJECT_DIR$/Keywords/boolean/boolean.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Keywords/break/break.iml" filepath="$PROJECT_DIR$/Keywords/break/break.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Keywords/byte/byte.iml" filepath="$PROJECT_DIR$/Keywords/byte/byte.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Keywords/case/case.iml" filepath="$PROJECT_DIR$/Keywords/case/case.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Keywords/catch/catch.iml" filepath="$PROJECT_DIR$/Keywords/catch/catch.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Math Methods/cbrt/cbrt.iml" filepath="$PROJECT_DIR$/Math Methods/cbrt/cbrt.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Math Methods/ceil/ceil.iml" filepath="$PROJECT_DIR$/Math Methods/ceil/ceil.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Keywords/char/char.iml" filepath="$PROJECT_DIR$/Keywords/char/char.iml" />
+      <module fileurl="file://$PROJECT_DIR$/String Methods/chartAt/chartAt.iml" filepath="$PROJECT_DIR$/String Methods/chartAt/chartAt.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Keywords/class/class.iml" filepath="$PROJECT_DIR$/Keywords/class/class.iml" />
+      <module fileurl="file://$PROJECT_DIR$/String Methods/codePointAt/codePointAt.iml" filepath="$PROJECT_DIR$/String Methods/codePointAt/codePointAt.iml" />
+      <module fileurl="file://$PROJECT_DIR$/String Methods/codePointBefore/codePointBefore.iml" filepath="$PROJECT_DIR$/String Methods/codePointBefore/codePointBefore.iml" />
+      <module fileurl="file://$PROJECT_DIR$/String Methods/codePointCount/codePointCount.iml" filepath="$PROJECT_DIR$/String Methods/codePointCount/codePointCount.iml" />
+      <module fileurl="file://$PROJECT_DIR$/String Methods/compareTo/compareTo.iml" filepath="$PROJECT_DIR$/String Methods/compareTo/compareTo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/String Methods/compareToIgnoreCase/compareToIgnoreCase.iml" filepath="$PROJECT_DIR$/String Methods/compareToIgnoreCase/compareToIgnoreCase.iml" />
+      <module fileurl="file://$PROJECT_DIR$/String Methods/concat/concat.iml" filepath="$PROJECT_DIR$/String Methods/concat/concat.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Keywords/const/const.iml" filepath="$PROJECT_DIR$/Keywords/const/const.iml" />
+      <module fileurl="file://$PROJECT_DIR$/String Methods/contains/contains.iml" filepath="$PROJECT_DIR$/String Methods/contains/contains.iml" />
+      <module fileurl="file://$PROJECT_DIR$/String Methods/contentEquals/contentEquals.iml" filepath="$PROJECT_DIR$/String Methods/contentEquals/contentEquals.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Keywords/continue/continue.iml" filepath="$PROJECT_DIR$/Keywords/continue/continue.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Math Methods/copySign/copySign.iml" filepath="$PROJECT_DIR$/Math Methods/copySign/copySign.iml" />
+      <module fileurl="file://$PROJECT_DIR$/String Methods/copyValueOf/copyValueOf.iml" filepath="$PROJECT_DIR$/String Methods/copyValueOf/copyValueOf.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Math Methods/cos/cos.iml" filepath="$PROJECT_DIR$/Math Methods/cos/cos.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Keywords/default/default.iml" filepath="$PROJECT_DIR$/Keywords/default/default.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Keywords/do/do.iml" filepath="$PROJECT_DIR$/Keywords/do/do.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Keywords/else/else.iml" filepath="$PROJECT_DIR$/Keywords/else/else.iml" />
+      <module fileurl="file://$PROJECT_DIR$/String Methods/endsWith/endsWith.iml" filepath="$PROJECT_DIR$/String Methods/endsWith/endsWith.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Keywords/enum/enum.iml" filepath="$PROJECT_DIR$/Keywords/enum/enum.iml" />
+      <module fileurl="file://$PROJECT_DIR$/String Methods/equals/equals.iml" filepath="$PROJECT_DIR$/String Methods/equals/equals.iml" />
+      <module fileurl="file://$PROJECT_DIR$/String Methods/equalsIgnoreCase/equalsIgnoreCase.iml" filepath="$PROJECT_DIR$/String Methods/equalsIgnoreCase/equalsIgnoreCase.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Math Methods/exp/exp.iml" filepath="$PROJECT_DIR$/Math Methods/exp/exp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Keywords/extends/extends.iml" filepath="$PROJECT_DIR$/Keywords/extends/extends.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Keywords/final/final.iml" filepath="$PROJECT_DIR$/Keywords/final/final.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Keywords/finally/finally.iml" filepath="$PROJECT_DIR$/Keywords/finally/finally.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Keywords/float/float.iml" filepath="$PROJECT_DIR$/Keywords/float/float.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Math Methods/floor/floor.iml" filepath="$PROJECT_DIR$/Math Methods/floor/floor.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Keywords/for/for.iml" filepath="$PROJECT_DIR$/Keywords/for/for.iml" />
+      <module fileurl="file://$PROJECT_DIR$/String Methods/format/format.iml" filepath="$PROJECT_DIR$/String Methods/format/format.iml" />
+      <module fileurl="file://$PROJECT_DIR$/String Methods/getBytes/getBytes.iml" filepath="$PROJECT_DIR$/String Methods/getBytes/getBytes.iml" />
+      <module fileurl="file://$PROJECT_DIR$/String Methods/getChars/getChars.iml" filepath="$PROJECT_DIR$/String Methods/getChars/getChars.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Math Methods/getExponent/getExponent.iml" filepath="$PROJECT_DIR$/Math Methods/getExponent/getExponent.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Keywords/goto/goto.iml" filepath="$PROJECT_DIR$/Keywords/goto/goto.iml" />
+      <module fileurl="file://$PROJECT_DIR$/String Methods/hashCode/hashCode.iml" filepath="$PROJECT_DIR$/String Methods/hashCode/hashCode.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Math Methods/hypot/hypot.iml" filepath="$PROJECT_DIR$/Math Methods/hypot/hypot.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Keywords/if/if.iml" filepath="$PROJECT_DIR$/Keywords/if/if.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Keywords/implements/implements.iml" filepath="$PROJECT_DIR$/Keywords/implements/implements.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Keywords/imports/imports.iml" filepath="$PROJECT_DIR$/Keywords/imports/imports.iml" />
+      <module fileurl="file://$PROJECT_DIR$/String Methods/indexOf/indexOf.iml" filepath="$PROJECT_DIR$/String Methods/indexOf/indexOf.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Keywords/instanceof/instanceof.iml" filepath="$PROJECT_DIR$/Keywords/instanceof/instanceof.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Keywords/int/int.iml" filepath="$PROJECT_DIR$/Keywords/int/int.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Keywords/interface/interface.iml" filepath="$PROJECT_DIR$/Keywords/interface/interface.iml" />
+      <module fileurl="file://$PROJECT_DIR$/String Methods/intern/intern.iml" filepath="$PROJECT_DIR$/String Methods/intern/intern.iml" />
+      <module fileurl="file://$PROJECT_DIR$/String Methods/isEmpty/isEmpty.iml" filepath="$PROJECT_DIR$/String Methods/isEmpty/isEmpty.iml" />
+      <module fileurl="file://$PROJECT_DIR$/String Methods/lastIndexOf/lastIndexOf.iml" filepath="$PROJECT_DIR$/String Methods/lastIndexOf/lastIndexOf.iml" />
+      <module fileurl="file://$PROJECT_DIR$/String Methods/length/length.iml" filepath="$PROJECT_DIR$/String Methods/length/length.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Math Methods/log/log.iml" filepath="$PROJECT_DIR$/Math Methods/log/log.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Math Methods/log10/log10.iml" filepath="$PROJECT_DIR$/Math Methods/log10/log10.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Math Methods/log1p/log1p.iml" filepath="$PROJECT_DIR$/Math Methods/log1p/log1p.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Keywords/long/long.iml" filepath="$PROJECT_DIR$/Keywords/long/long.iml" />
+      <module fileurl="file://$PROJECT_DIR$/String Methods/matches/matches.iml" filepath="$PROJECT_DIR$/String Methods/matches/matches.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Math Methods/max/max.iml" filepath="$PROJECT_DIR$/Math Methods/max/max.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Math Methods/min/min.iml" filepath="$PROJECT_DIR$/Math Methods/min/min.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Keywords/native/native.iml" filepath="$PROJECT_DIR$/Keywords/native/native.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Keywords/new/new.iml" filepath="$PROJECT_DIR$/Keywords/new/new.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Math Methods/nextAfter/nextAfter.iml" filepath="$PROJECT_DIR$/Math Methods/nextAfter/nextAfter.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Math Methods/nextUp/nextUp.iml" filepath="$PROJECT_DIR$/Math Methods/nextUp/nextUp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/String Methods/offsetByCodePoints/offsetByCodePoints.iml" filepath="$PROJECT_DIR$/String Methods/offsetByCodePoints/offsetByCodePoints.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Keywords/package/package.iml" filepath="$PROJECT_DIR$/Keywords/package/package.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Math Methods/pow/pow.iml" filepath="$PROJECT_DIR$/Math Methods/pow/pow.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Keywords/private/private.iml" filepath="$PROJECT_DIR$/Keywords/private/private.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Keywords/protected/protected.iml" filepath="$PROJECT_DIR$/Keywords/protected/protected.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Keywords/public/public.iml" filepath="$PROJECT_DIR$/Keywords/public/public.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Math Methods/random/random.iml" filepath="$PROJECT_DIR$/Math Methods/random/random.iml" />
+      <module fileurl="file://$PROJECT_DIR$/String Methods/regionMatches/regionMatches.iml" filepath="$PROJECT_DIR$/String Methods/regionMatches/regionMatches.iml" />
+      <module fileurl="file://$PROJECT_DIR$/String Methods/replace/replace.iml" filepath="$PROJECT_DIR$/String Methods/replace/replace.iml" />
+      <module fileurl="file://$PROJECT_DIR$/String Methods/replaceAll/replaceAll.iml" filepath="$PROJECT_DIR$/String Methods/replaceAll/replaceAll.iml" />
+      <module fileurl="file://$PROJECT_DIR$/String Methods/replaceFirst/replaceFirst.iml" filepath="$PROJECT_DIR$/String Methods/replaceFirst/replaceFirst.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Keywords/requires/requires.iml" filepath="$PROJECT_DIR$/Keywords/requires/requires.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Keywords/return/return.iml" filepath="$PROJECT_DIR$/Keywords/return/return.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Math Methods/rint/rint.iml" filepath="$PROJECT_DIR$/Math Methods/rint/rint.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Math Methods/round/round.iml" filepath="$PROJECT_DIR$/Math Methods/round/round.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Keywords/short/short.iml" filepath="$PROJECT_DIR$/Keywords/short/short.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Math Methods/signum/signum.iml" filepath="$PROJECT_DIR$/Math Methods/signum/signum.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Math Methods/sin/sin.iml" filepath="$PROJECT_DIR$/Math Methods/sin/sin.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Math Methods/sinh/sinh.iml" filepath="$PROJECT_DIR$/Math Methods/sinh/sinh.iml" />
+      <module fileurl="file://$PROJECT_DIR$/String Methods/split/split.iml" filepath="$PROJECT_DIR$/String Methods/split/split.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Math Methods/sqrt/sqrt.iml" filepath="$PROJECT_DIR$/Math Methods/sqrt/sqrt.iml" />
+      <module fileurl="file://$PROJECT_DIR$/String Methods/startsWith/startsWith.iml" filepath="$PROJECT_DIR$/String Methods/startsWith/startsWith.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Keywords/static/static.iml" filepath="$PROJECT_DIR$/Keywords/static/static.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Keywords/strictfp/strictfp.iml" filepath="$PROJECT_DIR$/Keywords/strictfp/strictfp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/String Methods/subSequence/subSequence.iml" filepath="$PROJECT_DIR$/String Methods/subSequence/subSequence.iml" />
+      <module fileurl="file://$PROJECT_DIR$/String Methods/substring/substring.iml" filepath="$PROJECT_DIR$/String Methods/substring/substring.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Keywords/super/super.iml" filepath="$PROJECT_DIR$/Keywords/super/super.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Keywords/switch/switch.iml" filepath="$PROJECT_DIR$/Keywords/switch/switch.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Keywords/synchronized/synchronized.iml" filepath="$PROJECT_DIR$/Keywords/synchronized/synchronized.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Math Methods/tan/tan.iml" filepath="$PROJECT_DIR$/Math Methods/tan/tan.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Math Methods/tanh/tanh.iml" filepath="$PROJECT_DIR$/Math Methods/tanh/tanh.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Keywords/this/this.iml" filepath="$PROJECT_DIR$/Keywords/this/this.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Keywords/throw/throw.iml" filepath="$PROJECT_DIR$/Keywords/throw/throw.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Keywords/throws/throws.iml" filepath="$PROJECT_DIR$/Keywords/throws/throws.iml" />
+      <module fileurl="file://$PROJECT_DIR$/String Methods/toCharArray/toCharArray.iml" filepath="$PROJECT_DIR$/String Methods/toCharArray/toCharArray.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Math Methods/toDegrees/toDegrees.iml" filepath="$PROJECT_DIR$/Math Methods/toDegrees/toDegrees.iml" />
+      <module fileurl="file://$PROJECT_DIR$/String Methods/toLowerCase/toLowerCase.iml" filepath="$PROJECT_DIR$/String Methods/toLowerCase/toLowerCase.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Math Methods/toRadians/toRadians.iml" filepath="$PROJECT_DIR$/Math Methods/toRadians/toRadians.iml" />
+      <module fileurl="file://$PROJECT_DIR$/String Methods/toString/toString.iml" filepath="$PROJECT_DIR$/String Methods/toString/toString.iml" />
+      <module fileurl="file://$PROJECT_DIR$/String Methods/toUpperCase/toUpperCase.iml" filepath="$PROJECT_DIR$/String Methods/toUpperCase/toUpperCase.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Keywords/transient/transient.iml" filepath="$PROJECT_DIR$/Keywords/transient/transient.iml" />
+      <module fileurl="file://$PROJECT_DIR$/String Methods/trim/trim.iml" filepath="$PROJECT_DIR$/String Methods/trim/trim.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Keywords/try/try.iml" filepath="$PROJECT_DIR$/Keywords/try/try.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Math Methods/ulp/ulp.iml" filepath="$PROJECT_DIR$/Math Methods/ulp/ulp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/String Methods/valueOf/valueOf.iml" filepath="$PROJECT_DIR$/String Methods/valueOf/valueOf.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Keywords/var/var.iml" filepath="$PROJECT_DIR$/Keywords/var/var.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Keywords/void/void.iml" filepath="$PROJECT_DIR$/Keywords/void/void.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Keywords/volatile/volatile.iml" filepath="$PROJECT_DIR$/Keywords/volatile/volatile.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Keywords/while/while.iml" filepath="$PROJECT_DIR$/Keywords/while/while.iml" />
+    </modules>
+  </component>
+</project>
