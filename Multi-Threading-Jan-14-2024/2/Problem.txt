@@ -1,5 +1,0 @@
-Problem 2: Producer-Consumer Problem
-Description:
-Implement a simple producer-consumer problem with a buffer. Create two threads, a producer, and a consumer. 
-The producer should produce items and add them to the buffer, while the consumer should consume items 
-from the buffer. Ensure that the producer and consumer do not interfere with each other.
