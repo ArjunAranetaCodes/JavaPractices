@@ -1,2 +1,0 @@
-Problem 2: Producer-Consumer Problem
-Description: Implement a simple producer-consumer problem using a shared buffer.
