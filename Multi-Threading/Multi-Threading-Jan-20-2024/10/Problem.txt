@@ -1,0 +1,2 @@
+Problem 10: Semaphore
+Description: Use Semaphore to control access to a shared resource with a limited capacity.
