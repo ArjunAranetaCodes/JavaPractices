@@ -54,3 +54,18 @@ D) An exception is thrown
 
 A) 2 (Note: In Java, integer division results in an integer value)
 </details>
+
+Question 4
+What is the purpose of the finally block in a Java try-catch statement?
+<pre>
+A) To handle exceptions
+B) To provide an alternate path for code execution
+C) To ensure resources are closed regardless of exceptions
+D) To skip over code
+</pre>
+
+<details>
+<summary>Answer:</summary>
+
+C) To ensure resources are closed regardless of exceptions
+</details>
