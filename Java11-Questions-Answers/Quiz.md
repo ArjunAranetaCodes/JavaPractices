@@ -28,3 +28,28 @@ D) List
   
   B) Iterable
 </details>
+
+<pre>
+Question 3
+What is the output of the following code?
+```Java
+public class Main {
+public static void main(String[] args) {
+int x = 5;
+int y = 2;
+System.out.println(x / y);
+}
+}
+```
+MarkDown
+A) 2
+B) 2.5
+C) 3
+D) An exception is thrown
+</pre>
+
+<details>
+<summary>Answer:</summary>
+
+A) 2 (Note: In Java, integer division results in an integer value)
+</details>
