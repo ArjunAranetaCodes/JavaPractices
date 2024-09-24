@@ -70,10 +70,9 @@ D) To skip over code
 C) To ensure resources are closed regardless of exceptions
 </details>
 
-<pre>
-Question 5
+<h2>Question 5</h2>
 Which of the following Java features allows for the creation of a lambda expression?
-MarkDown
+<pre>
 A) Functional interfaces
 B) Abstract classes
 C) Lambda expressions
