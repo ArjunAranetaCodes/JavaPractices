@@ -32,6 +32,7 @@ D) List
 <pre>
 Question 3
 What is the output of the following code?
+</pre>
 ```Java
 public class Main {
 public static void main(String[] args) {
@@ -41,7 +42,7 @@ System.out.println(x / y);
 }
 }
 ```
-MarkDown
+<pre>
 A) 2
 B) 2.5
 C) 3
