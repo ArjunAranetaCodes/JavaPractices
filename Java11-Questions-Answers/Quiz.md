@@ -1,6 +1,6 @@
-<pre>
-Question 1
+<h2>Question 2</h2>
 What is the purpose of the java.lang.Module class in Java 11?
+<pre>
 A) To define a new module system
 B) To manage dependencies between modules
 C) To provide a way to configure module paths
@@ -13,10 +13,9 @@ D) To load modules dynamically
   A) To define a new module system
 </details>
 
-<pre>
-Question 2
+<h2>Question 2</h2>
 Which of the following interfaces is used to iterate over a collection in Java?
-MarkDown
+<pre>
 A) Iterator
 B) Iterable
 C) Collection
@@ -29,10 +28,8 @@ D) List
   B) Iterable
 </details>
 
-<pre>
-Question 3
+<h2>Question 3</h2>
 What is the output of the following code?
-</pre>
 ```Java
 public class Main {
 public static void main(String[] args) {
@@ -55,7 +52,7 @@ D) An exception is thrown
 A) 2 (Note: In Java, integer division results in an integer value)
 </details>
 
-Question 4
+<h2>Question 4</h2>
 What is the purpose of the finally block in a Java try-catch statement?
 <pre>
 A) To handle exceptions
