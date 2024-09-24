@@ -12,3 +12,19 @@ D) To load modules dynamically
   
   A) To define a new module system
 </details>
+
+<pre>
+Question 2
+Which of the following interfaces is used to iterate over a collection in Java?
+MarkDown
+A) Iterator
+B) Iterable
+C) Collection
+D) List
+</pre>
+
+<details>
+  <summary>Answer:</summary>
+  
+  B) Iterable
+</details>
