@@ -81,3 +81,18 @@ D) Method references
 
 A) Functional interfaces
 </details>
+
+<h2>Question 6</h2>
+What is the purpose of the java.util.Optional class in Java?
+<pre>
+A) To handle null values
+B) To create optional variables
+C) To provide a way to work with optional data
+D) To replace null checks
+</pre>
+
+<details>
+<summary>Answer:</summary>
+
+C) To provide a way to work with optional data
+</details>
