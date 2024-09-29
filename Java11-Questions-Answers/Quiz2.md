@@ -150,17 +150,17 @@ D) public
 A) final
 </details>
 
-<h2>Question 10</h2>
-What is the purpose of the java.lang.Math.addExact method in Java?
+<h2>Question 20</h2>
+What is the purpose of the java.lang.ClassNotFoundException exception in Java?
 <pre>
-A) To add two numbers with overflow checking
-B) To subtract two numbers with overflow checking
-C) To multiply two numbers with overflow checking
-D) To divide two numbers with overflow checking
+A) To handle errors during class loading
+B) To handle errors during object creation
+C) To handle errors during method invocation
+D) To handle errors during exception handling
 </pre>
 
 <details>
 <summary>Answer:</summary>
 
-A) To add two numbers with overflow checking
+ A) To handle errors during class loading
 </details>
