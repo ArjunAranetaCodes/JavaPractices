@@ -135,19 +135,19 @@ D) 5
 A) He
 </details>
 
-<h2>Question 9</h2>
-Which of the following Java keywords is used to declare a class that cannot be instantiated?
+<h2>Question 19</h2>
+Which of the following Java keywords is used to declare a method that cannot be overridden?
 <pre>
-A) abstract
-B) final
-C) static
-D) private
+A) final
+B) static
+C) private
+D) public
 </pre>
 
 <details>
 <summary>Answer:</summary>
 
-A) abstract
+A) final
 </details>
 
 <h2>Question 10</h2>
