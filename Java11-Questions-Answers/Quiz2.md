@@ -96,19 +96,19 @@ D) To create a dynamic array
 D) To create a dynamic array
 </details>
 
-<h2>Question 7</h2>
-Which of the following Java statements is used to create a new thread?
+<h2>Question 17</h2>
+Which of the following Java statements is used to create a new object?
 <pre>
-A) Thread t = new Thread();
-B) Thread t = new Thread(Runnable r);
-C) Thread t = new Thread(Thread t);
-D) Thread t = Thread.start();
+A) Object obj = new Object();
+B) Object obj = Object();
+C) Object obj = new();
+D) Object obj = Object.new();
 </pre>
 
 <details>
 <summary>Answer:</summary>
 
-B) Thread t = new Thread(Runnable r);
+A) Object obj = new Object();
 </details>
 
 <h2>Question 8</h2>
