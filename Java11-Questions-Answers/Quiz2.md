@@ -111,20 +111,22 @@ D) Object obj = Object.new();
 A) Object obj = new Object();
 </details>
 
-<h2>Question 8</h2>
+<h2>Question 18</h2>
 What is the output of the following code?
-<pre>
+```
 public class Main {
   public static void main(String[] args) {
-    String str = "Hello";
-    System.out.println(str.substring(1, 3));
+    int x = 10;
+    int y = 2;
+    System.out.println(x % y);
   }
 }
-
-A) He
-B) Hel
-C) ell
-D) llo
+```
+<pre>
+A) 0
+B) 1
+C) 2
+D) 5
 </pre>
 
 <details>
