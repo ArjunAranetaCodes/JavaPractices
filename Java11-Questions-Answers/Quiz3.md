@@ -49,7 +49,7 @@ B) false
 B) false
 </details>
 
-<h2>Question 214</h2>
+<h2>Question 24</h2>
 Which of the following Java keywords is used to declare a static import?
 <pre>
 A) import
@@ -64,19 +64,19 @@ D) final
 B) static
 </details>
 
-<h2>Question 15</h2>
-What is the purpose of the java.lang.StringBuilder class in Java?
+<h2>Question 25</h2>
+What is the purpose of the java.lang.RuntimeException class in Java?
 <pre>
-A) To create immutable strings
-B) To create mutable strings
-C) To parse strings
-D) To format strings
+A) To handle checked exceptions
+B) To handle unchecked exceptions
+C) To handle errors
+D) To handle exceptions during runtime
 </pre>
 
 <details>
 <summary>Answer:</summary>
 
-B) To create mutable strings
+B) To handle unchecked exceptions
 </details>
 
 <h2>Question 16</h2>
