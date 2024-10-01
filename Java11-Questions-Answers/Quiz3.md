@@ -49,19 +49,19 @@ B) false
 B) false
 </details>
 
-<h2>Question 14</h2>
-Which of the following Java keywords is used to declare a variable that cannot be changed?
+<h2>Question 214</h2>
+Which of the following Java keywords is used to declare a static import?
 <pre>
-A) final
+A) import
 B) static
-C) private
-D) public
+C) public
+D) final
 </pre>
 
 <details>
 <summary>Answer:</summary>
 
-A) final
+B) static
 </details>
 
 <h2>Question 15</h2>
