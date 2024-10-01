@@ -28,27 +28,25 @@ D) throw
 B) catch
 </details>
 
-<h2>Question 13</h2>
+<h2>Question 23</h2>
 What is the output of the following code?
 ```Java
 public class Main {
   public static void main(String[] args) {
-    int[] arr = {1, 2, 3};
-    System.out.println(arr.length);
+    boolean flag = true;
+    System.out.println(!flag);
   }
 }
 ```
 <pre>
-A) 2
-B) 3
-C) 4
-D) 5
+A) true
+B) false
 </pre>
 
 <details>
 <summary>Answer:</summary>
 
-B) 3
+B) false
 </details>
 
 <h2>Question 14</h2>
