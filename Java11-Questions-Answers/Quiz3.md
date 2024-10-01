@@ -13,19 +13,19 @@ D) To work with databases
 A) To work with threads
 </details>
 
-<h2>Question 12</h2>
-Which of the following Java statements is used to throw an exception?
+<h2>Question 22</h2>
+Which of the following Java statements is used to catch an exception?
 <pre>
-A) throw new Exception();
-B) catch new Exception();
-C) finally new Exception();
-D) try new Exception();
+A) try
+B) catch
+C) finally
+D) throw
 </pre>
 
 <details>
   <summary>Answer:</summary>
   
-  A) throw new Exception();
+B) catch
 </details>
 
 <h2>Question 13</h2>
