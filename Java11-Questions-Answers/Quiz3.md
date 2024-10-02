@@ -79,7 +79,7 @@ D) To handle exceptions during runtime
 B) To handle unchecked exceptions
 </details>
 
-<h2>Question 16</h2>
+<h2>Question 26</h2>
 What is the purpose of the java.util.ArrayList class in Java?
 <pre>
 A) To create a linked list
@@ -94,7 +94,7 @@ D) To create a dynamic array
 D) To create a dynamic array
 </details>
 
-<h2>Question 17</h2>
+<h2>Question 27</h2>
 Which of the following Java statements is used to create a new object?
 <pre>
 A) Object obj = new Object();
