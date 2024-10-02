@@ -109,7 +109,7 @@ D) Object obj = Object.new();
 A) Object obj = new Object();
 </details>
 
-<h2>Question 18</h2>
+<h2>Question 28</h2>
 What is the output of the following code?
 ```
 public class Main {
