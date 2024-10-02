@@ -133,32 +133,32 @@ D) 5
 A) He
 </details>
 
-<h2>Question 19</h2>
-Which of the following Java keywords is used to declare a method that cannot be overridden?
+<h2>Question 29</h2>
+Which of the following Java keywords is used to declare a method that takes a variable number of arguments?
 <pre>
-A) final
-B) static
-C) private
-D) public
+A) var
+B) args
+C) arg
+D) ...
 </pre>
 
 <details>
 <summary>Answer:</summary>
 
-A) final
+D) ...
 </details>
 
-<h2>Question 20</h2>
-What is the purpose of the java.lang.ClassNotFoundException exception in Java?
+<h2>Question 30</h2>
+What is the purpose of the java.lang.NumberFormatException exception in Java?
 <pre>
-A) To handle errors during class loading
-B) To handle errors during object creation
-C) To handle errors during method invocation
+A) To handle errors during string parsing
+B) To handle errors during arithmetic operations
+C) To handle errors during object creation
 D) To handle errors during exception handling
 </pre>
 
 <details>
 <summary>Answer:</summary>
 
- A) To handle errors during class loading
+A) To handle errors during string parsing
 </details>
