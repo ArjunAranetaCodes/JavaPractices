@@ -28,25 +28,27 @@ D) void () ->
 A) () -> {}
 </details>
 
-<h2>Question 23</h2>
+<h2>Question 33</h2>
 What is the output of the following code?
 ```Java
 public class Main {
   public static void main(String[] args) {
-    boolean flag = true;
-    System.out.println(!flag);
+    String str = "Hello";
+    System.out.println(str.toUpperCase());
   }
 }
 ```
 <pre>
-A) true
-B) false
+A) hello
+B) Hello
+C) HELLO
+D) hELLO
 </pre>
 
 <details>
 <summary>Answer:</summary>
 
-B) false
+C) HELLO
 </details>
 
 <h2>Question 24</h2>
