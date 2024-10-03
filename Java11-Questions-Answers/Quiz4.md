@@ -51,19 +51,19 @@ D) hELLO
 C) HELLO
 </details>
 
-<h2>Question 24</h2>
-Which of the following Java keywords is used to declare a static import?
+<h2>Question 34</h2>
+Which of the following Java keywords is used to declare a method that returns a value?
 <pre>
-A) import
-B) static
-C) public
-D) final
+A) void
+B) return
+C) abstract
+D) static
 </pre>
 
 <details>
 <summary>Answer:</summary>
 
-B) static
+A) To work with reflections
 </details>
 
 <h2>Question 25</h2>
