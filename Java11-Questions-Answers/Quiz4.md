@@ -13,19 +13,19 @@ D) To reduce elements of a stream
 A) To collect elements of a stream into a collection
 </details>
 
-<h2>Question 22</h2>
-Which of the following Java statements is used to catch an exception?
+<h2>Question 32</h2>
+Which of the following Java statements is used to create a lambda expression?
 <pre>
-A) try
-B) catch
-C) finally
-D) throw
+A) () -> {}
+B) {} ()
+C) () -> void
+D) void () ->
 </pre>
 
 <details>
   <summary>Answer:</summary>
   
-B) catch
+A) () -> {}
 </details>
 
 <h2>Question 23</h2>
