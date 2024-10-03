@@ -63,22 +63,22 @@ D) static
 <details>
 <summary>Answer:</summary>
 
-A) To work with reflections
+B) return
 </details>
 
-<h2>Question 25</h2>
-What is the purpose of the java.lang.RuntimeException class in Java?
+<h2>Question 35</h2>
+What is the purpose of the java.lang.reflect package in Java?
 <pre>
-A) To handle checked exceptions
-B) To handle unchecked exceptions
-C) To handle errors
-D) To handle exceptions during runtime
+A) To work with reflections
+B) To work with collections
+C) To work with files
+D) To work with databases
 </pre>
 
 <details>
 <summary>Answer:</summary>
 
-B) To handle unchecked exceptions
+A) To work with reflections
 </details>
 
 <h2>Question 26</h2>
