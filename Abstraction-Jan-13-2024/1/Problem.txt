@@ -1,4 +1,0 @@
-Description: Create an abstract class called "Shape" with an abstract method called "calculateArea()." 
-Implement two concrete subclasses, "Circle" and "Rectangle," that extend the "Shape" class and provide 
-their own implementations for the "calculateArea()" method. 
-Write a main program that creates instances of both subclasses and prints their areas.
