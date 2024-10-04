@@ -96,3 +96,70 @@ D) To replace null checks
 
 C) To provide a way to work with optional data
 </details>
+
+<h2>Question 7</h2>
+Which of the following Java statements is used to create a new thread?
+<pre>
+A) Thread t = new Thread();
+B) Thread t = new Thread(Runnable r);
+C) Thread t = new Thread(Thread t);
+D) Thread t = Thread.start();
+</pre>
+
+<details>
+<summary>Answer:</summary>
+
+B) Thread t = new Thread(Runnable r);
+</details>
+
+<h2>Question 8</h2>
+What is the output of the following code?
+<pre>
+public class Main {
+  public static void main(String[] args) {
+    String str = "Hello";
+    System.out.println(str.substring(1, 3));
+  }
+}
+
+A) He
+B) Hel
+C) ell
+D) llo
+</pre>
+
+<details>
+<summary>Answer:</summary>
+
+A) He
+</details>
+
+<h2>Question 9</h2>
+Which of the following Java keywords is used to declare a class that cannot be instantiated?
+<pre>
+A) abstract
+B) final
+C) static
+D) private
+</pre>
+
+<details>
+<summary>Answer:</summary>
+
+A) abstract
+</details>
+
+<h2>Question 10</h2>
+What is the purpose of the java.lang.Math.addExact method in Java?
+<pre>
+A) To add two numbers with overflow checking
+B) To subtract two numbers with overflow checking
+C) To multiply two numbers with overflow checking
+D) To divide two numbers with overflow checking
+</pre>
+
+<details>
+<summary>Answer:</summary>
+
+A) To add two numbers with overflow checking
+</details>
