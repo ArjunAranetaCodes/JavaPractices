@@ -1,6 +1,0 @@
-Problem 2: Abstract Animal Class
-
-Description: Create an abstract class called "Animal" with abstract methods "makeSound()" and "move()." 
-Implement two concrete subclasses, "Dog" and "Fish," that extend the "Animal" class 
-and provide their own implementations for the abstract methods. 
-Write a main program that creates instances of both subclasses and calls their methods.
