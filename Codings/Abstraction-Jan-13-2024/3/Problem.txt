@@ -1,0 +1,8 @@
+Problem 3: Abstract Employee Class
+
+Description: Create an abstract class called "Employee" with instance variables for "name" and "salary." 
+Implement a concrete subclass called "Manager" that extends the "Employee" class 
+and includes an additional instance variable for "bonus." 
+Implement a method called "calculateTotalSalary()" in the "Manager" class that 
+calculates the total salary including the bonus. Write a main program that creates an instance of the "Manager" 
+class and prints the total salary.
