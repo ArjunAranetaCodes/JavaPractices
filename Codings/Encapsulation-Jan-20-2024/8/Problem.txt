@@ -1,0 +1,2 @@
+Problem 8: Circle Information
+Description: Create a Circle class with a private radius field. Use encapsulation to provide methods for setting the radius, calculating the area, and retrieving the circumference.
