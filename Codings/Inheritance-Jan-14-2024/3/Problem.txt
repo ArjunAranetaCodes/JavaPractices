@@ -1,0 +1,5 @@
+Problem 3: Logger Interface
+Description:
+Create an interface called Logger with methods logInfo(), logWarning(), and logError(). 
+Implement this interface in classes for different logging mechanisms like ConsoleLogger, 
+FileLogger, and DatabaseLogger. Write a program to demonstrate the use of these classes and the Logger interface.
