@@ -1,0 +1,2 @@
+Problem 3: Book Information
+Description: Develop a Book class with private fields for title, author, and price. Ensure encapsulation by providing methods to set and get these attributes.
