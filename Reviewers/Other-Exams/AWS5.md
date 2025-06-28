@@ -375,7 +375,7 @@ D) Savings Plans
   <strong>Explanation:</strong> Pay-as-you-go pricing is the feature of the AWS Cloud that gives users the ability to pay based on current needs rather than forecasted needs. Pay-as-you-go pricing means that users only pay for the AWS services and resources they use, without any upfront or long-term commitments. This allows users to scale up or down their usage depending on their changing business requirements, and avoid paying for idle or unused capacity. Pay-as-you-go pricing also enables users to benefit from the economies of scale and lower costs of AWS as they grow their business.
 </details>
 
-<h2>Question 39</h2>
+<h2>Question 20</h2>
 (Topic 1) A company has been storing monthly reports in an Amazon S3 bucket. The company exports the report data into comma-separated values (.csv) files. A developer wants to write a simple query that can read all of these files and generate a summary report. Which AWS service or feature should the developer use to meet these requirements with the LEAST amount of operational overhead?
 <pre>
 A) Amazon S3 Select
@@ -392,7 +392,7 @@ D) Amazon EC2
   <strong>Explanation:</strong> Amazon Athena is the AWS service that the developer should use to write a simple query that can read all of the .csv files stored in an Amazon S3 bucket and generate a summary report. Amazon Athena is an interactive query service that allows users to analyze data in Amazon S3 using standard SQL. Amazon Athena does not require any server setup or management, and users only pay for the queries they run. Amazon Athena can handle various data formats, including .csv, and can integrate with other AWS services such as Amazon QuickSight for data visualization.
 </details>
 
-<h2>Question 44</h2>
+<h2>Question 21</h2>
 (Topic 1) Which of the following describes an AWS Region?
 <pre>
 A) A specific location within a geographic area that provides high availability
@@ -409,7 +409,7 @@ D) A collection of databases that can be accessed from a specific geographic are
   <strong>Explanation:</strong> An AWS Region is a specific location within a geographic area that provides high availability. An AWS Region consists of two or more Availability Zones, which are isolated locations within the same Region. Each Availability Zone has independent power, cooling, and physical security, and is connected to the other Availability Zones in the same Region by low-latency, high-throughput, and highly redundant networking. AWS services are available in multiple Regions around the world, allowing the user to choose where to run their applications and store their data.
 </details>
 
-<h2>Question 45</h2>
+<h2>Question 22</h2>
 (Topic 1) Which AWS service or tool can be used to consolidate payments for a company with multiple AWS accounts?
 <pre>
 A) AWS Cost and Usage Report
@@ -426,7 +426,7 @@ D) AWS Budgets
   <strong>Explanation:</strong> AWS Organizations is an account management service that enables you to consolidate multiple AWS accounts into an organization that you create and centrally manage. AWS Organizations includes consolidated billing and account management capabilities that enable you to better meet the budgetary, security, and compliance needs of your business.
 </details>
 
-<h2>Question 47</h2>
+<h2>Question 23</h2>
 (Topic 1) Which AWS feature or resource is a deployable Amazon EC2 instance template that is prepackaged with software and security requirements?
 <pre>
 A) Amazon Elastic Block Store (Amazon EBS) volume
@@ -443,7 +443,7 @@ D) Amazon Machine Image (AMI)
   <strong>Explanation:</strong> An Amazon Machine Image (AMI) is a deployable Amazon EC2 instance template that is prepackaged with software and security requirements. It provides the information required to launch an instance, which is a virtual server in the cloud. You can use an AMI to launch as many instances as you need. You can also create your own custom AMIs or use AMIs shared by other AWS users.
 </details>
 
-<h2>Question 50</h2>
+<h2>Question 24</h2>
 (Topic 1) Which of the following is an advantage that users experience when they move on-premises workloads to the AWS Cloud?
 <pre>
 A) Elimination of expenses for running and maintaining data centers
@@ -460,7 +460,7 @@ D) Elimination of operational expenses
   <strong>Explanation:</strong> The advantage that users experience when they move on-premises workloads to the AWS Cloud is: elimination of expenses for running and maintaining data centers. By moving on-premises workloads to the AWS Cloud, users can reduce or eliminate the costs associated with owning and operating physical servers, storage, network equipment, and facilities. These costs include hardware purchase, maintenance, repair, power, cooling, security, and staff. Users can also benefit from the pay-as-you-go pricing model of AWS, which allows them to pay only for the resources they use, and scale up or down as needed.
 </details>
 
-<h2>Question 55</h2>
+<h2>Question 25</h2>
 (Topic 1) Which of the following is a benefit of decoupling an AWS Cloud architecture?
 <pre>
 A) Reduced latency
@@ -477,7 +477,7 @@ D) Fewer components to manage
   <strong>Explanation:</strong> A benefit of decoupling an AWS Cloud architecture is the ability to upgrade components independently. Decoupling is a way of designing systems to reduce interdependencies and minimize the impact of changes. Decoupling allows components to interact with each other through well-defined interfaces, rather than direct references. This reduces the risk of failures and errors propagating across the system, and enables greater scalability, availability, and maintainability. By decoupling an AWS Cloud architecture, the user can upgrade or modify one component without affecting the other components.
 </details>
 
-<h2>Question 60</h2>
+<h2>Question 26</h2>
 (Topic 1) Which AWS service uses a combination of publishers and subscribers?
 <pre>
 A) AWS Lambda
@@ -494,7 +494,7 @@ D) AWS CloudFormation
   <strong>Explanation:</strong> Amazon Simple Notification Service (Amazon SNS) is a service that provides fully managed pub/sub messaging. Pub/sub messaging is a pattern that uses a combination of publishers and subscribers. Publishers are entities that produce messages and send them to topics. Subscribers are entities that receive messages from topics. Topics are logical access points that act as communication channels between publishers and subscribers. Amazon SNS enables applications to decouple, scale, and coordinate the delivery of messages to multiple endpoints, such as email, SMS, mobile push notifications, Lambda functions, SQS queues, and HTTP/S endpoints.
 </details>
 
-<h2>Question 65</h2>
+<h2>Question 27</h2>
 (Topic 3) Which task can only an AWS account root user perform?
 <pre>
 A) Changing the AWS Support plan
@@ -511,7 +511,7 @@ D) Configuring AWS WAF
   <strong>Explanation:</strong> The AWS account root user is the email address that you use to sign up for AWS. The root user has complete access to all AWS services and resources in the account. The root user can perform tasks that only the root user can do, such as changing the AWS Support plan, closing the account, and restoring IAM user permissions.
 </details>
 
-<h2>Question 69</h2>
+<h2>Question 28</h2>
 (Topic 3) A company wants to grant users in one AWS account access to resources in another AWS account. The users do not currently have permission to access the resources. Which AWS service will meet this requirement?
 <pre>
 A) IAM group
@@ -528,7 +528,7 @@ D) IAM Access Analyzer
   <strong>Explanation:</strong> IAM roles are a way to delegate access to resources in different AWS accounts. IAM roles allow users to assume a set of permissions for a limited time without having to create or share long-term credentials. IAM roles can be used to grant cross-account access by creating a trust relationship between the accounts and specifying the permissions that the role can perform. Users can then switch to the role and access the resources in the other account using temporary security credentials provided by the role.
 </details>
 
-<h2>Question 70</h2>
+<h2>Question 29</h2>
 (Topic 3) Which AWS service or tool helps users visualize, understand, and manage spending and usage over time?
 <pre>
 A) AWS Organizations
@@ -545,7 +545,7 @@ D) AWS Service Catalog
   <strong>Explanation:</strong> AWS Cost Explorer is the AWS service or tool that helps users visualize, understand, and manage spending and usage over time. AWS Cost Explorer is a web-based interface that allows users to access interactive graphs and tables that display their AWS costs and usage data. Users can create custom reports that analyze cost and usage data by various dimensions, such as service, region, account, tag, and more. Users can also view historical data for up to the last 12 months, forecast future costs for up to the next 12 months, and get recommendations for cost optimization. AWS Cost Explorer also provides preconfigured views that show common cost and usage scenarios, such as monthly spend by service, daily spend by linked account, and Reserved Instance utilization.
 </details>
 
-<h2>Question 75</h2>
+<h2>Question 30</h2>
 (Topic 3) Which VPC component provides a layer of security at the subnet level?
 <pre>
 A) Security groups
@@ -567,7 +567,7 @@ D) Route tables
   - D) Route tables determine where network traffic from a subnet or gateway is directed
 </details>
 
-<h2>Question 78</h2>
+<h2>Question 31</h2>
 (Topic 3) A company wants to set up a high-speed connection between its data center and its applications that run on AWS. The company must not transfer data over the internet. Which action should the company take to meet these requirements?
 <pre>
 A) Transfer data to AWS by using AWS Snowball
@@ -589,7 +589,7 @@ D) Set up an AWS Direct Connect connection between the company network and AWS
   - C) A VPN connection enables customers to establish a secure and private connection between their network and AWS, but still uses the internet
 </details>
 
-<h2>Question 81</h2>
+<h2>Question 32</h2>
 (Topic 3) Which AWS service or feature gives users the ability to capture information about network traffic in a VPC?
 <pre>
 A) VPC Flow Logs
@@ -606,7 +606,7 @@ D) AWS CloudTrail
   <strong>Explanation:</strong> VPC Flow Logs is a feature that enables you to capture information about the IP traffic going to and from network interfaces in your VPC. Flow log data can be published to Amazon CloudWatch Logs, Amazon S3, or Amazon Kinesis Data Firehose. You can use VPC Flow Logs to diagnose network issues, monitor traffic patterns, detect security anomalies, and comply with auditing requirements.
 </details>
 
-<h2>Question 82</h2>
+<h2>Question 33</h2>
 (Topic 3) Which AWS Cloud benefit describes the ability to acquire resources as they are needed and release resources when they are no longer needed?
 <pre>
 A) Economies of scale
@@ -628,7 +628,7 @@ D) Security
   - D) Security is another benefit of the AWS Cloud, but does not describe the specific ability of acquiring and releasing resources on demand
 </details>
 
-<h2>Question 85</h2>
+<h2>Question 34</h2>
 (Topic 3) Which AWS Cloud deployment model uses AWS Outposts as part of the application deployment infrastructure?
 <pre>
 A) On-premises
@@ -645,7 +645,7 @@ D) Hybrid
   <strong>Explanation:</strong> AWS Outposts is a fully managed service that extends AWS infrastructure, services, APIs, and tools to virtually any datacenter, co-location space, or on-premises facility for a truly consistent hybrid experience. AWS Outposts enables you to run AWS services in your on-premises data center.
 </details>
 
-<h2>Question 89</h2>
+<h2>Question 35</h2>
 (Topic 3) A company is assessing its AWS Business Support plan to determine if the plan still meets the company's needs. The company is considering switching to AWS Enterprise Support. Which additional benefit will the company receive with AWS Enterprise Support?
 <pre>
 A) A full set of AWS Trusted Advisor checks
@@ -667,7 +667,7 @@ D) A consultative review and architecture guidance for the company's application
   - D) A consultative review and architecture guidance for the company's applications is available for customers with Enterprise On-Ramp or Enterprise Support plans
 </details>
 
-<h2>Question 94</h2>
+<h2>Question 36</h2>
 (Topic 2) A company wants to migrate its application to AWS. The company wants to replace upfront expenses with variable payment that is based on usage. What should the company do to meet these requirements?
 <pre>
 A) Use pay-as-you-go pricing
@@ -684,7 +684,7 @@ D) Rightsize instances
   <strong>Explanation:</strong> Pay-as-you-go pricing is one of the main benefits of AWS. With pay-as-you-go pricing, you pay only for what you use, when you use it. There are no long-term contracts, termination fees, or complex licensing. You replace upfront expenses with lower variable costs and pay only for the resources you consume.
 </details>
 
-<h2>Question 95</h2>
+<h2>Question 37</h2>
 (Topic 2) Which design principles should a company apply to AWS Cloud workloads to maximize sustainability and minimize environmental impact? (Select TWO.)
 <pre>
 A) Maximize utilization of Amazon EC2 instances
@@ -708,7 +708,7 @@ E) Reduce the need for users to reinstall applications
   - D) Forcing frequent application reinstallations by users would increase the amount of data and bandwidth required to deliver the applications to users
 </details>
 
-<h2>Question 96</h2>
+<h2>Question 38</h2>
 (Topic 1) Which AWS solution provides the ability for a company to run AWS services in the company's on-premises data center?
 <pre>
 A) AWS Direct Connect
@@ -725,7 +725,7 @@ D) AWS Storage Gateway
   <strong>Explanation:</strong> AWS Outposts is a fully managed service that extends AWS infrastructure, services, APIs, and tools to virtually any datacenter, co-location space, or on-premises facility for a truly consistent hybrid experience. AWS Outposts enables you to run AWS services in your on-premises data center.
 </details>
 
-<h2>Question 102</h2>
+<h2>Question 39</h2>
 (Topic 2) Which AWS service is used to temporarily provide federated security credentials to a user?
 <pre>
 A) Amazon GuardDuty
@@ -747,7 +747,7 @@ D) AWS Certificate Manager
   - D) AWS Certificate Manager is a service that helps customers provision, manage, and deploy public and private SSL/TLS certificates
 </details>
 
-<h2>Question 104</h2>
+<h2>Question 40</h2>
 (Topic 2) A company has a compliance requirement to record and evaluate configuration changes, as well as perform remediation actions on AWS resources. Which AWS service should the company use?
 <pre>
 A) AWS Config
@@ -764,7 +764,7 @@ D) AWS Trusted Advisor
   <strong>Explanation:</strong> AWS Config is a service that enables you to assess, audit, and evaluate the configurations of your AWS resources. AWS Config continuously monitors and records your AWS resource configurations and allows you to automate the evaluation of recorded configurations against desired configurations. With AWS Config, you can review changes in configurations and relationships between AWS resources, dive into detailed resource configuration histories, and determine your overall compliance against the configurations specified in your internal guidelines. This can help you simplify compliance auditing, security analysis, change management, and operational troubleshooting.
 </details>
 
-<h2>Question 105</h2>
+<h2>Question 41</h2>
 (Topic 2) A company wants its Amazon EC2 instances to share the same geographic area but use redundant underlying power sources. Which solution will meet these requirements?
 <pre>
 A) Use EC2 instances across multiple Availability Zones in the same AWS Region
@@ -786,7 +786,7 @@ D) Use EC2 instances in AWS OpsWorks stacks in different AWS Regions
   - D) AWS OpsWorks is a configuration management service that allows users to automate the deployment and management of applications using Chef or Puppet
 </details>
 
-<h2>Question 106</h2>
+<h2>Question 42</h2>
 (Topic 2) Which AWS service can defend against DDoS attacks?
 <pre>
 A) AWS Firewall Manager
@@ -808,7 +808,7 @@ D) Amazon Inspector
   - D) Amazon Inspector is an automated security assessment service that helps improve the security and compliance of applications deployed on AWS
 </details>
 
-<h2>Question 115</h2>
+<h2>Question 43</h2>
 (Topic 2) Which AWS service provides the SIMPLEST way for the company to establish a website on AWS?
 <pre>
 A) Amazon Elastic File System (Amazon EFS)
@@ -825,7 +825,7 @@ D) Amazon Lightsail
   <strong>Explanation:</strong> Amazon Lightsail is an easy-to-use cloud platform that offers you everything needed to build an application or website, plus a cost-effective, monthly plan. Whether you're new to the cloud or looking to get on the cloud quickly with AWS infrastructure you trust, we've got you covered. Lightsail provides the simplest way for the company to establish a website on AWS.
 </details>
 
-<h2>Question 120</h2>
+<h2>Question 44</h2>
 (Topic 2) A company is running an application on AWS. The company wants to identify and prevent the accidental exposure of data. Which AWS service or feature will meet these requirements?
 <pre>
 A) Amazon GuardDuty
@@ -842,7 +842,7 @@ D) AWS Network Firewall
   <strong>Explanation:</strong> Amazon GuardDuty is a threat detection service that continuously monitors for malicious activity and unauthorized behavior to protect your AWS accounts, workloads, and data stored in Amazon S3. With the cloud, the collection and aggregation of account and network activities is simplified, but it can be time consuming for security teams to continuously analyze event log data for potential threats. With GuardDuty, you can automate anomaly detection and get actionable findings to help you protect your AWS resources.
 </details>
 
-<h2>Question 121</h2>
+<h2>Question 45</h2>
 (Topic 2) A company needs to design a solution for the efficient use of compute resources for an enterprise workload. The company needs to make informed decisions as its technology needs evolve. Which pillar of the AWS Well-Architected Framework do these requirements represent?
 <pre>
 A) Operational excellence
@@ -864,7 +864,7 @@ D) Reliability
   - D) Reliability represents the ability of a system to recover from infrastructure or service disruptions, dynamically acquire computing resources to meet demand, and mitigate disruptions
 </details>
 
-<h2>Question 124</h2>
+<h2>Question 46</h2>
 (Topic 2) A company wants its workload to perform consistently and correctly. Which benefit of AWS Cloud computing does this goal represent?
 <pre>
 A) Security
@@ -881,7 +881,7 @@ D) Reliability
   <strong>Explanation:</strong> Reliability is the benefit of AWS Cloud computing that ensures the workload performs consistently and correctly. According to the AWS Cloud Practitioner Essentials course, reliability means "the ability of a system to recover from infrastructure or service disruptions, dynamically acquire computing resources to meet demand, and mitigate disruptions such as misconfigurations or transient network issues." Elasticity, security, and pay-as-you-go pricing are also benefits of AWS Cloud computing, but they do not directly relate to the goal of consistent and correct performance.
 </details>
 
-<h2>Question 128</h2>
+<h2>Question 47</h2>
 (Topic 2) Which service is an AWS in-memory data store service?
 <pre>
 A) Amazon Aurora
@@ -903,7 +903,7 @@ D) Amazon ElastiCache
   - C) Amazon DynamoDB is a key-value and document database that delivers single-digit millisecond performance at any scale
 </details>
 
-<h2>Question 164</h2>
+<h2>Question 48</h2>
 (Topic 1) A security engineer wants a single-tenant AWS solution to create, control, and manage their own cryptographic keys to meet regulatory compliance requirements for data security. Which AWS service should the engineer use?
 <pre>
 A) AWS Key Management Service (AWS KMS)
@@ -925,7 +925,7 @@ D) AWS Systems Manager
   - D) AWS Systems Manager is a service that provides customers with a unified user interface to view operational data from multiple AWS services and automate operational tasks across their AWS resources. AWS Systems Manager does not provide customers with HSMs or cryptographic keys
 </details>
 
-<h2>Question 168</h2>
+<h2>Question 49</h2>
 (Topic 1) A company is designing an identity access management solution for an application. The company wants users to be able to use their social media, email, or online shopping accounts to access the application. Which AWS service provides this functionality?
 <pre>
 A) AWS IAM Identity Center (AWS Single Sign-On)
@@ -947,7 +947,7 @@ D) AWS Identity and Access Management (IAM)
   - D) AWS Identity and Access Management (IAM) is a service that enables users to manage access to AWS resources using users, groups, roles, and policies
 </details>
 
-<h2>Question 169</h2>
+<h2>Question 50</h2>
 (Topic 1) Which AWS service provides a managed Microsoft Active Directory in the AWS Cloud?
 <pre>
 A) Amazon FSx for Windows File Server
@@ -964,7 +964,7 @@ D) Amazon RDS for Microsoft SQL Server
   <strong>Explanation:</strong> AWS Directory Service for Microsoft Active Directory is the AWS service that provides a managed Microsoft Active Directory in the AWS Cloud. It enables the user to use their existing Active Directory users, groups, and policies to access AWS resources, such as Amazon EC2 instances, Amazon S3 buckets, and AWS Single Sign-On. It also integrates with other Microsoft applications and services, such as Microsoft SQL Server, Microsoft Office 365, and Microsoft SharePoint.
 </details>
 
-<h2>Question 170</h2>
+<h2>Question 51</h2>
 (Topic 1) Which AWS service or feature is used to troubleshoot network connectivity issues between Amazon EC2 instances?
 <pre>
 A) AWS Certificate Manager (ACM)
@@ -981,7 +981,7 @@ D) AWS CloudHSM
   <strong>Explanation:</strong> VPC Flow Logs is the AWS service or feature that is used to troubleshoot network connectivity issues between Amazon EC2 instances. VPC Flow Logs is a feature that enables users to capture information about the IP traffic going to and from network interfaces in their VPC. VPC Flow Logs can help users monitor and diagnose network-related issues, such as traffic not reaching an instance, or an instance not responding to requests. VPC Flow Logs can be published to Amazon CloudWatch Logs, Amazon S3, or Amazon Kinesis Data Firehose for analysis and storage.
 </details>
 
-<h2>Question 171</h2>
+<h2>Question 52</h2>
 (Topic 1) A company needs to continuously monitor its environment to analyze network and account activity and identify potential security threats. Which AWS service should the company use to meet these requirements?
 <pre>
 A) AWS Artifact
@@ -998,7 +998,7 @@ D) Amazon GuardDuty
   <strong>Explanation:</strong> Amazon GuardDuty is a service that provides intelligent threat detection and continuous monitoring for the AWS environment. It analyzes network and account activity using machine learning and threat intelligence to identify potential security threats, such as unauthorized access, compromised credentials, malicious hosts, and reconnaissance activities. It also generates detailed and actionable findings that can be viewed on the AWS Management Console or sent to other AWS services, such as Amazon CloudWatch Events and AWS Lambda, for further analysis or remediation.
 </details>
 
-<h2>Question 174</h2>
+<h2>Question 53</h2>
 (Topic 1) A company is using a third-party service to back up 10 TB of data to a tape library. The on-premises backup server is running out of space. The company wants to use AWS services for the backups without changing its existing backup workflows. Which AWS service should the company use to meet these requirements?
 <pre>
 A) Amazon Elastic Block Store (Amazon EBS)
@@ -1020,7 +1020,7 @@ D) AWS Lambda
   - D) AWS Lambda is a service that enables users to run code without provisioning or managing servers
 </details>
 
-<h2>Question 177</h2>
+<h2>Question 54</h2>
 (Topic 1) Which AWS service can a company use to perform complex analytical queries?
 <pre>
 A) Amazon RDS
@@ -1037,7 +1037,7 @@ D) Amazon ElastiCache
   <strong>Explanation:</strong> Amazon Redshift is a fully managed, petabyte-scale data warehouse service in the cloud. You can start with just a few hundred gigabytes of data and scale to a petabyte or more. This enables you to use your data to acquire new insights for your business and customers. Amazon Redshift is designed for complex analytical queries that often involve aggregations and joins across very large tables. Amazon Redshift supports standard SQL and integrates with many existing business intelligence tools.
 </details>
 
-<h2>Question 182</h2>
+<h2>Question 55</h2>
 (Topic 1) A large company wants to track the combined AWS usage costs of all of its linked accounts. How can this be accomplished?
 <pre>
 A) Use AWS Trusted Advisor to generate customized summary reports
@@ -1054,7 +1054,7 @@ D) Use the AWS Control Tower dashboard to get a summary report of all linked acc
   <strong>Explanation:</strong> The company can use AWS Organizations to track the combined AWS usage costs of all of its linked accounts. AWS Organizations is a service that enables you to consolidate multiple AWS accounts into an organization that you can manage centrally. You can use AWS Organizations to create a consolidated billing report that shows the charges incurred by each account in your organization as well as the total charges across all accounts. You can also use AWS Organizations to apply policies and controls to your accounts to help you manage costs and security.
 </details>
 
-<h2>Question 183</h2>
+<h2>Question 56</h2>
 (Topic 1) A company's information security manager is supervising a move to AWS and wants to ensure that AWS best practices are followed. The manager has concerns about the potential misuse of AWS account root user credentials. Which of the following is an AWS best practice for using the AWS account root user credentials?
 <pre>
 A) Allow only the manager to use the account root user credentials for normal activities
@@ -1071,7 +1071,7 @@ D) Use the account root user credentials only for the creation of private VPC su
   <strong>Explanation:</strong> The AWS best practice for using the AWS account root user credentials is to use them only when they alone must be used to perform a required function. The AWS account root user credentials have full access to all the resources in the account, and therefore pose a security risk if compromised or misused. You should create individual IAM users with the minimum necessary permissions for everyday tasks, and use AWS Organizations to manage multiple accounts. You should also enable multi-factor authentication (MFA) and rotate the password for the root user regularly. Some of the functions that require the root user credentials are changing the account name, closing the account, changing the support plan, and restoring an IAM user's access.
 </details>
 
-<h2>Question 189</h2>
+<h2>Question 57</h2>
 (Topic 1) Which tasks are customer responsibilities according to the AWS shared responsibility model? (Select TWO.)
 <pre>
 A) Determine application dependencies with operating systems
@@ -1090,7 +1090,7 @@ E) Provide network availability in Availability Zones
   <strong>Explanation:</strong> The correct answer to the question is B because providing user access with AWS Identity and Access Management (IAM) is a customer responsibility according to the AWS shared responsibility model. The AWS shared responsibility model is a framework that defines the division of responsibilities between AWS and the customer for security and compliance. AWS is responsible for the security of the cloud, which includes the global infrastructure, such as the regions, availability zones, and edge locations; the hardware, software, networking, and facilities that run the AWS services; and the virtualization layer that separates the customer instances and storage. The customer is responsible for the security in the cloud, which includes the customer data, the guest operating systems, the applications, the identity and access management, the firewall configuration, and the encryption. IAM is an AWS service that enables customers to manage access and permissions to AWS resources and services. Customers are responsible for creating and managing IAM users, groups, roles, and policies, and ensuring that they follow the principle of least privilege.
 </details>
 
-<h2>Question 192</h2>
+<h2>Question 58</h2>
 (Topic 1) Which of the following are advantages of the AWS Cloud? (Select TWO.)
 <pre>
 A) Trade variable expenses for capital expenses
@@ -1114,7 +1114,7 @@ E) Overprovision to ensure capacity
   - E) Overprovision to ensure capacity means that customers have to pay for more resources than they actually need to avoid performance issues
 </details>
 
-<h2>Question 194</h2>
+<h2>Question 59</h2>
 (Topic 1) A company is building a serverless architecture that connects application data from multiple data sources. The company needs a solution that does not require additional code. Which AWS service meets these requirements?
 <pre>
 A) AWS Lambda
@@ -1131,7 +1131,7 @@ D) Amazon EventBridge
   <strong>Explanation:</strong> Amazon EventBridge is the service that meets the requirements of building a serverless architecture that connects application data from multiple data sources without requiring additional code. Amazon EventBridge is a serverless event bus service that allows you to easily connect your applications with data from AWS services, SaaS applications, and your own applications. You can use Amazon EventBridge to create rules that match events and route them to targets such as AWS Lambda functions, Amazon SNS topics, Amazon SQS queues, or other AWS services. Amazon EventBridge handles the event ingestion, delivery, security, authorization, and error handling for you.
 </details>
 
-<h2>Question 195</h2>
+<h2>Question 60</h2>
 (Topic 1) Which AWS service or tool provides recommendations to help users get rightsized Amazon EC2 instances based on historical workload usage data?
 <pre>
 A) AWS Pricing Calculator
@@ -1148,7 +1148,7 @@ D) AWS Systems Manager
   <strong>Explanation:</strong> AWS Compute Optimizer is the AWS service or tool that provides recommendations to help users get rightsized Amazon EC2 instances based on historical workload usage data. AWS Compute Optimizer analyzes the configuration and performance characteristics of the EC2 instances and delivers recommendations for optimal instance types, sizes, and configurations. AWS Compute Optimizer helps users improve performance, reduce costs, and eliminate underutilized resources.
 </details>
 
-<h2>Question 199</h2>
+<h2>Question 61</h2>
 (Topic 1) An Availability Zone consists of:
 <pre>
 A) one or more data centers in a single location
@@ -1170,7 +1170,7 @@ D) two or more physical hosts in multiple data centers
   - D) Two or more physical hosts in multiple data centers are not an Availability Zone, but rather the components of multiple data centers within one or more Availability Zones
 </details>
 
-<h2>Question 204</h2>
+<h2>Question 62</h2>
 (Topic 1) Which of the following acts as an instance-level firewall to control inbound and outbound access?
 <pre>
 A) Network access control list
@@ -1187,7 +1187,7 @@ D) Virtual private gateways
   <strong>Explanation:</strong> The correct answer is B because security groups are AWS features that act as instance-level firewalls to control inbound and outbound access. Security groups are virtual firewalls that can be attached to one or more Amazon EC2 instances. Users can configure rules for security groups to allow or deny traffic based on protocols, ports, and source or destination IP addresses.
 </details>
 
-<h2>Question 209</h2>
+<h2>Question 63</h2>
 (Topic 1) A retail company is migrating its IT infrastructure applications from on premises to the AWS Cloud. Which costs will the company eliminate with this migration? (Select TWO.)
 <pre>
 A) Cost of data center operations
@@ -1206,7 +1206,7 @@ E) Cost of network management
   <strong>Explanation:</strong> The costs that the company will eliminate with this migration are the cost of data center operations and the cost of physical server hardware. The cost of data center operations includes expenses such as power, cooling, security, and facility maintenance. The cost of physical server hardware is the expense that the company has to incur to purchase, maintain, and upgrade the servers and related equipment. By migrating to the AWS Cloud, the company can avoid these costs by using the AWS services and resources that are already managed by AWS.
 </details>
 
-<h2>Question 210</h2>
+<h2>Question 64</h2>
 (Topic 1) A developer needs to build an application for a retail company. The application must provide real-time product recommendations that are based on machine learning. Which AWS service should the developer use to meet this requirement?
 <pre>
 A) AWS Health Dashboard
@@ -1223,7 +1223,7 @@ D) Amazon Transcribe
   <strong>Explanation:</strong> Amazon Personalize is a fully managed machine learning service that customers can use to generate personalized recommendations for their users. It can also generate user segments based on the users' affinity for certain items or item metadata. Amazon Personalize uses the customers' data to train and deploy custom recommendation models that can be integrated into their applications. Therefore, the correct answer is B.
 </details>
 
-<h2>Question 216</h2>
+<h2>Question 65</h2>
 (Topic 3) Which AWS service provides protection against DDoS attacks for applications that run in the AWS Cloud?
 <pre>
 A) Amazon VPC
@@ -1240,7 +1240,7 @@ D) AWS Config
   <strong>Explanation:</strong> AWS Shield is an AWS service that provides protection against distributed denial of service (DDoS) attacks for applications that run in the AWS Cloud. DDoS attacks are attempts to make an online service unavailable by overwhelming it with traffic from multiple sources. AWS Shield provides two tiers of protection: AWS Shield Standard and AWS Shield Advanced. AWS Shield Standard is automatically enabled for all AWS customers at no additional charge. It provides protection against common and frequently occurring network and transport layer DDoS attacks. AWS Shield Advanced is an optional paid service that provides additional protection against larger and more sophisticated DDoS attacks. AWS Shield Advanced also provides access to 24/7 DDoS response team, cost protection, and enhanced detection and mitigation capabilities.
 </details>
 
-<h2>Question 218</h2>
+<h2>Question 66</h2>
 (Topic 3) Which option is a perspective that includes foundational capabilities of the AWS Cloud Adoption Framework (AWS CAF)?
 <pre>
 A) Sustainability
@@ -1257,7 +1257,7 @@ D) Reliability
   <strong>Explanation:</strong> The AWS Cloud Adoption Framework (AWS CAF) helps organizations understand how cloud adoption transforms the way they work, and it provides structure to identify and address gaps in skills and processes. The AWS CAF organizes guidance into six areas of focus, called perspectives. Each perspective reflects a different stakeholder viewpoint with its own distinct responsibilities, skills, and attributes. The Security Perspective helps you structure the selection and implementation of security controls that meet your organization's needs.
 </details>
 
-<h2>Question 219</h2>
+<h2>Question 67</h2>
 (Topic 3) A company is planning to host its workloads on AWS. Which AWS service requires the company to update and patch the guest operating system?
 <pre>
 A) Amazon DynamoDB
@@ -1274,7 +1274,7 @@ D) Amazon Aurora
   <strong>Explanation:</strong> Amazon EC2 is an AWS service that provides scalable, secure, and resizable compute capacity in the cloud. Amazon EC2 allows customers to launch and manage virtual servers, called instances, that run a variety of operating systems and applications. Customers have full control over the configuration and management of their instances, including the guest operating system. Therefore, customers are responsible for updating and patching the guest operating system on their EC2 instances, as well as any other software or utilities installed on the instances. AWS provides tools and services, such as AWS Systems Manager and AWS OpsWorks, to help customers automate and simplify the patching process.
 </details>
 
-<h2>Question 220</h2>
+<h2>Question 68</h2>
 (Topic 3) A company needs to apply security rules to specific Amazon EC2 instances. Which AWS service or feature provides this functionality?
 <pre>
 A) AWS Shield
@@ -1291,7 +1291,7 @@ D) AWS Firewall Manager
   <strong>Explanation:</strong> Security groups act as a firewall for associated Amazon EC2 instances, controlling both inbound and outbound traffic at the instance level. You can use security groups to set rules that allow or deny traffic to or from your instances. You can modify the rules for a security group at any time; the new rules are automatically applied to all instances that are associated with the security group.
 </details>
 
-<h2>Question 222</h2>
+<h2>Question 69</h2>
 (Topic 3) Which AWS service converts text to lifelike voices?
 <pre>
 A) Amazon Transcribe
@@ -1308,7 +1308,7 @@ D) Amazon Textract
   <strong>Explanation:</strong> Amazon Polly is a service that turns text into lifelike speech, allowing you to create applications that talk, and build entirely new categories of speech-enabled products. Polly's Text-to-Speech (TTS) service uses advanced deep learning technologies to synthesize natural sounding human speech. Amazon Polly supports dozens of languages and a wide range of natural-sounding voices. You can customize and control the speech output by using lexicons and SSML tags. You can also store and redistribute the speech output in standard audio formats like MP3 and OGG.
 </details>
 
-<h2>Question 227</h2>
+<h2>Question 70</h2>
 (Topic 3) Which Amazon S3 storage class is the MOST cost-effective for long-term storage?
 <pre>
 A) S3 Glacier Deep Archive
@@ -1325,7 +1325,7 @@ D) S3 One Zone-Infrequent Access (S3 One Zone-IA)
   <strong>Explanation:</strong> Amazon S3 Glacier Deep Archive is the lowest-cost storage class in the cloud. It is designed for long-term data archiving that is rarely accessed. It offers a retrieval time of 12 hours and a durability of 99.999999999% (11 9's). It is ideal for data that must be retained for 7 years or longer to meet regulatory compliance requirements.
 </details>
 
-<h2>Question 231</h2>
+<h2>Question 71</h2>
 (Topic 3) An ecommerce company wants to provide relevant product recommendations to its customers. The recommendations will include products that are frequently purchased with other products that the customer already purchased. The recommendations also will include products of a specific color and products from the customer's favorite brand. Which AWS service or feature should the company use to meet these requirements with the LEAST development effort?
 <pre>
 A) Amazon Comprehend
@@ -1347,7 +1347,7 @@ D) Amazon SageMaker Studio
   - D) Amazon SageMaker Studio is a web-based integrated development environment (IDE) for machine learning
 </details>
 
-<h2>Question 232</h2>
+<h2>Question 72</h2>
 (Topic 1) Amazon Elastic File System (Amazon EFS) and Amazon FSx offer which type of storage?
 <pre>
 A) File storage
@@ -1364,7 +1364,7 @@ D) Instance store
   <strong>Explanation:</strong> Amazon Elastic File System (Amazon EFS) and Amazon FSx are AWS services that offer file storage. File storage is a type of storage that organizes data into files and folders that can be accessed and shared over a network. File storage is suitable for applications that require shared access to data, such as content management, media processing, and web serving. Amazon EFS provides a simple, scalable, and fully managed elastic file system that can be used with AWS Cloud services and on-premises resources. Amazon FSx provides fully managed third-party file systems, such as Windows File Server and Lustre, with native compatibility and high performance.
 </details>
 
-<h2>Question 240</h2>
+<h2>Question 73</h2>
 (Topic 3) Which AWS service is a continuous delivery and deployment solution?
 <pre>
 A) AWS AppSync
@@ -1381,7 +1381,7 @@ D) AWS CodeCommit
   <strong>Explanation:</strong> AWS CodePipeline is a continuous delivery and deployment service that automates the release process of software applications across different stages, such as source code, build, test, and deploy. AWS AppSync, AWS Cloud9, and AWS CodeCommit are other AWS services related to application development, but they do not provide continuous delivery and deployment solutions.
 </details>
 
-<h2>Question 245</h2>
+<h2>Question 74</h2>
 (Topic 3) Which option is an AWS Cloud Adoption Framework (AWS CAF) foundational capability for the operations perspective?
 <pre>
 A) Performance and capacity management
@@ -1398,7 +1398,7 @@ D) Product management
   <strong>Explanation:</strong> Identity and access management is one of the foundational capabilities for the operations perspective of the AWS Cloud Adoption Framework (AWS CAF). It involves managing the identities, roles, permissions, and credentials of users and systems that interact with AWS resources. Performance and capacity management is a capability for the platform perspective. Application portfolio management is a capability for the business perspective. Product management is a capability for the governance perspective.
 </details>
 
-<h2>Question 248</h2>
+<h2>Question 75</h2>
 (Topic 3) Which of the following are pillars of the AWS Well-Architected Framework? (Select TWO.)
 <pre>
 A) High availability
@@ -1417,7 +1417,7 @@ E) Continuous development
   <strong>Explanation:</strong> The AWS Well-Architected Framework is a set of six pillars and lenses that help cloud architects design and run workloads in the cloud. The six pillars are: operational excellence, security, reliability, performance efficiency, cost optimization, and sustainability. Each pillar has a set of design principles and best practices that guide the architectural decisions. High availability is not a separate pillar, but a quality that can be achieved by applying the principles of the reliability pillar. Going global in minutes and continuous development are not pillars of the framework, but possible benefits of using AWS services and following the framework's recommendations.
 </details>
 
-<h2>Question 250</h2>
+<h2>Question 76</h2>
 (Topic 3) Which actions are best practices for an AWS account root user? (Select TWO.)
 <pre>
 A) Share root user credentials with team members
@@ -1439,7 +1439,7 @@ E) Use programmatic access instead of the root user and password
   - Create an IAM user with administrator privileges for daily administrative tasks, instead of using the root user. IAM is a service that helps customers manage access to AWS resources for users and groups. Customers can create IAM users and assign them permissions to perform specific tasks on specific resources. By creating an IAM user with administrator privileges, customers can avoid using the root user for everyday tasks and reduce the risk of accidental or malicious changes to the account.
 </details>
 
-<h2>Question 253</h2>
+<h2>Question 77</h2>
 (Topic 3) A company wants an automated process to continuously scan its Amazon EC2 instances for software vulnerabilities. Which AWS service will meet these requirements?
 <pre>
 A) Amazon GuardDuty
@@ -1456,7 +1456,7 @@ D) Amazon Cognito
   <strong>Explanation:</strong> Amazon Inspector is the AWS service that can be used to perform vulnerability scans on AWS EC2 instances for software vulnerabilities automatically in a periodic fashion. Amazon Inspector automatically discovers EC2 instances and scans them for software vulnerabilities and unintended network exposure. Amazon Inspector uses AWS Systems Manager (SSM) and the SSM Agent to collect information about the software application inventory of the EC2 instances. This data is then scanned by Amazon Inspector for software vulnerabilities. Amazon Inspector also integrates with other AWS services, such as Amazon EventBridge and AWS Security Hub, to automate discovery, expedite vulnerability routing, and shorten mean time to remediate (MTTR) vulnerabilities.
 </details>
 
-<h2>Question 255</h2>
+<h2>Question 78</h2>
 (Topic 3) A company is moving an on-premises data center to the AWS Cloud. The company must migrate 50 petabytes of file storage data to AWS with the least possible operational overhead. Which AWS service or resource should the company use to meet these requirements?
 <pre>
 A) AWS Snowmobile
@@ -1478,7 +1478,7 @@ D) AWS Database Migration Service (AWS DMS)
   - D) AWS Database Migration Service (AWS DMS) is a service that helps migrate databases to AWS. It does not migrate file storage data
 </details>
 
-<h2>Question 257</h2>
+<h2>Question 79</h2>
 (Topic 3) Which mechanism allows developers to access AWS services from application code?
 <pre>
 A) AWS Software Development Kit
@@ -1495,7 +1495,7 @@ D) AWS Config
   <strong>Explanation:</strong> AWS Software Development Kit (SDK) is a set of platform-specific building tools for developers. It allows developers to access AWS services from application code using familiar programming languages. It provides pre-built components and libraries that can be incorporated into applications, as well as tools to debug, monitor, and optimize performance.
 </details>
 
-<h2>Question 260</h2>
+<h2>Question 80</h2>
 (Topic 3) According to the AWS shared responsibility model, who is responsible for the virtualization layer down to the physical security of the facilities in which AWS services operate?
 <pre>
 A) It is the sole responsibility of the customer
@@ -1512,7 +1512,7 @@ D) The customer's AWS Support plan tier determines who manages the configuration
   <strong>Explanation:</strong> According to the AWS shared responsibility model, AWS is responsible for the security of the cloud, which includes the virtualization layer down to the physical security of the facilities in which AWS services operate. The customer is responsible for the security in the cloud, which includes the configuration and management of the AWS resources and applications that they use.
 </details>
 
-<h2>Question 263</h2>
+<h2>Question 81</h2>
 (Topic 3) A company wants to create a globally accessible ecommerce platform for its customers. The company wants to use a highly available and scalable DNS web service to connect users to the platform. Which AWS service will meet these requirements?
 <pre>
 A) Amazon EC2
@@ -1529,7 +1529,7 @@ D) Amazon RDS
   <strong>Explanation:</strong> Amazon Route 53 is a highly available and scalable Domain Name System (DNS) web service that can route internet traffic to the company's ecommerce platform. Route 53 can also register domain names, check the health of resources, and provide global DNS features. Route 53 can connect users to the platform by translating human-readable names like www.example.com into the numeric IP addresses that computers use to communicate with each other.
 </details>
 
-<h2>Question 272</h2>
+<h2>Question 82</h2>
 (Topic 3) A company wants a customized assessment of its current on-premises environment. The company wants to understand its projected running costs in the AWS Cloud. Which AWS service or tool will meet these requirements?
 <pre>
 A) AWS Trusted Advisor
@@ -1546,7 +1546,7 @@ D) Migration Evaluator
   <strong>Explanation:</strong> Migration Evaluator is an AWS service that provides a customized assessment of your current on-premises environment and helps you build a data-driven business case for migration to AWS. Migration Evaluator collects and analyzes data from your on-premises servers, such as CPU, memory, disk, network, and utilization metrics, and compares them with the most cost-effective AWS alternatives. Migration Evaluator also helps you understand your existing software licenses and running costs, and provides recommendations for Bring Your Own License (BYOL) and License Included (LI) options in AWS. Migration Evaluator generates a detailed report that shows your projected running costs in the AWS Cloud, along with potential savings and benefits.
 </details>
 
-<h2>Question 275</h2>
+<h2>Question 83</h2>
 (Topic 3) Which of the following is a software development framework that a company can use to define cloud resources as code and provision the resources through AWS CloudFormation?
 <pre>
 A) AWS CLI
@@ -1563,7 +1563,7 @@ D) AWS CodeStar
   <strong>Explanation:</strong> AWS Cloud Development Kit (AWS CDK) is a software development framework that allows you to define cloud resources as code using familiar programming languages, such as TypeScript, Python, Java, .NET, and Go (in Developer Preview). You can use AWS CDK to model your application resources using high-level constructs that provide sensible defaults and best practices, or use low-level constructs that provide full access to the underlying AWS CloudFormation resources. AWS CDK synthesizes your code into AWS CloudFormation templates that you can deploy using the AWS CDK CLI or the AWS Management Console. AWS CDK also integrates with other AWS services, such as AWS CodeCommit, AWS CodeBuild, AWS CodePipeline, AWS Lambda, Amazon EC2, Amazon S3, and more, to help you automate your development and deployment processes.
 </details>
 
-<h2>Question 276</h2>
+<h2>Question 84</h2>
 (Topic 3) Which task must a user perform by using the AWS account root user credentials?
 <pre>
 A) Make changes to AWS production resources
@@ -1580,7 +1580,7 @@ D) Grant auditors' access to an AWS account for a compliance audit
   <strong>Explanation:</strong> The AWS account root user is the email address that you used to sign up for AWS. The root user has complete access to all AWS services and resources in the account. You should use the root user only to perform a few account and service management tasks. One of these tasks is changing AWS Support plans, which requires root user credentials. For other tasks, you should create an IAM user or role with the appropriate permissions and use that instead of the root user.
 </details>
 
-<h2>Question 280</h2>
+<h2>Question 85</h2>
 (Topic 3) Which AWS service is always provided at no charge?
 <pre>
 A) Amazon S3
@@ -1597,7 +1597,7 @@ D) AWS WAF
   <strong>Explanation:</strong> AWS Identity and Access Management (IAM) is a web service that helps you securely control access to AWS resources. You can use IAM to create and manage AWS users and groups, and use permissions to allow and deny their access to AWS resources. IAM is always provided at no charge.
 </details>
 
-<h2>Question 281</h2>
+<h2>Question 86</h2>
 (Topic 3) A company wants a time-series database service that makes it easier to store and analyze trillions of events each day. Which AWS service will meet this requirement?
 <pre>
 A) Amazon Neptune
@@ -1619,7 +1619,7 @@ D) Amazon DocumentDB (with MongoDB compatibility)
   - D) Amazon DocumentDB (with MongoDB compatibility) is a document database service that supports MongoDB workloads
 </details>
 
-<h2>Question 283</h2>
+<h2>Question 87</h2>
 (Topic 3) A company's IT team is managing MySQL database server clusters. The IT team has to patch the database and take backup snapshots of the data in the clusters. The company wants to move this workload to AWS so that these tasks will be completed automatically. What should the company do to meet these requirements?
 <pre>
 A) Deploy MySQL database server clusters on Amazon EC2 instances
@@ -1641,7 +1641,7 @@ D) Migrate all the MySQL database data to Amazon S3
   - D) Migrating all the MySQL database data to Amazon S3 would not provide a relational database service with automated patching and backup capabilities
 </details>
 
-<h2>Question 287</h2>
+<h2>Question 88</h2>
 (Topic 3) At what support level do users receive access to a support concierge?
 <pre>
 A) Basic Support
@@ -1658,7 +1658,7 @@ D) Enterprise Support
   <strong>Explanation:</strong> Users receive access to a support concierge at the Enterprise Support level. A support concierge is a team of AWS billing and account experts that specialize in working with enterprise accounts. They can help users with billing and account inquiries, cost optimization, FinOps support, cost analysis, and prioritized answers to billing questions. The support concierge is included as part of the Enterprise Support plan, which also provides access to a Technical Account Manager (TAM), Infrastructure Event Management, AWS Trusted Advisor, and 24/7 technical support.
 </details>
 
-<h2>Question 291</h2>
+<h2>Question 89</h2>
 (Topic 3) A company wants to migrate to AWS and use the same security software it uses on premises. The security software vendor offers its security software as a service on AWS. Where can the company purchase the security solution?
 <pre>
 A) AWS Partner Solutions Finder
@@ -1675,7 +1675,7 @@ D) AWS Marketplace
   <strong>Explanation:</strong> AWS Marketplace is an online store that helps customers find, buy, and immediately start using the software and services that run on AWS. Customers can choose from a wide range of software products in popular categories such as security, networking, storage, machine learning, business intelligence, database, and DevOps. Customers can also use AWS Marketplace to purchase software as a service (SaaS) solutions that are integrated with AWS. Customers can benefit from simplified procurement, billing, and deployment processes, as well as flexible pricing options and free trials. Customers can also leverage AWS Marketplace to discover and subscribe to solutions offered by AWS Partners, such as the security software vendor mentioned in the question.
 </details>
 
-<h2>Question 294</h2>
+<h2>Question 90</h2>
 (Topic 3) A company wants to use the AWS Cloud to deploy an application globally. Which architecture deployment model should the company use to meet this requirement?
 <pre>
 A) Multi-Region
