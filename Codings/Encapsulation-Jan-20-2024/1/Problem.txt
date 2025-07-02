@@ -1,2 +1,0 @@
-Problem 1: Simple Encapsulation
-Description: Create a class representing a bank account with private fields for account number, balance, and account holder name. Implement encapsulation by providing methods to deposit, withdraw, and get the account balance.
