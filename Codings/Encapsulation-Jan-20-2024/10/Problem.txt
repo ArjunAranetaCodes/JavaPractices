@@ -1,2 +1,0 @@
-Problem 10: Library Book
-Description: Create a LibraryBook class with private fields for book title, author, and availability status. Use encapsulation to provide methods for checking out and returning the book.
