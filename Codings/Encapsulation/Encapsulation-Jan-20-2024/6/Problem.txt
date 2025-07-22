@@ -1,0 +1,2 @@
+Problem 6: Product Information
+Description: Implement a Product class with private fields for product ID, name, and price. Utilize encapsulation to provide methods for setting and retrieving product information.
