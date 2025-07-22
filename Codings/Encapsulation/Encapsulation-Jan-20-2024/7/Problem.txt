@@ -1,0 +1,2 @@
+Problem 7: Password Validator
+Description: Develop a PasswordValidator class with a private field for the password. Implement encapsulation to validate the password against certain criteria (length, complexity, etc.).
