@@ -1,0 +1,2 @@
+Problem 2: Employee Information
+Description: Create an Employee class with private fields for employee ID, name, and salary. Use encapsulation to ensure that these fields are accessible only through getter and setter methods.
