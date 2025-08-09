@@ -1,0 +1,4 @@
+Problem 1: Shape Hierarchy
+Create a hierarchy of shapes with a base class Shape and two derived classes Circle and Rectangle. 
+Include methods in each class to calculate the area and perimeter. 
+Test your classes by creating instances of each and printing their area and perimeter.
