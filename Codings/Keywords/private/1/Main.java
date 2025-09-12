@@ -1,0 +1,12 @@
+class Main {
+    private int number;
+
+    public Main(int number) {
+        this.number = number;
+    }
+
+    public static void main(String[] args) {
+        Main obj = new Main(42);
+        System.out.println("Number: " + obj.number);
+    }
+}
