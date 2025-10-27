@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/11-26-2023" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/11-27-2023" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/11-28-2023" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/11-29-2023" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/11-30-2023" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/12-01-2023" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/12-02-2023" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/12-03-2023" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/12-04-2023" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/12-05-2023" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/12-06-2023" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Functional Interfaces" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/allMatch" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/anyMatch" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/builder" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/collect" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/concat" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/count" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/distinct" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/empty" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/findAny" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/findFirst" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/flatMap" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/flatMapToDouble" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/forEach" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/forEachOrdered" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/generate" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/iterate" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/limit" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/map" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/max" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/min" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/noneMatch" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/peek" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/reduce" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/skip" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/sorted" isTestSource="false" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>
