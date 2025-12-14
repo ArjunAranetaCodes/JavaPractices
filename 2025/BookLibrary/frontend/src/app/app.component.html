@@ -1,0 +1,129 @@
+<div class="container">
+  <div class="app-header">
+    <h1>📚 Book Library</h1>
+    <p>Manage your book collection</p>
+  </div>
+
+  <div class="library-card">
+    <div class="header-actions">
+      <h2 style="color: #2c3e50; margin: 0;">My Books</h2>
+      <button class="btn btn-primary" (click)="openModal()">+ Add Book</button>
+    </div>
+
+    <div class="filters-section">
+      <input 
+        type="text" 
+        class="search-input" 
+        placeholder="🔍 Search by title or author..."
+        [(ngModel)]="searchTerm"
+        (input)="onSearchChange()">
+      
+      <select 
+        class="genre-select" 
+        [(ngModel)]="selectedGenre"
+        (change)="onGenreChange()">
+        <option value="">All Genres</option>
+        <option *ngFor="let genre of genres" [value]="genre">{{ genre }}</option>
+      </select>
+
+      <button 
+        class="btn btn-secondary" 
+        (click)="clearFilters()"
+        *ngIf="searchTerm || selectedGenre">
+        Clear Filters
+      </button>
+    </div>
+
+    <div class="books-grid">
+      <div *ngFor="let book of filteredBooks" class="book-card">
+        <div class="book-info">
+          <h3>{{ book.title }}</h3>
+          <p><strong>Author:</strong> {{ book.author }}</p>
+          <p *ngIf="book.isbn"><strong>ISBN:</strong> {{ book.isbn }}</p>
+          <p *ngIf="book.publicationYear"><strong>Year:</strong> {{ book.publicationYear }}</p>
+          <span *ngIf="book.genre" class="genre-badge">{{ book.genre }}</span>
+        </div>
+        <div class="book-actions">
+          <button class="btn btn-secondary" (click)="openModal(book)">Edit</button>
+          <button class="btn btn-danger" (click)="deleteBook(book.id!)">Delete</button>
+        </div>
+      </div>
+
+      <div *ngIf="filteredBooks.length === 0" class="empty-state" style="grid-column: 1 / -1;">
+        <h3>No books found</h3>
+        <p *ngIf="searchTerm || selectedGenre">Try adjusting your filters</p>
+        <p *ngIf="!searchTerm && !selectedGenre">Add your first book to get started!</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal -->
+<div class="modal" [class.show]="showModal" (click)="closeModal()">
+  <div class="modal-content" (click)="$event.stopPropagation()">
+    <div class="modal-header">
+      <h2>{{ editingBook ? 'Edit Book' : 'Add New Book' }}</h2>
+      <span class="close" (click)="closeModal()">&times;</span>
+    </div>
+    <form (ngSubmit)="saveBook()">
+      <div class="form-group">
+        <label for="title">Title *</label>
+        <input 
+          type="text" 
+          id="title" 
+          [(ngModel)]="newBook.title" 
+          name="title"
+          required
+          placeholder="Enter book title">
+      </div>
+      <div class="form-group">
+        <label for="author">Author *</label>
+        <input 
+          type="text" 
+          id="author" 
+          [(ngModel)]="newBook.author" 
+          name="author"
+          required
+          placeholder="Enter author name">
+      </div>
+      <div class="form-group">
+        <label for="isbn">ISBN</label>
+        <input 
+          type="text" 
+          id="isbn" 
+          [(ngModel)]="newBook.isbn" 
+          name="isbn"
+          placeholder="Enter ISBN number">
+      </div>
+      <div class="form-group">
+        <label for="genre">Genre</label>
+        <select 
+          id="genre" 
+          [(ngModel)]="newBook.genre" 
+          name="genre">
+          <option value="">Select Genre</option>
+          <option *ngFor="let genre of genres" [value]="genre">{{ genre }}</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="publicationYear">Publication Year</label>
+        <input 
+          type="number" 
+          id="publicationYear" 
+          [(ngModel)]="newBook.publicationYear" 
+          name="publicationYear"
+          placeholder="Enter publication year"
+          min="1000"
+          max="2100">
+      </div>
+      <div class="form-actions">
+        <button type="button" class="btn btn-secondary" (click)="closeModal()">Cancel</button>
+        <button type="submit" class="btn btn-primary">Save</button>
+      </div>
+    </form>
+  </div>
+</div>
+
+
+
+
