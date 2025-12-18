@@ -1,0 +1,130 @@
+<div class="container">
+  <div class="app-header">
+    <h1>💰 Expense Tracker</h1>
+    <p>Track your expenses easily</p>
+  </div>
+
+  <div class="summary-card">
+    <div class="summary-item">
+      <h3>Total Expenses</h3>
+      <div class="amount total">${{ totalExpenses.toFixed(2) }}</div>
+    </div>
+    <div class="summary-item">
+      <h3>Total Records</h3>
+      <div class="amount">{{ expenses.length }}</div>
+    </div>
+  </div>
+
+  <div class="tracker-card">
+    <div class="header-actions">
+      <h2 style="color: #2c3e50; margin: 0;">My Expenses</h2>
+      <button class="btn btn-primary" (click)="openModal()">+ Add Expense</button>
+    </div>
+
+    <div class="filters-section">
+      <input 
+        type="text" 
+        class="search-input" 
+        placeholder="🔍 Search by description..."
+        [(ngModel)]="searchTerm"
+        (input)="onSearchChange()">
+      
+      <select 
+        class="category-select" 
+        [(ngModel)]="selectedCategory"
+        (change)="onCategoryChange()">
+        <option value="">All Categories</option>
+        <option *ngFor="let category of categories" [value]="category">{{ category }}</option>
+      </select>
+
+      <button 
+        class="btn btn-secondary" 
+        (click)="clearFilters()"
+        *ngIf="searchTerm || selectedCategory">
+        Clear Filters
+      </button>
+    </div>
+
+    <div class="expenses-list">
+      <div *ngFor="let expense of filteredExpenses" class="expense-item">
+        <div class="expense-info">
+          <h3>{{ expense.description }}</h3>
+          <p *ngIf="expense.category">
+            <span class="category-badge">{{ expense.category }}</span>
+          </p>
+          <p *ngIf="expense.expenseDate">
+            📅 {{ expense.expenseDate | date:'MMM dd, yyyy' }}
+          </p>
+        </div>
+        <div class="expense-amount">${{ expense.amount.toFixed(2) }}</div>
+        <div class="expense-actions">
+          <button class="btn btn-secondary" (click)="openModal(expense)">Edit</button>
+          <button class="btn btn-danger" (click)="deleteExpense(expense.id!)">Delete</button>
+        </div>
+      </div>
+
+      <div *ngIf="filteredExpenses.length === 0" class="empty-state">
+        <h3>No expenses found</h3>
+        <p *ngIf="searchTerm || selectedCategory">Try adjusting your filters</p>
+        <p *ngIf="!searchTerm && !selectedCategory">Add your first expense to get started!</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal -->
+<div class="modal" [class.show]="showModal" (click)="closeModal()">
+  <div class="modal-content" (click)="$event.stopPropagation()">
+    <div class="modal-header">
+      <h2>{{ editingExpense ? 'Edit Expense' : 'Add New Expense' }}</h2>
+      <span class="close" (click)="closeModal()">&times;</span>
+    </div>
+    <form (ngSubmit)="saveExpense()">
+      <div class="form-group">
+        <label for="description">Description *</label>
+        <input 
+          type="text" 
+          id="description" 
+          [(ngModel)]="newExpense.description" 
+          name="description"
+          required
+          placeholder="Enter expense description">
+      </div>
+      <div class="form-group">
+        <label for="amount">Amount *</label>
+        <input 
+          type="number" 
+          id="amount" 
+          [(ngModel)]="newExpense.amount" 
+          name="amount"
+          required
+          min="0"
+          step="0.01"
+          placeholder="Enter amount">
+      </div>
+      <div class="form-group">
+        <label for="category">Category</label>
+        <select 
+          id="category" 
+          [(ngModel)]="newExpense.category" 
+          name="category">
+          <option value="">Select Category</option>
+          <option *ngFor="let category of categories" [value]="category">{{ category }}</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="expenseDate">Date</label>
+        <input 
+          type="date" 
+          id="expenseDate" 
+          [(ngModel)]="newExpense.expenseDate" 
+          name="expenseDate">
+      </div>
+      <div class="form-actions">
+        <button type="button" class="btn btn-secondary" (click)="closeModal()">Cancel</button>
+        <button type="submit" class="btn btn-primary">Save</button>
+      </div>
+    </form>
+  </div>
+</div>
+
