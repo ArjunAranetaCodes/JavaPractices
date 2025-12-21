@@ -74,3 +74,4 @@ Frontend runs on `http://localhost:4200`.
 - CORS is configured to allow Angular dev server
 - Simple and straightforward implementation
 
+
