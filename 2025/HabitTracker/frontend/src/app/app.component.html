@@ -1,0 +1,202 @@
+<div class="container">
+  <div class="app-header">
+    <h1>🔥 Habit Tracker</h1>
+    <p>Build better habits, one day at a time</p>
+  </div>
+
+  <div class="stats-section">
+    <div class="stat-item">
+      <h3>Active Habits</h3>
+      <div class="count">{{ getActiveCount() }}</div>
+    </div>
+    <div class="stat-item">
+      <h3>Total Streak</h3>
+      <div class="count">{{ getTotalStreak() }}</div>
+    </div>
+    <div class="stat-item">
+      <h3>Longest Streak</h3>
+      <div class="count">{{ getLongestStreak() }}</div>
+    </div>
+  </div>
+
+  <div class="header-actions">
+    <h2>My Habits</h2>
+    <button class="btn btn-primary" (click)="openModal()">+ Add Habit</button>
+  </div>
+
+  <div class="filters-section">
+    <input 
+      type="text" 
+      class="search-input" 
+      placeholder="🔍 Search habits..."
+      [(ngModel)]="searchTerm"
+      (input)="onSearchChange()">
+    
+    <select 
+      class="status-select" 
+      [(ngModel)]="selectedStatus"
+      (change)="onStatusChange()">
+      <option value="">All Status</option>
+      <option value="ACTIVE">Active</option>
+      <option value="PAUSED">Paused</option>
+      <option value="COMPLETED">Completed</option>
+    </select>
+
+    <select 
+      class="category-select" 
+      [(ngModel)]="selectedCategory"
+      (change)="onCategoryChange()">
+      <option value="">All Categories</option>
+      <option *ngFor="let category of categories" [value]="category">{{ category }}</option>
+    </select>
+
+    <button 
+      class="btn btn-secondary" 
+      (click)="clearFilters()"
+      *ngIf="searchTerm || selectedStatus || selectedCategory">
+      Clear Filters
+    </button>
+  </div>
+
+  <div class="habits-grid">
+    <div 
+      *ngFor="let habit of filteredHabits" 
+      class="habit-card"
+      [class.active]="habit.status === 'ACTIVE'"
+      [class.paused]="habit.status === 'PAUSED'"
+      [class.completed]="habit.status === 'COMPLETED'">
+      <div class="habit-header">
+        <h3 class="habit-title">{{ habit.name }}</h3>
+        <div class="habit-actions">
+          <button class="btn btn-secondary btn-icon" (click)="openModal(habit)">Edit</button>
+          <button class="btn btn-danger btn-icon" (click)="deleteHabit(habit.id!)">Delete</button>
+        </div>
+      </div>
+      
+      <div class="habit-info" *ngIf="habit.description">
+        <div class="info-row">
+          <p>{{ habit.description }}</p>
+        </div>
+      </div>
+
+      <div class="streak-section">
+        <div class="streak-item">
+          <h4>Current</h4>
+          <div class="count">
+            <span class="fire-icon">🔥</span> {{ habit.currentStreak || 0 }}
+          </div>
+        </div>
+        <div class="streak-item">
+          <h4>Longest</h4>
+          <div class="count">{{ habit.longestStreak || 0 }}</div>
+        </div>
+      </div>
+
+      <div class="habit-footer">
+        <div>
+          <span *ngIf="habit.status" 
+                class="status-badge"
+                [class.status-active]="habit.status === 'ACTIVE'"
+                [class.status-paused]="habit.status === 'PAUSED'"
+                [class.status-completed]="habit.status === 'COMPLETED'">
+            {{ habit.status }}
+          </span>
+          <span *ngIf="habit.category" class="category-badge" style="margin-left: 8px;">{{ habit.category }}</span>
+          <span *ngIf="habit.frequency" class="frequency-badge" style="margin-left: 8px;">{{ habit.frequency }}</span>
+        </div>
+        <div style="display: flex; gap: 8px;">
+          <button 
+            class="btn btn-success btn-icon" 
+            (click)="completeHabit(habit)"
+            *ngIf="habit.status === 'ACTIVE' && !isCompletedToday(habit)">
+            ✓ Complete
+          </button>
+          <button 
+            class="btn btn-warning btn-icon" 
+            (click)="resetStreak(habit)"
+            *ngIf="habit.currentStreak && habit.currentStreak > 0">
+            Reset
+          </button>
+        </div>
+      </div>
+      <div *ngIf="isCompletedToday(habit)" style="margin-top: 10px; text-align: center; color: #27ae60; font-weight: bold;">
+        ✓ Completed today!
+      </div>
+    </div>
+
+    <div *ngIf="filteredHabits.length === 0" class="empty-state">
+      <h3>No habits found</h3>
+      <p *ngIf="searchTerm || selectedStatus || selectedCategory">Try adjusting your filters</p>
+      <p *ngIf="!searchTerm && !selectedStatus && !selectedCategory">Add your first habit to get started!</p>
+    </div>
+  </div>
+</div>
+
+<!-- Modal -->
+<div class="modal" [class.show]="showModal" (click)="closeModal()">
+  <div class="modal-content" (click)="$event.stopPropagation()">
+    <div class="modal-header">
+      <h2>{{ editingHabit ? 'Edit Habit' : 'Add New Habit' }}</h2>
+      <span class="close" (click)="closeModal()">&times;</span>
+    </div>
+    <form (ngSubmit)="saveHabit()">
+      <div class="form-group">
+        <label for="name">Habit Name *</label>
+        <input 
+          type="text" 
+          id="name" 
+          [(ngModel)]="newHabit.name" 
+          name="name"
+          required
+          placeholder="e.g., Drink 8 glasses of water">
+      </div>
+      <div class="form-group">
+        <label for="description">Description</label>
+        <textarea 
+          id="description" 
+          [(ngModel)]="newHabit.description" 
+          name="description"
+          placeholder="Add a description for this habit..."></textarea>
+      </div>
+      <div class="form-row">
+        <div class="form-group">
+          <label for="category">Category</label>
+          <select 
+            id="category" 
+            [(ngModel)]="newHabit.category" 
+            name="category">
+            <option value="">Select Category</option>
+            <option *ngFor="let category of categories" [value]="category">{{ category }}</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="frequency">Frequency</label>
+          <select 
+            id="frequency" 
+            [(ngModel)]="newHabit.frequency" 
+            name="frequency">
+            <option value="DAILY">Daily</option>
+            <option value="WEEKLY">Weekly</option>
+            <option value="CUSTOM">Custom</option>
+          </select>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="status">Status</label>
+        <select 
+          id="status" 
+          [(ngModel)]="newHabit.status" 
+          name="status">
+          <option value="ACTIVE">Active</option>
+          <option value="PAUSED">Paused</option>
+          <option value="COMPLETED">Completed</option>
+        </select>
+      </div>
+      <div class="form-actions">
+        <button type="button" class="btn btn-secondary" (click)="closeModal()">Cancel</button>
+        <button type="submit" class="btn btn-primary">Save</button>
+      </div>
+    </form>
+  </div>
+</div>
+
