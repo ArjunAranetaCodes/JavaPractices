@@ -1,0 +1,239 @@
+<div class="container">
+  <div class="app-header">
+    <h1>📅 Event Planner</h1>
+    <p>Organize your events and meetings</p>
+  </div>
+
+  <div class="stats-section">
+    <div class="stat-item">
+      <h3>Total Events</h3>
+      <div class="count">{{ getTotalCount() }}</div>
+    </div>
+    <div class="stat-item">
+      <h3>Upcoming</h3>
+      <div class="count">{{ getUpcomingCount() }}</div>
+    </div>
+    <div class="stat-item">
+      <h3>Completed</h3>
+      <div class="count">{{ getCompletedCount() }}</div>
+    </div>
+  </div>
+
+  <div class="header-actions">
+    <h2>My Events</h2>
+    <button class="btn btn-primary" (click)="openModal()">+ Add Event</button>
+  </div>
+
+  <div class="filters-section">
+    <input 
+      type="text" 
+      class="search-input" 
+      placeholder="🔍 Search events..."
+      [(ngModel)]="searchTerm"
+      (input)="onSearchChange()">
+    
+    <select 
+      class="status-select" 
+      [(ngModel)]="selectedStatus"
+      (change)="onStatusChange()">
+      <option value="">All Status</option>
+      <option *ngFor="let status of statuses" [value]="status">{{ status.replace('_', ' ') | titlecase }}</option>
+    </select>
+
+    <select 
+      class="category-select" 
+      [(ngModel)]="selectedCategory"
+      (change)="onCategoryChange()">
+      <option value="">All Categories</option>
+      <option *ngFor="let category of categories" [value]="category">{{ category | titlecase }}</option>
+    </select>
+
+    <select 
+      class="priority-select" 
+      [(ngModel)]="selectedPriority"
+      (change)="onPriorityChange()">
+      <option value="">All Priorities</option>
+      <option *ngFor="let priority of priorities" [value]="priority">{{ priority | titlecase }}</option>
+    </select>
+
+    <input 
+      type="date" 
+      class="date-input" 
+      [(ngModel)]="selectedDate"
+      (change)="onDateChange()"
+      placeholder="Filter by date">
+
+    <button 
+      class="btn btn-secondary" 
+      (click)="clearFilters()"
+      *ngIf="searchTerm || selectedStatus || selectedCategory || selectedPriority || selectedDate">
+      Clear Filters
+    </button>
+  </div>
+
+  <div class="events-grid">
+    <div 
+      *ngFor="let event of filteredEvents" 
+      class="event-card"
+      [class.completed]="event.status === 'COMPLETED'"
+      [class.cancelled]="event.status === 'CANCELLED'">
+      <div class="event-header">
+        <h3 class="event-title">{{ event.title }}</h3>
+        <div class="event-actions">
+          <button class="btn btn-secondary btn-icon" (click)="openModal(event)">Edit</button>
+          <button class="btn btn-danger btn-icon" (click)="deleteEvent(event.id!)">Delete</button>
+        </div>
+      </div>
+      
+      <div class="event-info">
+        <div class="info-row">
+          <strong>📅 Date:</strong> 
+          <span class="date-badge">{{ formatDate(event.eventDate) }}</span>
+        </div>
+        <div class="info-row" *ngIf="event.eventTime">
+          <strong>🕐 Time:</strong> 
+          <span class="time-display">{{ formatTime(event.eventTime) }}</span>
+        </div>
+        <div class="info-row" *ngIf="event.location">
+          <strong>📍 Location:</strong> 
+          <span>{{ event.location }}</span>
+        </div>
+        <div class="info-row" *ngIf="event.description">
+          <strong>📝 Description:</strong> 
+          <span style="font-size: 0.9rem;">{{ event.description }}</span>
+        </div>
+        <div class="info-row" *ngIf="event.notes">
+          <strong>📋 Notes:</strong> 
+          <span style="font-size: 0.9rem;">{{ event.notes }}</span>
+        </div>
+      </div>
+
+      <div class="event-footer">
+        <div>
+          <span *ngIf="event.status" 
+                class="status-badge" 
+                [ngClass]="getStatusClass(event.status)">
+            {{ event.status.replace('_', ' ') | titlecase }}
+          </span>
+          <span *ngIf="event.priority" 
+                class="priority-badge" 
+                [class.priority-high]="event.priority === 'HIGH'"
+                [class.priority-medium]="event.priority === 'MEDIUM'"
+                [class.priority-low]="event.priority === 'LOW'"
+                style="margin-left: 8px;">
+            {{ event.priority }}
+          </span>
+          <span *ngIf="event.category" class="category-badge" style="margin-left: 8px;">{{ event.category | titlecase }}</span>
+        </div>
+      </div>
+    </div>
+
+    <div *ngIf="filteredEvents.length === 0" class="empty-state">
+      <h3>No events found</h3>
+      <p *ngIf="searchTerm || selectedStatus || selectedCategory || selectedPriority || selectedDate">Try adjusting your filters</p>
+      <p *ngIf="!searchTerm && !selectedStatus && !selectedCategory && !selectedPriority && !selectedDate">Add your first event to get started!</p>
+    </div>
+  </div>
+</div>
+
+<!-- Modal -->
+<div class="modal" [class.show]="showModal" (click)="closeModal()">
+  <div class="modal-content" (click)="$event.stopPropagation()">
+    <div class="modal-header">
+      <h2>{{ editingEvent ? 'Edit Event' : 'Add New Event' }}</h2>
+      <span class="close" (click)="closeModal()">&times;</span>
+    </div>
+    <form (ngSubmit)="saveEvent()">
+      <div class="form-group">
+        <label for="title">Event Title *</label>
+        <input 
+          type="text" 
+          id="title" 
+          [(ngModel)]="newEvent.title" 
+          name="title"
+          required
+          placeholder="e.g., Team Meeting">
+      </div>
+      <div class="form-group">
+        <label for="description">Description</label>
+        <textarea 
+          id="description" 
+          [(ngModel)]="newEvent.description" 
+          name="description"
+          placeholder="Event description..."></textarea>
+      </div>
+      <div class="form-row">
+        <div class="form-group">
+          <label for="eventDate">Event Date *</label>
+          <input 
+            type="date" 
+            id="eventDate" 
+            [(ngModel)]="newEvent.eventDate" 
+            name="eventDate"
+            required>
+        </div>
+        <div class="form-group">
+          <label for="eventTime">Event Time</label>
+          <input 
+            type="time" 
+            id="eventTime" 
+            [(ngModel)]="newEvent.eventTime" 
+            name="eventTime">
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="location">Location</label>
+        <input 
+          type="text" 
+          id="location" 
+          [(ngModel)]="newEvent.location" 
+          name="location"
+          placeholder="e.g., Conference Room A">
+      </div>
+      <div class="form-row">
+        <div class="form-group">
+          <label for="category">Category</label>
+          <select 
+            id="category" 
+            [(ngModel)]="newEvent.category" 
+            name="category">
+            <option *ngFor="let category of categories" [value]="category">{{ category | titlecase }}</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="status">Status</label>
+          <select 
+            id="status" 
+            [(ngModel)]="newEvent.status" 
+            name="status">
+            <option *ngFor="let status of statuses" [value]="status">{{ status.replace('_', ' ') | titlecase }}</option>
+          </select>
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group">
+          <label for="priority">Priority</label>
+          <select 
+            id="priority" 
+            [(ngModel)]="newEvent.priority" 
+            name="priority">
+            <option *ngFor="let priority of priorities" [value]="priority">{{ priority | titlecase }}</option>
+          </select>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="notes">Notes</label>
+        <textarea 
+          id="notes" 
+          [(ngModel)]="newEvent.notes" 
+          name="notes"
+          placeholder="Additional notes..."></textarea>
+      </div>
+      <div class="form-actions">
+        <button type="button" class="btn btn-secondary" (click)="closeModal()">Cancel</button>
+        <button type="submit" class="btn btn-primary">Save</button>
+      </div>
+    </form>
+  </div>
+</div>
+
