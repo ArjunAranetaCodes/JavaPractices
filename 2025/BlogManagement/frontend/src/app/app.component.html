@@ -1,0 +1,234 @@
+<div class="container">
+  <div class="app-header">
+    <h1>✍️ Blog Management System</h1>
+    <p>Create, manage, and publish your blog posts</p>
+  </div>
+
+  <div class="stats-section">
+    <div class="stat-item">
+      <h3>Total Posts</h3>
+      <div class="count">{{ getTotalCount() }}</div>
+    </div>
+    <div class="stat-item">
+      <h3>Published</h3>
+      <div class="count">{{ getPublishedCount() }}</div>
+    </div>
+    <div class="stat-item">
+      <h3>Drafts</h3>
+      <div class="count">{{ getDraftCount() }}</div>
+    </div>
+    <div class="stat-item">
+      <h3>Featured</h3>
+      <div class="count">{{ getFeaturedCount() }}</div>
+    </div>
+  </div>
+
+  <div class="header-actions">
+    <h2>My Blog Posts</h2>
+    <button class="btn btn-primary" (click)="openModal()">+ New Post</button>
+  </div>
+
+  <div class="filters-section">
+    <input 
+      type="text" 
+      class="search-input" 
+      placeholder="🔍 Search posts..."
+      [(ngModel)]="searchTerm"
+      (input)="onSearchChange()">
+    
+    <select 
+      class="status-select" 
+      [(ngModel)]="selectedStatus"
+      (change)="onStatusChange()">
+      <option value="">All Statuses</option>
+      <option *ngFor="let status of statuses" [value]="status">{{ status | titlecase }}</option>
+    </select>
+
+    <select 
+      class="category-select" 
+      [(ngModel)]="selectedCategory"
+      (change)="onCategoryChange()">
+      <option value="">All Categories</option>
+      <option *ngFor="let category of categories" [value]="category">{{ category | titlecase }}</option>
+    </select>
+
+    <select 
+      class="author-select" 
+      [(ngModel)]="selectedAuthor"
+      (change)="onAuthorChange()">
+      <option value="">All Authors</option>
+      <option *ngFor="let author of authors" [value]="author">{{ author }}</option>
+    </select>
+
+    <button 
+      class="btn btn-secondary" 
+      (click)="clearFilters()"
+      *ngIf="searchTerm || selectedStatus || selectedCategory || selectedAuthor">
+      Clear Filters
+    </button>
+  </div>
+
+  <div class="posts-grid">
+    <div 
+      *ngFor="let post of filteredPosts" 
+      class="post-card"
+      [class.featured]="post.featured">
+      <div class="post-header">
+        <h3 class="post-title">{{ post.title }}</h3>
+        <div class="post-actions">
+          <button class="btn btn-secondary btn-icon" (click)="openModal(post)">Edit</button>
+          <button class="btn btn-danger btn-icon" (click)="deletePost(post.id!)">Delete</button>
+        </div>
+      </div>
+      
+      <div class="post-info">
+        <div class="info-row" *ngIf="post.excerpt">
+          <div class="excerpt">{{ post.excerpt }}</div>
+        </div>
+        <div class="info-row" *ngIf="!post.excerpt && post.content">
+          <div class="content-preview">{{ truncateText(post.content, 200) }}</div>
+        </div>
+        <div class="info-row" *ngIf="post.author">
+          <strong>✍️ Author:</strong> 
+          <span>{{ post.author }}</span>
+        </div>
+        <div class="info-row" *ngIf="post.publicationDate">
+          <strong>📅 Published:</strong> 
+          <span class="date-badge">{{ formatDate(post.publicationDate) }}</span>
+        </div>
+        <div class="info-row" *ngIf="post.readingTime">
+          <strong>⏱️ Reading Time:</strong> 
+          <span class="reading-time">{{ post.readingTime }} min read</span>
+        </div>
+        <div class="info-row" *ngIf="post.tags">
+          <strong>🏷️ Tags:</strong> 
+          <div style="flex: 1; display: flex; flex-wrap: wrap; gap: 6px;">
+            <span *ngFor="let tag of getTagsArray(post.tags)" class="tag">{{ tag }}</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="post-footer">
+        <div>
+          <span *ngIf="post.featured" class="featured-badge">⭐ Featured</span>
+          <span *ngIf="post.status" class="status-badge" [ngClass]="getStatusClass(post.status)">
+            {{ post.status | titlecase }}
+          </span>
+          <span *ngIf="post.category" class="category-badge" style="margin-left: 8px;">
+            {{ post.category | titlecase }}
+          </span>
+        </div>
+      </div>
+    </div>
+
+    <div *ngIf="filteredPosts.length === 0" class="empty-state">
+      <h3>No posts found</h3>
+      <p *ngIf="searchTerm || selectedStatus || selectedCategory || selectedAuthor">Try adjusting your filters</p>
+      <p *ngIf="!searchTerm && !selectedStatus && !selectedCategory && !selectedAuthor">Create your first blog post to get started!</p>
+    </div>
+  </div>
+</div>
+
+<!-- Modal -->
+<div class="modal" [class.show]="showModal" (click)="closeModal()">
+  <div class="modal-content" (click)="$event.stopPropagation()">
+    <div class="modal-header">
+      <h2>{{ editingPost ? 'Edit Post' : 'Create New Post' }}</h2>
+      <span class="close" (click)="closeModal()">&times;</span>
+    </div>
+    <form (ngSubmit)="savePost()">
+      <div class="form-group">
+        <label for="title">Post Title *</label>
+        <input 
+          type="text" 
+          id="title" 
+          [(ngModel)]="newPost.title" 
+          name="title"
+          required
+          placeholder="Enter post title">
+      </div>
+      <div class="form-group">
+        <label for="excerpt">Excerpt/Summary</label>
+        <textarea 
+          id="excerpt" 
+          [(ngModel)]="newPost.excerpt" 
+          name="excerpt"
+          placeholder="Short summary of the post..."></textarea>
+      </div>
+      <div class="form-group">
+        <label for="content">Content *</label>
+        <textarea 
+          id="content" 
+          [(ngModel)]="newPost.content" 
+          name="content"
+          required
+          placeholder="Write your post content here..."
+          style="min-height: 250px;"></textarea>
+      </div>
+      <div class="form-row">
+        <div class="form-group">
+          <label for="author">Author</label>
+          <input 
+            type="text" 
+            id="author" 
+            [(ngModel)]="newPost.author" 
+            name="author"
+            placeholder="Author name">
+        </div>
+        <div class="form-group">
+          <label for="category">Category</label>
+          <select 
+            id="category" 
+            [(ngModel)]="newPost.category" 
+            name="category">
+            <option *ngFor="let category of categories" [value]="category">{{ category | titlecase }}</option>
+          </select>
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group">
+          <label for="status">Status</label>
+          <select 
+            id="status" 
+            [(ngModel)]="newPost.status" 
+            name="status">
+            <option *ngFor="let status of statuses" [value]="status">{{ status | titlecase }}</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="publicationDate">Publication Date</label>
+          <input 
+            type="date" 
+            id="publicationDate" 
+            [(ngModel)]="newPost.publicationDate" 
+            name="publicationDate">
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="tags">Tags (comma-separated)</label>
+        <input 
+          type="text" 
+          id="tags" 
+          [(ngModel)]="newPost.tags" 
+          name="tags"
+          placeholder="e.g., technology, web development, tutorial">
+      </div>
+      <div class="form-group">
+        <div class="checkbox-group">
+          <input 
+            type="checkbox" 
+            id="featured" 
+            [(ngModel)]="newPost.featured" 
+            name="featured">
+          <label for="featured" style="margin: 0; cursor: pointer;">Mark as Featured Post</label>
+        </div>
+      </div>
+      <div class="form-actions">
+        <button type="button" class="btn btn-secondary" (click)="closeModal()">Cancel</button>
+        <button type="submit" class="btn btn-primary">Save</button>
+      </div>
+    </form>
+  </div>
+</div>
+
+
