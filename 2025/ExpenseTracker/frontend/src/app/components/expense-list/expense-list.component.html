@@ -1,0 +1,97 @@
+<div class="expense-list-container">
+  <div class="header">
+    <h1>Expense Tracker</h1>
+    <button class="btn btn-primary" routerLink="/expenses/new">+ New Expense</button>
+  </div>
+
+  <div class="filters">
+    <div class="filter-group">
+      <input 
+        type="text" 
+        placeholder="Search expenses..." 
+        [(ngModel)]="searchQuery"
+        (input)="onSearchChange()"
+        class="search-input">
+    </div>
+
+    <div class="filter-group">
+      <label>Category:</label>
+      <select [(ngModel)]="categoryFilter" (change)="onCategoryFilterChange()" class="filter-select">
+        <option value="ALL">All Categories</option>
+        <option *ngFor="let category of getCategoryOptions()" [value]="category">
+          {{ category }}
+        </option>
+      </select>
+    </div>
+
+    <div class="filter-group">
+      <label>Payment Method:</label>
+      <select [(ngModel)]="paymentMethodFilter" (change)="onPaymentMethodFilterChange()" class="filter-select">
+        <option value="ALL">All Methods</option>
+        <option *ngFor="let method of getPaymentMethodOptions()" [value]="method">
+          {{ method.replace('_', ' ') }}
+        </option>
+      </select>
+    </div>
+  </div>
+
+  <div class="expense-summary">
+    <div class="summary-card">
+      <h3>Total Expenses</h3>
+      <p class="total-amount">${{ totalAmount.toFixed(2) }}</p>
+      <span class="summary-count">{{ filteredExpenses.length }} expense(s)</span>
+    </div>
+  </div>
+
+  <div class="expenses-grid" *ngIf="filteredExpenses.length > 0; else noExpenses">
+    <div 
+      *ngFor="let expense of filteredExpenses" 
+      class="expense-card">
+      <div class="expense-header">
+        <h3 class="expense-description">{{ expense.description }}</h3>
+        <div class="expense-actions">
+          <button 
+            class="btn-icon" 
+            [routerLink]="['/expenses/edit', expense.id]"
+            title="Edit">
+            ✏️
+          </button>
+          <button 
+            class="btn-icon" 
+            (click)="deleteExpense(expense.id!)"
+            title="Delete">
+            🗑️
+          </button>
+        </div>
+      </div>
+
+      <div class="expense-amount">
+        <span class="amount-value">${{ expense.amount.toFixed(2) }}</span>
+      </div>
+
+      <div class="expense-meta">
+        <span class="badge" [ngClass]="getCategoryClass(expense.category)">
+          {{ expense.category }}
+        </span>
+        <span class="badge badge-payment" *ngIf="expense.paymentMethod">
+          {{ expense.paymentMethod.replace('_', ' ') }}
+        </span>
+      </div>
+
+      <div class="expense-details">
+        <p *ngIf="expense.expenseDate">
+          <strong>Date:</strong> {{ expense.expenseDate | date: 'shortDate' }}
+        </p>
+        <p *ngIf="expense.notes">
+          <strong>Notes:</strong> {{ expense.notes }}
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <ng-template #noExpenses>
+    <div class="no-expenses">
+      <p>No expenses found. Create a new expense to get started!</p>
+    </div>
+  </ng-template>
+</div>
