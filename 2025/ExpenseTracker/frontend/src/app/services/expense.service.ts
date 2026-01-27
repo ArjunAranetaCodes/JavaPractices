@@ -1,15 +1,15 @@
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpParams } from '@angular/common/http';
 import { Observable } from 'rxjs';
-import { Expense } from '../models/expense';
+import { Expense, ExpenseCategory, PaymentMethod } from '../models/expense.model';
 
 @Injectable({
   providedIn: 'root'
 })
 export class ExpenseService {
-  private apiUrl = 'http://localhost:8087/api/expenses';
+  private apiUrl = 'http://localhost:8085/api/expenses';
 
-  constructor(private http: HttpClient) {}
+  constructor(private http: HttpClient) { }
 
   getAllExpenses(): Observable<Expense[]> {
     return this.http.get<Expense[]>(this.apiUrl);
@@ -17,19 +17,6 @@ export class ExpenseService {
 
   getExpenseById(id: number): Observable<Expense> {
     return this.http.get<Expense>(`${this.apiUrl}/${id}`);
-  }
-
-  searchExpenses(query: string): Observable<Expense[]> {
-    const params = new HttpParams().set('query', query);
-    return this.http.get<Expense[]>(`${this.apiUrl}/search`, { params });
-  }
-
-  getExpensesByCategory(category: string): Observable<Expense[]> {
-    return this.http.get<Expense[]>(`${this.apiUrl}/category/${category}`);
-  }
-
-  getTotalExpenses(): Observable<number> {
-    return this.http.get<number>(`${this.apiUrl}/total`);
   }
 
   createExpense(expense: Expense): Observable<Expense> {
@@ -43,5 +30,35 @@ export class ExpenseService {
   deleteExpense(id: number): Observable<void> {
     return this.http.delete<void>(`${this.apiUrl}/${id}`);
   }
-}
 
+  getExpensesByCategory(category: ExpenseCategory): Observable<Expense[]> {
+    return this.http.get<Expense[]>(`${this.apiUrl}/category/${category}`);
+  }
+
+  getExpensesByDateRange(startDate: string, endDate: string): Observable<Expense[]> {
+    const params = new HttpParams()
+      .set('startDate', startDate)
+      .set('endDate', endDate);
+    return this.http.get<Expense[]>(`${this.apiUrl}/date-range`, { params });
+  }
+
+  getExpensesByPaymentMethod(paymentMethod: PaymentMethod): Observable<Expense[]> {
+    return this.http.get<Expense[]>(`${this.apiUrl}/payment-method/${paymentMethod}`);
+  }
+
+  searchExpenses(query: string): Observable<Expense[]> {
+    const params = new HttpParams().set('query', query);
+    return this.http.get<Expense[]>(`${this.apiUrl}/search`, { params });
+  }
+
+  getTotalByCategory(category: ExpenseCategory): Observable<number> {
+    return this.http.get<number>(`${this.apiUrl}/total/category/${category}`);
+  }
+
+  getTotalInDateRange(startDate: string, endDate: string): Observable<number> {
+    const params = new HttpParams()
+      .set('startDate', startDate)
+      .set('endDate', endDate);
+    return this.http.get<number>(`${this.apiUrl}/total/date-range`, { params });
+  }
+}
