@@ -1,0 +1,255 @@
+<div class="container">
+  <div class="app-header">
+    <h1>💪 Fitness Tracker</h1>
+    <p>Track your workouts and fitness progress</p>
+  </div>
+
+  <div class="stats-section">
+    <div class="stat-item">
+      <h3>Total Workouts</h3>
+      <div class="count">{{ getTotalCount() }}</div>
+    </div>
+    <div class="stat-item">
+      <h3>Total Calories</h3>
+      <div class="count">{{ getTotalCalories() }}</div>
+    </div>
+    <div class="stat-item">
+      <h3>Total Duration</h3>
+      <div class="count">{{ formatDuration(getTotalDuration()) }}</div>
+    </div>
+  </div>
+
+  <div class="header-actions">
+    <h2>My Workouts</h2>
+    <button class="btn btn-primary" (click)="openModal()">+ Add Workout</button>
+  </div>
+
+  <div class="filters-section">
+    <input 
+      type="text" 
+      class="search-input" 
+      placeholder="🔍 Search workouts..."
+      [(ngModel)]="searchTerm"
+      (input)="onSearchChange()">
+    
+    <select 
+      class="type-select" 
+      [(ngModel)]="selectedType"
+      (change)="onTypeChange()">
+      <option value="">All Types</option>
+      <option *ngFor="let type of exerciseTypes" [value]="type">{{ type | titlecase }}</option>
+    </select>
+
+    <select 
+      class="category-select" 
+      [(ngModel)]="selectedCategory"
+      (change)="onCategoryChange()">
+      <option value="">All Categories</option>
+      <option *ngFor="let category of categories" [value]="category">{{ category.replace('_', ' ') | titlecase }}</option>
+    </select>
+
+    <input 
+      type="date" 
+      class="date-input" 
+      [(ngModel)]="selectedDate"
+      (change)="onDateChange()"
+      placeholder="Filter by date">
+
+    <button 
+      class="btn btn-secondary" 
+      (click)="clearFilters()"
+      *ngIf="searchTerm || selectedType || selectedCategory || selectedDate">
+      Clear Filters
+    </button>
+  </div>
+
+  <div class="workouts-grid">
+    <div 
+      *ngFor="let workout of filteredWorkouts" 
+      class="workout-card">
+      <div class="workout-header">
+        <h3 class="workout-title">{{ workout.name }}</h3>
+        <div class="workout-actions">
+          <button class="btn btn-secondary btn-icon" (click)="openModal(workout)">Edit</button>
+          <button class="btn btn-danger btn-icon" (click)="deleteWorkout(workout.id!)">Delete</button>
+        </div>
+      </div>
+      
+      <div class="workout-info">
+        <div class="info-row">
+          <strong>📅 Date:</strong> 
+          <span class="date-badge">{{ formatDate(workout.workoutDate) }}</span>
+        </div>
+        <div class="info-row" *ngIf="workout.durationMinutes">
+          <strong>⏱️ Duration:</strong> 
+          <span class="metric-display">{{ formatDuration(workout.durationMinutes) }}</span>
+        </div>
+        <div class="info-row" *ngIf="workout.sets && workout.reps">
+          <strong>💪 Sets x Reps:</strong> 
+          <span class="metric-display">{{ workout.sets }} x {{ workout.reps }}</span>
+        </div>
+        <div class="info-row" *ngIf="workout.weight">
+          <strong>🏋️ Weight:</strong> 
+          <span class="metric-display">{{ workout.weight }} kg</span>
+        </div>
+        <div class="info-row" *ngIf="workout.distance">
+          <strong>🏃 Distance:</strong> 
+          <span class="metric-display">{{ workout.distance }} km</span>
+        </div>
+        <div class="info-row" *ngIf="workout.caloriesBurned">
+          <strong>🔥 Calories:</strong> 
+          <span class="metric-display">{{ workout.caloriesBurned }} kcal</span>
+        </div>
+        <div class="info-row" *ngIf="workout.notes">
+          <strong>📝 Notes:</strong> 
+          <span style="font-size: 0.9rem;">{{ workout.notes }}</span>
+        </div>
+      </div>
+
+      <div class="workout-footer">
+        <div>
+          <span *ngIf="workout.exerciseType" class="type-badge">{{ workout.exerciseType | titlecase }}</span>
+          <span *ngIf="workout.category" class="category-badge" style="margin-left: 8px;">{{ workout.category.replace('_', ' ') | titlecase }}</span>
+        </div>
+      </div>
+    </div>
+
+    <div *ngIf="filteredWorkouts.length === 0" class="empty-state">
+      <h3>No workouts found</h3>
+      <p *ngIf="searchTerm || selectedType || selectedCategory || selectedDate">Try adjusting your filters</p>
+      <p *ngIf="!searchTerm && !selectedType && !selectedCategory && !selectedDate">Add your first workout to get started!</p>
+    </div>
+  </div>
+</div>
+
+<!-- Modal -->
+<div class="modal" [class.show]="showModal" (click)="closeModal()">
+  <div class="modal-content" (click)="$event.stopPropagation()">
+    <div class="modal-header">
+      <h2>{{ editingWorkout ? 'Edit Workout' : 'Add New Workout' }}</h2>
+      <span class="close" (click)="closeModal()">&times;</span>
+    </div>
+    <form (ngSubmit)="saveWorkout()">
+      <div class="form-group">
+        <label for="name">Workout Name *</label>
+        <input 
+          type="text" 
+          id="name" 
+          [(ngModel)]="newWorkout.name" 
+          name="name"
+          required
+          placeholder="e.g., Morning Run">
+      </div>
+      <div class="form-row">
+        <div class="form-group">
+          <label for="exerciseType">Exercise Type</label>
+          <select 
+            id="exerciseType" 
+            [(ngModel)]="newWorkout.exerciseType" 
+            name="exerciseType">
+            <option *ngFor="let type of exerciseTypes" [value]="type">{{ type | titlecase }}</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="category">Category</label>
+          <select 
+            id="category" 
+            [(ngModel)]="newWorkout.category" 
+            name="category">
+            <option *ngFor="let category of categories" [value]="category">{{ category.replace('_', ' ') | titlecase }}</option>
+          </select>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="workoutDate">Workout Date *</label>
+        <input 
+          type="date" 
+          id="workoutDate" 
+          [(ngModel)]="newWorkout.workoutDate" 
+          name="workoutDate"
+          required>
+      </div>
+      <div class="form-row">
+        <div class="form-group">
+          <label for="durationMinutes">Duration (minutes)</label>
+          <input 
+            type="number" 
+            id="durationMinutes" 
+            [(ngModel)]="newWorkout.durationMinutes" 
+            name="durationMinutes"
+            min="0"
+            placeholder="0">
+        </div>
+        <div class="form-group">
+          <label for="caloriesBurned">Calories Burned</label>
+          <input 
+            type="number" 
+            id="caloriesBurned" 
+            [(ngModel)]="newWorkout.caloriesBurned" 
+            name="caloriesBurned"
+            min="0"
+            placeholder="0">
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group">
+          <label for="sets">Sets</label>
+          <input 
+            type="number" 
+            id="sets" 
+            [(ngModel)]="newWorkout.sets" 
+            name="sets"
+            min="0"
+            placeholder="0">
+        </div>
+        <div class="form-group">
+          <label for="reps">Reps</label>
+          <input 
+            type="number" 
+            id="reps" 
+            [(ngModel)]="newWorkout.reps" 
+            name="reps"
+            min="0"
+            placeholder="0">
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group">
+          <label for="weight">Weight (kg)</label>
+          <input 
+            type="number" 
+            id="weight" 
+            [(ngModel)]="newWorkout.weight" 
+            name="weight"
+            min="0"
+            step="0.1"
+            placeholder="0">
+        </div>
+        <div class="form-group">
+          <label for="distance">Distance (km)</label>
+          <input 
+            type="number" 
+            id="distance" 
+            [(ngModel)]="newWorkout.distance" 
+            name="distance"
+            min="0"
+            step="0.1"
+            placeholder="0">
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="notes">Notes</label>
+        <textarea 
+          id="notes" 
+          [(ngModel)]="newWorkout.notes" 
+          name="notes"
+          placeholder="Additional notes..."></textarea>
+      </div>
+      <div class="form-actions">
+        <button type="button" class="btn btn-secondary" (click)="closeModal()">Cancel</button>
+        <button type="submit" class="btn btn-primary">Save</button>
+      </div>
+    </form>
+  </div>
+</div>
+
