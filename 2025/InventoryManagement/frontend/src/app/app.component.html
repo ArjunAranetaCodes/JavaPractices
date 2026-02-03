@@ -1,0 +1,232 @@
+<div class="container">
+  <div class="app-header">
+    <h1>📦 Inventory Management System</h1>
+    <p>Track products, stock levels, and inventory value</p>
+  </div>
+
+  <div class="stats-section">
+    <div class="stat-item">
+      <h3>Total Products</h3>
+      <div class="count">{{ getTotalCount() }}</div>
+    </div>
+    <div class="stat-item">
+      <h3>Low Stock</h3>
+      <div class="count" style="color: #f39c12;">{{ getLowStockCount() }}</div>
+    </div>
+    <div class="stat-item">
+      <h3>Out of Stock</h3>
+      <div class="count" style="color: #e74c3c;">{{ getOutOfStockCount() }}</div>
+    </div>
+    <div class="stat-item">
+      <h3>Total Value</h3>
+      <div class="value">{{ formatCurrency(getTotalValue()) }}</div>
+    </div>
+  </div>
+
+  <div class="header-actions">
+    <h2>Products</h2>
+    <button class="btn btn-primary" (click)="openModal()">+ New Product</button>
+  </div>
+
+  <div class="filters-section">
+    <input 
+      type="text" 
+      class="search-input" 
+      placeholder="🔍 Search products..."
+      [(ngModel)]="searchTerm"
+      (input)="onSearchChange()">
+    
+    <select 
+      class="category-select" 
+      [(ngModel)]="selectedCategory"
+      (change)="onCategoryChange()">
+      <option value="">All Categories</option>
+      <option *ngFor="let category of categories" [value]="category">{{ category | titlecase }}</option>
+    </select>
+
+    <select 
+      class="supplier-select" 
+      [(ngModel)]="selectedSupplier"
+      (change)="onSupplierChange()">
+      <option value="">All Suppliers</option>
+      <option *ngFor="let supplier of suppliers" [value]="supplier">{{ supplier }}</option>
+    </select>
+
+    <button 
+      class="btn btn-secondary" 
+      (click)="clearFilters()"
+      *ngIf="searchTerm || selectedCategory || selectedSupplier">
+      Clear Filters
+    </button>
+  </div>
+
+  <div class="products-grid">
+    <div 
+      *ngFor="let product of filteredProducts" 
+      class="product-card"
+      [ngClass]="getProductCardClass(product)">
+      <div class="product-header">
+        <h3 class="product-name">{{ product.name }}</h3>
+        <div class="product-actions">
+          <button class="btn btn-secondary btn-icon" (click)="openModal(product)">Edit</button>
+          <button class="btn btn-danger btn-icon" (click)="deleteProduct(product.id!)">Delete</button>
+        </div>
+      </div>
+      
+      <div class="product-info">
+        <div class="info-row" *ngIf="product.sku">
+          <strong>SKU:</strong> 
+          <span class="sku-badge">{{ product.sku }}</span>
+        </div>
+        <div class="info-row" *ngIf="product.description">
+          <div class="description">{{ product.description }}</div>
+        </div>
+        <div class="info-row" *ngIf="product.price">
+          <strong>💰 Price:</strong> 
+          <span class="price-badge">{{ formatCurrency(product.price) }}</span>
+        </div>
+        <div class="info-row" *ngIf="product.quantity !== undefined">
+          <strong>📊 Quantity:</strong> 
+          <span class="quantity-badge">{{ product.quantity }}</span>
+          <span *ngIf="product.minStockLevel">(Min: {{ product.minStockLevel }})</span>
+        </div>
+        <div class="info-row" *ngIf="product.supplier">
+          <strong>🏢 Supplier:</strong> 
+          <span class="supplier-badge">{{ product.supplier }}</span>
+        </div>
+        <div class="info-row" *ngIf="product.location">
+          <strong>📍 Location:</strong> 
+          <span class="location-badge">{{ product.location }}</span>
+        </div>
+        <div class="info-row" *ngIf="product.price && product.quantity">
+          <strong>💵 Total Value:</strong> 
+          <span class="price-badge">{{ formatCurrency(product.price * product.quantity) }}</span>
+        </div>
+      </div>
+
+      <div class="product-footer">
+        <div>
+          <span class="stock-badge" [ngClass]="getStockStatusClass(getStockStatus(product))">
+            {{ getStockStatus(product) | titlecase }}
+          </span>
+          <span *ngIf="product.category" class="category-badge" style="margin-left: 8px;">
+            {{ product.category | titlecase }}
+          </span>
+        </div>
+      </div>
+    </div>
+
+    <div *ngIf="filteredProducts.length === 0" class="empty-state">
+      <h3>No products found</h3>
+      <p *ngIf="searchTerm || selectedCategory || selectedSupplier">Try adjusting your filters</p>
+      <p *ngIf="!searchTerm && !selectedCategory && !selectedSupplier">Add your first product to get started!</p>
+    </div>
+  </div>
+</div>
+
+<!-- Modal -->
+<div class="modal" [class.show]="showModal" (click)="closeModal()">
+  <div class="modal-content" (click)="$event.stopPropagation()">
+    <div class="modal-header">
+      <h2>{{ editingProduct ? 'Edit Product' : 'Create New Product' }}</h2>
+      <span class="close" (click)="closeModal()">&times;</span>
+    </div>
+    <form (ngSubmit)="saveProduct()">
+      <div class="form-group">
+        <label for="name">Product Name *</label>
+        <input 
+          type="text" 
+          id="name" 
+          [(ngModel)]="newProduct.name" 
+          name="name"
+          required
+          placeholder="Enter product name">
+      </div>
+      <div class="form-group">
+        <label for="description">Description</label>
+        <textarea 
+          id="description" 
+          [(ngModel)]="newProduct.description" 
+          name="description"
+          placeholder="Product description..."></textarea>
+      </div>
+      <div class="form-row">
+        <div class="form-group">
+          <label for="sku">SKU</label>
+          <input 
+            type="text" 
+            id="sku" 
+            [(ngModel)]="newProduct.sku" 
+            name="sku"
+            placeholder="Stock Keeping Unit">
+        </div>
+        <div class="form-group">
+          <label for="category">Category</label>
+          <select 
+            id="category" 
+            [(ngModel)]="newProduct.category" 
+            name="category">
+            <option *ngFor="let category of categories" [value]="category">{{ category | titlecase }}</option>
+          </select>
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group">
+          <label for="price">Price ($)</label>
+          <input 
+            type="number" 
+            id="price" 
+            [(ngModel)]="newProduct.price" 
+            name="price"
+            step="0.01"
+            min="0"
+            placeholder="0.00">
+        </div>
+        <div class="form-group">
+          <label for="quantity">Quantity</label>
+          <input 
+            type="number" 
+            id="quantity" 
+            [(ngModel)]="newProduct.quantity" 
+            name="quantity"
+            min="0"
+            placeholder="0">
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group">
+          <label for="supplier">Supplier</label>
+          <input 
+            type="text" 
+            id="supplier" 
+            [(ngModel)]="newProduct.supplier" 
+            name="supplier"
+            placeholder="Supplier name">
+        </div>
+        <div class="form-group">
+          <label for="location">Location</label>
+          <input 
+            type="text" 
+            id="location" 
+            [(ngModel)]="newProduct.location" 
+            name="location"
+            placeholder="Warehouse location">
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="minStockLevel">Minimum Stock Level</label>
+        <input 
+          type="number" 
+          id="minStockLevel" 
+          [(ngModel)]="newProduct.minStockLevel" 
+          name="minStockLevel"
+          min="0"
+          placeholder="10">
+      </div>
+      <div class="form-actions">
+        <button type="button" class="btn btn-secondary" (click)="closeModal()">Cancel</button>
+        <button type="submit" class="btn btn-primary">Save</button>
+      </div>
+    </form>
+  </div>
+</div>
