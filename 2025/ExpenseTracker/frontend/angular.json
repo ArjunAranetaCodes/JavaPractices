@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "expense-tracker": {
+    "expense-tracker-frontend": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,10 +13,10 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/expense-tracker",
+            "outputPath": "dist/expense-tracker-frontend",
             "index": "src/index.html",
             "main": "src/main.ts",
-            "polyfills": ["zone.js"],
+            "polyfills": "src/polyfills.ts",
             "tsConfig": "tsconfig.app.json",
             "assets": [
               "src/favicon.ico",
@@ -34,6 +34,11 @@
                   "type": "initial",
                   "maximumWarning": "500kb",
                   "maximumError": "1mb"
+                },
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "2kb",
+                  "maximumError": "4kb"
                 }
               ],
               "outputHashing": "all"
@@ -43,7 +48,8 @@
               "optimization": false,
               "vendorChunk": true,
               "extractLicenses": false,
-              "sourceMap": true
+              "sourceMap": true,
+              "namedChunks": true
             }
           },
           "defaultConfiguration": "production"
@@ -52,10 +58,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "expense-tracker:build:production"
+              "buildTarget": "expense-tracker-frontend:build:production"
             },
             "development": {
-              "buildTarget": "expense-tracker:build:development"
+              "buildTarget": "expense-tracker-frontend:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -64,4 +70,3 @@
     }
   }
 }
-
