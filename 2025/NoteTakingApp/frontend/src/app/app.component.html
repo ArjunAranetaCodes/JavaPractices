@@ -1,0 +1,119 @@
+<div class="container">
+  <div class="app-header">
+    <h1>📝 Note Taking App</h1>
+    <p>Capture your thoughts and ideas</p>
+  </div>
+
+  <div class="stats-section">
+    <div class="stat-item">
+      <h3>Total Notes</h3>
+      <div class="count">{{ notes.length }}</div>
+    </div>
+    <div class="stat-item">
+      <h3>Filtered Notes</h3>
+      <div class="count">{{ filteredNotes.length }}</div>
+    </div>
+  </div>
+
+  <div class="header-actions">
+    <h2 style="color: #2c3e50; margin: 0;">My Notes</h2>
+    <button class="btn btn-primary" (click)="openModal()">+ New Note</button>
+  </div>
+
+  <div class="filters-section">
+    <input 
+      type="text" 
+      class="search-input" 
+      placeholder="🔍 Search notes..."
+      [(ngModel)]="searchTerm"
+      (input)="onSearchChange()">
+    
+    <select 
+      class="category-select" 
+      [(ngModel)]="selectedCategory"
+      (change)="onCategoryChange()">
+      <option value="">All Categories</option>
+      <option *ngFor="let category of categories" [value]="category">{{ category }}</option>
+    </select>
+
+    <button 
+      class="btn btn-secondary" 
+      (click)="clearFilters()"
+      *ngIf="searchTerm || selectedCategory">
+      Clear Filters
+    </button>
+  </div>
+
+  <div class="notes-grid">
+    <div *ngFor="let note of filteredNotes" class="note-card">
+      <div class="note-header">
+        <h3 class="note-title">{{ note.title }}</h3>
+        <div class="note-actions">
+          <button class="btn btn-secondary btn-icon" (click)="openModal(note)">Edit</button>
+          <button class="btn btn-danger btn-icon" (click)="deleteNote(note.id!)">Delete</button>
+        </div>
+      </div>
+      <div class="note-content">{{ getNotePreview(note.content) }}</div>
+      <div class="note-footer">
+        <div>
+          <span *ngIf="note.category" class="category-badge">{{ note.category }}</span>
+        </div>
+        <div *ngIf="note.updatedAt">
+          {{ formatDate(note.updatedAt) }}
+        </div>
+      </div>
+    </div>
+
+    <div *ngIf="filteredNotes.length === 0" class="empty-state" style="grid-column: 1 / -1;">
+      <h3>No notes found</h3>
+      <p *ngIf="searchTerm || selectedCategory">Try adjusting your filters</p>
+      <p *ngIf="!searchTerm && !selectedCategory">Create your first note to get started!</p>
+    </div>
+  </div>
+</div>
+
+<!-- Modal -->
+<div class="modal" [class.show]="showModal" (click)="closeModal()">
+  <div class="modal-content" (click)="$event.stopPropagation()">
+    <div class="modal-header">
+      <h2>{{ editingNote ? 'Edit Note' : 'Create New Note' }}</h2>
+      <span class="close" (click)="closeModal()">&times;</span>
+    </div>
+    <form (ngSubmit)="saveNote()">
+      <div class="form-group">
+        <label for="title">Title *</label>
+        <input 
+          type="text" 
+          id="title" 
+          [(ngModel)]="newNote.title" 
+          name="title"
+          required
+          placeholder="Enter note title">
+      </div>
+      <div class="form-group">
+        <label for="content">Content *</label>
+        <textarea 
+          id="content" 
+          [(ngModel)]="newNote.content" 
+          name="content"
+          required
+          placeholder="Enter note content"></textarea>
+      </div>
+      <div class="form-group">
+        <label for="category">Category</label>
+        <select 
+          id="category" 
+          [(ngModel)]="newNote.category" 
+          name="category">
+          <option value="">Select Category</option>
+          <option *ngFor="let category of categories" [value]="category">{{ category }}</option>
+        </select>
+      </div>
+      <div class="form-actions">
+        <button type="button" class="btn btn-secondary" (click)="closeModal()">Cancel</button>
+        <button type="submit" class="btn btn-primary">Save</button>
+      </div>
+    </form>
+  </div>
+</div>
+
