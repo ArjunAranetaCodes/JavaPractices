@@ -1,0 +1,62 @@
+<form (ngSubmit)="onSubmit()">
+  <div class="form-group">
+    <label for="name">Product Name *</label>
+    <input 
+      type="text" 
+      id="name" 
+      [(ngModel)]="formProduct.name" 
+      name="name" 
+      required>
+  </div>
+
+  <div class="form-group">
+    <label for="description">Description *</label>
+    <textarea 
+      id="description" 
+      [(ngModel)]="formProduct.description" 
+      name="description" 
+      required>
+    </textarea>
+  </div>
+
+  <div class="form-group">
+    <label for="category">Category *</label>
+    <select 
+      id="category" 
+      [(ngModel)]="formProduct.category" 
+      name="category" 
+      required>
+      <option *ngFor="let cat of categories" [value]="cat">{{ cat }}</option>
+    </select>
+  </div>
+
+  <div class="form-group">
+    <label for="price">Price *</label>
+    <input 
+      type="number" 
+      id="price" 
+      [(ngModel)]="formProduct.price" 
+      name="price" 
+      min="0" 
+      step="0.01" 
+      required>
+  </div>
+
+  <div class="form-group">
+    <label for="quantity">Quantity *</label>
+    <input 
+      type="number" 
+      id="quantity" 
+      [(ngModel)]="formProduct.quantity" 
+      name="quantity" 
+      min="0" 
+      required>
+  </div>
+
+  <div class="modal-actions">
+    <button type="button" class="btn btn-secondary" (click)="onCancel()">Cancel</button>
+    <button type="submit" class="btn btn-primary" [disabled]="!isValid()">
+      {{ isEditMode ? 'Update' : 'Create' }}
+    </button>
+  </div>
+</form>
