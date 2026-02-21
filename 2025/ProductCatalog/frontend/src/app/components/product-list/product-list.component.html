@@ -1,0 +1,55 @@
+<div class="container">
+  <h1>Product Catalog</h1>
+
+  <div class="card">
+    <div class="header-actions">
+      <div class="search-box">
+        <input 
+          type="text" 
+          placeholder="Search products..." 
+          [(ngModel)]="searchTerm"
+          (input)="searchProducts()">
+      </div>
+      <select [(ngModel)]="selectedCategory" (change)="onCategoryChange()">
+        <option *ngFor="let cat of categories" [value]="cat">
+          {{ cat === 'all' ? 'All Categories' : cat }}
+        </option>
+      </select>
+      <button class="btn btn-primary" (click)="openAddModal()">Add New Product</button>
+    </div>
+  </div>
+
+  <div *ngIf="filteredProducts.length === 0" class="card empty-state">
+    <h2>No products found</h2>
+    <p>Try adjusting your search or add a new product.</p>
+  </div>
+
+  <div class="grid" *ngIf="filteredProducts.length > 0">
+    <div class="product-card" *ngFor="let product of filteredProducts">
+      <span class="category">{{ product.category }}</span>
+      <h3>{{ product.name }}</h3>
+      <div class="price">${{ product.price.toFixed(2) }}</div>
+      <div class="quantity">Stock: {{ product.quantity }} units</div>
+      <p class="description">{{ product.description }}</p>
+      <div class="actions">
+        <button class="btn btn-secondary" (click)="openEditModal(product)">Edit</button>
+        <button class="btn btn-danger" (click)="deleteProduct(product.id!)">Delete</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal-overlay" *ngIf="showModal" (click)="closeModal()">
+    <div class="modal-content" (click)="$event.stopPropagation()">
+      <div class="modal-header">
+        <h2>{{ isEditMode ? 'Edit Product' : 'Add New Product' }}</h2>
+        <button class="close-btn" (click)="closeModal()">&times;</button>
+      </div>
+      <app-product-form 
+        [product]="editingProduct!"
+        [isEditMode]="isEditMode"
+        (save)="saveProduct($event)"
+        (cancel)="closeModal()">
+      </app-product-form>
+    </div>
+  </div>
+</div>
