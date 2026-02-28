@@ -1,0 +1,251 @@
+<div class="container">
+  <div class="app-header">
+    <h1>🍳 Recipe Manager</h1>
+    <p>Organize and manage your favorite recipes</p>
+  </div>
+
+  <div class="stats-section">
+    <div class="stat-item">
+      <h3>Total Recipes</h3>
+      <div class="count">{{ getTotalRecipes() }}</div>
+    </div>
+    <div class="stat-item">
+      <h3>Average Rating</h3>
+      <div class="count">{{ getAverageRating() }} ⭐</div>
+    </div>
+  </div>
+
+  <div class="header-actions">
+    <h2>My Recipes</h2>
+    <button class="btn btn-primary" (click)="openModal()">+ Add Recipe</button>
+  </div>
+
+  <div class="filters-section">
+    <input 
+      type="text" 
+      class="search-input" 
+      placeholder="🔍 Search recipes..."
+      [(ngModel)]="searchTerm"
+      (input)="onSearchChange()">
+    
+    <select 
+      class="category-select" 
+      [(ngModel)]="selectedCategory"
+      (change)="onCategoryChange()">
+      <option value="">All Categories</option>
+      <option *ngFor="let category of categories" [value]="category">{{ category }}</option>
+    </select>
+
+    <select 
+      class="difficulty-select" 
+      [(ngModel)]="selectedDifficulty"
+      (change)="onDifficultyChange()">
+      <option value="">All Difficulties</option>
+      <option value="EASY">Easy</option>
+      <option value="MEDIUM">Medium</option>
+      <option value="HARD">Hard</option>
+    </select>
+
+    <button 
+      class="btn btn-secondary" 
+      (click)="clearFilters()"
+      *ngIf="searchTerm || selectedCategory || selectedDifficulty">
+      Clear Filters
+    </button>
+  </div>
+
+  <div class="recipes-grid">
+    <div 
+      *ngFor="let recipe of filteredRecipes" 
+      class="recipe-card">
+      <div class="recipe-header">
+        <h3 class="recipe-title">{{ recipe.name }}</h3>
+        <div class="recipe-actions">
+          <button class="btn btn-secondary btn-icon" (click)="openModal(recipe)">Edit</button>
+          <button class="btn btn-danger btn-icon" (click)="deleteRecipe(recipe.id!)">Delete</button>
+        </div>
+      </div>
+      
+      <div class="recipe-image" *ngIf="recipe.imageUrl">
+        <img [src]="recipe.imageUrl" [alt]="recipe.name" style="width: 100%; height: 100%; object-fit: cover; border-radius: 8px;">
+      </div>
+      <div class="recipe-image" *ngIf="!recipe.imageUrl">
+        🍽️
+      </div>
+
+      <div class="description" *ngIf="recipe.description">
+        {{ recipe.description }}
+      </div>
+
+      <div class="recipe-info">
+        <div class="info-row">
+          <strong>⏱️ Total Time:</strong> 
+          <span>{{ formatTime(getTotalTime(recipe)) }}</span>
+        </div>
+        <div class="info-row" *ngIf="recipe.prepTime">
+          <strong>Prep:</strong> 
+          <span>{{ formatTime(recipe.prepTime) }}</span>
+        </div>
+        <div class="info-row" *ngIf="recipe.cookTime">
+          <strong>Cook:</strong> 
+          <span>{{ formatTime(recipe.cookTime) }}</span>
+        </div>
+        <div class="info-row" *ngIf="recipe.servings">
+          <strong>🍽️ Servings:</strong> 
+          <span>{{ recipe.servings }}</span>
+        </div>
+        <div class="info-row" *ngIf="recipe.ingredients">
+          <strong>📝 Ingredients:</strong> 
+          <span style="font-size: 0.85rem;">{{ formatIngredients(recipe.ingredients) }}</span>
+        </div>
+      </div>
+
+      <div class="recipe-footer">
+        <div>
+          <span *ngIf="recipe.difficulty" 
+                class="difficulty-badge"
+                [class.difficulty-easy]="recipe.difficulty === 'EASY'"
+                [class.difficulty-medium]="recipe.difficulty === 'MEDIUM'"
+                [class.difficulty-hard]="recipe.difficulty === 'HARD'">
+            {{ recipe.difficulty }}
+          </span>
+          <span *ngIf="recipe.category" class="category-badge" style="margin-left: 8px;">{{ recipe.category }}</span>
+        </div>
+        <div class="rating" *ngIf="recipe.rating && recipe.rating > 0">
+          <span *ngFor="let star of getStars(recipe.rating)" class="star" [class.empty]="star === 0">⭐</span>
+          <span style="margin-left: 4px; font-size: 0.9rem;">{{ recipe.rating }}</span>
+        </div>
+      </div>
+    </div>
+
+    <div *ngIf="filteredRecipes.length === 0" class="empty-state">
+      <h3>No recipes found</h3>
+      <p *ngIf="searchTerm || selectedCategory || selectedDifficulty">Try adjusting your filters</p>
+      <p *ngIf="!searchTerm && !selectedCategory && !selectedDifficulty">Add your first recipe to get started!</p>
+    </div>
+  </div>
+</div>
+
+<!-- Modal -->
+<div class="modal" [class.show]="showModal" (click)="closeModal()">
+  <div class="modal-content" (click)="$event.stopPropagation()">
+    <div class="modal-header">
+      <h2>{{ editingRecipe ? 'Edit Recipe' : 'Add New Recipe' }}</h2>
+      <span class="close" (click)="closeModal()">&times;</span>
+    </div>
+    <form (ngSubmit)="saveRecipe()">
+      <div class="form-group">
+        <label for="name">Recipe Name *</label>
+        <input 
+          type="text" 
+          id="name" 
+          [(ngModel)]="newRecipe.name" 
+          name="name"
+          required
+          placeholder="e.g., Chocolate Chip Cookies">
+      </div>
+      <div class="form-group">
+        <label for="description">Description</label>
+        <textarea 
+          id="description" 
+          [(ngModel)]="newRecipe.description" 
+          name="description"
+          placeholder="Describe your recipe..."></textarea>
+      </div>
+      <div class="form-row">
+        <div class="form-group">
+          <label for="category">Category</label>
+          <select 
+            id="category" 
+            [(ngModel)]="newRecipe.category" 
+            name="category">
+            <option value="">Select Category</option>
+            <option *ngFor="let category of categories" [value]="category">{{ category }}</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="difficulty">Difficulty</label>
+          <select 
+            id="difficulty" 
+            [(ngModel)]="newRecipe.difficulty" 
+            name="difficulty">
+            <option value="EASY">Easy</option>
+            <option value="MEDIUM">Medium</option>
+            <option value="HARD">Hard</option>
+          </select>
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group">
+          <label for="prepTime">Prep Time (minutes)</label>
+          <input 
+            type="number" 
+            id="prepTime" 
+            [(ngModel)]="newRecipe.prepTime" 
+            name="prepTime"
+            min="0">
+        </div>
+        <div class="form-group">
+          <label for="cookTime">Cook Time (minutes)</label>
+          <input 
+            type="number" 
+            id="cookTime" 
+            [(ngModel)]="newRecipe.cookTime" 
+            name="cookTime"
+            min="0">
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="servings">Servings</label>
+        <input 
+          type="number" 
+          id="servings" 
+          [(ngModel)]="newRecipe.servings" 
+          name="servings"
+          min="1">
+      </div>
+      <div class="form-group">
+        <label for="ingredients">Ingredients (one per line)</label>
+        <textarea 
+          id="ingredients" 
+          [(ngModel)]="newRecipe.ingredients" 
+          name="ingredients"
+          placeholder="2 cups flour&#10;1 cup sugar&#10;3 eggs"></textarea>
+      </div>
+      <div class="form-group">
+        <label for="instructions">Instructions</label>
+        <textarea 
+          id="instructions" 
+          [(ngModel)]="newRecipe.instructions" 
+          name="instructions"
+          placeholder="Step-by-step cooking instructions..."></textarea>
+      </div>
+      <div class="form-group">
+        <label>Rating</label>
+        <div class="rating-input">
+          <span 
+            *ngFor="let i of [1,2,3,4,5]" 
+            class="star" 
+            [class.empty]="i > selectedRating"
+            (click)="setRating(i)">
+            ⭐
+          </span>
+          <span style="margin-left: 10px;">{{ selectedRating > 0 ? selectedRating + ' / 5' : 'Not rated' }}</span>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="imageUrl">Image URL (optional)</label>
+        <input 
+          type="url" 
+          id="imageUrl" 
+          [(ngModel)]="newRecipe.imageUrl" 
+          name="imageUrl"
+          placeholder="https://example.com/image.jpg">
+      </div>
+      <div class="form-actions">
+        <button type="button" class="btn btn-secondary" (click)="closeModal()">Cancel</button>
+        <button type="submit" class="btn btn-primary">Save</button>
+      </div>
+    </form>
+  </div>
+</div>
