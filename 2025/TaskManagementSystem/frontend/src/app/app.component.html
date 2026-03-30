@@ -1,0 +1,16 @@
+<div class="app-container">
+  <nav class="navbar">
+    <div class="nav-content">
+      <h1 class="nav-title">{{ title }}</h1>
+      <div class="nav-links">
+        <a routerLink="/tasks" routerLinkActive="active">Tasks</a>
+        <a routerLink="/tasks/new" routerLinkActive="active">New Task</a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="main-content">
+    <router-outlet></router-outlet>
+  </main>
+</div>
+
