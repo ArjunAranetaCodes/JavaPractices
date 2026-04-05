@@ -1,0 +1,26 @@
+<form (ngSubmit)="onSubmit()">
+  <div class="form-group">
+    <label for="title">Title *</label>
+    <input id="title" name="title" [(ngModel)]="form.title" required placeholder="e.g. Angular docs">
+  </div>
+  <div class="form-group">
+    <label for="url">URL *</label>
+    <input id="url" name="url" type="url" [(ngModel)]="form.url" required placeholder="https://...">
+  </div>
+  <div class="form-group">
+    <label for="category">Category</label>
+    <select id="category" name="category" [(ngModel)]="form.category">
+      <option *ngFor="let c of categories" [value]="c">{{ c }}</option>
+    </select>
+  </div>
+  <div class="form-group">
+    <label for="notes">Notes</label>
+    <textarea id="notes" name="notes" [(ngModel)]="form.notes" placeholder="Optional notes"></textarea>
+  </div>
+  <div class="modal-actions">
+    <button type="button" class="btn btn-secondary" (click)="onCancel()">Cancel</button>
+    <button type="submit" class="btn btn-primary" [disabled]="!isValid()">
+      {{ isEditMode ? 'Update' : 'Add' }}
+    </button>
+  </div>
+</form>
