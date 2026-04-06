@@ -1,0 +1,56 @@
+<div class="container">
+  <h1>Bookmark Manager</h1>
+
+  <div class="card">
+    <div class="header-actions">
+      <div class="search-box">
+        <input
+          type="text"
+          placeholder="Search title or URL..."
+          [(ngModel)]="searchTerm"
+          (input)="onSearchChange()">
+      </div>
+      <div class="filter-group">
+        <select [(ngModel)]="selectedCategory" (change)="onCategoryChange()">
+          <option *ngFor="let c of categories" [value]="c">
+            {{ c === 'all' ? 'All categories' : c }}
+          </option>
+        </select>
+      </div>
+      <button class="btn btn-primary" (click)="openAddModal()">Add Bookmark</button>
+    </div>
+  </div>
+
+  <div class="card empty-state" *ngIf="filtered.length === 0">
+    <p>No bookmarks yet. Add one to get started.</p>
+  </div>
+
+  <div class="grid" *ngIf="filtered.length > 0">
+    <div class="bookmark-card" *ngFor="let b of filtered">
+      <span class="category" *ngIf="b.category">{{ b.category }}</span>
+      <h3>{{ b.title }}</h3>
+      <div class="url">{{ b.url }}</div>
+      <p class="notes" *ngIf="b.notes">{{ b.notes }}</p>
+      <div class="actions">
+        <button class="btn btn-link" (click)="openUrl(b.url)">Open link</button>
+        <button class="btn btn-secondary" (click)="openEditModal(b)">Edit</button>
+        <button class="btn btn-danger" (click)="deleteBookmark(b.id!)">Delete</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal-overlay" *ngIf="showModal" (click)="closeModal()">
+    <div class="modal-content" (click)="$event.stopPropagation()">
+      <div class="modal-header">
+        <h2>{{ isEditMode ? 'Edit Bookmark' : 'Add Bookmark' }}</h2>
+        <button class="close-btn" (click)="closeModal()">&times;</button>
+      </div>
+      <app-bookmark-form
+        [bookmark]="editingBookmark!"
+        [isEditMode]="isEditMode"
+        (save)="saveBookmark($event)"
+        (cancel)="closeModal()">
+      </app-bookmark-form>
+    </div>
+  </div>
+</div>
