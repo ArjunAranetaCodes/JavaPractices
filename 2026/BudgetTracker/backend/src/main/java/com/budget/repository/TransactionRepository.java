@@ -1,0 +1,18 @@
+package com.budget.repository;
+
+import com.budget.model.Transaction;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+
+import java.time.LocalDate;
+import java.util.List;
+
+@Repository
+public interface TransactionRepository extends JpaRepository<Transaction, Long> {
+
+    List<Transaction> findByTypeIgnoreCase(String type);
+
+    List<Transaction> findByCategoryIgnoreCase(String category);
+
+    List<Transaction> findByTransactionDateBetween(LocalDate start, LocalDate end);
+}
