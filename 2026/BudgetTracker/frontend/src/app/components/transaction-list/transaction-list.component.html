@@ -1,0 +1,74 @@
+<div class="container">
+  <h1>Budget Tracker</h1>
+
+  <div class="card">
+    <div class="header-actions">
+      <div class="filter-group">
+        <select [(ngModel)]="selectedType" (change)="onTypeChange()">
+          <option value="all">All types</option>
+          <option value="INCOME">Income</option>
+          <option value="EXPENSE">Expense</option>
+        </select>
+      </div>
+      <div class="filter-group">
+        <select [(ngModel)]="selectedCategory" (change)="onCategoryChange()">
+          <option *ngFor="let c of categories" [value]="c">
+            {{ c === 'all' ? 'All categories' : c }}
+          </option>
+        </select>
+      </div>
+      <button class="btn btn-income" (click)="openAddModal('INCOME')">+ Income</button>
+      <button class="btn btn-expense" (click)="openAddModal('EXPENSE')">+ Expense</button>
+    </div>
+  </div>
+
+  <div class="summary-bar" *ngIf="filtered.length > 0">
+    <div class="summary-item income">
+      <div class="label">Income</div>
+      <div class="value">${{ formatAmount(totalIncome()) }}</div>
+    </div>
+    <div class="summary-item expense">
+      <div class="label">Expense</div>
+      <div class="value">${{ formatAmount(totalExpense()) }}</div>
+    </div>
+    <div class="summary-item balance">
+      <div class="label">Balance</div>
+      <div class="value">${{ formatAmount(balance()) }}</div>
+    </div>
+  </div>
+
+  <div class="card empty-state" *ngIf="filtered.length === 0">
+    <p>No transactions yet. Add income or expense to start.</p>
+  </div>
+
+  <div class="grid" *ngIf="filtered.length > 0">
+    <div class="txn-card" [class.income]="(t.type || '').toUpperCase() === 'INCOME'" [class.expense]="(t.type || '').toUpperCase() === 'EXPENSE'" *ngFor="let t of filtered">
+      <span class="type" [class.income]="(t.type || '').toUpperCase() === 'INCOME'" [class.expense]="(t.type || '').toUpperCase() === 'EXPENSE'">{{ t.type }}</span>
+      <div class="amount" [class.income]="(t.type || '').toUpperCase() === 'INCOME'" [class.expense]="(t.type || '').toUpperCase() === 'EXPENSE'">
+        {{ (t.type || '').toUpperCase() === 'INCOME' ? '+' : '-' }}${{ formatAmount(t.amount) }}
+      </div>
+      <div class="date">{{ t.transactionDate }}</div>
+      <div class="category" *ngIf="t.category">{{ t.category }}</div>
+      <div class="description" *ngIf="t.description">{{ t.description }}</div>
+      <div class="actions">
+        <button class="btn btn-secondary" (click)="openEditModal(t)">Edit</button>
+        <button class="btn btn-danger" (click)="deleteTransaction(t.id!)">Delete</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal-overlay" *ngIf="showModal" (click)="closeModal()">
+    <div class="modal-content" (click)="$event.stopPropagation()">
+      <div class="modal-header">
+        <h2>{{ isEditMode ? 'Edit transaction' : 'Add transaction' }}</h2>
+        <button class="close-btn" (click)="closeModal()">&times;</button>
+      </div>
+      <app-transaction-form
+        [transaction]="editingTransaction!"
+        [isEditMode]="isEditMode"
+        (save)="saveTransaction($event)"
+        (cancel)="closeModal()">
+      </app-transaction-form>
+    </div>
+  </div>
+</div>
