@@ -1,0 +1,57 @@
+<div class="container">
+  <h1>Daily Journal</h1>
+
+  <div class="card">
+    <div class="header-actions">
+      <div class="search-box">
+        <input
+          type="text"
+          placeholder="Search title or content..."
+          [(ngModel)]="searchTerm"
+          (input)="onSearchChange()">
+      </div>
+      <div class="filter-group">
+        <select [(ngModel)]="selectedMood" (change)="onMoodChange()">
+          <option *ngFor="let m of moods" [value]="m">
+            {{ m === 'all' ? 'All moods' : m }}
+          </option>
+        </select>
+      </div>
+      <button class="btn btn-primary" (click)="openAddModal()">New entry</button>
+    </div>
+  </div>
+
+  <div class="card empty-state" *ngIf="filtered.length === 0">
+    <p>No journal entries yet. Write your first entry.</p>
+  </div>
+
+  <div *ngIf="filtered.length > 0">
+    <div class="entry-card" *ngFor="let e of filtered">
+      <div class="meta">
+        <span class="date">{{ e.entryDate }}</span>
+        <span class="mood" [ngClass]="moodClass(e.mood || '')" *ngIf="e.mood">{{ e.mood }}</span>
+      </div>
+      <h3>{{ e.title }}</h3>
+      <div class="content" *ngIf="e.content">{{ e.content }}</div>
+      <div class="actions">
+        <button class="btn btn-secondary" (click)="openEditModal(e)">Edit</button>
+        <button class="btn btn-danger" (click)="deleteEntry(e.id!)">Delete</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal-overlay" *ngIf="showModal" (click)="closeModal()">
+    <div class="modal-content" (click)="$event.stopPropagation()">
+      <div class="modal-header">
+        <h2>{{ isEditMode ? 'Edit entry' : 'New entry' }}</h2>
+        <button class="close-btn" (click)="closeModal()">&times;</button>
+      </div>
+      <app-journal-form
+        [entry]="editingEntry!"
+        [isEditMode]="isEditMode"
+        (save)="saveEntry($event)"
+        (cancel)="closeModal()">
+      </app-journal-form>
+    </div>
+  </div>
+</div>
