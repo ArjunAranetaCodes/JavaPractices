@@ -1,0 +1,49 @@
+<form (ngSubmit)="onSubmit()">
+  <div class="form-row">
+    <div class="form-group">
+      <label for="firstName">First Name *</label>
+      <input id="firstName" name="firstName" [(ngModel)]="form.firstName" required>
+    </div>
+    <div class="form-group">
+      <label for="lastName">Last Name *</label>
+      <input id="lastName" name="lastName" [(ngModel)]="form.lastName" required>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label for="email">Email *</label>
+    <input id="email" name="email" type="email" [(ngModel)]="form.email" required>
+  </div>
+
+  <div class="form-row">
+    <div class="form-group">
+      <label for="jobTitle">Job Title</label>
+      <input id="jobTitle" name="jobTitle" [(ngModel)]="form.jobTitle">
+    </div>
+    <div class="form-group">
+      <label for="department">Department</label>
+      <select id="department" name="department" [(ngModel)]="form.department">
+        <option *ngFor="let d of departments" [value]="d">{{ d }}</option>
+      </select>
+    </div>
+  </div>
+
+  <div class="form-row">
+    <div class="form-group">
+      <label for="phone">Phone</label>
+      <input id="phone" name="phone" [(ngModel)]="form.phone">
+    </div>
+    <div class="form-group">
+      <label for="location">Location</label>
+      <input id="location" name="location" [(ngModel)]="form.location">
+    </div>
+  </div>
+
+  <div class="modal-actions">
+    <button type="button" class="btn btn-secondary" (click)="onCancel()">Cancel</button>
+    <button type="submit" class="btn btn-primary" [disabled]="!isValid()">
+      {{ isEditMode ? 'Update' : 'Create' }}
+    </button>
+  </div>
+</form>
+
