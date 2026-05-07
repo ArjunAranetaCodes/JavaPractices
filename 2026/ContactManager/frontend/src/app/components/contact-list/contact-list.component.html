@@ -1,0 +1,73 @@
+<div class="container">
+  <h1>Contact Manager</h1>
+
+  <div class="card">
+    <div class="header-actions">
+      <div class="search-box">
+        <input
+          type="text"
+          placeholder="Search by name or email..."
+          [(ngModel)]="searchTerm"
+          (input)="onSearchChange()">
+      </div>
+      <div class="filter-group">
+        <input
+          type="text"
+          placeholder="Filter by company..."
+          [(ngModel)]="companyFilter"
+          (input)="onCompanyChange()">
+      </div>
+      <label style="display:flex;align-items:center;gap:6px;">
+        <input
+          type="checkbox"
+          [(ngModel)]="showFavoritesOnly"
+          (change)="onFavoritesToggle()">
+        Favorites only
+      </label>
+      <button class="btn btn-primary" (click)="openAddModal()">Add Contact</button>
+    </div>
+  </div>
+
+  <div class="card empty-state" *ngIf="filtered.length === 0">
+    <p>No contacts found. Add a contact to get started.</p>
+  </div>
+
+  <div class="grid" *ngIf="filtered.length > 0">
+    <div class="contact-card" *ngFor="let c of filtered">
+      <div class="name">
+        {{ c.firstName }} {{ c.lastName }}
+        <span class="favorite-badge" *ngIf="c.favorite">★</span>
+      </div>
+      <div class="meta">
+        <div *ngIf="c.email">📧 {{ c.email }}</div>
+        <div *ngIf="c.phone">📞 {{ c.phone }}</div>
+        <div *ngIf="c.company">
+          {{ c.company }}<span *ngIf="c.jobTitle"> · {{ c.jobTitle }}</span>
+        </div>
+      </div>
+      <div class="notes" *ngIf="c.notes">
+        {{ c.notes }}
+      </div>
+      <div class="actions">
+        <button class="btn btn-secondary" (click)="openEditModal(c)">Edit</button>
+        <button class="btn btn-danger" (click)="deleteContact(c.id!)">Delete</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal-overlay" *ngIf="showModal" (click)="closeModal()">
+    <div class="modal-content" (click)="$event.stopPropagation()">
+      <div class="modal-header">
+        <h2>{{ isEditMode ? 'Edit Contact' : 'Add Contact' }}</h2>
+        <button class="close-btn" (click)="closeModal()">&times;</button>
+      </div>
+      <app-contact-form
+        [contact]="editingContact!"
+        [isEditMode]="isEditMode"
+        (save)="saveContact($event)"
+        (cancel)="closeModal()">
+      </app-contact-form>
+    </div>
+  </div>
+</div>
+
