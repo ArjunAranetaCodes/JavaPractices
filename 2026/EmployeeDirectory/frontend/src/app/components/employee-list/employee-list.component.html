@@ -1,0 +1,63 @@
+<div class="container">
+  <h1>Employee Directory</h1>
+
+  <div class="card">
+    <div class="header-actions">
+      <div class="search-box">
+        <input
+          type="text"
+          placeholder="Search by name or email..."
+          [(ngModel)]="searchTerm"
+          (input)="onSearchChange()">
+      </div>
+
+      <select [(ngModel)]="selectedDepartment" (change)="onDepartmentChange()">
+        <option *ngFor="let d of departments" [value]="d">
+          {{ d === 'all' ? 'All Departments' : d }}
+        </option>
+      </select>
+
+      <button class="btn btn-primary" (click)="openAddModal()">Add Employee</button>
+    </div>
+  </div>
+
+  <div class="card empty-state" *ngIf="filtered.length === 0">
+    <p>No employees found. Try adjusting your filters or add a new employee.</p>
+  </div>
+
+  <div class="grid" *ngIf="filtered.length > 0">
+    <div class="employee-card" *ngFor="let e of filtered">
+      <div class="department" *ngIf="e.department">{{ e.department }}</div>
+      <h3>{{ e.firstName }} {{ e.lastName }}</h3>
+      <div class="position" *ngIf="e.jobTitle">{{ e.jobTitle }}</div>
+
+      <div class="meta">
+        <div *ngIf="e.email">📧 {{ e.email }}</div>
+        <div *ngIf="e.phone">📞 {{ e.phone }}</div>
+        <div *ngIf="e.location">📍 {{ e.location }}</div>
+      </div>
+
+      <div class="actions">
+        <button class="btn btn-secondary" (click)="openEditModal(e)">Edit</button>
+        <button class="btn btn-danger" (click)="deleteEmployee(e.id!)">Delete</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal-overlay" *ngIf="showModal" (click)="closeModal()">
+    <div class="modal-content" (click)="$event.stopPropagation()">
+      <div class="modal-header">
+        <h2>{{ isEditMode ? 'Edit Employee' : 'Add Employee' }}</h2>
+        <button class="close-btn" (click)="closeModal()">&times;</button>
+      </div>
+
+      <app-employee-form
+        [employee]="editingEmployee!"
+        [isEditMode]="isEditMode"
+        (save)="saveEmployee($event)"
+        (cancel)="closeModal()">
+      </app-employee-form>
+    </div>
+  </div>
+</div>
+
