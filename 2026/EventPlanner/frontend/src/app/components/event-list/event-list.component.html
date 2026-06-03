@@ -1,0 +1,64 @@
+<div class="container">
+  <h1>Event Planner</h1>
+
+  <div class="card">
+    <div class="header-actions">
+      <div class="search-box">
+        <input
+          type="text"
+          placeholder="Search title or description..."
+          [(ngModel)]="searchTerm"
+          (input)="onSearchChange()">
+      </div>
+      <div class="filter-group">
+        <select [(ngModel)]="selectedStatus" (change)="onStatusChange()">
+          <option *ngFor="let s of statuses" [value]="s">
+            {{ s === 'all' ? 'All statuses' : s }}
+          </option>
+        </select>
+      </div>
+      <div class="filter-group">
+        <select [(ngModel)]="selectedCategory" (change)="onCategoryChange()">
+          <option *ngFor="let c of categories" [value]="c">
+            {{ c === 'all' ? 'All categories' : c }}
+          </option>
+        </select>
+      </div>
+      <button class="btn btn-primary" (click)="openAddModal()">Add Event</button>
+    </div>
+  </div>
+
+  <div class="card empty-state" *ngIf="filtered.length === 0">
+    <p>No events yet. Add one to your calendar.</p>
+  </div>
+
+  <div class="grid" *ngIf="filtered.length > 0">
+    <div class="event-card" *ngFor="let e of filtered">
+      <span class="category" *ngIf="e.category">{{ e.category }}</span>
+      <span class="status" [ngClass]="statusClass(e.status || '')">{{ e.status }}</span>
+      <h3>{{ e.title }}</h3>
+      <div class="when">{{ formatWhen(e.startDateTime, e.endDateTime) }}</div>
+      <div class="location" *ngIf="e.location">📍 {{ e.location }}</div>
+      <div class="description" *ngIf="e.description">{{ e.description }}</div>
+      <div class="actions">
+        <button class="btn btn-secondary" (click)="openEditModal(e)">Edit</button>
+        <button class="btn btn-danger" (click)="deleteEvent(e.id!)">Delete</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal-overlay" *ngIf="showModal" (click)="closeModal()">
+    <div class="modal-content" (click)="$event.stopPropagation()">
+      <div class="modal-header">
+        <h2>{{ isEditMode ? 'Edit event' : 'Add event' }}</h2>
+        <button class="close-btn" (click)="closeModal()">&times;</button>
+      </div>
+      <app-event-form
+        [event]="editingEvent!"
+        [isEditMode]="isEditMode"
+        (save)="saveEvent($event)"
+        (cancel)="closeModal()">
+      </app-event-form>
+    </div>
+  </div>
+</div>
